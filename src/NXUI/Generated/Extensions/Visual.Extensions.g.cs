@@ -19,7 +19,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.BoundsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBounds(
+    public static Avalonia.Data.BindingBase BindBounds(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipToBounds<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -168,7 +168,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClipToBounds<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -218,7 +218,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T ClipToBounds<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -254,7 +254,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.ClipToBoundsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClipToBounds(
+    public static Avalonia.Data.BindingBase BindClipToBounds(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Clip<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -406,7 +406,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Clip<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -456,7 +456,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T Clip<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -492,7 +492,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.ClipProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClip(
+    public static Avalonia.Data.BindingBase BindClip(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -644,7 +644,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -694,7 +694,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T IsVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -730,7 +730,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.IsVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsVisible(
+    public static Avalonia.Data.BindingBase BindIsVisible(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +836,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Opacity<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -882,7 +882,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Opacity<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -932,7 +932,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T Opacity<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -968,7 +968,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.OpacityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpacity(
+    public static Avalonia.Data.BindingBase BindOpacity(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1074,7 +1074,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpacityMask<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1120,7 +1120,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OpacityMask<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1170,7 +1170,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T OpacityMask<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1206,7 +1206,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.OpacityMaskProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpacityMask(
+    public static Avalonia.Data.BindingBase BindOpacityMask(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1292,6 +1292,244 @@ public static partial class VisualExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Visual.CacheModeProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheMode<T>(this ElementBuilder<T> builder, Avalonia.Media.CacheMode? value) where T : Avalonia.Visual
+    {
+        return builder.WithValue(PropertyMetadata.Visual_CacheMode, Avalonia.Visual.CacheModeProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Visual.CacheModeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheMode<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        return builder.WithBinding(PropertyMetadata.Visual_CacheMode, Avalonia.Visual.CacheModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Visual.CacheModeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheMode<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.CacheMode?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        return builder.WithBinding(PropertyMetadata.Visual_CacheMode, Avalonia.Visual.CacheModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Visual.CacheModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheMode<T>(this ElementRef<T> elementRef, Avalonia.Media.CacheMode? value) where T : Avalonia.Visual
+    {
+        return elementRef.SetValue(Avalonia.Visual.CacheModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Visual.CacheModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        return elementRef.SetBinding(Avalonia.Visual.CacheModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Visual.CacheModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.CacheMode?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        return elementRef.SetBinding(Avalonia.Visual.CacheModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Visual.CacheModeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Visual.CacheModeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheMode<T>(this T obj, Avalonia.Media.CacheMode? value) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.CacheModeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Visual.CacheModeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheMode<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        var descriptor = Avalonia.Visual.CacheModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Visual.CacheModeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheMode<T>(
+        this T obj,
+        IObservable<Avalonia.Media.CacheMode?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        var descriptor = Avalonia.Visual.CacheModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.CacheModeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.CacheModeProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindCacheMode(
+        this Avalonia.Visual obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Visual.CacheModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.CacheMode?> ObserveCacheMode(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.CacheModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCacheMode<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.CacheMode?>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetObservable(Avalonia.Visual.CacheModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.CacheMode?>> ObserveBindingCacheMode(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.CacheModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCacheMode<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.CacheMode?>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.CacheModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCacheModeChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.CacheModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.CacheModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCacheModeChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.CacheModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Visual.EffectProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -1312,7 +1550,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Effect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1358,7 +1596,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Effect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1408,7 +1646,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T Effect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1444,7 +1682,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.EffectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindEffect(
+    public static Avalonia.Data.BindingBase BindEffect(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1537,7 +1775,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHasMirrorTransform(
+    public static Avalonia.Data.BindingBase BindHasMirrorTransform(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1640,7 +1878,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransform<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1686,7 +1924,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RenderTransform<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1736,7 +1974,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T RenderTransform<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1772,7 +2010,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.RenderTransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRenderTransform(
+    public static Avalonia.Data.BindingBase BindRenderTransform(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1878,7 +2116,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransformOrigin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1924,7 +2162,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RenderTransformOrigin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1974,7 +2212,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T RenderTransformOrigin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2010,7 +2248,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRenderTransformOrigin(
+    public static Avalonia.Data.BindingBase BindRenderTransformOrigin(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2116,7 +2354,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2162,7 +2400,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FlowDirection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2212,7 +2450,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T FlowDirection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2248,7 +2486,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.FlowDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlowDirection(
+    public static Avalonia.Data.BindingBase BindFlowDirection(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2387,7 +2625,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.VisualParentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVisualParent(
+    public static Avalonia.Data.BindingBase BindVisualParent(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2490,7 +2728,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ZIndex<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2536,7 +2774,7 @@ public static partial class VisualExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ZIndex<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2586,7 +2824,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T ZIndex<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -2622,7 +2860,7 @@ public static partial class VisualExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Visual.ZIndexProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindZIndex(
+    public static Avalonia.Data.BindingBase BindZIndex(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

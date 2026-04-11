@@ -123,7 +123,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitionBaseDuration(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseDuration(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitionBaseDuration(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseDuration(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TransitionBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitionBaseDuration(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitionBaseDuration(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DurationProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TransitionBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitionBaseDuration(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitionBaseDuration(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DurationProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitionBaseDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseDelay(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitionBaseDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseDelay(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TransitionBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitionBaseDelay(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitionBaseDelay(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DelayProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TransitionBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitionBaseDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitionBaseDelay(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DelayProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitionBaseEasing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseEasing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitionBaseEasing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseEasing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TransitionBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitionBaseEasing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitionBaseEasing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.EasingProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TransitionBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitionBaseEasing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitionBaseEasing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.EasingProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitionBaseProperty(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseProperty(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitionBaseProperty(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseProperty(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TransitionBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitionBaseProperty(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitionBaseProperty(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.PropertyProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TransitionBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitionBaseProperty(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitionBaseProperty(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.PropertyProperty, binding));
         return keyFrame;

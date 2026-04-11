@@ -32,7 +32,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -78,7 +78,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Color<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -128,7 +128,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T Color<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -164,7 +164,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColor(
+    public static Avalonia.Data.BindingBase BindColor(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -316,7 +316,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ColorComponent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -366,7 +366,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T ColorComponent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -402,7 +402,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColorComponent(
+    public static Avalonia.Data.BindingBase BindColorComponent(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -600,7 +600,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -646,7 +646,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ColorModel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -696,7 +696,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T ColorModel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -732,7 +732,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColorModel(
+    public static Avalonia.Data.BindingBase BindColorModel(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -884,7 +884,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -930,7 +930,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HsvColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -980,7 +980,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T HsvColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1016,7 +1016,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHsvColor(
+    public static Avalonia.Data.BindingBase BindHsvColor(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1122,7 +1122,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1168,7 +1168,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsAlphaVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1218,7 +1218,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsAlphaVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1254,7 +1254,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsAlphaVisible(
+    public static Avalonia.Data.BindingBase BindIsAlphaVisible(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1360,7 +1360,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPerceptive<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1406,7 +1406,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsPerceptive<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1456,7 +1456,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsPerceptive<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1492,7 +1492,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsPerceptive(
+    public static Avalonia.Data.BindingBase BindIsPerceptive(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1598,7 +1598,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsRoundingEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1644,7 +1644,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsRoundingEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1694,7 +1694,7 @@ public static partial class ColorSliderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsRoundingEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1730,7 +1730,7 @@ public static partial class ColorSliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsRoundingEnabled(
+    public static Avalonia.Data.BindingBase BindIsRoundingEnabled(
         this Avalonia.Controls.Primitives.ColorSlider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

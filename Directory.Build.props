@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <VersionPrefix>11.3.0.1</VersionPrefix>
+    <VersionPrefix>12.0.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     <Authors>Wiesław Šoltés</Authors>
     <Company>Wiesław Šoltés</Company>
@@ -13,9 +13,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <AvaloniaVersion>11.3.0</AvaloniaVersion>
-    <AvaloniaTreeDataGridVersion>11.1.1</AvaloniaTreeDataGridVersion>
-    <AvaloniaControlsItemsRepeaterVersion>11.1.5</AvaloniaControlsItemsRepeaterVersion>
+    <AvaloniaVersion>12.0.0</AvaloniaVersion>
+    <AvaloniaControlsItemsRepeaterVersion>12.0.0</AvaloniaControlsItemsRepeaterVersion>
+    <ProDiagnosticsVersion>12.0.0</ProDiagnosticsVersion>
     <SystemReactiveVersion>6.0.1</SystemReactiveVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == ''">

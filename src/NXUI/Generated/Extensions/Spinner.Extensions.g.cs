@@ -32,7 +32,7 @@ public static partial class SpinnerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ValidSpinDirection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Spinner
     {
@@ -78,7 +78,7 @@ public static partial class SpinnerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ValidSpinDirection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Spinner
     {
@@ -128,7 +128,7 @@ public static partial class SpinnerExtensions
     /// <returns>The target object reference.</returns>
     public static T ValidSpinDirection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Spinner
     {
@@ -164,7 +164,7 @@ public static partial class SpinnerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindValidSpinDirection(
+    public static Avalonia.Data.BindingBase BindValidSpinDirection(
         this Avalonia.Controls.Spinner obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

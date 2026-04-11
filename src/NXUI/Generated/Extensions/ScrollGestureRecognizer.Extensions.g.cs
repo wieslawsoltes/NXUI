@@ -32,7 +32,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanHorizontallyScroll<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -78,7 +78,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CanHorizontallyScroll<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -128,7 +128,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The target object reference.</returns>
     public static T CanHorizontallyScroll<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -164,7 +164,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(
+    public static Avalonia.Data.BindingBase BindCanHorizontallyScroll(
         this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanVerticallyScroll<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -316,7 +316,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CanVerticallyScroll<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -366,7 +366,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The target object reference.</returns>
     public static T CanVerticallyScroll<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -402,7 +402,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanVerticallyScroll(
+    public static Avalonia.Data.BindingBase BindCanVerticallyScroll(
         this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsScrollInertiaEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -554,7 +554,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsScrollInertiaEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -604,7 +604,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsScrollInertiaEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -640,7 +640,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsScrollInertiaEnabled(
+    public static Avalonia.Data.BindingBase BindIsScrollInertiaEnabled(
         this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ScrollStartDistance<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -792,7 +792,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ScrollStartDistance<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -842,7 +842,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <returns>The target object reference.</returns>
     public static T ScrollStartDistance<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
@@ -878,7 +878,7 @@ public static partial class ScrollGestureRecognizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindScrollStartDistance(
+    public static Avalonia.Data.BindingBase BindScrollStartDistance(
         this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

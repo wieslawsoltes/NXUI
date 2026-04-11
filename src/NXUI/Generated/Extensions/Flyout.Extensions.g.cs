@@ -32,7 +32,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -78,7 +78,7 @@ public static partial class FlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Content<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -128,7 +128,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -164,7 +164,7 @@ public static partial class FlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Flyout.ContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContent(
+    public static Avalonia.Data.BindingBase BindContent(
         this Avalonia.Controls.Flyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -316,7 +316,7 @@ public static partial class FlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ContentTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -366,7 +366,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -402,7 +402,7 @@ public static partial class FlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContentTemplate(
+    public static Avalonia.Data.BindingBase BindContentTemplate(
         this Avalonia.Controls.Flyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlyoutPresenterTheme<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -554,7 +554,7 @@ public static partial class FlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FlyoutPresenterTheme<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -604,7 +604,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T FlyoutPresenterTheme<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -640,7 +640,7 @@ public static partial class FlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlyoutPresenterTheme(
+    public static Avalonia.Data.BindingBase BindFlyoutPresenterTheme(
         this Avalonia.Controls.Flyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

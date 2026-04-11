@@ -32,7 +32,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static GlyphRunDrawingBuilder Foreground(
         this GlyphRunDrawingBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GlyphRunDrawing> Foreground(
         this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GlyphRunDrawing Foreground(
         this Avalonia.Media.GlyphRunDrawing obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindForeground(
+    public static Avalonia.Data.BindingBase BindForeground(
         this Avalonia.Media.GlyphRunDrawing obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static GlyphRunDrawingBuilder GlyphRun(
         this GlyphRunDrawingBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GlyphRunDrawing> GlyphRun(
         this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GlyphRunDrawing GlyphRun(
         this Avalonia.Media.GlyphRunDrawing obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGlyphRun(
+    public static Avalonia.Data.BindingBase BindGlyphRun(
         this Avalonia.Media.GlyphRunDrawing obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -78,7 +78,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OffContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -128,7 +128,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OffContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -164,7 +164,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffContent(
+    public static Avalonia.Data.BindingBase BindOffContent(
         this Avalonia.Controls.ToggleSwitch obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContentTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -316,7 +316,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OffContentTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -366,7 +366,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OffContentTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -402,7 +402,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffContentTemplate(
+    public static Avalonia.Data.BindingBase BindOffContentTemplate(
         this Avalonia.Controls.ToggleSwitch obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -554,7 +554,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OnContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -604,7 +604,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OnContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -640,7 +640,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOnContent(
+    public static Avalonia.Data.BindingBase BindOnContent(
         this Avalonia.Controls.ToggleSwitch obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContentTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -792,7 +792,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OnContentTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -842,7 +842,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OnContentTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -878,7 +878,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOnContentTemplate(
+    public static Avalonia.Data.BindingBase BindOnContentTemplate(
         this Avalonia.Controls.ToggleSwitch obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KnobTransitions<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -1030,7 +1030,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> KnobTransitions<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -1080,7 +1080,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T KnobTransitions<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -1116,7 +1116,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindKnobTransitions(
+    public static Avalonia.Data.BindingBase BindKnobTransitions(
         this Avalonia.Controls.ToggleSwitch obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -78,7 +78,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsChecked<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -128,7 +128,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T IsChecked<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -164,7 +164,7 @@ public static partial class ToggleButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsChecked(
+    public static Avalonia.Data.BindingBase BindIsChecked(
         this Avalonia.Controls.Primitives.ToggleButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsThreeState<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -316,7 +316,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsThreeState<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -366,7 +366,7 @@ public static partial class ToggleButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T IsThreeState<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -402,7 +402,7 @@ public static partial class ToggleButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsThreeState(
+    public static Avalonia.Data.BindingBase BindIsThreeState(
         this Avalonia.Controls.Primitives.ToggleButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

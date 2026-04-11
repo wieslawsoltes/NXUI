@@ -123,7 +123,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectableTextBlockSelectionStart(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionStart(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectableTextBlockSelectionStart(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionStart(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectableTextBlockSelectionStart(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectableTextBlockSelectionStart(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectableTextBlockSelectionStart(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectableTextBlockSelectionStart(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectableTextBlockSelectionEnd(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionEnd(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectableTextBlockSelectionEnd(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionEnd(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectableTextBlockSelectionEnd(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectableTextBlockSelectionEnd(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectableTextBlockSelectionEnd(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectableTextBlockSelectionEnd(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectableTextBlockSelectionBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectableTextBlockSelectionBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectableTextBlockSelectionBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectableTextBlockSelectionBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectableTextBlockSelectionBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectableTextBlockSelectionBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectableTextBlockSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectableTextBlockSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectableTextBlockSelectionForegroundBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectableTextBlockSelectionForegroundBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectableTextBlockSelectionForegroundBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectableTextBlockSelectionForegroundBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, binding));
         return keyFrame;

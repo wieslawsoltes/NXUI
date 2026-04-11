@@ -12,4 +12,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> property defined in <see cref="Avalonia.Controls.Carousel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Animation.IPageTransition> Carousel_PageTransition => Avalonia.Controls.Carousel.PageTransitionProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> property defined in <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> Carousel_IsSwipeEnabled => Avalonia.Controls.Carousel.IsSwipeEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> property defined in <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> Carousel_ViewportFraction => Avalonia.Controls.Carousel.ViewportFractionProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/> property defined in <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.Carousel,System.Boolean> Carousel_IsSwiping => Avalonia.Controls.Carousel.IsSwipingProperty;
 }

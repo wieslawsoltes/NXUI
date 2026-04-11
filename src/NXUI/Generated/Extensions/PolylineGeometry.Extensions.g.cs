@@ -32,7 +32,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Points<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -78,7 +78,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Points<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -128,7 +128,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Points<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -164,7 +164,7 @@ public static partial class PolylineGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoints(
+    public static Avalonia.Data.BindingBase BindPoints(
         this Avalonia.Media.PolylineGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsFilled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -316,7 +316,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsFilled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -366,7 +366,7 @@ public static partial class PolylineGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T IsFilled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
     {
@@ -402,7 +402,7 @@ public static partial class PolylineGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsFilled(
+    public static Avalonia.Data.BindingBase BindIsFilled(
         this Avalonia.Media.PolylineGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

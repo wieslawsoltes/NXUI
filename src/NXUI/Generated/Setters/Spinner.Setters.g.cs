@@ -123,7 +123,7 @@ public static partial class SpinnerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSpinnerValidSpinDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSpinnerValidSpinDirection(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class SpinnerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSpinnerValidSpinDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSpinnerValidSpinDirection(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class SpinnerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSpinnerValidSpinDirection(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSpinnerValidSpinDirection(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class SpinnerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class TransformGroupExtensions
     /// <returns>The builder instance.</returns>
     public static TransformGroupBuilder Children(
         this TransformGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class TransformGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.TransformGroup> Children(
         this ElementRef<Avalonia.Media.TransformGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class TransformGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.TransformGroup Children(
         this Avalonia.Media.TransformGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class TransformGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChildren(
+    public static Avalonia.Data.BindingBase BindChildren(
         this Avalonia.Media.TransformGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

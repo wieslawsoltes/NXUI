@@ -123,7 +123,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlItemContainerTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsControlItemContainerTheme(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsControlItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItemContainerTheme(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsControlItemContainerTheme(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItemContainerTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsControlItemContainerTheme(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlItemsPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsControlItemsPanel(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlItemsPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsControlItemsPanel(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItemsPanel(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsControlItemsPanel(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsPanelProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItemsPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsControlItemsPanel(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsPanelProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsControlItemsSource(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsControlItemsSource(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItemsSource(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsControlItemsSource(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItemsSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsControlItemsSource(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsControlItemTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsControlItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsControlItemTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemTemplateProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItemTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsControlItemTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemTemplateProperty, binding));
         return keyFrame;
@@ -653,7 +653,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlDisplayMemberBinding(this StyleBuilder builder, Avalonia.Data.IBinding value)
+    public static StyleBuilder SetItemsControlDisplayMemberBinding(this StyleBuilder builder, Avalonia.Data.BindingBase value)
     {
         return builder.WithAction(style =>
         {
@@ -667,7 +667,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlDisplayMemberBinding(this KeyFrameBuilder builder, Avalonia.Data.IBinding value)
+    public static KeyFrameBuilder SetItemsControlDisplayMemberBinding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -683,7 +683,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlDisplayMemberBinding(this Style style, Avalonia.Data.IBinding value)
+    public static Style SetItemsControlDisplayMemberBinding(this Style style, Avalonia.Data.BindingBase value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, value));
         return style;
@@ -695,7 +695,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlDisplayMemberBinding(this KeyFrame keyFrame, Avalonia.Data.IBinding value)
+    public static KeyFrame SetItemsControlDisplayMemberBinding(this KeyFrame keyFrame, Avalonia.Data.BindingBase value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, value));
         return keyFrame;
@@ -707,7 +707,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsControlDisplayMemberBinding(this StyleBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static StyleBuilder SetItemsControlDisplayMemberBinding(this StyleBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
     {
         return builder.WithAction(style =>
         {
@@ -721,7 +721,7 @@ public static partial class ItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsControlDisplayMemberBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static KeyFrameBuilder SetItemsControlDisplayMemberBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -735,7 +735,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlDisplayMemberBinding(this Style style, IObservable<Avalonia.Data.IBinding> observable)
+    public static Style SetItemsControlDisplayMemberBinding(this Style style, IObservable<Avalonia.Data.BindingBase> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, observable.ToBinding()));
         return style;
@@ -747,7 +747,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlDisplayMemberBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.IBinding> observable)
+    public static KeyFrame SetItemsControlDisplayMemberBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.BindingBase> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, observable.ToBinding()));
         return keyFrame;

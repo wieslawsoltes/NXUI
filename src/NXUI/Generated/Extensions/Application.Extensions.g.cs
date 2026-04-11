@@ -32,7 +32,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DataContext<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -78,7 +78,7 @@ public static partial class ApplicationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DataContext<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -128,7 +128,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T DataContext<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -164,7 +164,7 @@ public static partial class ApplicationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Application.DataContextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDataContext(
+    public static Avalonia.Data.BindingBase BindDataContext(
         this Avalonia.Application obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ActualThemeVariant<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -316,7 +316,7 @@ public static partial class ApplicationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ActualThemeVariant<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -366,7 +366,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T ActualThemeVariant<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -402,7 +402,7 @@ public static partial class ApplicationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Application.ActualThemeVariantProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindActualThemeVariant(
+    public static Avalonia.Data.BindingBase BindActualThemeVariant(
         this Avalonia.Application obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RequestedThemeVariant<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -554,7 +554,7 @@ public static partial class ApplicationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RequestedThemeVariant<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -604,7 +604,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T RequestedThemeVariant<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -640,7 +640,7 @@ public static partial class ApplicationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRequestedThemeVariant(
+    public static Avalonia.Data.BindingBase BindRequestedThemeVariant(
         this Avalonia.Application obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Name<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -792,7 +792,7 @@ public static partial class ApplicationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Name<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -842,7 +842,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T Name<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -878,7 +878,7 @@ public static partial class ApplicationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Application.NameProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindName(
+    public static Avalonia.Data.BindingBase BindName(
         this Avalonia.Application obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

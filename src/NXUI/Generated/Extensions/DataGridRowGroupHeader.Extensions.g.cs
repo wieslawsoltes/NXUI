@@ -32,7 +32,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsItemCountVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -78,7 +78,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsItemCountVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -128,7 +128,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsItemCountVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -164,7 +164,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsItemCountVisible(
+    public static Avalonia.Data.BindingBase BindIsItemCountVisible(
         this Avalonia.Controls.DataGridRowGroupHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemCountFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -316,7 +316,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemCountFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -366,7 +366,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemCountFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -402,7 +402,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemCountFormat(
+    public static Avalonia.Data.BindingBase BindItemCountFormat(
         this Avalonia.Controls.DataGridRowGroupHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PropertyName<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -554,7 +554,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PropertyName<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -604,7 +604,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T PropertyName<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -640,7 +640,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPropertyName(
+    public static Avalonia.Data.BindingBase BindPropertyName(
         this Avalonia.Controls.DataGridRowGroupHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPropertyNameVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -792,7 +792,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsPropertyNameVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -842,7 +842,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsPropertyNameVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -878,7 +878,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsPropertyNameVisible(
+    public static Avalonia.Data.BindingBase BindIsPropertyNameVisible(
         this Avalonia.Controls.DataGridRowGroupHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SublevelIndent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -1030,7 +1030,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SublevelIndent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -1080,7 +1080,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T SublevelIndent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
@@ -1116,7 +1116,7 @@ public static partial class DataGridRowGroupHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSublevelIndent(
+    public static Avalonia.Data.BindingBase BindSublevelIndent(
         this Avalonia.Controls.DataGridRowGroupHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

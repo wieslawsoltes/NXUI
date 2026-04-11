@@ -123,7 +123,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterDate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterDate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DateProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterDate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterDate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DateProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterDayFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDayFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterDayFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDayFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterDayFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterDayFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterDayFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterDayFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterDayVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDayVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterDayVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDayVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterDayVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterDayVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterDayVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterDayVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterMaxYear(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMaxYear(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterMaxYear(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMaxYear(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterMaxYear(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterMaxYear(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterMaxYear(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterMaxYear(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterMinYear(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMinYear(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterMinYear(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMinYear(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterMinYear(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterMinYear(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MinYearProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterMinYear(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterMinYear(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MinYearProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterMonthFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMonthFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterMonthFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterMonthFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterMonthFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterMonthFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterMonthFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterMonthVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMonthVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterMonthVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterMonthVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterMonthVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterMonthVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterMonthVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterYearFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterYearFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterYearFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterYearFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterYearFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterYearFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterYearFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterYearFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDatePickerPresenterYearVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterYearVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDatePickerPresenterYearVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterYearVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerPresenterYearVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDatePickerPresenterYearVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerPresenterYearVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDatePickerPresenterYearVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, binding));
         return keyFrame;

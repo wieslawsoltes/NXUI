@@ -32,7 +32,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AdornedElement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -78,7 +78,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AdornedElement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -128,7 +128,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The target object reference.</returns>
     public static T AdornedElement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -164,7 +164,7 @@ public static partial class AdornerLayerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAdornedElement(
+    public static Avalonia.Data.BindingBase BindAdornedElement(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClipEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -316,7 +316,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsClipEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -366,7 +366,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsClipEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -402,7 +402,7 @@ public static partial class AdornerLayerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsClipEnabled(
+    public static Avalonia.Data.BindingBase BindIsClipEnabled(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Adorner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -554,7 +554,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Adorner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -604,7 +604,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The target object reference.</returns>
     public static T Adorner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -640,7 +640,7 @@ public static partial class AdornerLayerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAdorner(
+    public static Avalonia.Data.BindingBase BindAdorner(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DefaultFocusAdorner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AdornerLayer
     {
@@ -792,7 +792,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DefaultFocusAdorner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AdornerLayer
     {
@@ -842,7 +842,7 @@ public static partial class AdornerLayerExtensions
     /// <returns>The target object reference.</returns>
     public static T DefaultFocusAdorner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AdornerLayer
     {
@@ -878,7 +878,7 @@ public static partial class AdornerLayerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDefaultFocusAdorner(
+    public static Avalonia.Data.BindingBase BindDefaultFocusAdorner(
         this Avalonia.Controls.Primitives.AdornerLayer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

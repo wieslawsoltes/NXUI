@@ -123,7 +123,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetArcSegmentIsLargeArc(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentIsLargeArc(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetArcSegmentIsLargeArc(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentIsLargeArc(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ArcSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentIsLargeArc(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetArcSegmentIsLargeArc(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ArcSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetArcSegmentPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentPoint(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetArcSegmentPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentPoint(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ArcSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentPoint(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetArcSegmentPoint(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ArcSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetArcSegmentRotationAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentRotationAngle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetArcSegmentRotationAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentRotationAngle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ArcSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentRotationAngle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetArcSegmentRotationAngle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ArcSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetArcSegmentSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentSize(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetArcSegmentSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentSize(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ArcSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentSize(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetArcSegmentSize(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ArcSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetArcSegmentSweepDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentSweepDirection(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetArcSegmentSweepDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentSweepDirection(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ArcSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentSweepDirection(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetArcSegmentSweepDirection(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ArcSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, binding));
         return keyFrame;

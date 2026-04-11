@@ -32,7 +32,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustification<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -78,7 +78,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsJustification<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -128,7 +128,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsJustification<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -164,7 +164,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsJustification(
+    public static Avalonia.Data.BindingBase BindItemsJustification(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -408,7 +408,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -454,7 +454,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsStretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -504,7 +504,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsStretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -540,7 +540,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsStretch(
+    public static Avalonia.Data.BindingBase BindItemsStretch(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -715,7 +715,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -761,7 +761,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinColumnSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -811,7 +811,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T MinColumnSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -847,7 +847,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinColumnSpacing(
+    public static Avalonia.Data.BindingBase BindMinColumnSpacing(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -953,7 +953,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -999,7 +999,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinItemHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1049,7 +1049,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T MinItemHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1085,7 +1085,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinItemHeight(
+    public static Avalonia.Data.BindingBase BindMinItemHeight(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1191,7 +1191,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1237,7 +1237,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinItemWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1287,7 +1287,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T MinItemWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1323,7 +1323,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinItemWidth(
+    public static Avalonia.Data.BindingBase BindMinItemWidth(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1429,7 +1429,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinRowSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1475,7 +1475,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinRowSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1525,7 +1525,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T MinRowSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1561,7 +1561,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinRowSpacing(
+    public static Avalonia.Data.BindingBase BindMinRowSpacing(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1667,7 +1667,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaximumRowsOrColumns<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1713,7 +1713,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaximumRowsOrColumns<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1763,7 +1763,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T MaximumRowsOrColumns<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1799,7 +1799,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaximumRowsOrColumns(
+    public static Avalonia.Data.BindingBase BindMaximumRowsOrColumns(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1905,7 +1905,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1951,7 +1951,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -2001,7 +2001,7 @@ public static partial class UniformGridLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -2037,7 +2037,7 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Layout.UniformGridLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

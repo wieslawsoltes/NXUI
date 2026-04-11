@@ -123,7 +123,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsRepeaterHorizontalCacheLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterHorizontalCacheLength(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsRepeaterHorizontalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterHorizontalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterHorizontalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsRepeaterHorizontalCacheLength(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsRepeaterItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterItemTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsRepeaterItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsRepeaterItemTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsRepeaterItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterItemsSource(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsRepeaterItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterItemsSource(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterItemsSource(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsRepeaterItemsSource(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItemsSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsRepeaterItemsSource(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsRepeaterLayout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterLayout(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsRepeaterLayout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterLayout(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterLayout(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsRepeaterLayout(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetItemsRepeaterVerticalCacheLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterVerticalCacheLength(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetItemsRepeaterVerticalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterVerticalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterVerticalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetItemsRepeaterVerticalCacheLength(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, binding));
         return keyFrame;

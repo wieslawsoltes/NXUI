@@ -120,6 +120,15 @@ public static partial class TemplatedControlElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value.
     /// </summary>
     public static IObservable<Avalonia.Thickness> ObservePadding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.TemplatedControl

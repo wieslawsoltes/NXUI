@@ -32,7 +32,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -78,7 +78,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -128,7 +128,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -164,7 +164,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDate(
+    public static Avalonia.Data.BindingBase BindDisplayDate(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateStart<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -316,7 +316,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDateStart<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -366,7 +366,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDateStart<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -402,7 +402,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDateStart(
+    public static Avalonia.Data.BindingBase BindDisplayDateStart(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateEnd<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -554,7 +554,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDateEnd<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -604,7 +604,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDateEnd<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -640,7 +640,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDateEnd(
+    public static Avalonia.Data.BindingBase BindDisplayDateEnd(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeek<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -792,7 +792,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FirstDayOfWeek<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -842,7 +842,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeek<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -878,7 +878,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFirstDayOfWeek(
+    public static Avalonia.Data.BindingBase BindFirstDayOfWeek(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1145,7 +1145,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1191,7 +1191,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDropDownOpen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1241,7 +1241,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDropDownOpen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1277,7 +1277,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDropDownOpen(
+    public static Avalonia.Data.BindingBase BindIsDropDownOpen(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1383,7 +1383,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTodayHighlighted<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1429,7 +1429,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTodayHighlighted<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1479,7 +1479,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTodayHighlighted<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1515,7 +1515,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTodayHighlighted(
+    public static Avalonia.Data.BindingBase BindIsTodayHighlighted(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1621,7 +1621,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1667,7 +1667,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedDate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1717,7 +1717,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedDate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1753,7 +1753,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedDate(
+    public static Avalonia.Data.BindingBase BindSelectedDate(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1859,7 +1859,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1905,7 +1905,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedDateFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1955,7 +1955,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedDateFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1991,7 +1991,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedDateFormat(
+    public static Avalonia.Data.BindingBase BindSelectedDateFormat(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2166,7 +2166,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomDateFormatString<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2212,7 +2212,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CustomDateFormatString<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2262,7 +2262,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomDateFormatString<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2298,7 +2298,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCustomDateFormatString(
+    public static Avalonia.Data.BindingBase BindCustomDateFormatString(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2404,7 +2404,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2450,7 +2450,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Text<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2500,7 +2500,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2536,7 +2536,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindText(
+    public static Avalonia.Data.BindingBase BindText(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2622,113 +2622,113 @@ public static partial class CalendarDatePickerExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithValue(PropertyMetadata.CalendarDatePicker_Watermark, Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value);
+        return builder.WithValue(PropertyMetadata.CalendarDatePicker_PlaceholderText, Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_Watermark, Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_PlaceholderText, Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_Watermark, Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_PlaceholderText, Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementRef<T> PlaceholderText<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetValue(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.CalendarDatePicker.WatermarkProperty
+    // Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
+    public static T PlaceholderText<T>(this T obj, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty] = value;
+        obj[Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -2736,19 +2736,19 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T PlaceholderText<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -2756,217 +2756,217 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T PlaceholderText<T>(
         this T obj,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWatermark(
+    /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderText(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<System.String?> ObservePlaceholderText(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String?>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String?>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingPlaceholderText(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnBindingPlaceholderText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWatermarkChanged(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderTextChanged(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnPlaceholderTextChanged<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithValue(PropertyMetadata.CalendarDatePicker_UseFloatingWatermark, Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value);
+        return builder.WithValue(PropertyMetadata.CalendarDatePicker_UseFloatingPlaceholder, Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_UseFloatingWatermark, Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_UseFloatingPlaceholder, Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(
         this ElementBuilder<T> builder,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_UseFloatingWatermark, Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_UseFloatingPlaceholder, Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementRef<T> UseFloatingPlaceholder<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetValue(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(
+    public static ElementRef<T> UseFloatingPlaceholder<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(
+    public static ElementRef<T> UseFloatingPlaceholder<T>(
         this ElementRef<T> elementRef,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty
+    // Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
+    public static T UseFloatingPlaceholder<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
-        obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty] = value;
+        obj[Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -2974,19 +2974,19 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(
+    public static T UseFloatingPlaceholder<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -2994,104 +2994,342 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(
+    public static T UseFloatingPlaceholder<T>(
         this T obj,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseFloatingWatermark(
+    /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindUseFloatingPlaceholder(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Boolean> ObserveUseFloatingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<System.Boolean> ObserveUseFloatingPlaceholder(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnUseFloatingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnUseFloatingPlaceholder<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseFloatingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseFloatingPlaceholder(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingUseFloatingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnBindingUseFloatingPlaceholder<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseFloatingWatermarkChanged(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseFloatingPlaceholderChanged(this Avalonia.Controls.CalendarDatePicker obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnUseFloatingWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnUseFloatingPlaceholderChanged<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return builder.WithValue(PropertyMetadata.CalendarDatePicker_PlaceholderForeground, Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_PlaceholderForeground, Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return builder.WithBinding(PropertyMetadata.CalendarDatePicker_PlaceholderForeground, Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return elementRef.SetValue(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(
+        this T obj,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderForeground(
+        this Avalonia.Controls.CalendarDatePicker obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingPlaceholderForeground(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderForegroundChanged(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlaceholderForegroundChanged<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
         handler(obj, observable);
         return obj;
     }
@@ -3118,7 +3356,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3164,7 +3402,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3214,7 +3452,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3250,7 +3488,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3448,7 +3686,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3494,7 +3732,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3544,7 +3782,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3580,7 +3818,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.CalendarDatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -78,7 +78,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -128,7 +128,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -164,7 +164,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemHeight(
+    public static Avalonia.Data.BindingBase BindItemHeight(
         this Avalonia.Controls.Primitives.DateTimePickerPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -316,7 +316,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PanelType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -366,7 +366,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T PanelType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -402,7 +402,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPanelType(
+    public static Avalonia.Data.BindingBase BindPanelType(
         this Avalonia.Controls.Primitives.DateTimePickerPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -669,7 +669,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -715,7 +715,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -765,7 +765,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -801,7 +801,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemFormat(
+    public static Avalonia.Data.BindingBase BindItemFormat(
         this Avalonia.Controls.Primitives.DateTimePickerPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -907,7 +907,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShouldLoop<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -953,7 +953,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShouldLoop<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -1003,7 +1003,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ShouldLoop<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -1039,7 +1039,7 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShouldLoop(
+    public static Avalonia.Data.BindingBase BindShouldLoop(
         this Avalonia.Controls.Primitives.DateTimePickerPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

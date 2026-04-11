@@ -123,7 +123,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewColor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewColor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewColor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewColorModel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorModel(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewColorModel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorModel(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewColorModel(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewColorModel(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorModelProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewColorModel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewColorModel(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorModelProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewColorSpectrumComponents(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorSpectrumComponents(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewColorSpectrumComponents(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewColorSpectrumComponents(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewColorSpectrumComponents(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewColorSpectrumComponents(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewColorSpectrumShape(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorSpectrumShape(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewColorSpectrumShape(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewColorSpectrumShape(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewColorSpectrumShape(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewColorSpectrumShape(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewHexInputAlphaPosition(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewHexInputAlphaPosition(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewHexInputAlphaPosition(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewHexInputAlphaPosition(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewHexInputAlphaPosition(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewHexInputAlphaPosition(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewHexInputAlphaPosition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewHexInputAlphaPosition(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewHsvColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewHsvColor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewHsvColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewHsvColor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewHsvColor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewHsvColor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.HsvColorProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewHsvColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewHsvColor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HsvColorProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsAccentColorsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAccentColorsVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsAccentColorsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAccentColorsVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsAccentColorsVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsAccentColorsVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsAccentColorsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsAccentColorsVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsAlphaEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAlphaEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsAlphaEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAlphaEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsAlphaEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsAlphaEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaEnabledProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsAlphaEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsAlphaEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaEnabledProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsAlphaVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsAlphaVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaVisibleProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsAlphaVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsAlphaVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaVisibleProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorComponentsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorComponentsVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorComponentsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorComponentsVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorComponentsVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorComponentsVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorComponentsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorComponentsVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorModelVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorModelVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorModelVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorModelVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorModelVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorModelVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorModelVisibleProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorModelVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorModelVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorModelVisibleProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorPaletteVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorPaletteVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorPaletteVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorPaletteVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorPaletteVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorPaletteVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorPaletteVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorPaletteVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, binding));
         return keyFrame;
@@ -2031,7 +2031,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorPreviewVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorPreviewVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2045,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorPreviewVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorPreviewVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2059,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorPreviewVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorPreviewVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, binding));
         return style;
@@ -2071,7 +2071,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorPreviewVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorPreviewVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, binding));
         return keyFrame;
@@ -2190,7 +2190,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorSpectrumVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorSpectrumVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2204,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorSpectrumVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2218,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorSpectrumVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorSpectrumVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, binding));
         return style;
@@ -2230,7 +2230,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorSpectrumVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorSpectrumVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, binding));
         return keyFrame;
@@ -2349,7 +2349,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsColorSpectrumSliderVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorSpectrumSliderVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2363,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsColorSpectrumSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2377,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsColorSpectrumSliderVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsColorSpectrumSliderVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, binding));
         return style;
@@ -2389,7 +2389,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsColorSpectrumSliderVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsColorSpectrumSliderVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, binding));
         return keyFrame;
@@ -2508,7 +2508,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsComponentSliderVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsComponentSliderVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2522,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsComponentSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsComponentSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2536,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsComponentSliderVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsComponentSliderVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, binding));
         return style;
@@ -2548,7 +2548,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsComponentSliderVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsComponentSliderVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, binding));
         return keyFrame;
@@ -2667,7 +2667,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsComponentTextInputVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsComponentTextInputVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2681,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsComponentTextInputVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsComponentTextInputVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +2695,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsComponentTextInputVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsComponentTextInputVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, binding));
         return style;
@@ -2707,7 +2707,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsComponentTextInputVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsComponentTextInputVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, binding));
         return keyFrame;
@@ -2826,7 +2826,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewIsHexInputVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsHexInputVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +2840,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewIsHexInputVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsHexInputVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +2854,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewIsHexInputVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewIsHexInputVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsHexInputVisibleProperty, binding));
         return style;
@@ -2866,7 +2866,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewIsHexInputVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewIsHexInputVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsHexInputVisibleProperty, binding));
         return keyFrame;
@@ -2985,7 +2985,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMaxHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxHue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +2999,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMaxHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxHue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3013,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMaxHue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMaxHue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxHueProperty, binding));
         return style;
@@ -3025,7 +3025,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMaxHue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMaxHue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxHueProperty, binding));
         return keyFrame;
@@ -3144,7 +3144,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMaxSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxSaturation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3158,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMaxSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxSaturation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3172,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMaxSaturation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMaxSaturation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxSaturationProperty, binding));
         return style;
@@ -3184,7 +3184,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMaxSaturation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMaxSaturation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxSaturationProperty, binding));
         return keyFrame;
@@ -3303,7 +3303,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMaxValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxValue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3317,7 +3317,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMaxValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxValue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3331,7 +3331,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMaxValue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMaxValue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxValueProperty, binding));
         return style;
@@ -3343,7 +3343,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMaxValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMaxValue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxValueProperty, binding));
         return keyFrame;
@@ -3462,7 +3462,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMinHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinHue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3476,7 +3476,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMinHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinHue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3490,7 +3490,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMinHue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMinHue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinHueProperty, binding));
         return style;
@@ -3502,7 +3502,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMinHue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMinHue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinHueProperty, binding));
         return keyFrame;
@@ -3621,7 +3621,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMinSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinSaturation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3635,7 +3635,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMinSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinSaturation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3649,7 +3649,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMinSaturation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMinSaturation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinSaturationProperty, binding));
         return style;
@@ -3661,7 +3661,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMinSaturation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMinSaturation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinSaturationProperty, binding));
         return keyFrame;
@@ -3780,7 +3780,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewMinValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinValue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3794,7 +3794,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewMinValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinValue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3808,7 +3808,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewMinValue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewMinValue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinValueProperty, binding));
         return style;
@@ -3820,7 +3820,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewMinValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewMinValue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinValueProperty, binding));
         return keyFrame;
@@ -3939,7 +3939,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewPaletteColors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPaletteColors(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3953,7 +3953,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewPaletteColors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPaletteColors(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3967,7 +3967,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewPaletteColors(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewPaletteColors(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColorsProperty, binding));
         return style;
@@ -3979,7 +3979,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewPaletteColors(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewPaletteColors(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColorsProperty, binding));
         return keyFrame;
@@ -4098,7 +4098,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewPaletteColumnCount(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPaletteColumnCount(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4112,7 +4112,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewPaletteColumnCount(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPaletteColumnCount(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4126,7 +4126,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewPaletteColumnCount(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewPaletteColumnCount(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColumnCountProperty, binding));
         return style;
@@ -4138,7 +4138,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewPaletteColumnCount(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewPaletteColumnCount(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColumnCountProperty, binding));
         return keyFrame;
@@ -4257,7 +4257,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewPalette(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPalette(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4271,7 +4271,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewPalette(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPalette(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4285,7 +4285,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewPalette(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewPalette(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteProperty, binding));
         return style;
@@ -4297,7 +4297,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewPalette(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewPalette(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteProperty, binding));
         return keyFrame;
@@ -4416,7 +4416,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorViewSelectedIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewSelectedIndex(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4430,7 +4430,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorViewSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4444,7 +4444,7 @@ public static partial class ColorViewSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorViewSelectedIndex(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorViewSelectedIndex(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorView.SelectedIndexProperty, binding));
         return style;
@@ -4456,7 +4456,7 @@ public static partial class ColorViewSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorViewSelectedIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorViewSelectedIndex(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.SelectedIndexProperty, binding));
         return keyFrame;

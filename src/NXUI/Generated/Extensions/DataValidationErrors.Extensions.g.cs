@@ -32,7 +32,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Errors<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -78,7 +78,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Errors<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -128,7 +128,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T Errors<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -164,7 +164,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindErrors(
+    public static Avalonia.Data.BindingBase BindErrors(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HasErrors<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -316,7 +316,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HasErrors<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -366,7 +366,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T HasErrors<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -402,7 +402,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHasErrors(
+    public static Avalonia.Data.BindingBase BindHasErrors(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ErrorConverter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -554,7 +554,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ErrorConverter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -604,7 +604,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T ErrorConverter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -640,7 +640,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindErrorConverter(
+    public static Avalonia.Data.BindingBase BindErrorConverter(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ErrorTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -792,7 +792,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ErrorTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -842,7 +842,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T ErrorTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -878,7 +878,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindErrorTemplate(
+    public static Avalonia.Data.BindingBase BindErrorTemplate(
         this Avalonia.Controls.DataValidationErrors obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Owner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -1030,7 +1030,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Owner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -1080,7 +1080,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T Owner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -1116,7 +1116,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOwner(
+    public static Avalonia.Data.BindingBase BindOwner(
         this Avalonia.Controls.DataValidationErrors obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

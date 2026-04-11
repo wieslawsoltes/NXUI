@@ -32,7 +32,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowSpin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -78,7 +78,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AllowSpin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -128,7 +128,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The target object reference.</returns>
     public static T AllowSpin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -164,7 +164,7 @@ public static partial class ButtonSpinnerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAllowSpin(
+    public static Avalonia.Data.BindingBase BindAllowSpin(
         this Avalonia.Controls.ButtonSpinner obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowButtonSpinner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -316,7 +316,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowButtonSpinner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -366,7 +366,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowButtonSpinner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -402,7 +402,7 @@ public static partial class ButtonSpinnerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowButtonSpinner(
+    public static Avalonia.Data.BindingBase BindShowButtonSpinner(
         this Avalonia.Controls.ButtonSpinner obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -554,7 +554,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ButtonSpinnerLocation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -604,7 +604,7 @@ public static partial class ButtonSpinnerExtensions
     /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
@@ -640,7 +640,7 @@ public static partial class ButtonSpinnerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindButtonSpinnerLocation(
+    public static Avalonia.Data.BindingBase BindButtonSpinnerLocation(
         this Avalonia.Controls.ButtonSpinner obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

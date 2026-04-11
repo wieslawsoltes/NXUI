@@ -32,7 +32,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static GeometryDrawingBuilder Geometry(
         this GeometryDrawingBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GeometryDrawing> Geometry(
         this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Geometry(
         this Avalonia.Media.GeometryDrawing obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGeometry(
+    public static Avalonia.Data.BindingBase BindGeometry(
         this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static GeometryDrawingBuilder Brush(
         this GeometryDrawingBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GeometryDrawing> Brush(
         this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Brush(
         this Avalonia.Media.GeometryDrawing obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBrush(
+    public static Avalonia.Data.BindingBase BindBrush(
         this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static GeometryDrawingBuilder Pen(
         this GeometryDrawingBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GeometryDrawing> Pen(
         this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Pen(
         this Avalonia.Media.GeometryDrawing obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPen(
+    public static Avalonia.Data.BindingBase BindPen(
         this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

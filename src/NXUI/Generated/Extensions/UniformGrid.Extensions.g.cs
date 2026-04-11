@@ -32,7 +32,7 @@ public static partial class UniformGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -78,7 +78,7 @@ public static partial class UniformGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Rows<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -128,7 +128,7 @@ public static partial class UniformGridExtensions
     /// <returns>The target object reference.</returns>
     public static T Rows<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -164,7 +164,7 @@ public static partial class UniformGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRows(
+    public static Avalonia.Data.BindingBase BindRows(
         this Avalonia.Controls.Primitives.UniformGrid obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class UniformGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Columns<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -316,7 +316,7 @@ public static partial class UniformGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Columns<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -366,7 +366,7 @@ public static partial class UniformGridExtensions
     /// <returns>The target object reference.</returns>
     public static T Columns<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -402,7 +402,7 @@ public static partial class UniformGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColumns(
+    public static Avalonia.Data.BindingBase BindColumns(
         this Avalonia.Controls.Primitives.UniformGrid obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class UniformGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstColumn<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -554,7 +554,7 @@ public static partial class UniformGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FirstColumn<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -604,7 +604,7 @@ public static partial class UniformGridExtensions
     /// <returns>The target object reference.</returns>
     public static T FirstColumn<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -640,7 +640,7 @@ public static partial class UniformGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFirstColumn(
+    public static Avalonia.Data.BindingBase BindFirstColumn(
         this Avalonia.Controls.Primitives.UniformGrid obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class UniformGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -792,7 +792,7 @@ public static partial class UniformGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RowSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -842,7 +842,7 @@ public static partial class UniformGridExtensions
     /// <returns>The target object reference.</returns>
     public static T RowSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -878,7 +878,7 @@ public static partial class UniformGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRowSpacing(
+    public static Avalonia.Data.BindingBase BindRowSpacing(
         this Avalonia.Controls.Primitives.UniformGrid obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class UniformGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -1030,7 +1030,7 @@ public static partial class UniformGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ColumnSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -1080,7 +1080,7 @@ public static partial class UniformGridExtensions
     /// <returns>The target object reference.</returns>
     public static T ColumnSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -1116,7 +1116,7 @@ public static partial class UniformGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColumnSpacing(
+    public static Avalonia.Data.BindingBase BindColumnSpacing(
         this Avalonia.Controls.Primitives.UniformGrid obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

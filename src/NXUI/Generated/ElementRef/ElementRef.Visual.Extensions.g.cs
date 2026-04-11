@@ -66,6 +66,15 @@ public static partial class VisualElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Visual.CacheModeProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.CacheMode?> ObserveCacheMode<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Visual
+    {
+        return elementRef.Observe(Avalonia.Visual.CacheModeProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Visual.EffectProperty"/> value.
     /// </summary>
     public static IObservable<Avalonia.Media.IEffect?> ObserveEffect<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Visual

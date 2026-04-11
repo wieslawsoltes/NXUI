@@ -28,4 +28,22 @@ public static partial class SplitViewTemplateSettingsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneHeightProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveClosedPaneHeight<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.Observe(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneHeightProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneRowGridLengthProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.GridLength> ObservePaneRowGridLength<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.Observe(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneRowGridLengthProperty);
+    }
+
 }

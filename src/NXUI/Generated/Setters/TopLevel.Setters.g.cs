@@ -12,165 +12,6 @@ public static partial class TopLevelSetters
 {
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="builder">The style builder.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, Avalonia.Input.IInputElement value)
-    {
-        return builder.WithAction(style =>
-        {
-            style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, value));
-        });
-    }
-
-    /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="builder">The keyframe builder.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, Avalonia.Input.IInputElement value)
-    {
-        return builder.WithAction(keyFrame =>
-        {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, value));
-        });
-    }
-
-    // Avalonia.Controls.TopLevel.PointerOverElementProperty
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelPointerOverElement(this Style style, Avalonia.Input.IInputElement value)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, value));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelPointerOverElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using an observable source.
-    /// </summary>
-    /// <param name="builder">The style builder.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        return builder.WithAction(style =>
-        {
-            style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding()));
-        });
-    }
-
-    /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using an observable source.
-    /// </summary>
-    /// <param name="builder">The keyframe builder.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        return builder.WithAction(keyFrame =>
-        {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding()));
-        });
-    }
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelPointerOverElement(this Style style, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelPointerOverElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding()));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using a binding.
-    /// </summary>
-    /// <param name="builder">The style builder.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
-    {
-        return builder.WithAction(style =>
-        {
-            style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding));
-        });
-    }
-
-    /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using a binding.
-    /// </summary>
-    /// <param name="builder">The keyframe builder.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
-    {
-        return builder.WithAction(keyFrame =>
-        {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding));
-        });
-    }
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelPointerOverElement(this Style style, Avalonia.Data.IBinding binding)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelPointerOverElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding));
-        return keyFrame;
-    }
-
-
-    /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
@@ -282,7 +123,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelTransparencyLevelHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelTransparencyLevelHint(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +137,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelTransparencyLevelHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelTransparencyLevelHint(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +151,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelTransparencyLevelHint(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTopLevelTransparencyLevelHint(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, binding));
         return style;
@@ -322,7 +163,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, binding));
         return keyFrame;
@@ -441,7 +282,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelTransparencyBackgroundFallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelTransparencyBackgroundFallback(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +296,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelTransparencyBackgroundFallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelTransparencyBackgroundFallback(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +310,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelTransparencyBackgroundFallback(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTopLevelTransparencyBackgroundFallback(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, binding));
         return style;
@@ -481,7 +322,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelTransparencyBackgroundFallback(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTopLevelTransparencyBackgroundFallback(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, binding));
         return keyFrame;
@@ -600,7 +441,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelSystemBarColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelSystemBarColor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +455,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelSystemBarColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelSystemBarColor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +469,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelSystemBarColor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTopLevelSystemBarColor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.SystemBarColorProperty, binding));
         return style;
@@ -640,7 +481,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelSystemBarColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTopLevelSystemBarColor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.SystemBarColorProperty, binding));
         return keyFrame;
@@ -759,7 +600,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTopLevelAutoSafeAreaPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelAutoSafeAreaPadding(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +614,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTopLevelAutoSafeAreaPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelAutoSafeAreaPadding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +628,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelAutoSafeAreaPadding(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTopLevelAutoSafeAreaPadding(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, binding));
         return style;
@@ -799,7 +640,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelAutoSafeAreaPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTopLevelAutoSafeAreaPadding(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, binding));
         return keyFrame;

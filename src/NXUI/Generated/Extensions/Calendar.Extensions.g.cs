@@ -32,7 +32,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeek<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -78,7 +78,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FirstDayOfWeek<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -128,7 +128,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeek<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -164,7 +164,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFirstDayOfWeek(
+    public static Avalonia.Data.BindingBase BindFirstDayOfWeek(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -431,7 +431,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTodayHighlighted<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -477,7 +477,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTodayHighlighted<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -527,7 +527,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTodayHighlighted<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -563,7 +563,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTodayHighlighted(
+    public static Avalonia.Data.BindingBase BindIsTodayHighlighted(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -669,7 +669,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeaderBackground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -715,7 +715,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HeaderBackground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -765,7 +765,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T HeaderBackground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -801,7 +801,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeaderBackground(
+    public static Avalonia.Data.BindingBase BindHeaderBackground(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -907,7 +907,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -953,7 +953,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1003,7 +1003,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1039,7 +1039,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayMode(
+    public static Avalonia.Data.BindingBase BindDisplayMode(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1214,7 +1214,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1260,7 +1260,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1310,7 +1310,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1346,7 +1346,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionMode(
+    public static Avalonia.Data.BindingBase BindSelectionMode(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1524,6 +1524,244 @@ public static partial class CalendarExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> AllowTapRangeSelection<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Calendar
+    {
+        return builder.WithValue(PropertyMetadata.Calendar_AllowTapRangeSelection, Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> AllowTapRangeSelection<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        return builder.WithBinding(PropertyMetadata.Calendar_AllowTapRangeSelection, Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> AllowTapRangeSelection<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        return builder.WithBinding(PropertyMetadata.Calendar_AllowTapRangeSelection, Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowTapRangeSelection<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Calendar
+    {
+        return elementRef.SetValue(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowTapRangeSelection<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowTapRangeSelection<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AllowTapRangeSelection<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Calendar
+    {
+        obj[Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AllowTapRangeSelection<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        var descriptor = Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AllowTapRangeSelection<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
+    {
+        var descriptor = Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindAllowTapRangeSelection(
+        this Avalonia.Controls.Calendar obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveAllowTapRangeSelection(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowTapRangeSelection<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAllowTapRangeSelection(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAllowTapRangeSelection<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAllowTapRangeSelectionChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowTapRangeSelectionChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -1544,7 +1782,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1590,7 +1828,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedDate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1640,7 +1878,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedDate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1676,7 +1914,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedDate(
+    public static Avalonia.Data.BindingBase BindSelectedDate(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1782,7 +2020,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1828,7 +2066,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1878,7 +2116,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -1914,7 +2152,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDate(
+    public static Avalonia.Data.BindingBase BindDisplayDate(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2020,7 +2258,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateStart<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2066,7 +2304,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDateStart<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2116,7 +2354,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDateStart<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2152,7 +2390,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDateStart(
+    public static Avalonia.Data.BindingBase BindDisplayDateStart(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2258,7 +2496,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateEnd<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2304,7 +2542,7 @@ public static partial class CalendarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayDateEnd<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2354,7 +2592,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayDateEnd<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -2390,7 +2628,7 @@ public static partial class CalendarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayDateEnd(
+    public static Avalonia.Data.BindingBase BindDisplayDateEnd(
         this Avalonia.Controls.Calendar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

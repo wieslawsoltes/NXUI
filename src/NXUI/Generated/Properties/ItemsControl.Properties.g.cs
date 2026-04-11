@@ -36,5 +36,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsControl_DisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Data.BindingBase> ItemsControl_DisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
 }

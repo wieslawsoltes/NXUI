@@ -47,4 +47,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<Avalonia.Media.IBrush> TextElement_Foreground => Avalonia.Controls.Documents.TextElement.ForegroundProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Double> TextElement_LetterSpacing => Avalonia.Controls.Documents.TextElement.LetterSpacingProperty;
 }

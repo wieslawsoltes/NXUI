@@ -12,4 +12,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> property defined in <see cref="Avalonia.Media.DrawingImage"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.Drawing> DrawingImage_Drawing => Avalonia.Media.DrawingImage.DrawingProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Media.DrawingImage.ViewboxProperty"/> property defined in <see cref="Avalonia.Media.DrawingImage"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Nullable<Avalonia.Rect>> DrawingImage_Viewbox => Avalonia.Media.DrawingImage.ViewboxProperty;
 }

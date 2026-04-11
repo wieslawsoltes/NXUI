@@ -30,15 +30,6 @@ public static partial class TopLevelElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value.
-    /// </summary>
-    public static IObservable<Avalonia.Input.IInputElement?> ObservePointerOverElement<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TopLevel
-    {
-        return elementRef.Observe(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-    }
-
-
-    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> value.
     /// </summary>
     public static IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> ObserveTransparencyLevelHint<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TopLevel

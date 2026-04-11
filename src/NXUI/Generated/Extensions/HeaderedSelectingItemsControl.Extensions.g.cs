@@ -32,7 +32,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -78,7 +78,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Header<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -128,7 +128,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Header<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -164,7 +164,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeader(
+    public static Avalonia.Data.BindingBase BindHeader(
         this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeaderTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -316,7 +316,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HeaderTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -366,7 +366,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T HeaderTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
@@ -402,7 +402,7 @@ public static partial class HeaderedSelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeaderTemplate(
+    public static Avalonia.Data.BindingBase BindHeaderTemplate(
         this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -19,4 +19,13 @@ public static partial class PolylineElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Polyline.PointsProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.FillRule> ObserveFillRule<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Shapes.Polyline
+    {
+        return elementRef.Observe(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+    }
+
 }

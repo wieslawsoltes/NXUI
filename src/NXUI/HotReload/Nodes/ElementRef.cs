@@ -74,7 +74,7 @@ public readonly struct ElementRef<TControl>
     /// </summary>
     public ElementRef<TControl> SetBinding<TValue>(
         AvaloniaProperty<TValue> property,
-        IBinding binding,
+        BindingBase binding,
         BindingMode mode = BindingMode.TwoWay,
         BindingPriority priority = BindingPriority.LocalValue)
     {
@@ -146,7 +146,7 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
 
     public void SetBinding<TValue>(
         AvaloniaProperty<TValue> property,
-        IBinding binding,
+        BindingBase binding,
         BindingMode mode,
         BindingPriority priority)
     {

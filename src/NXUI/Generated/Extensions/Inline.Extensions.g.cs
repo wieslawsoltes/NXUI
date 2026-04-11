@@ -32,7 +32,7 @@ public static partial class InlineExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -78,7 +78,7 @@ public static partial class InlineExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextDecorations<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -128,7 +128,7 @@ public static partial class InlineExtensions
     /// <returns>The target object reference.</returns>
     public static T TextDecorations<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -164,7 +164,7 @@ public static partial class InlineExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextDecorations(
+    public static Avalonia.Data.BindingBase BindTextDecorations(
         this Avalonia.Controls.Documents.Inline obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class InlineExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -316,7 +316,7 @@ public static partial class InlineExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BaselineAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -366,7 +366,7 @@ public static partial class InlineExtensions
     /// <returns>The target object reference.</returns>
     public static T BaselineAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -402,7 +402,7 @@ public static partial class InlineExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBaselineAlignment(
+    public static Avalonia.Data.BindingBase BindBaselineAlignment(
         this Avalonia.Controls.Documents.Inline obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsIndeterminate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -78,7 +78,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsIndeterminate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -128,7 +128,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The target object reference.</returns>
     public static T IsIndeterminate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -164,7 +164,7 @@ public static partial class ProgressBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsIndeterminate(
+    public static Avalonia.Data.BindingBase BindIsIndeterminate(
         this Avalonia.Controls.ProgressBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowProgressText<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -316,7 +316,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowProgressText<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -366,7 +366,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowProgressText<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -402,7 +402,7 @@ public static partial class ProgressBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowProgressText(
+    public static Avalonia.Data.BindingBase BindShowProgressText(
         this Avalonia.Controls.ProgressBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ProgressTextFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -554,7 +554,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ProgressTextFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -604,7 +604,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The target object reference.</returns>
     public static T ProgressTextFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -640,7 +640,7 @@ public static partial class ProgressBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindProgressTextFormat(
+    public static Avalonia.Data.BindingBase BindProgressTextFormat(
         this Avalonia.Controls.ProgressBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -792,7 +792,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -842,7 +842,7 @@ public static partial class ProgressBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
     {
@@ -878,7 +878,7 @@ public static partial class ProgressBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.ProgressBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1017,7 +1017,7 @@ public static partial class ProgressBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPercentage(
+    public static Avalonia.Data.BindingBase BindPercentage(
         this Avalonia.Controls.ProgressBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

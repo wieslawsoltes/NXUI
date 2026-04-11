@@ -32,7 +32,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Location<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -78,7 +78,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Location<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -128,7 +128,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T Location<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -164,7 +164,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLocation(
+    public static Avalonia.Data.BindingBase BindLocation(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -362,7 +362,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -408,7 +408,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Stroke<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -458,7 +458,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T Stroke<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -494,7 +494,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStroke(
+    public static Avalonia.Data.BindingBase BindStroke(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -600,7 +600,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnit<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -646,7 +646,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeThicknessUnit<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -696,7 +696,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeThicknessUnit<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -732,7 +732,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeThicknessUnit(
+    public static Avalonia.Data.BindingBase BindStrokeThicknessUnit(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -907,7 +907,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -953,7 +953,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeDashArray<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1003,7 +1003,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashArray<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1039,7 +1039,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeDashArray(
+    public static Avalonia.Data.BindingBase BindStrokeDashArray(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1145,7 +1145,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1191,7 +1191,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeDashOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1241,7 +1241,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1277,7 +1277,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeDashOffset(
+    public static Avalonia.Data.BindingBase BindStrokeDashOffset(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1383,7 +1383,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1429,7 +1429,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeThickness<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1479,7 +1479,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeThickness<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1515,7 +1515,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeThickness(
+    public static Avalonia.Data.BindingBase BindStrokeThickness(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1621,7 +1621,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1667,7 +1667,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeLineCap<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1717,7 +1717,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeLineCap<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1753,7 +1753,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeLineCap(
+    public static Avalonia.Data.BindingBase BindStrokeLineCap(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1928,7 +1928,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -1974,7 +1974,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -2024,7 +2024,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -2060,7 +2060,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeOffset(
+    public static Avalonia.Data.BindingBase BindStrokeOffset(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2166,7 +2166,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnit<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -2212,7 +2212,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeOffsetUnit<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -2262,7 +2262,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeOffsetUnit<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -2298,7 +2298,7 @@ public static partial class TextDecorationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeOffsetUnit(
+    public static Avalonia.Data.BindingBase BindStrokeOffsetUnit(
         this Avalonia.Media.TextDecoration obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

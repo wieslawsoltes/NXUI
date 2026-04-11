@@ -123,7 +123,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetEllipseGeometryRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRect(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetEllipseGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetEllipseGeometryRect(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetEllipseGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetEllipseGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetEllipseGeometryRadiusX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetEllipseGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetEllipseGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetEllipseGeometryRadiusY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetEllipseGeometryCenter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryCenter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetEllipseGeometryCenter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryCenter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryCenter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetEllipseGeometryCenter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -78,7 +78,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Background<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -128,7 +128,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -164,7 +164,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.BackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackground(
+    public static Avalonia.Data.BindingBase BindBackground(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -316,7 +316,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BackgroundSizing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -366,7 +366,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T BackgroundSizing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -402,7 +402,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackgroundSizing(
+    public static Avalonia.Data.BindingBase BindBackgroundSizing(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -577,7 +577,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -623,7 +623,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -673,7 +673,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -709,7 +709,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderBrush(
+    public static Avalonia.Data.BindingBase BindBorderBrush(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -815,7 +815,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -861,7 +861,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderThickness<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -911,7 +911,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderThickness<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -947,7 +947,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderThickness(
+    public static Avalonia.Data.BindingBase BindBorderThickness(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1103,7 +1103,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1149,7 +1149,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CornerRadius<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1199,7 +1199,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T CornerRadius<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1235,7 +1235,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCornerRadius(
+    public static Avalonia.Data.BindingBase BindCornerRadius(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1391,7 +1391,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1437,7 +1437,7 @@ public static partial class BorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BoxShadow<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1487,7 +1487,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T BoxShadow<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -1523,7 +1523,7 @@ public static partial class BorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBoxShadow(
+    public static Avalonia.Data.BindingBase BindBoxShadow(
         this Avalonia.Controls.Border obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

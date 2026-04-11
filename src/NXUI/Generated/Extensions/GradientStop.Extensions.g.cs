@@ -32,7 +32,7 @@ public static partial class GradientStopExtensions
     /// <returns>The builder instance.</returns>
     public static GradientStopBuilder Offset(
         this GradientStopBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class GradientStopExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GradientStop> Offset(
         this ElementRef<Avalonia.Media.GradientStop> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class GradientStopExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GradientStop Offset(
         this Avalonia.Media.GradientStop obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GradientStop.OffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffset(
+    public static Avalonia.Data.BindingBase BindOffset(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class GradientStopExtensions
     /// <returns>The builder instance.</returns>
     public static GradientStopBuilder Color(
         this GradientStopBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class GradientStopExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.GradientStop> Color(
         this ElementRef<Avalonia.Media.GradientStop> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class GradientStopExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GradientStop Color(
         this Avalonia.Media.GradientStop obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GradientStop.ColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColor(
+    public static Avalonia.Data.BindingBase BindColor(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

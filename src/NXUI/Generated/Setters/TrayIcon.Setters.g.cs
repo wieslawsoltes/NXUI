@@ -123,7 +123,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconCommand(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconCommand(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconCommand(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconCommand(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconCommandParameter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconCommandParameter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandParameterProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconCommandParameter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconCommandParameter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandParameterProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconIcons(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIcons(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconIcons(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIcons(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIcons(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconIcons(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconMenu(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconMenu(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconMenu(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconMenu(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconMenu(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconMenu(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconIcon(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIcon(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconIcon(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIcon(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIcon(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconIcon(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconToolTipText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconToolTipText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconToolTipText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconToolTipText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconToolTipText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconToolTipText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTrayIconIsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIsVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTrayIconIsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIsVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TrayIconSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTrayIconIsVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TrayIconSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, binding));
         return keyFrame;

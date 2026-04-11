@@ -32,7 +32,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowManagerAddShadowHint<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -78,7 +78,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> WindowManagerAddShadowHint<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -128,7 +128,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T WindowManagerAddShadowHint<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -164,7 +164,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(
+    public static Avalonia.Data.BindingBase BindWindowManagerAddShadowHint(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -316,7 +316,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Child<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -366,7 +366,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -402,7 +402,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChild(
+    public static Avalonia.Data.BindingBase BindChild(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InheritsTransform<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -554,7 +554,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> InheritsTransform<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -604,7 +604,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T InheritsTransform<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -640,7 +640,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInheritsTransform(
+    public static Avalonia.Data.BindingBase BindInheritsTransform(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsOpen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -792,7 +792,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsOpen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -842,7 +842,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T IsOpen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -878,7 +878,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsOpen(
+    public static Avalonia.Data.BindingBase BindIsOpen(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1030,7 +1030,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlacementAnchor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1080,7 +1080,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementAnchor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1116,7 +1116,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementAnchor(
+    public static Avalonia.Data.BindingBase BindPlacementAnchor(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1498,7 +1498,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1544,7 +1544,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlacementConstraintAdjustment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1594,7 +1594,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1630,7 +1630,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementConstraintAdjustment(
+    public static Avalonia.Data.BindingBase BindPlacementConstraintAdjustment(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1920,7 +1920,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravity<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -1966,7 +1966,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlacementGravity<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2016,7 +2016,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementGravity<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2052,7 +2052,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementGravity(
+    public static Avalonia.Data.BindingBase BindPlacementGravity(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2365,7 +2365,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2411,7 +2411,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Placement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2461,7 +2461,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T Placement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2497,7 +2497,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacement(
+    public static Avalonia.Data.BindingBase BindPlacement(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2971,7 +2971,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3017,7 +3017,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlacementRect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3067,7 +3067,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementRect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3103,7 +3103,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementRect(
+    public static Avalonia.Data.BindingBase BindPlacementRect(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3209,7 +3209,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3255,7 +3255,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlacementTarget<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3305,7 +3305,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementTarget<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3341,7 +3341,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementTarget(
+    public static Avalonia.Data.BindingBase BindPlacementTarget(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3447,7 +3447,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3493,7 +3493,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CustomPopupPlacementCallback<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3543,7 +3543,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomPopupPlacementCallback<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3579,7 +3579,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCustomPopupPlacementCallback(
+    public static Avalonia.Data.BindingBase BindCustomPopupPlacementCallback(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3685,7 +3685,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OverlayDismissEventPassThrough<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3731,7 +3731,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OverlayDismissEventPassThrough<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3781,7 +3781,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T OverlayDismissEventPassThrough<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3817,7 +3817,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOverlayDismissEventPassThrough(
+    public static Avalonia.Data.BindingBase BindOverlayDismissEventPassThrough(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3923,7 +3923,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OverlayInputPassThroughElement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3969,7 +3969,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OverlayInputPassThroughElement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4019,7 +4019,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T OverlayInputPassThroughElement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4055,7 +4055,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOverlayInputPassThroughElement(
+    public static Avalonia.Data.BindingBase BindOverlayInputPassThroughElement(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4161,7 +4161,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4207,7 +4207,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4257,7 +4257,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4293,7 +4293,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalOffset(
+    public static Avalonia.Data.BindingBase BindHorizontalOffset(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4399,7 +4399,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsLightDismissEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4445,7 +4445,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsLightDismissEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4495,7 +4495,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T IsLightDismissEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4531,7 +4531,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsLightDismissEnabled(
+    public static Avalonia.Data.BindingBase BindIsLightDismissEnabled(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4637,7 +4637,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4683,7 +4683,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4733,7 +4733,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4769,7 +4769,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalOffset(
+    public static Avalonia.Data.BindingBase BindVerticalOffset(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4875,7 +4875,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Topmost<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4921,7 +4921,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Topmost<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -4971,7 +4971,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T Topmost<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -5007,7 +5007,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTopmost(
+    public static Avalonia.Data.BindingBase BindTopmost(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5113,7 +5113,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TakesFocusFromNativeControl<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -5159,7 +5159,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TakesFocusFromNativeControl<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -5209,7 +5209,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T TakesFocusFromNativeControl<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -5245,7 +5245,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTakesFocusFromNativeControl(
+    public static Avalonia.Data.BindingBase BindTakesFocusFromNativeControl(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5351,7 +5351,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShouldUseOverlayLayer<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -5397,7 +5397,7 @@ public static partial class PopupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShouldUseOverlayLayer<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -5447,7 +5447,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T ShouldUseOverlayLayer<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -5483,7 +5483,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShouldUseOverlayLayer(
+    public static Avalonia.Data.BindingBase BindShouldUseOverlayLayer(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5576,7 +5576,7 @@ public static partial class PopupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.Popup.IsUsingOverlayLayerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsUsingOverlayLayer(
+    public static Avalonia.Data.BindingBase BindIsUsingOverlayLayer(
         this Avalonia.Controls.Primitives.Popup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

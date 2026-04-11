@@ -123,7 +123,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAdornerLayerAdornedElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerAdornedElement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAdornerLayerAdornedElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerAdornedElement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class AdornerLayerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerAdornedElement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAdornerLayerAdornedElement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class AdornerLayerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAdornerLayerIsClipEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerIsClipEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAdornerLayerIsClipEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerIsClipEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class AdornerLayerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerIsClipEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAdornerLayerIsClipEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class AdornerLayerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAdornerLayerAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerAdorner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAdornerLayerAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerAdorner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class AdornerLayerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerAdorner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAdornerLayerAdorner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class AdornerLayerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAdornerLayerDefaultFocusAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerDefaultFocusAdorner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAdornerLayerDefaultFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerDefaultFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class AdornerLayerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerDefaultFocusAdorner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAdornerLayerDefaultFocusAdorner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class AdornerLayerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerDefaultFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAdornerLayerDefaultFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, binding));
         return keyFrame;

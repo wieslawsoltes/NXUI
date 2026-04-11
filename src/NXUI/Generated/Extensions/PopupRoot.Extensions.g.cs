@@ -32,7 +32,7 @@ public static partial class PopupRootExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class PopupRootExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> Transform(
         this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class PopupRootExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.PopupRoot Transform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class PopupRootExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransform(
+    public static Avalonia.Data.BindingBase BindTransform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class PopupRootExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class PopupRootExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
         this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class PopupRootExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.PopupRoot WindowManagerAddShadowHint(
         this Avalonia.Controls.Primitives.PopupRoot obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class PopupRootExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(
+    public static Avalonia.Data.BindingBase BindWindowManagerAddShadowHint(
         this Avalonia.Controls.Primitives.PopupRoot obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

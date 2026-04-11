@@ -123,7 +123,7 @@ public static partial class BrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetBrushOpacity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBrushOpacity(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class BrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetBrushOpacity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBrushOpacity(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class BrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetBrushOpacity(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetBrushOpacity(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class BrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class BrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetBrushTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBrushTransform(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class BrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetBrushTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBrushTransform(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class BrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetBrushTransform(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetBrushTransform(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class BrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class BrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetBrushTransformOrigin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBrushTransformOrigin(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class BrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetBrushTransformOrigin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBrushTransformOrigin(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class BrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetBrushTransformOrigin(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetBrushTransformOrigin(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class BrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, binding));
         return keyFrame;

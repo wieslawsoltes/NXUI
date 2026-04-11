@@ -123,7 +123,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetButtonSpinnerAllowSpin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonSpinnerAllowSpin(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetButtonSpinnerAllowSpin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonSpinnerAllowSpin(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetButtonSpinnerAllowSpin(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetButtonSpinnerAllowSpin(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonSpinnerAllowSpin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetButtonSpinnerAllowSpin(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetButtonSpinnerShowButtonSpinner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonSpinnerShowButtonSpinner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetButtonSpinnerShowButtonSpinner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonSpinnerShowButtonSpinner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetButtonSpinnerShowButtonSpinner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetButtonSpinnerShowButtonSpinner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonSpinnerShowButtonSpinner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetButtonSpinnerShowButtonSpinner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetButtonSpinnerButtonSpinnerLocation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonSpinnerButtonSpinnerLocation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetButtonSpinnerButtonSpinnerLocation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonSpinnerButtonSpinnerLocation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetButtonSpinnerButtonSpinnerLocation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetButtonSpinnerButtonSpinnerLocation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ButtonSpinnerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonSpinnerButtonSpinnerLocation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetButtonSpinnerButtonSpinnerLocation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, binding));
         return keyFrame;

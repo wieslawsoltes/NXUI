@@ -32,7 +32,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Above<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -78,7 +78,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Above<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -128,7 +128,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Above<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -164,7 +164,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAbove(
+    public static Avalonia.Data.BindingBase BindAbove(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -316,7 +316,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignBottomWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -366,7 +366,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignBottomWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -402,7 +402,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignBottomWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignBottomWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -554,7 +554,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignBottomWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -604,7 +604,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignBottomWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -640,7 +640,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignBottomWith(
+    public static Avalonia.Data.BindingBase BindAlignBottomWith(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignHorizontalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -792,7 +792,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignHorizontalCenterWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -842,7 +842,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignHorizontalCenterWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -878,7 +878,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignHorizontalCenterWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignHorizontalCenterWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1030,7 +1030,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignLeftWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1080,7 +1080,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignLeftWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1116,7 +1116,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignLeftWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignLeftWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1222,7 +1222,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1268,7 +1268,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignLeftWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1318,7 +1318,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignLeftWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1354,7 +1354,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignLeftWith(
+    public static Avalonia.Data.BindingBase BindAlignLeftWith(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1460,7 +1460,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1506,7 +1506,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignRightWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1556,7 +1556,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignRightWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1592,7 +1592,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignRightWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignRightWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1698,7 +1698,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1744,7 +1744,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignRightWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1794,7 +1794,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignRightWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1830,7 +1830,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignRightWith(
+    public static Avalonia.Data.BindingBase BindAlignRightWith(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1936,7 +1936,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1982,7 +1982,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignTopWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2032,7 +2032,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignTopWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2068,7 +2068,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignTopWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignTopWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2174,7 +2174,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2220,7 +2220,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignTopWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2270,7 +2270,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignTopWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2306,7 +2306,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignTopWith(
+    public static Avalonia.Data.BindingBase BindAlignTopWith(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2412,7 +2412,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2458,7 +2458,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignVerticalCenterWithPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2508,7 +2508,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignVerticalCenterWithPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2544,7 +2544,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignVerticalCenterWithPanel(
+    public static Avalonia.Data.BindingBase BindAlignVerticalCenterWithPanel(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2650,7 +2650,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2696,7 +2696,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignVerticalCenterWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2746,7 +2746,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignVerticalCenterWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2782,7 +2782,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignVerticalCenterWith(
+    public static Avalonia.Data.BindingBase BindAlignVerticalCenterWith(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2888,7 +2888,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Below<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2934,7 +2934,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Below<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2984,7 +2984,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Below<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3020,7 +3020,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBelow(
+    public static Avalonia.Data.BindingBase BindBelow(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3126,7 +3126,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LeftOf<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3172,7 +3172,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LeftOf<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3222,7 +3222,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T LeftOf<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3258,7 +3258,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLeftOf(
+    public static Avalonia.Data.BindingBase BindLeftOf(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3364,7 +3364,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RightOf<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3410,7 +3410,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RightOf<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3460,7 +3460,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T RightOf<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -3496,7 +3496,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRightOf(
+    public static Avalonia.Data.BindingBase BindRightOf(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3602,7 +3602,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignHorizontalCenterWith<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RelativePanel
     {
@@ -3648,7 +3648,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignHorizontalCenterWith<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RelativePanel
     {
@@ -3698,7 +3698,7 @@ public static partial class RelativePanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignHorizontalCenterWith<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RelativePanel
     {
@@ -3734,7 +3734,7 @@ public static partial class RelativePanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignHorizontalCenterWith(
+    public static Avalonia.Data.BindingBase BindAlignHorizontalCenterWith(
         this Avalonia.Controls.RelativePanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

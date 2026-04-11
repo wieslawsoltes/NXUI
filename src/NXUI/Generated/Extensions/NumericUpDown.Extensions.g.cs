@@ -32,7 +32,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowSpin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -78,7 +78,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AllowSpin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -128,7 +128,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T AllowSpin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -164,7 +164,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAllowSpin(
+    public static Avalonia.Data.BindingBase BindAllowSpin(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -316,7 +316,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ButtonSpinnerLocation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -366,7 +366,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -402,7 +402,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindButtonSpinnerLocation(
+    public static Avalonia.Data.BindingBase BindButtonSpinnerLocation(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowButtonSpinner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -600,7 +600,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowButtonSpinner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -650,7 +650,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowButtonSpinner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -686,7 +686,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowButtonSpinner(
+    public static Avalonia.Data.BindingBase BindShowButtonSpinner(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipValueToMinMax<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -838,7 +838,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClipValueToMinMax<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -888,7 +888,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T ClipValueToMinMax<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -924,7 +924,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClipValueToMinMax(
+    public static Avalonia.Data.BindingBase BindClipValueToMinMax(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1030,7 +1030,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NumberFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1076,7 +1076,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> NumberFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1126,7 +1126,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T NumberFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1162,7 +1162,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindNumberFormat(
+    public static Avalonia.Data.BindingBase BindNumberFormat(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1268,7 +1268,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FormatString<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1314,7 +1314,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FormatString<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1364,7 +1364,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T FormatString<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1400,7 +1400,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFormatString(
+    public static Avalonia.Data.BindingBase BindFormatString(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1506,7 +1506,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Increment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1552,7 +1552,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Increment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1602,7 +1602,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Increment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1638,7 +1638,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIncrement(
+    public static Avalonia.Data.BindingBase BindIncrement(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1744,7 +1744,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1790,7 +1790,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsReadOnly<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1840,7 +1840,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T IsReadOnly<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1876,7 +1876,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsReadOnly(
+    public static Avalonia.Data.BindingBase BindIsReadOnly(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1982,7 +1982,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2028,7 +2028,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Maximum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2078,7 +2078,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Maximum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2114,7 +2114,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaximum(
+    public static Avalonia.Data.BindingBase BindMaximum(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2220,7 +2220,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2266,7 +2266,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Minimum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2316,7 +2316,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Minimum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2352,7 +2352,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinimum(
+    public static Avalonia.Data.BindingBase BindMinimum(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2458,7 +2458,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2504,7 +2504,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ParsingNumberStyle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2554,7 +2554,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2590,7 +2590,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindParsingNumberStyle(
+    public static Avalonia.Data.BindingBase BindParsingNumberStyle(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3133,7 +3133,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3179,7 +3179,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Text<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3229,7 +3229,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3265,7 +3265,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindText(
+    public static Avalonia.Data.BindingBase BindText(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3371,7 +3371,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextConverter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3417,7 +3417,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextConverter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3467,7 +3467,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T TextConverter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3503,7 +3503,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextConverter(
+    public static Avalonia.Data.BindingBase BindTextConverter(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3609,7 +3609,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3655,7 +3655,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Value<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3705,7 +3705,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Value<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3741,7 +3741,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindValue(
+    public static Avalonia.Data.BindingBase BindValue(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3827,113 +3827,113 @@ public static partial class NumericUpDownExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
-        return builder.WithValue(PropertyMetadata.NumericUpDown_Watermark, Avalonia.Controls.NumericUpDown.WatermarkProperty, value);
+        return builder.WithValue(PropertyMetadata.NumericUpDown_PlaceholderText, Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        return builder.WithBinding(PropertyMetadata.NumericUpDown_Watermark, Avalonia.Controls.NumericUpDown.WatermarkProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.NumericUpDown_PlaceholderText, Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        return builder.WithBinding(PropertyMetadata.NumericUpDown_Watermark, Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.NumericUpDown_PlaceholderText, Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementRef<T> PlaceholderText<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
-        return elementRef.SetValue(Avalonia.Controls.NumericUpDown.WatermarkProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.WatermarkProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.NumericUpDown.WatermarkProperty
+    // Avalonia.Controls.NumericUpDown.PlaceholderTextProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.NumericUpDown
+    public static T PlaceholderText<T>(this T obj, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
-        obj[Avalonia.Controls.NumericUpDown.WatermarkProperty] = value;
+        obj[Avalonia.Controls.NumericUpDown.PlaceholderTextProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -3941,19 +3941,19 @@ public static partial class NumericUpDownExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T PlaceholderText<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        var descriptor = Avalonia.Controls.NumericUpDown.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -3961,104 +3961,342 @@ public static partial class NumericUpDownExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T PlaceholderText<T>(
         this T obj,
         IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
-        var descriptor = Avalonia.Controls.NumericUpDown.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWatermark(
+    /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderText(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.NumericUpDown.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.String?> ObservePlaceholderText(this Avalonia.Controls.NumericUpDown obj)
     {
-        return obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String?>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
-        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingPlaceholderText(this Avalonia.Controls.NumericUpDown obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingPlaceholderText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWatermarkChanged(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderTextChanged(this Avalonia.Controls.NumericUpDown obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnPlaceholderTextChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.NumericUpDown
+    {
+        return builder.WithValue(PropertyMetadata.NumericUpDown_PlaceholderForeground, Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        return builder.WithBinding(PropertyMetadata.NumericUpDown_PlaceholderForeground, Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PlaceholderForeground<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        return builder.WithBinding(PropertyMetadata.NumericUpDown_PlaceholderForeground, Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.NumericUpDown
+    {
+        return elementRef.SetValue(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlaceholderForeground<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlaceholderForeground<T>(
+        this T obj,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
+    {
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderForeground(
+        this Avalonia.Controls.NumericUpDown obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingPlaceholderForeground(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderForegroundChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlaceholderForegroundChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
         handler(obj, observable);
         return obj;
     }
@@ -4085,7 +4323,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4131,7 +4369,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4181,7 +4419,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4217,7 +4455,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4415,7 +4653,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4461,7 +4699,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4511,7 +4749,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4547,7 +4785,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4745,7 +4983,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4791,7 +5029,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4841,7 +5079,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T TextAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4877,7 +5115,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextAlignment(
+    public static Avalonia.Data.BindingBase BindTextAlignment(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5144,7 +5382,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5190,7 +5428,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> InnerLeftContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5240,7 +5478,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerLeftContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5276,7 +5514,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInnerLeftContent(
+    public static Avalonia.Data.BindingBase BindInnerLeftContent(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5382,7 +5620,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5428,7 +5666,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> InnerRightContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5478,7 +5716,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerRightContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -5514,7 +5752,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInnerRightContent(
+    public static Avalonia.Data.BindingBase BindInnerRightContent(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

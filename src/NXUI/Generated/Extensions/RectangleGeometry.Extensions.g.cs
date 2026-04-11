@@ -32,7 +32,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RadiusX<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -78,7 +78,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RadiusX<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -128,7 +128,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T RadiusX<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -164,7 +164,7 @@ public static partial class RectangleGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRadiusX(
+    public static Avalonia.Data.BindingBase BindRadiusX(
         this Avalonia.Media.RectangleGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RadiusY<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -316,7 +316,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RadiusY<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -366,7 +366,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T RadiusY<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -402,7 +402,7 @@ public static partial class RectangleGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRadiusY(
+    public static Avalonia.Data.BindingBase BindRadiusY(
         this Avalonia.Media.RectangleGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -554,7 +554,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Rect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -604,7 +604,7 @@ public static partial class RectangleGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Rect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
@@ -640,7 +640,7 @@ public static partial class RectangleGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRect(
+    public static Avalonia.Data.BindingBase BindRect(
         this Avalonia.Media.RectangleGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

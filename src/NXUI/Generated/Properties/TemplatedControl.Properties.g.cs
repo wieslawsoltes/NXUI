@@ -69,6 +69,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControl_Foreground => Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> TemplatedControl_LetterSpacing => Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControl_Padding => Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty;

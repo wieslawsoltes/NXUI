@@ -32,7 +32,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CompactPaneLength<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -78,7 +78,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CompactPaneLength<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -128,7 +128,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T CompactPaneLength<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -164,7 +164,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCompactPaneLength(
+    public static Avalonia.Data.BindingBase BindCompactPaneLength(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -316,7 +316,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -366,7 +366,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -402,7 +402,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayMode(
+    public static Avalonia.Data.BindingBase BindDisplayMode(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -600,7 +600,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPaneOpen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -646,7 +646,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsPaneOpen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -696,7 +696,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T IsPaneOpen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -732,7 +732,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsPaneOpen(
+    public static Avalonia.Data.BindingBase BindIsPaneOpen(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -838,7 +838,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpenPaneLength<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -884,7 +884,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> OpenPaneLength<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -934,7 +934,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T OpenPaneLength<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -970,7 +970,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpenPaneLength(
+    public static Avalonia.Data.BindingBase BindOpenPaneLength(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1076,7 +1076,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneBackground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1122,7 +1122,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PaneBackground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1172,7 +1172,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T PaneBackground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1208,7 +1208,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPaneBackground(
+    public static Avalonia.Data.BindingBase BindPaneBackground(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1314,7 +1314,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1360,7 +1360,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PanePlacement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1410,7 +1410,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T PanePlacement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1446,7 +1446,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPanePlacement(
+    public static Avalonia.Data.BindingBase BindPanePlacement(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1576,6 +1576,52 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PanePlacementTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
+    {
+        return builder.WithValue(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, Avalonia.Controls.SplitViewPanePlacement.Top);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PanePlacementTop<T>(this T obj) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Top;
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PanePlacementBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
+    {
+        return builder.WithValue(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, Avalonia.Controls.SplitViewPanePlacement.Bottom);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PanePlacementBottom<T>(this T obj) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Bottom;
+        return obj;
+    }
+
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PaneProperty"/> literal value for hot reload builds.
@@ -1598,7 +1644,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Pane<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1644,7 +1690,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Pane<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1694,7 +1740,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T Pane<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1730,7 +1776,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.PaneProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPane(
+    public static Avalonia.Data.BindingBase BindPane(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1836,7 +1882,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1882,7 +1928,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PaneTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1932,7 +1978,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T PaneTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1968,7 +2014,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPaneTemplate(
+    public static Avalonia.Data.BindingBase BindPaneTemplate(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2074,7 +2120,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLightDismissOverlayMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -2120,7 +2166,7 @@ public static partial class SplitViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> UseLightDismissOverlayMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -2170,7 +2216,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T UseLightDismissOverlayMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -2206,7 +2252,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseLightDismissOverlayMode(
+    public static Avalonia.Data.BindingBase BindUseLightDismissOverlayMode(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2299,7 +2345,7 @@ public static partial class SplitViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTemplateSettings(
+    public static Avalonia.Data.BindingBase BindTemplateSettings(
         this Avalonia.Controls.SplitView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

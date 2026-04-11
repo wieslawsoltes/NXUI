@@ -11,12 +11,22 @@ public static partial class Events
     /// <summary>
     /// The <see cref="Avalonia.Input.InputElement.GotFocusEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.GotFocusEventArgs> InputElementGotFocus => Avalonia.Input.InputElement.GotFocusEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.FocusChangedEventArgs> InputElementGotFocus => Avalonia.Input.InputElement.GotFocusEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.GettingFocusEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.FocusChangingEventArgs> InputElementGettingFocus => Avalonia.Input.InputElement.GettingFocusEvent;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.InputElement.LostFocusEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> InputElementLostFocus => Avalonia.Input.InputElement.LostFocusEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.FocusChangedEventArgs> InputElementLostFocus => Avalonia.Input.InputElement.LostFocusEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.LosingFocusEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.FocusChangingEventArgs> InputElementLosingFocus => Avalonia.Input.InputElement.LosingFocusEvent;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.InputElement.KeyDownEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
@@ -72,4 +82,94 @@ public static partial class Events
     /// The <see cref="Avalonia.Input.InputElement.PointerWheelChangedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerWheelEventArgs> InputElementPointerWheelChanged => Avalonia.Input.InputElement.PointerWheelChangedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.ContextRequestedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.ContextRequestedEventArgs> InputElementContextRequested => Avalonia.Input.InputElement.ContextRequestedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.ContextCanceledEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> InputElementContextCanceled => Avalonia.Input.InputElement.ContextCanceledEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PinchEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PinchEventArgs> InputElementPinch => Avalonia.Input.InputElement.PinchEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PinchEndedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PinchEndedEventArgs> InputElementPinchEnded => Avalonia.Input.InputElement.PinchEndedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PullGestureEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PullGestureEventArgs> InputElementPullGesture => Avalonia.Input.InputElement.PullGestureEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PullGestureEndedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PullGestureEndedEventArgs> InputElementPullGestureEnded => Avalonia.Input.InputElement.PullGestureEndedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.SwipeGestureEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.SwipeGestureEventArgs> InputElementSwipeGesture => Avalonia.Input.InputElement.SwipeGestureEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.SwipeGestureEndedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.SwipeGestureEndedEventArgs> InputElementSwipeGestureEnded => Avalonia.Input.InputElement.SwipeGestureEndedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.ScrollGestureEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.ScrollGestureEventArgs> InputElementScrollGesture => Avalonia.Input.InputElement.ScrollGestureEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.ScrollGestureInertiaStartingEventArgs> InputElementScrollGestureInertiaStarting => Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.ScrollGestureEndedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.ScrollGestureEndedEventArgs> InputElementScrollGestureEnded => Avalonia.Input.InputElement.ScrollGestureEndedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerDeltaEventArgs> InputElementPointerTouchPadGestureMagnify => Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerDeltaEventArgs> InputElementPointerTouchPadGestureRotate => Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerDeltaEventArgs> InputElementPointerTouchPadGestureSwipe => Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.TappedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TappedEventArgs> InputElementTapped => Avalonia.Input.InputElement.TappedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.RightTappedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TappedEventArgs> InputElementRightTapped => Avalonia.Input.InputElement.RightTappedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.HoldingEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.HoldingRoutedEventArgs> InputElementHolding => Avalonia.Input.InputElement.HoldingEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.DoubleTappedEvent"/> event defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TappedEventArgs> InputElementDoubleTapped => Avalonia.Input.InputElement.DoubleTappedEvent;
 }

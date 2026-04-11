@@ -32,7 +32,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -78,7 +78,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -128,7 +128,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -164,7 +164,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.VirtualizingStackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -316,7 +316,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreHorizontalSnapPointsRegular<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -362,7 +362,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreHorizontalSnapPointsRegular<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -412,7 +412,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AreHorizontalSnapPointsRegular<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -448,7 +448,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreHorizontalSnapPointsRegular(
+    public static Avalonia.Data.BindingBase BindAreHorizontalSnapPointsRegular(
         this Avalonia.Controls.VirtualizingStackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreVerticalSnapPointsRegular<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -600,7 +600,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreVerticalSnapPointsRegular<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -650,7 +650,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AreVerticalSnapPointsRegular<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
     {
@@ -686,7 +686,7 @@ public static partial class VirtualizingStackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreVerticalSnapPointsRegular(
+    public static Avalonia.Data.BindingBase BindAreVerticalSnapPointsRegular(
         this Avalonia.Controls.VirtualizingStackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -766,6 +766,244 @@ public static partial class VirtualizingStackPanelExtensions
     public static T OnAreVerticalSnapPointsRegularChanged<T>(this T obj, Action<Avalonia.Controls.VirtualizingStackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheLength<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return builder.WithValue(PropertyMetadata.VirtualizingStackPanel_CacheLength, Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheLength<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return builder.WithBinding(PropertyMetadata.VirtualizingStackPanel_CacheLength, Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CacheLength<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return builder.WithBinding(PropertyMetadata.VirtualizingStackPanel_CacheLength, Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheLength<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return elementRef.SetValue(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CacheLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheLength<T>(this T obj, System.Double value) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        obj[Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheLength<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        var descriptor = Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CacheLength<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        var descriptor = Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindCacheLength(
+        this Avalonia.Controls.VirtualizingStackPanel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveCacheLength(this Avalonia.Controls.VirtualizingStackPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCacheLength<T>(this T obj, Action<Avalonia.Controls.VirtualizingStackPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCacheLength(this Avalonia.Controls.VirtualizingStackPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCacheLength<T>(this T obj, Action<Avalonia.Controls.VirtualizingStackPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCacheLengthChanged(this Avalonia.Controls.VirtualizingStackPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCacheLengthChanged<T>(this T obj, Action<Avalonia.Controls.VirtualizingStackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
         handler(obj, observable);
         return obj;
     }

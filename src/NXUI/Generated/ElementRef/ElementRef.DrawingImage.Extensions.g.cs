@@ -19,4 +19,13 @@ public static partial class DrawingImageElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingImage.DrawingProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Media.DrawingImage.ViewboxProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Nullable<Avalonia.Rect>> ObserveViewbox<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Media.DrawingImage
+    {
+        return elementRef.Observe(Avalonia.Media.DrawingImage.ViewboxProperty);
+    }
+
 }

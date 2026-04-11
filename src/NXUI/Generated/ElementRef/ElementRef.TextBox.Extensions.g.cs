@@ -210,29 +210,29 @@ public static partial class TextBoxElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> value.
     /// </summary>
-    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    public static IObservable<System.String?> ObservePlaceholderText<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
     {
-        return elementRef.Observe(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        return elementRef.Observe(Avalonia.Controls.TextBox.PlaceholderTextProperty);
     }
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> value.
     /// </summary>
-    public static IObservable<System.String?> ObserveWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    public static IObservable<System.Boolean> ObserveUseFloatingPlaceholder<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
     {
-        return elementRef.Observe(Avalonia.Controls.TextBox.WatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
     }
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> value.
     /// </summary>
-    public static IObservable<System.Boolean> ObserveUseFloatingWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
     {
-        return elementRef.Observe(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
     }
 
 

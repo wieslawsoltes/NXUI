@@ -123,7 +123,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlAutoScrollToSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlAutoScrollToSelectedItem(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlSelectedIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedIndex(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedIndex(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlSelectedIndex(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedItem(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlSelectedItem(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlSelectedValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedValue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlSelectedValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedValue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlSelectedValue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlSelectedValue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, binding));
         return keyFrame;
@@ -653,7 +653,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, Avalonia.Data.IBinding value)
+    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, Avalonia.Data.BindingBase value)
     {
         return builder.WithAction(style =>
         {
@@ -667,7 +667,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, Avalonia.Data.IBinding value)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -683,7 +683,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedValueBinding(this Style style, Avalonia.Data.IBinding value)
+    public static Style SetSelectingItemsControlSelectedValueBinding(this Style style, Avalonia.Data.BindingBase value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value));
         return style;
@@ -695,7 +695,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedValueBinding(this KeyFrame keyFrame, Avalonia.Data.IBinding value)
+    public static KeyFrame SetSelectingItemsControlSelectedValueBinding(this KeyFrame keyFrame, Avalonia.Data.BindingBase value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value));
         return keyFrame;
@@ -707,7 +707,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
     {
         return builder.WithAction(style =>
         {
@@ -721,7 +721,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -735,7 +735,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedValueBinding(this Style style, IObservable<Avalonia.Data.IBinding> observable)
+    public static Style SetSelectingItemsControlSelectedValueBinding(this Style style, IObservable<Avalonia.Data.BindingBase> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, observable.ToBinding()));
         return style;
@@ -747,7 +747,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedValueBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.IBinding> observable)
+    public static KeyFrame SetSelectingItemsControlSelectedValueBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.BindingBase> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, observable.ToBinding()));
         return keyFrame;
@@ -866,7 +866,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlIsSelected(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlIsSelected(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -880,7 +880,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlIsSelected(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlIsSelected(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -894,7 +894,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlIsSelected(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, binding));
         return style;
@@ -906,7 +906,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlIsSelected(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlIsSelected(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, binding));
         return keyFrame;
@@ -1025,7 +1025,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlIsTextSearchEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlIsTextSearchEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1039,7 +1039,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlIsTextSearchEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlIsTextSearchEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1053,7 +1053,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlIsTextSearchEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlIsTextSearchEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, binding));
         return style;
@@ -1065,7 +1065,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, binding));
         return keyFrame;
@@ -1184,7 +1184,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSelectingItemsControlWrapSelection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlWrapSelection(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1198,7 +1198,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSelectingItemsControlWrapSelection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlWrapSelection(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1212,7 +1212,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlWrapSelection(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSelectingItemsControlWrapSelection(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, binding));
         return style;
@@ -1224,7 +1224,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, binding));
         return keyFrame;

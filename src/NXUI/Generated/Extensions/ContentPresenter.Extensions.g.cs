@@ -32,7 +32,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -78,7 +78,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Background<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -128,7 +128,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -164,7 +164,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackground(
+    public static Avalonia.Data.BindingBase BindBackground(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -316,7 +316,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BackgroundSizing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -366,7 +366,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T BackgroundSizing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -402,7 +402,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackgroundSizing(
+    public static Avalonia.Data.BindingBase BindBackgroundSizing(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -577,7 +577,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -623,7 +623,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -673,7 +673,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -709,7 +709,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderBrush(
+    public static Avalonia.Data.BindingBase BindBorderBrush(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -815,7 +815,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -861,7 +861,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderThickness<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -911,7 +911,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderThickness<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -947,7 +947,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderThickness(
+    public static Avalonia.Data.BindingBase BindBorderThickness(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1103,7 +1103,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1149,7 +1149,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CornerRadius<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1199,7 +1199,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T CornerRadius<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1235,7 +1235,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCornerRadius(
+    public static Avalonia.Data.BindingBase BindCornerRadius(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1391,7 +1391,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1437,7 +1437,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BoxShadow<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1487,7 +1487,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T BoxShadow<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1523,7 +1523,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBoxShadow(
+    public static Avalonia.Data.BindingBase BindBoxShadow(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1629,7 +1629,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1675,7 +1675,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Foreground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1725,7 +1725,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1761,7 +1761,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindForeground(
+    public static Avalonia.Data.BindingBase BindForeground(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1867,7 +1867,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1913,7 +1913,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFamily<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1963,7 +1963,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFamily<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1999,7 +1999,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFamily(
+    public static Avalonia.Data.BindingBase BindFontFamily(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2105,7 +2105,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2151,7 +2151,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontSize<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2201,7 +2201,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T FontSize<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2237,7 +2237,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontSize(
+    public static Avalonia.Data.BindingBase BindFontSize(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2343,7 +2343,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2389,7 +2389,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStyle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2439,7 +2439,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStyle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2475,7 +2475,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStyle(
+    public static Avalonia.Data.BindingBase BindFontStyle(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2650,7 +2650,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2696,7 +2696,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontWeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2746,7 +2746,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T FontWeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2782,7 +2782,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontWeight(
+    public static Avalonia.Data.BindingBase BindFontWeight(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3302,7 +3302,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3348,7 +3348,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3398,7 +3398,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3434,7 +3434,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStretch(
+    public static Avalonia.Data.BindingBase BindFontStretch(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3747,7 +3747,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3793,7 +3793,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3843,7 +3843,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T TextAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3879,7 +3879,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextAlignment(
+    public static Avalonia.Data.BindingBase BindTextAlignment(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4146,7 +4146,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4192,7 +4192,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextWrapping<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4242,7 +4242,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T TextWrapping<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4278,7 +4278,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextWrapping(
+    public static Avalonia.Data.BindingBase BindTextWrapping(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4453,7 +4453,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextTrimming<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4499,7 +4499,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextTrimming<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4549,7 +4549,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T TextTrimming<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4585,7 +4585,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextTrimming(
+    public static Avalonia.Data.BindingBase BindTextTrimming(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4691,7 +4691,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4737,7 +4737,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LineHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4787,7 +4787,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T LineHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4823,7 +4823,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineHeight(
+    public static Avalonia.Data.BindingBase BindLineHeight(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4909,6 +4909,244 @@ public static partial class ContentPresenterExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return builder.WithValue(PropertyMetadata.ContentPresenter_LetterSpacing, Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.ContentPresenter_LetterSpacing, Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.ContentPresenter_LetterSpacing, Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindLetterSpacing(
+        this Avalonia.Controls.Presenters.ContentPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Double>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -4929,7 +5167,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4975,7 +5213,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxLines<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5025,7 +5263,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxLines<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5061,7 +5299,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxLines(
+    public static Avalonia.Data.BindingBase BindMaxLines(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5154,7 +5392,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChild(
+    public static Avalonia.Data.BindingBase BindChild(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5257,7 +5495,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5303,7 +5541,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Content<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5353,7 +5591,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5389,7 +5627,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContent(
+    public static Avalonia.Data.BindingBase BindContent(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5495,7 +5733,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5541,7 +5779,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ContentTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5591,7 +5829,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5627,7 +5865,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContentTemplate(
+    public static Avalonia.Data.BindingBase BindContentTemplate(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5733,7 +5971,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5779,7 +6017,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5829,7 +6067,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -5865,7 +6103,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -6063,7 +6301,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6109,7 +6347,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6159,7 +6397,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6195,7 +6433,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -6393,7 +6631,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6439,7 +6677,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Padding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6489,7 +6727,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Padding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6525,7 +6763,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPadding(
+    public static Avalonia.Data.BindingBase BindPadding(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -6681,7 +6919,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RecognizesAccessKey<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6727,7 +6965,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RecognizesAccessKey<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6777,7 +7015,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T RecognizesAccessKey<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -6813,7 +7051,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRecognizesAccessKey(
+    public static Avalonia.Data.BindingBase BindRecognizesAccessKey(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

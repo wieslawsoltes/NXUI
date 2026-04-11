@@ -32,7 +32,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder Brush(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> Brush(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Brush(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.BrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBrush(
+    public static Avalonia.Data.BindingBase BindBrush(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder Thickness(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> Thickness(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Thickness(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.ThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindThickness(
+    public static Avalonia.Data.BindingBase BindThickness(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder DashStyle(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> DashStyle(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen DashStyle(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.DashStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDashStyle(
+    public static Avalonia.Data.BindingBase BindDashStyle(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -725,7 +725,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder LineCap(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -771,7 +771,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> LineCap(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -819,7 +819,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCap(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -854,7 +854,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.LineCapProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineCap(
+    public static Avalonia.Data.BindingBase BindLineCap(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1022,7 +1022,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder LineJoin(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1068,7 +1068,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> LineJoin(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1116,7 +1116,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoin(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1151,7 +1151,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.LineJoinProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineJoin(
+    public static Avalonia.Data.BindingBase BindLineJoin(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1319,7 +1319,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static PenBuilder MiterLimit(
         this PenBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1365,7 +1365,7 @@ public static partial class PenExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Pen> MiterLimit(
         this ElementRef<Avalonia.Media.Pen> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1413,7 +1413,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen MiterLimit(
         this Avalonia.Media.Pen obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1448,7 +1448,7 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMiterLimit(
+    public static Avalonia.Data.BindingBase BindMiterLimit(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

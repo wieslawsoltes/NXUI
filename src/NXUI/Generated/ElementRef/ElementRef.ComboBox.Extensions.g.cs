@@ -21,6 +21,15 @@ public static partial class ComboBoxElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsEditable<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ComboBox
+    {
+        return elementRef.Observe(Avalonia.Controls.ComboBox.IsEditableProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> value.
     /// </summary>
     public static IObservable<System.Double> ObserveMaxDropDownHeight<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ComboBox
@@ -71,6 +80,15 @@ public static partial class ComboBoxElementRefExtensions
     public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ComboBox
     {
         return elementRef.Observe(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ComboBox.TextProperty"/> value.
+    /// </summary>
+    public static IObservable<System.String?> ObserveText<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ComboBox
+    {
+        return elementRef.Observe(Avalonia.Controls.ComboBox.TextProperty);
     }
 
 

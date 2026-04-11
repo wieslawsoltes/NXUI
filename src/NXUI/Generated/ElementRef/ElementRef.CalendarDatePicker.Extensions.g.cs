@@ -102,20 +102,29 @@ public static partial class CalendarDatePickerElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> value.
     /// </summary>
-    public static IObservable<System.String?> ObserveWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.CalendarDatePicker
+    public static IObservable<System.String?> ObservePlaceholderText<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty);
     }
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> value.
     /// </summary>
-    public static IObservable<System.Boolean> ObserveUseFloatingWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.CalendarDatePicker
+    public static IObservable<System.Boolean> ObserveUseFloatingPlaceholder<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.CalendarDatePicker
     {
-        return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.CalendarDatePicker
+    {
+        return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty);
     }
 
 

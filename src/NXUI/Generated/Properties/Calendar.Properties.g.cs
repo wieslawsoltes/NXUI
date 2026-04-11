@@ -34,6 +34,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Controls.CalendarSelectionMode> Calendar_SelectionMode => Avalonia.Controls.Calendar.SelectionModeProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> Calendar_AllowTapRangeSelection => Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> Calendar_SelectedDate => Avalonia.Controls.Calendar.SelectedDateProperty;

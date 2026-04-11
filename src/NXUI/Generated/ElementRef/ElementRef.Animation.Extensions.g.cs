@@ -39,6 +39,15 @@ public static partial class AnimationElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Animation.PlaybackBehavior> ObservePlaybackBehavior(this ElementRef<Avalonia.Animation.Animation> elementRef)
+    {
+        return elementRef.Observe(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value.
     /// </summary>
     public static IObservable<Avalonia.Animation.FillMode> ObserveFillMode(this ElementRef<Avalonia.Animation.Animation> elementRef)

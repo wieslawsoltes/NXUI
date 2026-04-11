@@ -123,7 +123,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxIsInactiveSelectionHighlightEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxIsInactiveSelectionHighlightEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxIsInactiveSelectionHighlightEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxIsInactiveSelectionHighlightEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxIsInactiveSelectionHighlightEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxIsInactiveSelectionHighlightEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxIsInactiveSelectionHighlightEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxIsInactiveSelectionHighlightEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxClearSelectionOnLostFocus(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxClearSelectionOnLostFocus(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxClearSelectionOnLostFocus(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxClearSelectionOnLostFocus(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxClearSelectionOnLostFocus(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxClearSelectionOnLostFocus(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxClearSelectionOnLostFocus(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxClearSelectionOnLostFocus(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxAcceptsReturn(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxAcceptsReturn(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxAcceptsReturn(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxAcceptsReturn(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxAcceptsReturn(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxAcceptsReturn(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.AcceptsReturnProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxAcceptsReturn(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxAcceptsReturn(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.AcceptsReturnProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxAcceptsTab(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxAcceptsTab(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxAcceptsTab(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxAcceptsTab(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxAcceptsTab(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxAcceptsTab(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.AcceptsTabProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxAcceptsTab(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxAcceptsTab(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.AcceptsTabProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxCaretIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxCaretIndex(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxCaretIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxCaretIndex(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxCaretIndex(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxCaretIndex(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretIndexProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxCaretIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxCaretIndex(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretIndexProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxIsReadOnly(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxIsReadOnly(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxIsReadOnly(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxIsReadOnly(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxIsReadOnly(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxIsReadOnly(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsReadOnlyProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxIsReadOnly(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxIsReadOnly(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsReadOnlyProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxPasswordChar(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxPasswordChar(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxPasswordChar(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxPasswordChar(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxPasswordChar(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxPasswordChar(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PasswordCharProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxPasswordChar(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxPasswordChar(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PasswordCharProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxSelectionBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxSelectionBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxSelectionBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxSelectionBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxSelectionBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxSelectionBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionBrushProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxSelectionBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxSelectionBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionBrushProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxSelectionForegroundBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxSelectionForegroundBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxSelectionForegroundBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxSelectionForegroundBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxCaretBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxCaretBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxCaretBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxCaretBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxCaretBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxCaretBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBrushProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxCaretBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxCaretBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBrushProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxCaretBlinkInterval(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxCaretBlinkInterval(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxCaretBlinkInterval(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxCaretBlinkInterval(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxCaretBlinkInterval(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxCaretBlinkInterval(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxCaretBlinkInterval(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxCaretBlinkInterval(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxSelectionStart(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxSelectionStart(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxSelectionStart(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxSelectionStart(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxSelectionStart(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxSelectionStart(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionStartProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxSelectionStart(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxSelectionStart(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionStartProperty, binding));
         return keyFrame;
@@ -2031,7 +2031,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxSelectionEnd(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxSelectionEnd(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2045,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxSelectionEnd(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxSelectionEnd(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2059,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxSelectionEnd(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxSelectionEnd(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionEndProperty, binding));
         return style;
@@ -2071,7 +2071,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxSelectionEnd(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxSelectionEnd(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.SelectionEndProperty, binding));
         return keyFrame;
@@ -2190,7 +2190,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxMaxLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxMaxLength(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2204,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxMaxLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxMaxLength(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2218,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxMaxLength(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxMaxLength(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MaxLengthProperty, binding));
         return style;
@@ -2230,7 +2230,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxMaxLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxMaxLength(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MaxLengthProperty, binding));
         return keyFrame;
@@ -2349,7 +2349,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxMaxLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxMaxLines(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2363,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxMaxLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxMaxLines(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2377,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxMaxLines(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxMaxLines(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MaxLinesProperty, binding));
         return style;
@@ -2389,7 +2389,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxMaxLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxMaxLines(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MaxLinesProperty, binding));
         return keyFrame;
@@ -2508,7 +2508,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxMinLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxMinLines(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2522,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxMinLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxMinLines(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2536,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxMinLines(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxMinLines(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, binding));
         return style;
@@ -2548,7 +2548,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxMinLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxMinLines(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, binding));
         return keyFrame;
@@ -2667,7 +2667,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2681,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +2695,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextProperty, binding));
         return style;
@@ -2707,7 +2707,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextProperty, binding));
         return keyFrame;
@@ -2826,7 +2826,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxTextAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +2840,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +2854,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxTextAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextAlignmentProperty, binding));
         return style;
@@ -2866,7 +2866,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxTextAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextAlignmentProperty, binding));
         return keyFrame;
@@ -2985,7 +2985,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +2999,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3013,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxHorizontalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, binding));
         return style;
@@ -3025,7 +3025,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, binding));
         return keyFrame;
@@ -3144,7 +3144,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3158,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3172,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxVerticalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, binding));
         return style;
@@ -3184,7 +3184,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, binding));
         return keyFrame;
@@ -3303,7 +3303,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxTextWrapping(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxTextWrapping(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3317,7 +3317,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3331,7 +3331,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxTextWrapping(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextWrappingProperty, binding));
         return style;
@@ -3343,7 +3343,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxTextWrapping(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxTextWrapping(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.TextWrappingProperty, binding));
         return keyFrame;
@@ -3462,7 +3462,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxLineHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxLineHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3476,7 +3476,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxLineHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxLineHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3490,7 +3490,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxLineHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LineHeightProperty, binding));
         return style;
@@ -3502,7 +3502,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxLineHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxLineHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LineHeightProperty, binding));
         return keyFrame;
@@ -3510,478 +3510,478 @@ public static partial class TextBoxSetters
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxLetterSpacing(this StyleBuilder builder, System.Double value)
+    public static StyleBuilder SetTextBoxPlaceholderText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxLetterSpacing(this KeyFrameBuilder builder, System.Double value)
+    public static KeyFrameBuilder SetTextBoxPlaceholderText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, value));
         });
     }
 
-    // Avalonia.Controls.TextBox.LetterSpacingProperty
+    // Avalonia.Controls.TextBox.PlaceholderTextProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxLetterSpacing(this Style style, System.Double value)
+    public static Style SetTextBoxPlaceholderText(this Style style, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxLetterSpacing(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextBoxPlaceholderText(this KeyFrame keyFrame, System.String value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxLetterSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBoxPlaceholderText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxLetterSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBoxPlaceholderText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxLetterSpacing(this Style style, IObservable<System.Double> observable)
+    public static Style SetTextBoxPlaceholderText(this Style style, IObservable<System.String> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxLetterSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    public static KeyFrame SetTextBoxPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxLetterSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxPlaceholderText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxPlaceholderText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxLetterSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxPlaceholderText(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxPlaceholderText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.LetterSpacingProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderTextProperty, binding));
         return keyFrame;
     }
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxWatermark(this StyleBuilder builder, System.String value)
+    public static StyleBuilder SetTextBoxUseFloatingPlaceholder(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxWatermark(this KeyFrameBuilder builder, System.String value)
+    public static KeyFrameBuilder SetTextBoxUseFloatingPlaceholder(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value));
         });
     }
 
-    // Avalonia.Controls.TextBox.WatermarkProperty
+    // Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxWatermark(this Style style, System.String value)
+    public static Style SetTextBoxUseFloatingPlaceholder(this Style style, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxWatermark(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetTextBoxUseFloatingPlaceholder(this KeyFrame keyFrame, System.Boolean value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxWatermark(this StyleBuilder builder, IObservable<System.String> observable)
+    public static StyleBuilder SetTextBoxUseFloatingPlaceholder(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxWatermark(this KeyFrameBuilder builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetTextBoxUseFloatingPlaceholder(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxWatermark(this Style style, IObservable<System.String> observable)
+    public static Style SetTextBoxUseFloatingPlaceholder(this Style style, IObservable<System.Boolean> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxWatermark(this KeyFrame keyFrame, IObservable<System.String> observable)
+    public static KeyFrame SetTextBoxUseFloatingPlaceholder(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxUseFloatingPlaceholder(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxUseFloatingPlaceholder(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxUseFloatingPlaceholder(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxUseFloatingPlaceholder(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.WatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding));
         return keyFrame;
     }
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxUseFloatingWatermark(this StyleBuilder builder, System.Boolean value)
+    public static StyleBuilder SetTextBoxPlaceholderForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxUseFloatingWatermark(this KeyFrameBuilder builder, System.Boolean value)
+    public static KeyFrameBuilder SetTextBoxPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value));
         });
     }
 
-    // Avalonia.Controls.TextBox.UseFloatingWatermarkProperty
+    // Avalonia.Controls.TextBox.PlaceholderForegroundProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxUseFloatingWatermark(this Style style, System.Boolean value)
+    public static Style SetTextBoxPlaceholderForeground(this Style style, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxUseFloatingWatermark(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTextBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxUseFloatingWatermark(this StyleBuilder builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTextBoxPlaceholderForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxUseFloatingWatermark(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTextBoxPlaceholderForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxUseFloatingWatermark(this Style style, IObservable<System.Boolean> observable)
+    public static Style SetTextBoxPlaceholderForeground(this Style style, IObservable<Avalonia.Media.IBrush> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxUseFloatingWatermark(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    public static KeyFrame SetTextBoxPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxUseFloatingWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxPlaceholderForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxUseFloatingWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxUseFloatingWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxPlaceholderForeground(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxUseFloatingWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding));
         return keyFrame;
     }
 
@@ -4098,7 +4098,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxNewLine(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxNewLine(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4112,7 +4112,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxNewLine(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxNewLine(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4126,7 +4126,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxNewLine(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxNewLine(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.NewLineProperty, binding));
         return style;
@@ -4138,7 +4138,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxNewLine(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxNewLine(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.NewLineProperty, binding));
         return keyFrame;
@@ -4257,7 +4257,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxInnerLeftContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxInnerLeftContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4271,7 +4271,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4285,7 +4285,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxInnerLeftContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxInnerLeftContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.InnerLeftContentProperty, binding));
         return style;
@@ -4297,7 +4297,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.InnerLeftContentProperty, binding));
         return keyFrame;
@@ -4416,7 +4416,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxInnerRightContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxInnerRightContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4430,7 +4430,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4444,7 +4444,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxInnerRightContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxInnerRightContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.InnerRightContentProperty, binding));
         return style;
@@ -4456,7 +4456,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.InnerRightContentProperty, binding));
         return keyFrame;
@@ -4575,7 +4575,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxRevealPassword(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxRevealPassword(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4589,7 +4589,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxRevealPassword(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxRevealPassword(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4603,7 +4603,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxRevealPassword(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxRevealPassword(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.RevealPasswordProperty, binding));
         return style;
@@ -4615,7 +4615,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxRevealPassword(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxRevealPassword(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.RevealPasswordProperty, binding));
         return keyFrame;
@@ -4734,7 +4734,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxIsUndoEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxIsUndoEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4748,7 +4748,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxIsUndoEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxIsUndoEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4762,7 +4762,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxIsUndoEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxIsUndoEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsUndoEnabledProperty, binding));
         return style;
@@ -4774,7 +4774,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxIsUndoEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxIsUndoEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.IsUndoEnabledProperty, binding));
         return keyFrame;
@@ -4893,7 +4893,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBoxUndoLimit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBoxUndoLimit(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -4907,7 +4907,7 @@ public static partial class TextBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBoxUndoLimit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBoxUndoLimit(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4921,7 +4921,7 @@ public static partial class TextBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBoxUndoLimit(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBoxUndoLimit(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBox.UndoLimitProperty, binding));
         return style;
@@ -4933,7 +4933,7 @@ public static partial class TextBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBoxUndoLimit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBoxUndoLimit(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.UndoLimitProperty, binding));
         return keyFrame;

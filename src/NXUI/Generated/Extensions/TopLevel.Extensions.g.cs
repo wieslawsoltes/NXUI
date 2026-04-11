@@ -19,7 +19,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClientSize(
+    public static Avalonia.Data.BindingBase BindClientSize(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -109,7 +109,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFrameSize(
+    public static Avalonia.Data.BindingBase BindFrameSize(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -192,244 +192,6 @@ public static partial class TopLevelExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> literal value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="value">The value.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PointerOverElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
-    {
-        return builder.WithValue(PropertyMetadata.TopLevel_PointerOverElement, Avalonia.Controls.TopLevel.PointerOverElementProperty, value);
-    }
-
-    /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PointerOverElement<T>(
-        this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        return builder.WithBinding(PropertyMetadata.TopLevel_PointerOverElement, Avalonia.Controls.TopLevel.PointerOverElementProperty, binding, mode, priority);
-    }
-
-    /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PointerOverElement<T>(
-        this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.IInputElement?> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        return builder.WithBinding(PropertyMetadata.TopLevel_PointerOverElement, Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding(), mode, priority);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="value">The value.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> PointerOverElement<T>(this ElementRef<T> elementRef, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
-    {
-        return elementRef.SetValue(Avalonia.Controls.TopLevel.PointerOverElementProperty, value);
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> PointerOverElement<T>(
-        this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        return elementRef.SetBinding(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding, mode, priority);
-    }
-
-    /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> PointerOverElement<T>(
-        this ElementRef<T> elementRef,
-        IObservable<Avalonia.Input.IInputElement?> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        return elementRef.SetBinding(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding(), mode, priority);
-    }
-
-    // Avalonia.Controls.TopLevel.PointerOverElementProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T PointerOverElement<T>(this T obj, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.PointerOverElementProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T PointerOverElement<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        var descriptor = Avalonia.Controls.TopLevel.PointerOverElementProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T PointerOverElement<T>(
-        this T obj,
-        IObservable<Avalonia.Input.IInputElement?> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
-    {
-        var descriptor = Avalonia.Controls.TopLevel.PointerOverElementProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPointerOverElement(
-        this Avalonia.Controls.TopLevel obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.TopLevel.PointerOverElementProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<Avalonia.Input.IInputElement?> ObservePointerOverElement(this Avalonia.Controls.TopLevel obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Input.IInputElement?>> handler) where T : Avalonia.Controls.TopLevel
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.IInputElement?>> ObserveBindingPointerOverElement(this Avalonia.Controls.TopLevel obj)
-    {
-        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and binding observable.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnBindingPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Input.IInputElement?>>> handler) where T : Avalonia.Controls.TopLevel
-    {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointerOverElementChanged(this Avalonia.Controls.TopLevel obj)
-    {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and property change observable.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnPointerOverElementChanged<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
-    {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-
-    /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -450,7 +212,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyLevelHint<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -496,7 +258,7 @@ public static partial class TopLevelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TransparencyLevelHint<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -546,7 +308,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T TransparencyLevelHint<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -582,7 +344,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransparencyLevelHint(
+    public static Avalonia.Data.BindingBase BindTransparencyLevelHint(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -675,7 +437,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindActualTransparencyLevel(
+    public static Avalonia.Data.BindingBase BindActualTransparencyLevel(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -778,7 +540,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyBackgroundFallback<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -824,7 +586,7 @@ public static partial class TopLevelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TransparencyBackgroundFallback<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -874,7 +636,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T TransparencyBackgroundFallback<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -910,7 +672,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransparencyBackgroundFallback(
+    public static Avalonia.Data.BindingBase BindTransparencyBackgroundFallback(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1016,7 +778,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemBarColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1062,7 +824,7 @@ public static partial class TopLevelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SystemBarColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1112,7 +874,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T SystemBarColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1148,7 +910,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSystemBarColor(
+    public static Avalonia.Data.BindingBase BindSystemBarColor(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1254,7 +1016,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoSafeAreaPadding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1300,7 +1062,7 @@ public static partial class TopLevelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AutoSafeAreaPadding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1350,7 +1112,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T AutoSafeAreaPadding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1386,7 +1148,7 @@ public static partial class TopLevelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAutoSafeAreaPadding(
+    public static Avalonia.Data.BindingBase BindAutoSafeAreaPadding(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

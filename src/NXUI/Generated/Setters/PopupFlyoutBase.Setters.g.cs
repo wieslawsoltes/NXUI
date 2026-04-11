@@ -123,7 +123,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBasePlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBasePlacement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBasePlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBasePlacement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBasePlacement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBasePlacement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBasePlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBasePlacement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseHorizontalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseHorizontalOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseHorizontalOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseVerticalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseVerticalOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseVerticalOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBasePlacementAnchor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBasePlacementAnchor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBasePlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBasePlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBasePlacementAnchor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBasePlacementAnchor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBasePlacementAnchor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBasePlacementAnchor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBasePlacementGravity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBasePlacementGravity(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBasePlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBasePlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBasePlacementGravity(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBasePlacementGravity(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBasePlacementGravity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBasePlacementGravity(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseCustomPopupPlacementCallback(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseCustomPopupPlacementCallback(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseShowMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseShowMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseShowMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseShowMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseShowMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseShowMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseShowMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseShowMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseOverlayDismissEventPassThrough(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseOverlayDismissEventPassThrough(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseOverlayDismissEventPassThrough(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseOverlayDismissEventPassThrough(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseOverlayDismissEventPassThrough(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseOverlayDismissEventPassThrough(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseOverlayDismissEventPassThrough(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseOverlayDismissEventPassThrough(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBaseOverlayInputPassThroughElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBaseOverlayInputPassThroughElement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBaseOverlayInputPassThroughElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBaseOverlayInputPassThroughElement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPopupFlyoutBasePlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupFlyoutBasePlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPopupFlyoutBasePlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupFlyoutBasePlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupFlyoutBasePlacementConstraintAdjustment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupFlyoutBasePlacementConstraintAdjustment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class PopupFlyoutBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupFlyoutBasePlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupFlyoutBasePlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, binding));
         return keyFrame;

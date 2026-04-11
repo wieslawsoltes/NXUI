@@ -32,7 +32,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -78,7 +78,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Background<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -128,7 +128,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -164,7 +164,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackground(
+    public static Avalonia.Data.BindingBase BindBackground(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -316,7 +316,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Padding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -366,7 +366,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T Padding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -402,7 +402,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPadding(
+    public static Avalonia.Data.BindingBase BindPadding(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -558,7 +558,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -604,7 +604,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFamily<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -654,7 +654,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFamily<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -690,7 +690,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFamily(
+    public static Avalonia.Data.BindingBase BindFontFamily(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -796,7 +796,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -842,7 +842,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontSize<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -892,7 +892,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontSize<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -928,7 +928,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontSize(
+    public static Avalonia.Data.BindingBase BindFontSize(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1034,7 +1034,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1080,7 +1080,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStyle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1130,7 +1130,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStyle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1166,7 +1166,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStyle(
+    public static Avalonia.Data.BindingBase BindFontStyle(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1341,7 +1341,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1387,7 +1387,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontWeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1437,7 +1437,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontWeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -1473,7 +1473,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontWeight(
+    public static Avalonia.Data.BindingBase BindFontWeight(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1993,7 +1993,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2039,7 +2039,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2089,7 +2089,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2125,7 +2125,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStretch(
+    public static Avalonia.Data.BindingBase BindFontStretch(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2438,7 +2438,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2484,7 +2484,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Foreground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2534,7 +2534,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -2570,7 +2570,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindForeground(
+    public static Avalonia.Data.BindingBase BindForeground(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2676,7 +2676,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2722,7 +2722,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BaselineOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2772,7 +2772,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T BaselineOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2808,7 +2808,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBaselineOffset(
+    public static Avalonia.Data.BindingBase BindBaselineOffset(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2914,7 +2914,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2960,7 +2960,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LineHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3010,7 +3010,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T LineHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3046,7 +3046,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineHeight(
+    public static Avalonia.Data.BindingBase BindLineHeight(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3152,7 +3152,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3198,7 +3198,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LineSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3248,7 +3248,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T LineSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3284,7 +3284,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineSpacing(
+    public static Avalonia.Data.BindingBase BindLineSpacing(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3375,7 +3375,7 @@ public static partial class TextBlockExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TextBlock
     {
         return builder.WithValue(PropertyMetadata.TextBlock_LetterSpacing, Avalonia.Controls.TextBlock.LetterSpacingProperty, value);
     }
@@ -3390,9 +3390,9 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LetterSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         return builder.WithBinding(PropertyMetadata.TextBlock_LetterSpacing, Avalonia.Controls.TextBlock.LetterSpacingProperty, binding, mode, priority);
     }
@@ -3409,7 +3409,7 @@ public static partial class TextBlockExtensions
         this ElementBuilder<T> builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         return builder.WithBinding(PropertyMetadata.TextBlock_LetterSpacing, Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
@@ -3421,7 +3421,7 @@ public static partial class TextBlockExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Control
+    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.TextBlock
     {
         return elementRef.SetValue(Avalonia.Controls.TextBlock.LetterSpacingProperty, value);
     }
@@ -3436,9 +3436,9 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LetterSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.LetterSpacingProperty, binding, mode, priority);
     }
@@ -3455,7 +3455,7 @@ public static partial class TextBlockExtensions
         this ElementRef<T> elementRef,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
@@ -3469,7 +3469,7 @@ public static partial class TextBlockExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
+    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.LetterSpacingProperty] = value;
         return obj;
@@ -3486,9 +3486,9 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T LetterSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         var descriptor = Avalonia.Controls.TextBlock.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -3508,7 +3508,7 @@ public static partial class TextBlockExtensions
         this T obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
         var descriptor = Avalonia.Controls.TextBlock.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -3522,8 +3522,8 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLetterSpacing(
-        this Avalonia.Controls.Control obj,
+    public static Avalonia.Data.BindingBase BindLetterSpacing(
+        this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -3539,7 +3539,7 @@ public static partial class TextBlockExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.TextBlock obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
     }
@@ -3551,7 +3551,7 @@ public static partial class TextBlockExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<System.Double>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
         handler(obj, observable);
@@ -3563,7 +3563,7 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.TextBlock obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
     }
@@ -3575,7 +3575,7 @@ public static partial class TextBlockExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
         handler(obj, observable);
@@ -3587,7 +3587,7 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Control obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.TextBlock obj)
     {
         return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
     }
@@ -3599,7 +3599,7 @@ public static partial class TextBlockExtensions
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
         handler(obj, observable);
@@ -3628,7 +3628,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3674,7 +3674,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxLines<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3724,7 +3724,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxLines<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3760,7 +3760,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxLines(
+    public static Avalonia.Data.BindingBase BindMaxLines(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3866,7 +3866,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -3912,7 +3912,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Text<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -3962,7 +3962,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -3998,7 +3998,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.TextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindText(
+    public static Avalonia.Data.BindingBase BindText(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4104,7 +4104,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4150,7 +4150,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4200,7 +4200,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T TextAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4236,7 +4236,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextAlignment(
+    public static Avalonia.Data.BindingBase BindTextAlignment(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4503,7 +4503,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4549,7 +4549,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextWrapping<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4599,7 +4599,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T TextWrapping<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4635,7 +4635,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextWrapping(
+    public static Avalonia.Data.BindingBase BindTextWrapping(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4810,7 +4810,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextTrimming<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4856,7 +4856,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextTrimming<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4906,7 +4906,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T TextTrimming<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4942,7 +4942,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextTrimming(
+    public static Avalonia.Data.BindingBase BindTextTrimming(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5048,7 +5048,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5094,7 +5094,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextDecorations<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5144,7 +5144,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T TextDecorations<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5180,7 +5180,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextDecorations(
+    public static Avalonia.Data.BindingBase BindTextDecorations(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5286,7 +5286,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5332,7 +5332,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFeatures<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5382,7 +5382,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFeatures<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5418,7 +5418,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFeatures(
+    public static Avalonia.Data.BindingBase BindFontFeatures(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5524,7 +5524,7 @@ public static partial class TextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Inlines<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5570,7 +5570,7 @@ public static partial class TextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Inlines<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5620,7 +5620,7 @@ public static partial class TextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T Inlines<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
     {
@@ -5656,7 +5656,7 @@ public static partial class TextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInlines(
+    public static Avalonia.Data.BindingBase BindInlines(
         this Avalonia.Controls.TextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

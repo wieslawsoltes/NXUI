@@ -32,7 +32,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -78,7 +78,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Minimum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -128,7 +128,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Minimum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -164,7 +164,7 @@ public static partial class RangeBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinimum(
+    public static Avalonia.Data.BindingBase BindMinimum(
         this Avalonia.Controls.Primitives.RangeBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -316,7 +316,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Maximum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -366,7 +366,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Maximum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -402,7 +402,7 @@ public static partial class RangeBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaximum(
+    public static Avalonia.Data.BindingBase BindMaximum(
         this Avalonia.Controls.Primitives.RangeBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -554,7 +554,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Value<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -604,7 +604,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Value<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -640,7 +640,7 @@ public static partial class RangeBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindValue(
+    public static Avalonia.Data.BindingBase BindValue(
         this Avalonia.Controls.Primitives.RangeBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SmallChange<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -792,7 +792,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SmallChange<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -842,7 +842,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T SmallChange<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -878,7 +878,7 @@ public static partial class RangeBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSmallChange(
+    public static Avalonia.Data.BindingBase BindSmallChange(
         this Avalonia.Controls.Primitives.RangeBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LargeChange<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -1030,7 +1030,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LargeChange<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -1080,7 +1080,7 @@ public static partial class RangeBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T LargeChange<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -1116,7 +1116,7 @@ public static partial class RangeBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLargeChange(
+    public static Avalonia.Data.BindingBase BindLargeChange(
         this Avalonia.Controls.Primitives.RangeBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

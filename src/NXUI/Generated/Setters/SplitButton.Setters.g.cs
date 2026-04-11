@@ -123,7 +123,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSplitButtonCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonCommand(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSplitButtonCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonCommand(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class SplitButtonSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSplitButtonCommand(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSplitButtonCommand(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class SplitButtonSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitButtonCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSplitButtonCommand(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSplitButtonCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonCommandParameter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSplitButtonCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class SplitButtonSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSplitButtonCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSplitButtonCommandParameter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandParameterProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class SplitButtonSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitButtonCommandParameter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSplitButtonCommandParameter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandParameterProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSplitButtonFlyout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonFlyout(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSplitButtonFlyout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonFlyout(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class SplitButtonSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSplitButtonFlyout(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSplitButtonFlyout(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SplitButton.FlyoutProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class SplitButtonSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitButtonFlyout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSplitButtonFlyout(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.FlyoutProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSplitButtonHotKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonHotKey(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSplitButtonHotKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonHotKey(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class SplitButtonSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSplitButtonHotKey(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSplitButtonHotKey(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.SplitButton.HotKeyProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class SplitButtonSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitButtonHotKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSplitButtonHotKey(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.HotKeyProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethod<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -78,7 +78,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SpreadMethod<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -128,7 +128,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T SpreadMethod<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -164,7 +164,7 @@ public static partial class GradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSpreadMethod(
+    public static Avalonia.Data.BindingBase BindSpreadMethod(
         this Avalonia.Media.GradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -339,7 +339,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GradientStops<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -385,7 +385,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> GradientStops<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -435,7 +435,7 @@ public static partial class GradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T GradientStops<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
@@ -471,7 +471,7 @@ public static partial class GradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGradientStops(
+    public static Avalonia.Data.BindingBase BindGradientStops(
         this Avalonia.Media.GradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

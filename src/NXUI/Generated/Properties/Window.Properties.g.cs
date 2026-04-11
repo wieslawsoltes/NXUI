@@ -19,11 +19,6 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Boolean> Window_ExtendClientAreaToDecorationsHint => Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Platform.ExtendClientAreaChromeHints> Window_ExtendClientAreaChromeHints => Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Double> Window_ExtendClientAreaTitleBarHeightHint => Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty;
@@ -44,9 +39,9 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Controls.Window,Avalonia.Thickness> Window_OffScreenMargin => Avalonia.Controls.Window.OffScreenMarginProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
+    /// The <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.SystemDecorations> Window_SystemDecorations => Avalonia.Controls.Window.SystemDecorationsProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.WindowDecorations> Window_WindowDecorations => Avalonia.Controls.Window.WindowDecorationsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
@@ -66,7 +61,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.WindowState> Window_WindowState => Avalonia.Controls.Window.WindowStateProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Window,Avalonia.Controls.WindowState> Window_WindowState => Avalonia.Controls.Window.WindowStateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Window.TitleProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
@@ -87,4 +82,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Window.CanResizeProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> Window_CanResize => Avalonia.Controls.Window.CanResizeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> Window_CanMinimize => Avalonia.Controls.Window.CanMinimizeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> Window_CanMaximize => Avalonia.Controls.Window.CanMaximizeProperty;
 }

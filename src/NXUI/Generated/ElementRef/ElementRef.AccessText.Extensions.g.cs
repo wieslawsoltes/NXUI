@@ -14,7 +14,7 @@ public static partial class AccessTextElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> value.
     /// </summary>
-    public static IObservable<System.Boolean> ObserveShowAccessKey<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Control
+    public static IObservable<System.Boolean> ObserveShowAccessKey<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.AccessText
     {
         return elementRef.Observe(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }

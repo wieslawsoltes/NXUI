@@ -123,7 +123,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitioningContentControlPageTransition(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitioningContentControlPageTransition(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitioningContentControlPageTransition(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitioningContentControlPageTransition(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitioningContentControlPageTransition(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitioningContentControlPageTransition(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitioningContentControlPageTransition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitioningContentControlPageTransition(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTransitioningContentControlIsTransitionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitioningContentControlIsTransitionReversed(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTransitioningContentControlIsTransitionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitioningContentControlIsTransitionReversed(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTransitioningContentControlIsTransitionReversed(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTransitioningContentControlIsTransitionReversed(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTransitioningContentControlIsTransitionReversed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTransitioningContentControlIsTransitionReversed(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, binding));
         return keyFrame;

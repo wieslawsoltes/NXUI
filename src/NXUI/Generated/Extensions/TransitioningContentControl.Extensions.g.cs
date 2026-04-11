@@ -32,7 +32,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -78,7 +78,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PageTransition<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -128,7 +128,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The target object reference.</returns>
     public static T PageTransition<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -164,7 +164,7 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPageTransition(
+    public static Avalonia.Data.BindingBase BindPageTransition(
         this Avalonia.Controls.TransitioningContentControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTransitionReversed<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -316,7 +316,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTransitionReversed<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -366,7 +366,7 @@ public static partial class TransitioningContentControlExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTransitionReversed<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -402,7 +402,7 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTransitionReversed(
+    public static Avalonia.Data.BindingBase BindIsTransitionReversed(
         this Avalonia.Controls.TransitioningContentControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

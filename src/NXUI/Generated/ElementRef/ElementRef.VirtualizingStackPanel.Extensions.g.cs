@@ -37,4 +37,13 @@ public static partial class VirtualizingStackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveCacheLength<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.VirtualizingStackPanel
+    {
+        return elementRef.Observe(Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty);
+    }
+
 }

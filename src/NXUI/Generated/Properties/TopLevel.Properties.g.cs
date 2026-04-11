@@ -19,11 +19,6 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,System.Nullable<Avalonia.Size>> TopLevel_FrameSize => Avalonia.Controls.TopLevel.FrameSizeProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> TopLevel_PointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> TopLevel_TransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;

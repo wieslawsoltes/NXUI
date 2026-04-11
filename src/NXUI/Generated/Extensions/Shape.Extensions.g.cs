@@ -32,7 +32,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -78,7 +78,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Fill<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -128,7 +128,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T Fill<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -164,7 +164,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFill(
+    public static Avalonia.Data.BindingBase BindFill(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -316,7 +316,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Stretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -366,7 +366,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T Stretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -402,7 +402,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStretch(
+    public static Avalonia.Data.BindingBase BindStretch(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -600,7 +600,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -646,7 +646,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Stroke<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -696,7 +696,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T Stroke<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -732,7 +732,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStroke(
+    public static Avalonia.Data.BindingBase BindStroke(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -838,7 +838,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -884,7 +884,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeDashArray<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -934,7 +934,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashArray<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -970,7 +970,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeDashArray(
+    public static Avalonia.Data.BindingBase BindStrokeDashArray(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1076,7 +1076,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1122,7 +1122,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeDashOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1172,7 +1172,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1208,7 +1208,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeDashOffset(
+    public static Avalonia.Data.BindingBase BindStrokeDashOffset(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1314,7 +1314,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1360,7 +1360,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeThickness<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1410,7 +1410,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeThickness<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1446,7 +1446,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeThickness(
+    public static Avalonia.Data.BindingBase BindStrokeThickness(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1552,7 +1552,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1598,7 +1598,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeLineCap<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1648,7 +1648,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeLineCap<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1684,7 +1684,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeLineCap(
+    public static Avalonia.Data.BindingBase BindStrokeLineCap(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1859,7 +1859,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1905,7 +1905,7 @@ public static partial class ShapeExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StrokeJoin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1955,7 +1955,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeJoin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1991,7 +1991,7 @@ public static partial class ShapeExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStrokeJoin(
+    public static Avalonia.Data.BindingBase BindStrokeJoin(
         this Avalonia.Controls.Shapes.Shape obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2141,6 +2141,244 @@ public static partial class ShapeExtensions
     public static T StrokeJoinRound<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Round;
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> StrokeMiterLimit<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return builder.WithValue(PropertyMetadata.Shape_StrokeMiterLimit, Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> StrokeMiterLimit<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return builder.WithBinding(PropertyMetadata.Shape_StrokeMiterLimit, Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> StrokeMiterLimit<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return builder.WithBinding(PropertyMetadata.Shape_StrokeMiterLimit, Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeMiterLimit<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return elementRef.SetValue(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeMiterLimit<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeMiterLimit<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T StrokeMiterLimit<T>(this T obj, System.Double value) where T : Avalonia.Controls.Shapes.Shape
+    {
+        obj[Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T StrokeMiterLimit<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var descriptor = Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T StrokeMiterLimit<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var descriptor = Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindStrokeMiterLimit(
+        this Avalonia.Controls.Shapes.Shape obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveStrokeMiterLimit(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeMiterLimit<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeMiterLimit(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeMiterLimit<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeMiterLimitChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeMiterLimitChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+        handler(obj, observable);
         return obj;
     }
 }

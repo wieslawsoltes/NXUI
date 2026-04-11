@@ -19,7 +19,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDesiredSize(
+    public static Avalonia.Data.BindingBase BindDesiredSize(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Width<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -168,7 +168,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Width<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -218,7 +218,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T Width<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -254,7 +254,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWidth(
+    public static Avalonia.Data.BindingBase BindWidth(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Height<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -406,7 +406,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Height<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -456,7 +456,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T Height<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -492,7 +492,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeight(
+    public static Avalonia.Data.BindingBase BindHeight(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -644,7 +644,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -694,7 +694,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T MinWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -730,7 +730,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinWidth(
+    public static Avalonia.Data.BindingBase BindMinWidth(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +836,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -882,7 +882,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -932,7 +932,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -968,7 +968,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxWidth(
+    public static Avalonia.Data.BindingBase BindMaxWidth(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1074,7 +1074,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1120,7 +1120,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1170,7 +1170,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T MinHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1206,7 +1206,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinHeight(
+    public static Avalonia.Data.BindingBase BindMinHeight(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1312,7 +1312,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1358,7 +1358,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1408,7 +1408,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1444,7 +1444,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxHeight(
+    public static Avalonia.Data.BindingBase BindMaxHeight(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1550,7 +1550,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Margin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1596,7 +1596,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Margin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1646,7 +1646,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T Margin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1682,7 +1682,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMargin(
+    public static Avalonia.Data.BindingBase BindMargin(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1838,7 +1838,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1884,7 +1884,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1934,7 +1934,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -1970,7 +1970,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalAlignment(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2168,7 +2168,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2214,7 +2214,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2264,7 +2264,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2300,7 +2300,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalAlignment(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2498,7 +2498,7 @@ public static partial class LayoutableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLayoutRounding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2544,7 +2544,7 @@ public static partial class LayoutableExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> UseLayoutRounding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2594,7 +2594,7 @@ public static partial class LayoutableExtensions
     /// <returns>The target object reference.</returns>
     public static T UseLayoutRounding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
@@ -2630,7 +2630,7 @@ public static partial class LayoutableExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseLayoutRounding(
+    public static Avalonia.Data.BindingBase BindUseLayoutRounding(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

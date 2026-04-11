@@ -19,7 +19,7 @@ public static partial class NotificationCardExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsClosing(
+    public static Avalonia.Data.BindingBase BindIsClosing(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClosed<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -168,7 +168,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsClosed<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -218,7 +218,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The target object reference.</returns>
     public static T IsClosed<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -254,7 +254,7 @@ public static partial class NotificationCardExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsClosed(
+    public static Avalonia.Data.BindingBase BindIsClosed(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -406,7 +406,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> NotificationType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -456,7 +456,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The target object reference.</returns>
     public static T NotificationType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -492,7 +492,7 @@ public static partial class NotificationCardExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindNotificationType(
+    public static Avalonia.Data.BindingBase BindNotificationType(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -690,7 +690,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CloseOnClick<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -736,7 +736,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CloseOnClick<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -786,7 +786,7 @@ public static partial class NotificationCardExtensions
     /// <returns>The target object reference.</returns>
     public static T CloseOnClick<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -822,7 +822,7 @@ public static partial class NotificationCardExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCloseOnClick(
+    public static Avalonia.Data.BindingBase BindCloseOnClick(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

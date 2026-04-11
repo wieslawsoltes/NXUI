@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> property defined in <see cref="Avalonia.Controls.Documents.Inline"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationCollection> Inline_TextDecorations => Avalonia.Controls.Documents.Inline.TextDecorationsProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.TextDecorationCollection> Inline_TextDecorations => Avalonia.Controls.Documents.Inline.TextDecorationsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Documents.Inline"/> class.

@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Boolean> ComboBox_IsDropDownOpen => Avalonia.Controls.ComboBox.IsDropDownOpenProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> ComboBox_IsEditable => Avalonia.Controls.ComboBox.IsEditableProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Double> ComboBox_MaxDropDownHeight => Avalonia.Controls.ComboBox.MaxDropDownHeightProperty;
@@ -42,6 +47,11 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ComboBox_VerticalContentAlignment => Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ComboBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.String> ComboBox_Text => Avalonia.Controls.ComboBox.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.

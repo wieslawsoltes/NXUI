@@ -24,6 +24,11 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.PlaybackDirection> Animation_PlaybackDirection => Avalonia.Animation.Animation.PlaybackDirectionProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.PlaybackBehavior> Animation_PlaybackBehavior => Avalonia.Animation.Animation.PlaybackBehaviorProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.FillMode> Animation_FillMode => Avalonia.Animation.Animation.FillModeProperty;

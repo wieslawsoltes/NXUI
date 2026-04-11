@@ -123,7 +123,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownAllowSpin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownAllowSpin(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownAllowSpin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownAllowSpin(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownAllowSpin(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownAllowSpin(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.AllowSpinProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownAllowSpin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownAllowSpin(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.AllowSpinProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownButtonSpinnerLocation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownButtonSpinnerLocation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownButtonSpinnerLocation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownButtonSpinnerLocation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownButtonSpinnerLocation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownButtonSpinnerLocation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownButtonSpinnerLocation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownButtonSpinnerLocation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownShowButtonSpinner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownShowButtonSpinner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownShowButtonSpinner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownShowButtonSpinner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownShowButtonSpinner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownShowButtonSpinner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownShowButtonSpinner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownShowButtonSpinner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownClipValueToMinMax(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownClipValueToMinMax(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownClipValueToMinMax(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownClipValueToMinMax(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownClipValueToMinMax(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownClipValueToMinMax(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownClipValueToMinMax(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownClipValueToMinMax(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownNumberFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownNumberFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownNumberFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownNumberFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownNumberFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownNumberFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.NumberFormatProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownNumberFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownNumberFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.NumberFormatProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownFormatString(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownFormatString(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownFormatString(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownFormatString(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownFormatString(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownFormatString(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.FormatStringProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownFormatString(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownFormatString(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.FormatStringProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownIncrement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownIncrement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownIncrement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownIncrement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.IncrementProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownIncrement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownIncrement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.IncrementProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownIsReadOnly(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownIsReadOnly(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownIsReadOnly(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownIsReadOnly(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownIsReadOnly(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownIsReadOnly(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownIsReadOnly(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownIsReadOnly(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownMaximum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownMaximum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownMaximum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownMaximum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.MaximumProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownMaximum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownMaximum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.MaximumProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownMinimum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownMinimum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownMinimum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownMinimum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.MinimumProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownMinimum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownMinimum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.MinimumProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownParsingNumberStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownParsingNumberStyle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownParsingNumberStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownParsingNumberStyle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownParsingNumberStyle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownParsingNumberStyle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownParsingNumberStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownParsingNumberStyle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextProperty, binding));
         return keyFrame;
@@ -2031,7 +2031,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownTextConverter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownTextConverter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2045,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownTextConverter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownTextConverter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2059,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownTextConverter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownTextConverter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, binding));
         return style;
@@ -2071,7 +2071,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownTextConverter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownTextConverter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, binding));
         return keyFrame;
@@ -2190,7 +2190,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownValue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2204,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownValue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2218,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownValue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownValue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, binding));
         return style;
@@ -2230,7 +2230,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, binding));
         return keyFrame;
@@ -2238,160 +2238,319 @@ public static partial class NumericUpDownSetters
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownWatermark(this StyleBuilder builder, System.String value)
+    public static StyleBuilder SetNumericUpDownPlaceholderText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownWatermark(this KeyFrameBuilder builder, System.String value)
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value));
         });
     }
 
-    // Avalonia.Controls.NumericUpDown.WatermarkProperty
+    // Avalonia.Controls.NumericUpDown.PlaceholderTextProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownWatermark(this Style style, System.String value)
+    public static Style SetNumericUpDownPlaceholderText(this Style style, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownWatermark(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetNumericUpDownPlaceholderText(this KeyFrame keyFrame, System.String value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownWatermark(this StyleBuilder builder, IObservable<System.String> observable)
+    public static StyleBuilder SetNumericUpDownPlaceholderText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownWatermark(this KeyFrameBuilder builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownWatermark(this Style style, IObservable<System.String> observable)
+    public static Style SetNumericUpDownPlaceholderText(this Style style, IObservable<System.String> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownWatermark(this KeyFrame keyFrame, IObservable<System.String> observable)
+    public static KeyFrame SetNumericUpDownPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownPlaceholderText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownPlaceholderText(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownPlaceholderText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.WatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetNumericUpDownPlaceholderForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownPlaceholderForeground(this Style style, Avalonia.Media.IBrush value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetNumericUpDownPlaceholderForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownPlaceholderForeground(this Style style, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetNumericUpDownPlaceholderForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetNumericUpDownPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownPlaceholderForeground(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty, binding));
         return keyFrame;
     }
 
@@ -2508,7 +2667,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2681,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2695,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownHorizontalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, binding));
         return style;
@@ -2548,7 +2707,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, binding));
         return keyFrame;
@@ -2667,7 +2826,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2840,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +2854,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownVerticalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, binding));
         return style;
@@ -2707,7 +2866,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, binding));
         return keyFrame;
@@ -2826,7 +2985,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownTextAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +2999,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +3013,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownTextAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
         return style;
@@ -2866,7 +3025,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownTextAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
         return keyFrame;
@@ -2985,7 +3144,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownInnerLeftContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownInnerLeftContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +3158,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3172,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownInnerLeftContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownInnerLeftContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, binding));
         return style;
@@ -3025,7 +3184,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, binding));
         return keyFrame;
@@ -3144,7 +3303,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNumericUpDownInnerRightContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNumericUpDownInnerRightContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3317,7 @@ public static partial class NumericUpDownSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNumericUpDownInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNumericUpDownInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3331,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownInnerRightContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNumericUpDownInnerRightContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, binding));
         return style;
@@ -3184,7 +3343,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNumericUpDownInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, binding));
         return keyFrame;

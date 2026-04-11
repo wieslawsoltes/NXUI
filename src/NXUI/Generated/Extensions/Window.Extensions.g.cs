@@ -32,7 +32,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -78,7 +78,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SizeToContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -128,7 +128,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T SizeToContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -164,7 +164,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSizeToContent(
+    public static Avalonia.Data.BindingBase BindSizeToContent(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -362,7 +362,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaToDecorationsHint<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -408,7 +408,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ExtendClientAreaToDecorationsHint<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -458,7 +458,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaToDecorationsHint<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -494,7 +494,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindExtendClientAreaToDecorationsHint(
+    public static Avalonia.Data.BindingBase BindExtendClientAreaToDecorationsHint(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -580,359 +580,6 @@ public static partial class WindowExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> literal value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="value">The value.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(this ElementBuilder<T> builder, Avalonia.Platform.ExtendClientAreaChromeHints value) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, value);
-    }
-
-    /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(
-        this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        return builder.WithBinding(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, binding, mode, priority);
-    }
-
-    /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(
-        this ElementBuilder<T> builder,
-        IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        return builder.WithBinding(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding(), mode, priority);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="value">The value.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> ExtendClientAreaChromeHints<T>(this ElementRef<T> elementRef, Avalonia.Platform.ExtendClientAreaChromeHints value) where T : Avalonia.Controls.Window
-    {
-        return elementRef.SetValue(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, value);
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> ExtendClientAreaChromeHints<T>(
-        this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        return elementRef.SetBinding(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, binding, mode, priority);
-    }
-
-    /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> on a referenced control.
-    /// </summary>
-    /// <param name="elementRef">The target element reference.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>The element reference.</returns>
-    public static ElementRef<T> ExtendClientAreaChromeHints<T>(
-        this ElementRef<T> elementRef,
-        IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        return elementRef.SetBinding(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding(), mode, priority);
-    }
-
-    // Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHints<T>(this T obj, Avalonia.Platform.ExtendClientAreaChromeHints value) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHints<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        var descriptor = Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHints<T>(
-        this T obj,
-        IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
-    {
-        var descriptor = Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindExtendClientAreaChromeHints(
-        this Avalonia.Controls.Window obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> ObserveExtendClientAreaChromeHints(this Avalonia.Controls.Window obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnExtendClientAreaChromeHints<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints>> handler) where T : Avalonia.Controls.Window
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Platform.ExtendClientAreaChromeHints>> ObserveBindingExtendClientAreaChromeHints(this Avalonia.Controls.Window obj)
-    {
-        return obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and binding observable.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnBindingExtendClientAreaChromeHints<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Platform.ExtendClientAreaChromeHints>>> handler) where T : Avalonia.Controls.Window
-    {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtendClientAreaChromeHintsChanged(this Avalonia.Controls.Window obj)
-    {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and property change observable.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnExtendClientAreaChromeHintsChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
-    {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHintsNoChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHintsNoChrome<T>(this T obj) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
-        return obj;
-    }
-
-    /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHintsSystemChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHintsSystemChrome<T>(this T obj) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome;
-        return obj;
-    }
-
-    /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHintsDefault<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.Default);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.Default"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHintsDefault<T>(this T obj) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.Default;
-        return obj;
-    }
-
-    /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHintsPreferSystemChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHintsPreferSystemChrome<T>(this T obj) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome;
-        return obj;
-    }
-
-    /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ExtendClientAreaChromeHintsOSXThickTitleBar<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
-    {
-        return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar);
-    }
-
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T ExtendClientAreaChromeHintsOSXThickTitleBar<T>(this T obj) where T : Avalonia.Controls.Window
-    {
-        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar;
-        return obj;
-    }
-
-
-    /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -953,7 +600,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaTitleBarHeightHint<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -999,7 +646,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ExtendClientAreaTitleBarHeightHint<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -1049,7 +696,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaTitleBarHeightHint<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -1085,7 +732,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindExtendClientAreaTitleBarHeightHint(
+    public static Avalonia.Data.BindingBase BindExtendClientAreaTitleBarHeightHint(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1178,7 +825,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsExtendedIntoWindowDecorations(
+    public static Avalonia.Data.BindingBase BindIsExtendedIntoWindowDecorations(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1268,7 +915,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWindowDecorationMargin(
+    public static Avalonia.Data.BindingBase BindWindowDecorationMargin(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1358,7 +1005,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffScreenMargin(
+    public static Avalonia.Data.BindingBase BindOffScreenMargin(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1441,113 +1088,113 @@ public static partial class WindowExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorations<T>(this ElementBuilder<T> builder, Avalonia.Controls.SystemDecorations value) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> WindowDecorations<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowDecorations value) where T : Avalonia.Controls.Window
     {
-        return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, value);
+        return builder.WithValue(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorations<T>(
+    public static ElementBuilder<T> WindowDecorations<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        return builder.WithBinding(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorations<T>(
+    public static ElementBuilder<T> WindowDecorations<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.SystemDecorations> observable,
+        IObservable<Avalonia.Controls.WindowDecorations> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        return builder.WithBinding(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> SystemDecorations<T>(this ElementRef<T> elementRef, Avalonia.Controls.SystemDecorations value) where T : Avalonia.Controls.Window
+    public static ElementRef<T> WindowDecorations<T>(this ElementRef<T> elementRef, Avalonia.Controls.WindowDecorations value) where T : Avalonia.Controls.Window
     {
-        return elementRef.SetValue(Avalonia.Controls.Window.SystemDecorationsProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.Window.WindowDecorationsProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> SystemDecorations<T>(
+    public static ElementRef<T> WindowDecorations<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        return elementRef.SetBinding(Avalonia.Controls.Window.SystemDecorationsProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.Window.WindowDecorationsProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> SystemDecorations<T>(
+    public static ElementRef<T> WindowDecorations<T>(
         this ElementRef<T> elementRef,
-        IObservable<Avalonia.Controls.SystemDecorations> observable,
+        IObservable<Avalonia.Controls.WindowDecorations> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        return elementRef.SetBinding(Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.Window.WindowDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.Window.SystemDecorationsProperty
+    // Avalonia.Controls.Window.WindowDecorationsProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorations<T>(this T obj, Avalonia.Controls.SystemDecorations value) where T : Avalonia.Controls.Window
+    public static T WindowDecorations<T>(this T obj, Avalonia.Controls.WindowDecorations value) where T : Avalonia.Controls.Window
     {
-        obj[Avalonia.Controls.Window.SystemDecorationsProperty] = value;
+        obj[Avalonia.Controls.Window.WindowDecorationsProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -1555,19 +1202,19 @@ public static partial class WindowExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorations<T>(
+    public static T WindowDecorations<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        var descriptor = Avalonia.Controls.Window.SystemDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Window.WindowDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -1575,174 +1222,174 @@ public static partial class WindowExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorations<T>(
+    public static T WindowDecorations<T>(
         this T obj,
-        IObservable<Avalonia.Controls.SystemDecorations> observable,
+        IObservable<Avalonia.Controls.WindowDecorations> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
-        var descriptor = Avalonia.Controls.Window.SystemDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Window.WindowDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSystemDecorations(
+    /// <returns>A <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindWindowDecorations(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.Window.SystemDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Window.WindowDecorationsProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.SystemDecorations> ObserveSystemDecorations(this Avalonia.Controls.Window obj)
+    public static IObservable<Avalonia.Controls.WindowDecorations> ObserveWindowDecorations(this Avalonia.Controls.Window obj)
     {
-        return obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        return obj.GetObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSystemDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.SystemDecorations>> handler) where T : Avalonia.Controls.Window
+    public static T OnWindowDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowDecorations>> handler) where T : Avalonia.Controls.Window
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.SystemDecorations>> ObserveBindingSystemDecorations(this Avalonia.Controls.Window obj)
+    public static IObservable<BindingValue<Avalonia.Controls.WindowDecorations>> ObserveBindingWindowDecorations(this Avalonia.Controls.Window obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSystemDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.SystemDecorations>>> handler) where T : Avalonia.Controls.Window
+    public static T OnBindingWindowDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowDecorations>>> handler) where T : Avalonia.Controls.Window
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSystemDecorationsChanged(this Avalonia.Controls.Window obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowDecorationsChanged(this Avalonia.Controls.Window obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSystemDecorationsChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    public static T OnWindowDecorationsChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorationsNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> WindowDecorationsNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
-        return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.None);
+        return builder.WithValue(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, Avalonia.Controls.WindowDecorations.None);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.None"/>.
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> property value to <see cref="Avalonia.Controls.WindowDecorations.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorationsNone<T>(this T obj) where T : Avalonia.Controls.Window
+    public static T WindowDecorationsNone<T>(this T obj) where T : Avalonia.Controls.Window
     {
-        obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.None;
+        obj[Avalonia.Controls.Window.WindowDecorationsProperty] = Avalonia.Controls.WindowDecorations.None;
         return obj;
     }
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorationsBorderOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> WindowDecorationsBorderOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
-        return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.BorderOnly);
+        return builder.WithValue(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, Avalonia.Controls.WindowDecorations.BorderOnly);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.BorderOnly"/>.
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> property value to <see cref="Avalonia.Controls.WindowDecorations.BorderOnly"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorationsBorderOnly<T>(this T obj) where T : Avalonia.Controls.Window
+    public static T WindowDecorationsBorderOnly<T>(this T obj) where T : Avalonia.Controls.Window
     {
-        obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.BorderOnly;
+        obj[Avalonia.Controls.Window.WindowDecorationsProperty] = Avalonia.Controls.WindowDecorations.BorderOnly;
         return obj;
     }
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemDecorationsFull<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> WindowDecorationsFull<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
-        return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.Full);
+        return builder.WithValue(PropertyMetadata.Window_WindowDecorations, Avalonia.Controls.Window.WindowDecorationsProperty, Avalonia.Controls.WindowDecorations.Full);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.Full"/>.
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> property value to <see cref="Avalonia.Controls.WindowDecorations.Full"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemDecorationsFull<T>(this T obj) where T : Avalonia.Controls.Window
+    public static T WindowDecorationsFull<T>(this T obj) where T : Avalonia.Controls.Window
     {
-        obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.Full;
+        obj[Avalonia.Controls.Window.WindowDecorationsProperty] = Avalonia.Controls.WindowDecorations.Full;
         return obj;
     }
 
@@ -1768,7 +1415,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowActivated<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -1814,7 +1461,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowActivated<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -1864,7 +1511,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowActivated<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -1900,7 +1547,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowActivated(
+    public static Avalonia.Data.BindingBase BindShowActivated(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2006,7 +1653,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowInTaskbar<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2052,7 +1699,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowInTaskbar<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2102,7 +1749,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowInTaskbar<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2138,7 +1785,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowInTaskbar(
+    public static Avalonia.Data.BindingBase BindShowInTaskbar(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2244,7 +1891,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehavior<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2290,7 +1937,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClosingBehavior<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2340,7 +1987,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T ClosingBehavior<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2376,7 +2023,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClosingBehavior(
+    public static Avalonia.Data.BindingBase BindClosingBehavior(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2528,7 +2175,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowState<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2574,7 +2221,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> WindowState<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2624,7 +2271,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T WindowState<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2660,7 +2307,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.WindowStateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWindowState(
+    public static Avalonia.Data.BindingBase BindWindowState(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2858,7 +2505,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Title<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2904,7 +2551,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Title<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2954,7 +2601,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T Title<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2990,7 +2637,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.TitleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTitle(
+    public static Avalonia.Data.BindingBase BindTitle(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3096,7 +2743,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3142,7 +2789,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Icon<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3192,7 +2839,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T Icon<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3228,7 +2875,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.IconProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIcon(
+    public static Avalonia.Data.BindingBase BindIcon(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3334,7 +2981,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3380,7 +3027,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> WindowStartupLocation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3430,7 +3077,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T WindowStartupLocation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3466,7 +3113,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWindowStartupLocation(
+    public static Avalonia.Data.BindingBase BindWindowStartupLocation(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3641,7 +3288,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanResize<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3687,7 +3334,7 @@ public static partial class WindowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CanResize<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3737,7 +3384,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T CanResize<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -3773,7 +3420,7 @@ public static partial class WindowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Window.CanResizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanResize(
+    public static Avalonia.Data.BindingBase BindCanResize(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3853,6 +3500,482 @@ public static partial class WindowExtensions
     public static T OnCanResizeChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanResizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMinimize<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        return builder.WithValue(PropertyMetadata.Window_CanMinimize, Avalonia.Controls.Window.CanMinimizeProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMinimize<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return builder.WithBinding(PropertyMetadata.Window_CanMinimize, Avalonia.Controls.Window.CanMinimizeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMinimize<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return builder.WithBinding(PropertyMetadata.Window_CanMinimize, Avalonia.Controls.Window.CanMinimizeProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMinimize<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetValue(Avalonia.Controls.Window.CanMinimizeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMinimize<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Window.CanMinimizeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMinimize<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Window.CanMinimizeProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Window.CanMinimizeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMinimize<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.CanMinimizeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMinimize<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        var descriptor = Avalonia.Controls.Window.CanMinimizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMinimize<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        var descriptor = Avalonia.Controls.Window.CanMinimizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindCanMinimize(
+        this Avalonia.Controls.Window obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Window.CanMinimizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveCanMinimize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanMinimize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanMinimize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanMinimize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanMinimizeChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanMinimizeChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanMinimizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMaximize<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        return builder.WithValue(PropertyMetadata.Window_CanMaximize, Avalonia.Controls.Window.CanMaximizeProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMaximize<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return builder.WithBinding(PropertyMetadata.Window_CanMaximize, Avalonia.Controls.Window.CanMaximizeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> CanMaximize<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return builder.WithBinding(PropertyMetadata.Window_CanMaximize, Avalonia.Controls.Window.CanMaximizeProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMaximize<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetValue(Avalonia.Controls.Window.CanMaximizeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMaximize<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Window.CanMaximizeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanMaximize<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Window.CanMaximizeProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Window.CanMaximizeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMaximize<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.CanMaximizeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMaximize<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        var descriptor = Avalonia.Controls.Window.CanMaximizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CanMaximize<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
+    {
+        var descriptor = Avalonia.Controls.Window.CanMaximizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindCanMaximize(
+        this Avalonia.Controls.Window obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Window.CanMaximizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveCanMaximize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.CanMaximizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanMaximize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Window.CanMaximizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanMaximize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.CanMaximizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanMaximize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.CanMaximizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanMaximizeChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanMaximizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanMaximizeChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanMaximizeProperty);
         handler(obj, observable);
         return obj;
     }

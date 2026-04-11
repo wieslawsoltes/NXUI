@@ -119,19 +119,19 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Double> TextBox_LineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// The <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextBox_LetterSpacing => Avalonia.Controls.TextBox.LetterSpacingProperty;
+    public static Avalonia.StyledProperty<System.String> TextBox_PlaceholderText => Avalonia.Controls.TextBox.PlaceholderTextProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// The <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextBox_Watermark => Avalonia.Controls.TextBox.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_UseFloatingPlaceholder => Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// The <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBox_UseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBox_PlaceholderForeground => Avalonia.Controls.TextBox.PlaceholderForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.

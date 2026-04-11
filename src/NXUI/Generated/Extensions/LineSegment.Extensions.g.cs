@@ -32,7 +32,7 @@ public static partial class LineSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static LineSegmentBuilder Point(
         this LineSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class LineSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.LineSegment> Point(
         this ElementRef<Avalonia.Media.LineSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class LineSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LineSegment Point(
         this Avalonia.Media.LineSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class LineSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.LineSegment.PointProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoint(
+    public static Avalonia.Data.BindingBase BindPoint(
         this Avalonia.Media.LineSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

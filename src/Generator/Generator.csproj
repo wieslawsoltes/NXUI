@@ -12,7 +12,6 @@
     <PackageReference Include="Avalonia.Controls.ColorPicker" Version="$(AvaloniaVersion)" />
     <PackageReference Include="Avalonia.Controls.ItemsRepeater" Version="$(AvaloniaControlsItemsRepeaterVersion)" />
     <PackageReference Include="Avalonia.Controls.DataGrid" Version="$(AvaloniaVersion)" />
-    <PackageReference Include="Avalonia.Controls.TreeDataGrid" Version="$(AvaloniaTreeDataGridVersion)" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reflectonia\Reflectonia.csproj" />

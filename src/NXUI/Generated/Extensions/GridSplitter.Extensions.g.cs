@@ -32,7 +32,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -78,7 +78,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ResizeDirection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -128,7 +128,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T ResizeDirection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -164,7 +164,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindResizeDirection(
+    public static Avalonia.Data.BindingBase BindResizeDirection(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -339,7 +339,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehavior<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -385,7 +385,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ResizeBehavior<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -435,7 +435,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T ResizeBehavior<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -471,7 +471,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindResizeBehavior(
+    public static Avalonia.Data.BindingBase BindResizeBehavior(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -669,7 +669,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowsPreview<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -715,7 +715,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowsPreview<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -765,7 +765,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowsPreview<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -801,7 +801,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowsPreview(
+    public static Avalonia.Data.BindingBase BindShowsPreview(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -907,7 +907,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KeyboardIncrement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -953,7 +953,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> KeyboardIncrement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1003,7 +1003,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T KeyboardIncrement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1039,7 +1039,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindKeyboardIncrement(
+    public static Avalonia.Data.BindingBase BindKeyboardIncrement(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1145,7 +1145,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DragIncrement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1191,7 +1191,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DragIncrement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1241,7 +1241,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T DragIncrement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1277,7 +1277,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDragIncrement(
+    public static Avalonia.Data.BindingBase BindDragIncrement(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1383,7 +1383,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PreviewContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1429,7 +1429,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PreviewContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1479,7 +1479,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T PreviewContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -1515,7 +1515,7 @@ public static partial class GridSplitterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPreviewContent(
+    public static Avalonia.Data.BindingBase BindPreviewContent(
         this Avalonia.Controls.GridSplitter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

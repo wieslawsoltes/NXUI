@@ -14,7 +14,7 @@ public static class ElementRefBindingExtensions
     /// <summary>
     /// Creates a one-way binding that mirrors the specified property from the referenced element.
     /// </summary>
-    public static IBinding Bind<TControl, TValue>(this ElementRef<TControl> elementRef, AvaloniaProperty<TValue> property)
+    public static BindingBase Bind<TControl, TValue>(this ElementRef<TControl> elementRef, AvaloniaProperty<TValue> property)
         where TControl : AvaloniaObject
     {
         return elementRef.Observe(property).ToBinding();
@@ -23,7 +23,7 @@ public static class ElementRefBindingExtensions
     /// <summary>
     /// Creates a one-way binding that projects the referenced property through <paramref name="selector"/>.
     /// </summary>
-    public static IBinding Bind<TControl, TValue, TResult>(
+    public static BindingBase Bind<TControl, TValue, TResult>(
         this ElementRef<TControl> elementRef,
         AvaloniaProperty<TValue> property,
         Func<TValue, TResult> selector)

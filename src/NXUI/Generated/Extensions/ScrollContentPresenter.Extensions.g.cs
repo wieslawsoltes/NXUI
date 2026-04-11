@@ -32,7 +32,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanHorizontallyScroll<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -78,7 +78,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CanHorizontallyScroll<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -128,7 +128,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T CanHorizontallyScroll<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -164,7 +164,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(
+    public static Avalonia.Data.BindingBase BindCanHorizontallyScroll(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanVerticallyScroll<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -316,7 +316,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CanVerticallyScroll<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -366,7 +366,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T CanVerticallyScroll<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -402,7 +402,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanVerticallyScroll(
+    public static Avalonia.Data.BindingBase BindCanVerticallyScroll(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +495,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindExtent(
+    public static Avalonia.Data.BindingBase BindExtent(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Offset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -644,7 +644,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Offset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -694,7 +694,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Offset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -730,7 +730,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffset(
+    public static Avalonia.Data.BindingBase BindOffset(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -823,7 +823,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindViewport(
+    public static Avalonia.Data.BindingBase BindViewport(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -926,7 +926,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSnapPointsType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -972,7 +972,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalSnapPointsType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1022,7 +1022,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalSnapPointsType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1058,7 +1058,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalSnapPointsType(
+    public static Avalonia.Data.BindingBase BindHorizontalSnapPointsType(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1233,7 +1233,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSnapPointsType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1279,7 +1279,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalSnapPointsType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1329,7 +1329,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalSnapPointsType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1365,7 +1365,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalSnapPointsType(
+    public static Avalonia.Data.BindingBase BindVerticalSnapPointsType(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1540,7 +1540,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSnapPointsAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1586,7 +1586,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalSnapPointsAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1636,7 +1636,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalSnapPointsAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1672,7 +1672,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalSnapPointsAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalSnapPointsAlignment(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1847,7 +1847,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSnapPointsAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1893,7 +1893,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalSnapPointsAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1943,7 +1943,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalSnapPointsAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -1979,7 +1979,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalSnapPointsAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalSnapPointsAlignment(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2154,7 +2154,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsScrollChainingEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -2200,7 +2200,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsScrollChainingEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -2250,7 +2250,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T IsScrollChainingEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -2286,7 +2286,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsScrollChainingEnabled(
+    public static Avalonia.Data.BindingBase BindIsScrollChainingEnabled(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

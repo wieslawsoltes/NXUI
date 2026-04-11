@@ -32,7 +32,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentX<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -78,7 +78,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignmentX<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -128,7 +128,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignmentX<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -164,7 +164,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignmentX(
+    public static Avalonia.Data.BindingBase BindAlignmentX(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -339,7 +339,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentY<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -385,7 +385,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AlignmentY<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -435,7 +435,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T AlignmentY<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -471,7 +471,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAlignmentY(
+    public static Avalonia.Data.BindingBase BindAlignmentY(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -646,7 +646,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DestinationRect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -692,7 +692,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DestinationRect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -742,7 +742,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T DestinationRect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -778,7 +778,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDestinationRect(
+    public static Avalonia.Data.BindingBase BindDestinationRect(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -884,7 +884,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -930,7 +930,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SourceRect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -980,7 +980,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T SourceRect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1016,7 +1016,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSourceRect(
+    public static Avalonia.Data.BindingBase BindSourceRect(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1122,7 +1122,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1168,7 +1168,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Stretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1218,7 +1218,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T Stretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1254,7 +1254,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.StretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStretch(
+    public static Avalonia.Data.BindingBase BindStretch(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1452,7 +1452,7 @@ public static partial class TileBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1498,7 +1498,7 @@ public static partial class TileBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TileMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1548,7 +1548,7 @@ public static partial class TileBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T TileMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
@@ -1584,7 +1584,7 @@ public static partial class TileBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTileMode(
+    public static Avalonia.Data.BindingBase BindTileMode(
         this Avalonia.Media.TileBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

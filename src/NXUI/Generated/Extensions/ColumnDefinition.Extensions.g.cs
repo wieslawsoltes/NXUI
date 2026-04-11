@@ -32,7 +32,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -78,7 +78,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -128,7 +128,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -164,7 +164,7 @@ public static partial class ColumnDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxWidth(
+    public static Avalonia.Data.BindingBase BindMaxWidth(
         this Avalonia.Controls.ColumnDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -316,7 +316,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -366,7 +366,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T MinWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -402,7 +402,7 @@ public static partial class ColumnDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinWidth(
+    public static Avalonia.Data.BindingBase BindMinWidth(
         this Avalonia.Controls.ColumnDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Width<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -554,7 +554,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Width<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -604,7 +604,7 @@ public static partial class ColumnDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T Width<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColumnDefinition
     {
@@ -640,7 +640,7 @@ public static partial class ColumnDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWidth(
+    public static Avalonia.Data.BindingBase BindWidth(
         this Avalonia.Controls.ColumnDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

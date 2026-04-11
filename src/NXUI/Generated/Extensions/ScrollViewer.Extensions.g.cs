@@ -32,7 +32,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BringIntoViewOnFocusChange<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -78,7 +78,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BringIntoViewOnFocusChange<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -128,7 +128,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T BringIntoViewOnFocusChange<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -164,7 +164,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBringIntoViewOnFocusChange(
+    public static Avalonia.Data.BindingBase BindBringIntoViewOnFocusChange(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -257,7 +257,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindExtent(
+    public static Avalonia.Data.BindingBase BindExtent(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Offset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
     {
@@ -406,7 +406,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Offset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
     {
@@ -456,7 +456,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T Offset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
     {
@@ -492,7 +492,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffset(
+    public static Avalonia.Data.BindingBase BindOffset(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -585,7 +585,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindViewport(
+    public static Avalonia.Data.BindingBase BindViewport(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -675,7 +675,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLargeChange(
+    public static Avalonia.Data.BindingBase BindLargeChange(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -765,7 +765,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSmallChange(
+    public static Avalonia.Data.BindingBase BindSmallChange(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -855,7 +855,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindScrollBarMaximum(
+    public static Avalonia.Data.BindingBase BindScrollBarMaximum(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -958,7 +958,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1004,7 +1004,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalScrollBarVisibility<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1054,7 +1054,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalScrollBarVisibility<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1090,7 +1090,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalScrollBarVisibility(
+    public static Avalonia.Data.BindingBase BindHorizontalScrollBarVisibility(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1288,7 +1288,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSnapPointsType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1334,7 +1334,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalSnapPointsType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1384,7 +1384,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalSnapPointsType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1420,7 +1420,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalSnapPointsType(
+    public static Avalonia.Data.BindingBase BindHorizontalSnapPointsType(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1595,7 +1595,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSnapPointsType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1641,7 +1641,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalSnapPointsType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1691,7 +1691,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalSnapPointsType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1727,7 +1727,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalSnapPointsType(
+    public static Avalonia.Data.BindingBase BindVerticalSnapPointsType(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1902,7 +1902,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSnapPointsAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1948,7 +1948,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalSnapPointsAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1998,7 +1998,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalSnapPointsAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2034,7 +2034,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalSnapPointsAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalSnapPointsAlignment(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2209,7 +2209,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSnapPointsAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2255,7 +2255,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalSnapPointsAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2305,7 +2305,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalSnapPointsAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2341,7 +2341,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalSnapPointsAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalSnapPointsAlignment(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2516,7 +2516,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2562,7 +2562,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalScrollBarVisibility<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2612,7 +2612,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalScrollBarVisibility<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2648,7 +2648,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalScrollBarVisibility(
+    public static Avalonia.Data.BindingBase BindVerticalScrollBarVisibility(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2833,7 +2833,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsExpanded(
+    public static Avalonia.Data.BindingBase BindIsExpanded(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2936,7 +2936,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowAutoHide<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2982,7 +2982,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AllowAutoHide<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3032,7 +3032,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T AllowAutoHide<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3068,7 +3068,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAllowAutoHide(
+    public static Avalonia.Data.BindingBase BindAllowAutoHide(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3174,7 +3174,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsScrollChainingEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3220,7 +3220,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsScrollChainingEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3270,7 +3270,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsScrollChainingEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3306,7 +3306,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsScrollChainingEnabled(
+    public static Avalonia.Data.BindingBase BindIsScrollChainingEnabled(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3412,7 +3412,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsScrollInertiaEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3458,7 +3458,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsScrollInertiaEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3508,7 +3508,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsScrollInertiaEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3544,7 +3544,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsScrollInertiaEnabled(
+    public static Avalonia.Data.BindingBase BindIsScrollInertiaEnabled(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3650,7 +3650,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDeferredScrollingEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3696,7 +3696,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDeferredScrollingEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3746,7 +3746,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDeferredScrollingEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -3782,7 +3782,7 @@ public static partial class ScrollViewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDeferredScrollingEnabled(
+    public static Avalonia.Data.BindingBase BindIsDeferredScrollingEnabled(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

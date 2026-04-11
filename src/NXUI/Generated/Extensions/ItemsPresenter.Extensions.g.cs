@@ -32,7 +32,7 @@ public static partial class ItemsPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
@@ -78,7 +78,7 @@ public static partial class ItemsPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
@@ -128,7 +128,7 @@ public static partial class ItemsPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
@@ -164,7 +164,7 @@ public static partial class ItemsPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsPanel(
+    public static Avalonia.Data.BindingBase BindItemsPanel(
         this Avalonia.Controls.Presenters.ItemsPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

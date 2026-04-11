@@ -123,7 +123,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRangeBaseMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseMinimum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRangeBaseMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseMinimum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class RangeBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRangeBaseMinimum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRangeBaseMinimum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MinimumProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class RangeBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRangeBaseMinimum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRangeBaseMinimum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MinimumProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRangeBaseMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseMaximum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRangeBaseMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseMaximum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class RangeBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRangeBaseMaximum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRangeBaseMaximum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MaximumProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class RangeBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRangeBaseMaximum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRangeBaseMaximum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MaximumProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRangeBaseValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseValue(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRangeBaseValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseValue(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class RangeBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRangeBaseValue(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRangeBaseValue(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.ValueProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class RangeBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRangeBaseValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRangeBaseValue(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.ValueProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRangeBaseSmallChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseSmallChange(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRangeBaseSmallChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseSmallChange(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class RangeBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRangeBaseSmallChange(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRangeBaseSmallChange(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class RangeBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRangeBaseSmallChange(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRangeBaseSmallChange(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRangeBaseLargeChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseLargeChange(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRangeBaseLargeChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseLargeChange(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class RangeBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRangeBaseLargeChange(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRangeBaseLargeChange(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class RangeBaseSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRangeBaseLargeChange(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRangeBaseLargeChange(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, binding));
         return keyFrame;

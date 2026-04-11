@@ -50,7 +50,7 @@ public static partial class SelectingItemsControlElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> value.
     /// </summary>
-    public static IObservable<Avalonia.Data.IBinding?> ObserveSelectedValueBinding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static IObservable<Avalonia.Data.BindingBase?> ObserveSelectedValueBinding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }

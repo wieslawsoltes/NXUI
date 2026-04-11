@@ -19,4 +19,31 @@ public static partial class CarouselElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Carousel.PageTransitionProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsSwipeEnabled<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Carousel
+    {
+        return elementRef.Observe(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveViewportFraction<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Carousel
+    {
+        return elementRef.Observe(Avalonia.Controls.Carousel.ViewportFractionProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsSwiping<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Carousel
+    {
+        return elementRef.Observe(Avalonia.Controls.Carousel.IsSwipingProperty);
+    }
+
 }

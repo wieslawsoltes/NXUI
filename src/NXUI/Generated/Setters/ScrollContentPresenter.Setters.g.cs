@@ -123,7 +123,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterCanHorizontallyScroll(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterCanHorizontallyScroll(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterCanHorizontallyScroll(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterCanHorizontallyScroll(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterCanHorizontallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterCanHorizontallyScroll(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterCanVerticallyScroll(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterCanVerticallyScroll(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterCanVerticallyScroll(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterCanVerticallyScroll(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterCanVerticallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterCanVerticallyScroll(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterHorizontalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterHorizontalSnapPointsType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterVerticalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterVerticalSnapPointsType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterVerticalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterVerticalSnapPointsAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollContentPresenterIsScrollChainingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollContentPresenterIsScrollChainingEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterIsScrollChainingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollContentPresenterIsScrollChainingEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class ScrollContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The builder instance.</returns>
     public static CalendarItemBuilder HeaderBackground(
         this CalendarItemBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(
         this ElementRef<Avalonia.Controls.Primitives.CalendarItem> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(
         this Avalonia.Controls.Primitives.CalendarItem obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeaderBackground(
+    public static Avalonia.Data.BindingBase BindHeaderBackground(
         this Avalonia.Controls.Primitives.CalendarItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The builder instance.</returns>
     public static CalendarItemBuilder DayTitleTemplate(
         this CalendarItemBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(
         this ElementRef<Avalonia.Controls.Primitives.CalendarItem> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(
         this Avalonia.Controls.Primitives.CalendarItem obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDayTitleTemplate(
+    public static Avalonia.Data.BindingBase BindDayTitleTemplate(
         this Avalonia.Controls.Primitives.CalendarItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

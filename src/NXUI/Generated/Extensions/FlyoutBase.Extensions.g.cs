@@ -10,7 +10,152 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class FlyoutBaseExtensions
 {
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return builder.WithValue(PropertyMetadata.FlyoutBase_IsOpen, Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsOpen<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return builder.WithBinding(PropertyMetadata.FlyoutBase_IsOpen, Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsOpen<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return builder.WithBinding(PropertyMetadata.FlyoutBase_IsOpen, Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsOpen<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsOpen<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsOpen<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty, observable.ToBinding(), mode, priority);
+    }
+
     // Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsOpen<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        obj[Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsOpen<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        var descriptor = Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsOpen<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        var descriptor = Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
 
     /// <summary>
     /// Makes a <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> binding.
@@ -19,9 +164,9 @@ public static partial class FlyoutBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsOpen(
+    public static Avalonia.Data.BindingBase BindIsOpen(
         this Avalonia.Controls.Primitives.FlyoutBase obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -46,8 +191,9 @@ public static partial class FlyoutBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<System.Boolean>> handler)
+    public static T OnIsOpen<T>(this T obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
         handler(obj, observable);
@@ -69,8 +215,9 @@ public static partial class FlyoutBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.FlyoutBase OnBindingIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<System.Boolean>>> handler)
+    public static T OnBindingIsOpen<T>(this T obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
         handler(obj, observable);
@@ -92,8 +239,9 @@ public static partial class FlyoutBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpenChanged(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    public static T OnIsOpenChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
         handler(obj, observable);
@@ -109,7 +257,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTarget(
+    public static Avalonia.Data.BindingBase BindTarget(
         this Avalonia.Controls.Primitives.FlyoutBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -212,7 +360,7 @@ public static partial class FlyoutBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AttachedFlyout<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -258,7 +406,7 @@ public static partial class FlyoutBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AttachedFlyout<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -308,7 +456,7 @@ public static partial class FlyoutBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T AttachedFlyout<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -344,7 +492,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAttachedFlyout(
+    public static Avalonia.Data.BindingBase BindAttachedFlyout(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

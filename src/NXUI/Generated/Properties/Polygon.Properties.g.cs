@@ -12,4 +12,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Polygon"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> Polygon_Points => Avalonia.Controls.Shapes.Polygon.PointsProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Shapes.Polygon.FillRuleProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Polygon"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.FillRule> Polygon_FillRule => Avalonia.Controls.Shapes.Polygon.FillRuleProperty;
 }

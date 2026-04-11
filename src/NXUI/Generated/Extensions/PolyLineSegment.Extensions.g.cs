@@ -32,7 +32,7 @@ public static partial class PolyLineSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static PolyLineSegmentBuilder Points(
         this PolyLineSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class PolyLineSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.PolyLineSegment> Points(
         this ElementRef<Avalonia.Media.PolyLineSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class PolyLineSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PolyLineSegment Points(
         this Avalonia.Media.PolyLineSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class PolyLineSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoints(
+    public static Avalonia.Data.BindingBase BindPoints(
         this Avalonia.Media.PolyLineSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

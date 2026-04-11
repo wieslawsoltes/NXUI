@@ -32,7 +32,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static DrawingGroupBuilder Opacity(
         this DrawingGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DrawingGroup> Opacity(
         this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup Opacity(
         this Avalonia.Media.DrawingGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpacity(
+    public static Avalonia.Data.BindingBase BindOpacity(
         this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static DrawingGroupBuilder Transform(
         this DrawingGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DrawingGroup> Transform(
         this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup Transform(
         this Avalonia.Media.DrawingGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransform(
+    public static Avalonia.Data.BindingBase BindTransform(
         this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static DrawingGroupBuilder ClipGeometry(
         this DrawingGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DrawingGroup> ClipGeometry(
         this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup ClipGeometry(
         this Avalonia.Media.DrawingGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClipGeometry(
+    public static Avalonia.Data.BindingBase BindClipGeometry(
         this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -725,7 +725,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static DrawingGroupBuilder OpacityMask(
         this DrawingGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -771,7 +771,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DrawingGroup> OpacityMask(
         this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -819,7 +819,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup OpacityMask(
         this Avalonia.Media.DrawingGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -854,7 +854,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpacityMask(
+    public static Avalonia.Data.BindingBase BindOpacityMask(
         this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -956,7 +956,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static DrawingGroupBuilder Children(
         this DrawingGroupBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1002,7 +1002,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DrawingGroup> Children(
         this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1050,7 +1050,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup Children(
         this Avalonia.Media.DrawingGroup obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1085,7 +1085,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChildren(
+    public static Avalonia.Data.BindingBase BindChildren(
         this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

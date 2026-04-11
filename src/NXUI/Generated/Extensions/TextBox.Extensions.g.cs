@@ -32,7 +32,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsInactiveSelectionHighlightEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -78,7 +78,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsInactiveSelectionHighlightEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -128,7 +128,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T IsInactiveSelectionHighlightEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -164,7 +164,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsInactiveSelectionHighlightEnabled(
+    public static Avalonia.Data.BindingBase BindIsInactiveSelectionHighlightEnabled(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClearSelectionOnLostFocus<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -316,7 +316,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClearSelectionOnLostFocus<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -366,7 +366,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ClearSelectionOnLostFocus<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -402,7 +402,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClearSelectionOnLostFocus(
+    public static Avalonia.Data.BindingBase BindClearSelectionOnLostFocus(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AcceptsReturn<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -554,7 +554,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AcceptsReturn<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -604,7 +604,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T AcceptsReturn<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -640,7 +640,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAcceptsReturn(
+    public static Avalonia.Data.BindingBase BindAcceptsReturn(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AcceptsTab<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -792,7 +792,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AcceptsTab<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -842,7 +842,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T AcceptsTab<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -878,7 +878,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAcceptsTab(
+    public static Avalonia.Data.BindingBase BindAcceptsTab(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretIndex<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1030,7 +1030,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CaretIndex<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1080,7 +1080,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T CaretIndex<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1116,7 +1116,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCaretIndex(
+    public static Avalonia.Data.BindingBase BindCaretIndex(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1222,7 +1222,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1268,7 +1268,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsReadOnly<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1318,7 +1318,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T IsReadOnly<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1354,7 +1354,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsReadOnly(
+    public static Avalonia.Data.BindingBase BindIsReadOnly(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1460,7 +1460,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PasswordChar<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1506,7 +1506,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PasswordChar<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1556,7 +1556,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PasswordChar<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1592,7 +1592,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPasswordChar(
+    public static Avalonia.Data.BindingBase BindPasswordChar(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1698,7 +1698,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1744,7 +1744,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1794,7 +1794,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1830,7 +1830,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionBrush(
+    public static Avalonia.Data.BindingBase BindSelectionBrush(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1936,7 +1936,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1982,7 +1982,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionForegroundBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2032,7 +2032,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionForegroundBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2068,7 +2068,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionForegroundBrush(
+    public static Avalonia.Data.BindingBase BindSelectionForegroundBrush(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2174,7 +2174,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2220,7 +2220,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CaretBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2270,7 +2270,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T CaretBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2306,7 +2306,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCaretBrush(
+    public static Avalonia.Data.BindingBase BindCaretBrush(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2412,7 +2412,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretBlinkInterval<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2458,7 +2458,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CaretBlinkInterval<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2508,7 +2508,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T CaretBlinkInterval<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2544,7 +2544,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCaretBlinkInterval(
+    public static Avalonia.Data.BindingBase BindCaretBlinkInterval(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2650,7 +2650,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionStart<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2696,7 +2696,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionStart<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2746,7 +2746,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionStart<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2782,7 +2782,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionStart(
+    public static Avalonia.Data.BindingBase BindSelectionStart(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2888,7 +2888,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionEnd<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2934,7 +2934,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionEnd<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -2984,7 +2984,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionEnd<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3020,7 +3020,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionEnd(
+    public static Avalonia.Data.BindingBase BindSelectionEnd(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3126,7 +3126,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLength<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3172,7 +3172,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxLength<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3222,7 +3222,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxLength<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3258,7 +3258,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxLength(
+    public static Avalonia.Data.BindingBase BindMaxLength(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3364,7 +3364,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3410,7 +3410,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxLines<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3460,7 +3460,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxLines<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3496,7 +3496,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxLines(
+    public static Avalonia.Data.BindingBase BindMaxLines(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3602,7 +3602,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinLines<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3648,7 +3648,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinLines<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3698,7 +3698,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T MinLines<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3734,7 +3734,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinLines(
+    public static Avalonia.Data.BindingBase BindMinLines(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3840,7 +3840,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3886,7 +3886,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Text<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3936,7 +3936,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3972,7 +3972,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.TextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindText(
+    public static Avalonia.Data.BindingBase BindText(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4078,7 +4078,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4124,7 +4124,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4174,7 +4174,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T TextAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4210,7 +4210,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextAlignment(
+    public static Avalonia.Data.BindingBase BindTextAlignment(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4477,7 +4477,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4523,7 +4523,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4573,7 +4573,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4609,7 +4609,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4807,7 +4807,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4853,7 +4853,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4903,7 +4903,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4939,7 +4939,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5137,7 +5137,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5183,7 +5183,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TextWrapping<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5233,7 +5233,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T TextWrapping<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5269,7 +5269,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTextWrapping(
+    public static Avalonia.Data.BindingBase BindTextWrapping(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5444,7 +5444,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5490,7 +5490,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LineHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5540,7 +5540,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T LineHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -5576,7 +5576,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineHeight(
+    public static Avalonia.Data.BindingBase BindLineHeight(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -5662,113 +5662,113 @@ public static partial class TextBoxExtensions
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithValue(PropertyMetadata.TextBox_LetterSpacing, Avalonia.Controls.TextBox.LetterSpacingProperty, value);
+        return builder.WithValue(PropertyMetadata.TextBox_PlaceholderText, Avalonia.Controls.TextBox.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> LetterSpacing<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_LetterSpacing, Avalonia.Controls.TextBox.LetterSpacingProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_PlaceholderText, Avalonia.Controls.TextBox.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> LetterSpacing<T>(
+    public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Double> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_LetterSpacing, Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_PlaceholderText, Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.TextBox
+    public static ElementRef<T> PlaceholderText<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetValue(Avalonia.Controls.TextBox.LetterSpacingProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.TextBox.PlaceholderTextProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> LetterSpacing<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.LetterSpacingProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.PlaceholderTextProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> LetterSpacing<T>(
+    public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
-        IObservable<System.Double> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.TextBox.LetterSpacingProperty
+    // Avalonia.Controls.TextBox.PlaceholderTextProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.TextBox
+    public static T PlaceholderText<T>(this T obj, System.String? value) where T : Avalonia.Controls.TextBox
     {
-        obj[Avalonia.Controls.TextBox.LetterSpacingProperty] = value;
+        obj[Avalonia.Controls.TextBox.PlaceholderTextProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -5776,19 +5776,19 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T LetterSpacing<T>(
+    public static T PlaceholderText<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -5796,217 +5796,217 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T LetterSpacing<T>(
+    public static T PlaceholderText<T>(
         this T obj,
-        IObservable<System.Double> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLetterSpacing(
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderText(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.TextBox.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderTextProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.String?> ObservePlaceholderText(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        return obj.GetObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Double>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingPlaceholderText(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingPlaceholderText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.TextBox obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderTextChanged(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnPlaceholderTextChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.LetterSpacingProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.PlaceholderTextProperty);
         handler(obj, observable);
         return obj;
     }
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithValue(PropertyMetadata.TextBox_Watermark, Avalonia.Controls.TextBox.WatermarkProperty, value);
+        return builder.WithValue(PropertyMetadata.TextBox_UseFloatingPlaceholder, Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_Watermark, Avalonia.Controls.TextBox.WatermarkProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_UseFloatingPlaceholder, Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(
+    public static ElementBuilder<T> UseFloatingPlaceholder<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String?> observable,
+        IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_Watermark, Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_UseFloatingPlaceholder, Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.TextBox
+    public static ElementRef<T> UseFloatingPlaceholder<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetValue(Avalonia.Controls.TextBox.WatermarkProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> UseFloatingPlaceholder<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.WatermarkProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Watermark<T>(
+    public static ElementRef<T> UseFloatingPlaceholder<T>(
         this ElementRef<T> elementRef,
-        IObservable<System.String?> observable,
+        IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.TextBox.WatermarkProperty
+    // Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.TextBox
+    public static T UseFloatingPlaceholder<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TextBox
     {
-        obj[Avalonia.Controls.TextBox.WatermarkProperty] = value;
+        obj[Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -6014,19 +6014,19 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T UseFloatingPlaceholder<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -6034,217 +6034,217 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(
+    public static T UseFloatingPlaceholder<T>(
         this T obj,
-        IObservable<System.String?> observable,
+        IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWatermark(
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindUseFloatingPlaceholder(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.TextBox.WatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.Boolean> ObserveUseFloatingPlaceholder(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        return obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnUseFloatingPlaceholder<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseFloatingPlaceholder(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingUseFloatingPlaceholder<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWatermarkChanged(this Avalonia.Controls.TextBox obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseFloatingPlaceholderChanged(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnUseFloatingPlaceholderChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty);
         handler(obj, observable);
         return obj;
     }
 
 
     /// <summary>
-    /// Records a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> literal value for hot reload builds.
+    /// Records a <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithValue(PropertyMetadata.TextBox_UseFloatingWatermark, Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value);
+        return builder.WithValue(PropertyMetadata.TextBox_PlaceholderForeground, Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value);
     }
 
     /// <summary>
-    /// Records a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> for hot reload builds.
+    /// Records a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(
+    public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_UseFloatingWatermark, Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding, mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_PlaceholderForeground, Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> for hot reload builds.
+    /// Records an observable binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> UseFloatingWatermark<T>(
+    public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Boolean> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return builder.WithBinding(PropertyMetadata.TextBox_UseFloatingWatermark, Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
+        return builder.WithBinding(PropertyMetadata.TextBox_PlaceholderForeground, Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value on a referenced control.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> value on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TextBox
+    public static ElementRef<T> PlaceholderForeground<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetValue(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, value);
+        return elementRef.SetValue(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, value);
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> on a referenced control.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(
+    public static ElementRef<T> PlaceholderForeground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, binding, mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, binding, mode, priority);
     }
 
     /// <summary>
-    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> on a referenced control.
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> on a referenced control.
     /// </summary>
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> UseFloatingWatermark<T>(
+    public static ElementRef<T> PlaceholderForeground<T>(
         this ElementRef<T> elementRef,
-        IObservable<System.Boolean> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        return elementRef.SetBinding(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
+        return elementRef.SetBinding(Avalonia.Controls.TextBox.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-    // Avalonia.Controls.TextBox.UseFloatingWatermarkProperty
+    // Avalonia.Controls.TextBox.PlaceholderForegroundProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TextBox
+    public static T PlaceholderForeground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
-        obj[Avalonia.Controls.TextBox.UseFloatingWatermarkProperty] = value;
+        obj[Avalonia.Controls.TextBox.PlaceholderForegroundProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -6252,19 +6252,19 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(
+    public static T PlaceholderForeground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -6272,104 +6272,104 @@ public static partial class TextBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T UseFloatingWatermark<T>(
+    public static T PlaceholderForeground<T>(
         this T obj,
-        IObservable<System.Boolean> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
-        var descriptor = Avalonia.Controls.TextBox.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseFloatingWatermark(
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaceholderForeground(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.TextBox.UseFloatingWatermarkProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.TextBox.PlaceholderForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Boolean> ObserveUseFloatingWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        return obj.GetObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnUseFloatingWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseFloatingWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingPlaceholderForeground(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetBindingObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        return obj.GetBindingObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
     }
 
     /// <summary>
-    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingUseFloatingWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseFloatingWatermarkChanged(this Avalonia.Controls.TextBox obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaceholderForegroundChanged(this Avalonia.Controls.TextBox obj)
     {
-        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
     }
 
     /// <summary>
-    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/>.
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnUseFloatingWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnPlaceholderForegroundChanged<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBox.PlaceholderForegroundProperty);
         handler(obj, observable);
         return obj;
     }
@@ -6396,7 +6396,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NewLine<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6442,7 +6442,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> NewLine<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6492,7 +6492,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T NewLine<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6528,7 +6528,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindNewLine(
+    public static Avalonia.Data.BindingBase BindNewLine(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -6634,7 +6634,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6680,7 +6680,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> InnerLeftContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6730,7 +6730,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerLeftContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6766,7 +6766,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInnerLeftContent(
+    public static Avalonia.Data.BindingBase BindInnerLeftContent(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -6872,7 +6872,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6918,7 +6918,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> InnerRightContent<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -6968,7 +6968,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerRightContent<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7004,7 +7004,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInnerRightContent(
+    public static Avalonia.Data.BindingBase BindInnerRightContent(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7110,7 +7110,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RevealPassword<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7156,7 +7156,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> RevealPassword<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7206,7 +7206,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T RevealPassword<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7242,7 +7242,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRevealPassword(
+    public static Avalonia.Data.BindingBase BindRevealPassword(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7335,7 +7335,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CanCutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanCut(
+    public static Avalonia.Data.BindingBase BindCanCut(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7425,7 +7425,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanCopy(
+    public static Avalonia.Data.BindingBase BindCanCopy(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7515,7 +7515,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanPaste(
+    public static Avalonia.Data.BindingBase BindCanPaste(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7618,7 +7618,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsUndoEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7664,7 +7664,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsUndoEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7714,7 +7714,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T IsUndoEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7750,7 +7750,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsUndoEnabled(
+    public static Avalonia.Data.BindingBase BindIsUndoEnabled(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -7856,7 +7856,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UndoLimit<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7902,7 +7902,7 @@ public static partial class TextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> UndoLimit<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7952,7 +7952,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T UndoLimit<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -7988,7 +7988,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUndoLimit(
+    public static Avalonia.Data.BindingBase BindUndoLimit(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -8081,7 +8081,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanUndo(
+    public static Avalonia.Data.BindingBase BindCanUndo(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -8171,7 +8171,7 @@ public static partial class TextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanRedo(
+    public static Avalonia.Data.BindingBase BindCanRedo(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

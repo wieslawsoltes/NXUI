@@ -57,4 +57,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> property defined in <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> InputElement_TabIndex => Avalonia.Input.InputElement.TabIndexProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> property defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> InputElement_IsHoldingEnabled => Avalonia.Input.InputElement.IsHoldingEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> property defined in <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> InputElement_IsHoldWithMouseEnabled => Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty;
 }

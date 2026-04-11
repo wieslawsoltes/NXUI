@@ -32,7 +32,7 @@ public static partial class TimePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinuteIncrement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -78,7 +78,7 @@ public static partial class TimePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinuteIncrement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -128,7 +128,7 @@ public static partial class TimePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T MinuteIncrement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -164,7 +164,7 @@ public static partial class TimePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinuteIncrement(
+    public static Avalonia.Data.BindingBase BindMinuteIncrement(
         this Avalonia.Controls.TimePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TimePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SecondIncrement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -316,7 +316,7 @@ public static partial class TimePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SecondIncrement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -366,7 +366,7 @@ public static partial class TimePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T SecondIncrement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -402,7 +402,7 @@ public static partial class TimePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSecondIncrement(
+    public static Avalonia.Data.BindingBase BindSecondIncrement(
         this Avalonia.Controls.TimePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TimePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClockIdentifier<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -554,7 +554,7 @@ public static partial class TimePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClockIdentifier<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -604,7 +604,7 @@ public static partial class TimePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T ClockIdentifier<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -640,7 +640,7 @@ public static partial class TimePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClockIdentifier(
+    public static Avalonia.Data.BindingBase BindClockIdentifier(
         this Avalonia.Controls.TimePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TimePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseSeconds<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -792,7 +792,7 @@ public static partial class TimePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> UseSeconds<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -842,7 +842,7 @@ public static partial class TimePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T UseSeconds<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -878,7 +878,7 @@ public static partial class TimePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseSeconds(
+    public static Avalonia.Data.BindingBase BindUseSeconds(
         this Avalonia.Controls.TimePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class TimePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedTime<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -1030,7 +1030,7 @@ public static partial class TimePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedTime<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -1080,7 +1080,7 @@ public static partial class TimePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedTime<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TimePicker
     {
@@ -1116,7 +1116,7 @@ public static partial class TimePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedTime(
+    public static Avalonia.Data.BindingBase BindSelectedTime(
         this Avalonia.Controls.TimePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -59,7 +59,7 @@ public static partial class ItemsControlElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> value.
     /// </summary>
-    public static IObservable<Avalonia.Data.IBinding?> ObserveDisplayMemberBinding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ItemsControl
+    public static IObservable<Avalonia.Data.BindingBase?> ObserveDisplayMemberBinding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ItemsControl
     {
         return elementRef.Observe(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }

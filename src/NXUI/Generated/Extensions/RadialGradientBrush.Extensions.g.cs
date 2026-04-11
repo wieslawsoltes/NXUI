@@ -32,7 +32,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static RadialGradientBrushBuilder Center(
         this RadialGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RadialGradientBrush> Center(
         this ElementRef<Avalonia.Media.RadialGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Center(
         this Avalonia.Media.RadialGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenter(
+    public static Avalonia.Data.BindingBase BindCenter(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static RadialGradientBrushBuilder GradientOrigin(
         this RadialGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RadialGradientBrush> GradientOrigin(
         this ElementRef<Avalonia.Media.RadialGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush GradientOrigin(
         this Avalonia.Media.RadialGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGradientOrigin(
+    public static Avalonia.Data.BindingBase BindGradientOrigin(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static RadialGradientBrushBuilder RadiusX(
         this RadialGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RadialGradientBrush> RadiusX(
         this ElementRef<Avalonia.Media.RadialGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush RadiusX(
         this Avalonia.Media.RadialGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRadiusX(
+    public static Avalonia.Data.BindingBase BindRadiusX(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -725,7 +725,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static RadialGradientBrushBuilder RadiusY(
         this RadialGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -771,7 +771,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RadialGradientBrush> RadiusY(
         this ElementRef<Avalonia.Media.RadialGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -819,7 +819,7 @@ public static partial class RadialGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush RadiusY(
         this Avalonia.Media.RadialGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -854,7 +854,7 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRadiusY(
+    public static Avalonia.Data.BindingBase BindRadiusY(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

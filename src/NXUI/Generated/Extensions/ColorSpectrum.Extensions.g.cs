@@ -32,7 +32,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -78,7 +78,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Color<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -128,7 +128,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T Color<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -164,7 +164,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindColor(
+    public static Avalonia.Data.BindingBase BindColor(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Components<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -316,7 +316,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Components<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -366,7 +366,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T Components<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -402,7 +402,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindComponents(
+    public static Avalonia.Data.BindingBase BindComponents(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -646,7 +646,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -692,7 +692,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HsvColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -742,7 +742,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T HsvColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -778,7 +778,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHsvColor(
+    public static Avalonia.Data.BindingBase BindHsvColor(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -884,7 +884,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHue<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -930,7 +930,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxHue<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -980,7 +980,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxHue<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1016,7 +1016,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxHue(
+    public static Avalonia.Data.BindingBase BindMaxHue(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1122,7 +1122,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxSaturation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1168,7 +1168,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxSaturation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1218,7 +1218,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxSaturation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1254,7 +1254,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxSaturation(
+    public static Avalonia.Data.BindingBase BindMaxSaturation(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1360,7 +1360,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxValue<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1406,7 +1406,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxValue<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1456,7 +1456,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxValue<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1492,7 +1492,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxValue(
+    public static Avalonia.Data.BindingBase BindMaxValue(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1598,7 +1598,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHue<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1644,7 +1644,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinHue<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1694,7 +1694,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MinHue<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1730,7 +1730,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinHue(
+    public static Avalonia.Data.BindingBase BindMinHue(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1836,7 +1836,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinSaturation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1882,7 +1882,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinSaturation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1932,7 +1932,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MinSaturation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -1968,7 +1968,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinSaturation(
+    public static Avalonia.Data.BindingBase BindMinSaturation(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2074,7 +2074,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinValue<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2120,7 +2120,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinValue<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2170,7 +2170,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T MinValue<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2206,7 +2206,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinValue(
+    public static Avalonia.Data.BindingBase BindMinValue(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2312,7 +2312,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Shape<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2358,7 +2358,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Shape<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2408,7 +2408,7 @@ public static partial class ColorSpectrumExtensions
     /// <returns>The target object reference.</returns>
     public static T Shape<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
@@ -2444,7 +2444,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShape(
+    public static Avalonia.Data.BindingBase BindShape(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2583,7 +2583,7 @@ public static partial class ColorSpectrumExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindThirdComponent(
+    public static Avalonia.Data.BindingBase BindThirdComponent(
         this Avalonia.Controls.Primitives.ColorSpectrum obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

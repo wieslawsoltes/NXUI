@@ -32,7 +32,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalCacheLength<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -78,7 +78,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalCacheLength<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -128,7 +128,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalCacheLength<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -164,7 +164,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalCacheLength(
+    public static Avalonia.Data.BindingBase BindHorizontalCacheLength(
         this Avalonia.Controls.ItemsRepeater obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -316,7 +316,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -366,7 +366,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -402,7 +402,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemTemplate(
+    public static Avalonia.Data.BindingBase BindItemTemplate(
         this Avalonia.Controls.ItemsRepeater obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -554,7 +554,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsSource<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -604,7 +604,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -640,7 +640,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsSource(
+    public static Avalonia.Data.BindingBase BindItemsSource(
         this Avalonia.Controls.ItemsRepeater obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Layout<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -792,7 +792,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Layout<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -842,7 +842,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T Layout<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -878,7 +878,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLayout(
+    public static Avalonia.Data.BindingBase BindLayout(
         this Avalonia.Controls.ItemsRepeater obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalCacheLength<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -1030,7 +1030,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalCacheLength<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -1080,7 +1080,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalCacheLength<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -1116,7 +1116,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalCacheLength(
+    public static Avalonia.Data.BindingBase BindVerticalCacheLength(
         this Avalonia.Controls.ItemsRepeater obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

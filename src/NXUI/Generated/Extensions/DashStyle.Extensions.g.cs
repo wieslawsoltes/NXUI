@@ -32,7 +32,7 @@ public static partial class DashStyleExtensions
     /// <returns>The builder instance.</returns>
     public static DashStyleBuilder Dashes(
         this DashStyleBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class DashStyleExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DashStyle> Dashes(
         this ElementRef<Avalonia.Media.DashStyle> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class DashStyleExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DashStyle Dashes(
         this Avalonia.Media.DashStyle obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DashStyle.DashesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDashes(
+    public static Avalonia.Data.BindingBase BindDashes(
         this Avalonia.Media.DashStyle obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class DashStyleExtensions
     /// <returns>The builder instance.</returns>
     public static DashStyleBuilder Offset(
         this DashStyleBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class DashStyleExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DashStyle> Offset(
         this ElementRef<Avalonia.Media.DashStyle> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class DashStyleExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DashStyle Offset(
         this Avalonia.Media.DashStyle obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffset(
+    public static Avalonia.Data.BindingBase BindOffset(
         this Avalonia.Media.DashStyle obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -23,7 +23,7 @@ public static partial class ExperimentalAcrylicBorderElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> value.
     /// </summary>
-    public static IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> ObserveMaterial<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?> ObserveMaterial<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         return elementRef.Observe(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }

@@ -123,7 +123,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCanvasLeft(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCanvasLeft(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCanvasLeft(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCanvasLeft(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class CanvasSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCanvasLeft(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCanvasLeft(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Canvas.LeftProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class CanvasSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCanvasLeft(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCanvasLeft(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Canvas.LeftProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCanvasTop(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCanvasTop(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCanvasTop(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCanvasTop(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class CanvasSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCanvasTop(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCanvasTop(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Canvas.TopProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class CanvasSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCanvasTop(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCanvasTop(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Canvas.TopProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCanvasRight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCanvasRight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCanvasRight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCanvasRight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class CanvasSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCanvasRight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCanvasRight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Canvas.RightProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class CanvasSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCanvasRight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCanvasRight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Canvas.RightProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCanvasBottom(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCanvasBottom(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class CanvasSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCanvasBottom(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCanvasBottom(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class CanvasSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCanvasBottom(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCanvasBottom(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Canvas.BottomProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class CanvasSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCanvasBottom(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCanvasBottom(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Canvas.BottomProperty, binding));
         return keyFrame;

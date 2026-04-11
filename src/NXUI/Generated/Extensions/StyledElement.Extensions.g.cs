@@ -32,7 +32,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DataContext<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -78,7 +78,7 @@ public static partial class StyledElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DataContext<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -128,7 +128,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T DataContext<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -164,7 +164,7 @@ public static partial class StyledElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.StyledElement.DataContextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDataContext(
+    public static Avalonia.Data.BindingBase BindDataContext(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Name<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -316,7 +316,7 @@ public static partial class StyledElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Name<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -366,7 +366,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Name<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -402,7 +402,7 @@ public static partial class StyledElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.StyledElement.NameProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindName(
+    public static Avalonia.Data.BindingBase BindName(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +495,7 @@ public static partial class StyledElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.StyledElement.ParentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindParent(
+    public static Avalonia.Data.BindingBase BindParent(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -585,7 +585,7 @@ public static partial class StyledElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTemplatedParent(
+    public static Avalonia.Data.BindingBase BindTemplatedParent(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -688,7 +688,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Theme<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -734,7 +734,7 @@ public static partial class StyledElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Theme<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -784,7 +784,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Theme<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -820,7 +820,7 @@ public static partial class StyledElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.StyledElement.ThemeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTheme(
+    public static Avalonia.Data.BindingBase BindTheme(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -123,7 +123,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationDuration(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDuration(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationDuration(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDuration(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDuration(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationDuration(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationIterationCount(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationIterationCount(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationIterationCount(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationIterationCount(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationIterationCount(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationIterationCount(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationPlaybackDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationPlaybackDirection(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationPlaybackDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationPlaybackDirection(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationPlaybackDirection(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationPlaybackDirection(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, binding));
         return style;
@@ -481,9 +481,168 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAnimationPlaybackBehavior(this StyleBuilder builder, Avalonia.Animation.PlaybackBehavior value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAnimationPlaybackBehavior(this KeyFrameBuilder builder, Avalonia.Animation.PlaybackBehavior value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, value));
+        });
+    }
+
+    // Avalonia.Animation.Animation.PlaybackBehaviorProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationPlaybackBehavior(this Style style, Avalonia.Animation.PlaybackBehavior value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationPlaybackBehavior(this KeyFrame keyFrame, Avalonia.Animation.PlaybackBehavior value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAnimationPlaybackBehavior(this StyleBuilder builder, IObservable<Avalonia.Animation.PlaybackBehavior> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAnimationPlaybackBehavior(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.PlaybackBehavior> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationPlaybackBehavior(this Style style, IObservable<Avalonia.Animation.PlaybackBehavior> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationPlaybackBehavior(this KeyFrame keyFrame, IObservable<Avalonia.Animation.PlaybackBehavior> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAnimationPlaybackBehavior(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAnimationPlaybackBehavior(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationPlaybackBehavior(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationPlaybackBehavior(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding));
         return keyFrame;
     }
 
@@ -600,7 +759,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationFillMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationFillMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +773,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationFillMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationFillMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +787,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationFillMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationFillMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, binding));
         return style;
@@ -640,7 +799,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, binding));
         return keyFrame;
@@ -759,7 +918,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationEasing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationEasing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +932,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationEasing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationEasing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +946,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationEasing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationEasing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, binding));
         return style;
@@ -799,7 +958,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, binding));
         return keyFrame;
@@ -918,7 +1077,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDelay(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +1091,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDelay(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +1105,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDelay(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationDelay(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, binding));
         return style;
@@ -958,7 +1117,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, binding));
         return keyFrame;
@@ -1077,7 +1236,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationDelayBetweenIterations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDelayBetweenIterations(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1250,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationDelayBetweenIterations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDelayBetweenIterations(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1264,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDelayBetweenIterations(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationDelayBetweenIterations(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, binding));
         return style;
@@ -1117,7 +1276,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, binding));
         return keyFrame;
@@ -1236,7 +1395,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAnimationSpeedRatio(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationSpeedRatio(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1409,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAnimationSpeedRatio(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationSpeedRatio(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1423,7 @@ public static partial class AnimationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationSpeedRatio(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAnimationSpeedRatio(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, binding));
         return style;
@@ -1276,7 +1435,7 @@ public static partial class AnimationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, binding));
         return keyFrame;

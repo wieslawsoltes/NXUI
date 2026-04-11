@@ -32,7 +32,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The builder instance.</returns>
     public static DropShadowEffectBuilder OffsetX(
         this DropShadowEffectBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DropShadowEffect> OffsetX(
         this ElementRef<Avalonia.Media.DropShadowEffect> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DropShadowEffect OffsetX(
         this Avalonia.Media.DropShadowEffect obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffsetX(
+    public static Avalonia.Data.BindingBase BindOffsetX(
         this Avalonia.Media.DropShadowEffect obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The builder instance.</returns>
     public static DropShadowEffectBuilder OffsetY(
         this DropShadowEffectBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.DropShadowEffect> OffsetY(
         this ElementRef<Avalonia.Media.DropShadowEffect> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class DropShadowEffectExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DropShadowEffect OffsetY(
         this Avalonia.Media.DropShadowEffect obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOffsetY(
+    public static Avalonia.Data.BindingBase BindOffsetY(
         this Avalonia.Media.DropShadowEffect obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
