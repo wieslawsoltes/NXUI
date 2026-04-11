@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Headless.XUnit;
 using NXUI.Extensions;
 using Xunit;
 using static NXUI.Builders;
@@ -9,7 +10,7 @@ namespace NXUI.HotReload.Tests;
 [Collection("HeadlessTests")]
 public class ThicknessConvenienceBuilderTests
 {
-    [Fact]
+    [AvaloniaFact]
     public void Window_Builder_Uses_Uniform_Padding_Overload()
     {
         var window = Window()
@@ -19,7 +20,7 @@ public class ThicknessConvenienceBuilderTests
         Assert.Equal(new Thickness(12), window.Padding);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Border_Builder_Uses_Horizontal_Vertical_Padding_Overload()
     {
         var border = Border()
@@ -29,7 +30,7 @@ public class ThicknessConvenienceBuilderTests
         Assert.Equal(new Thickness(6, 10), border.Padding);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Border_Builder_Uses_All_Sides_BorderThickness_Overload()
     {
         var border = Border()

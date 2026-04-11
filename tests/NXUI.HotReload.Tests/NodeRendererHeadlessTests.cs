@@ -3,6 +3,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using Avalonia.Controls;
 using Avalonia.Controls.Presenters;
+using Avalonia.Headless.XUnit;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using ButtonControl = Avalonia.Controls.Button;
@@ -16,7 +17,7 @@ namespace NXUI.HotReload.Tests;
 [Collection("HeadlessTests")]
 public class NodeRendererHeadlessTests
 {
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_TextBlock_Text_Updates_InPlace()
     {
         var previous = BuildMessageWindow("Initial");
@@ -32,7 +33,7 @@ public class NodeRendererHeadlessTests
         Assert.Same(window, result.RootInstance);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_AddChild_Appends_To_Panel_Without_Replacing_Siblings()
     {
         var previous = BuildStackPanel(includeThirdChild: false);
@@ -50,7 +51,7 @@ public class NodeRendererHeadlessTests
         Assert.Equal("Third", ((TextBlock)panel.Children[2]).Text);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_Soak_Retains_User_State_Across_Iterations()
     {
         var current = BuildSoakWindow(iteration: 0);
@@ -76,7 +77,7 @@ public class NodeRendererHeadlessTests
         }
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_EventHandlers_Do_Not_Accumulate()
     {
         var invocationCount = 0;
@@ -116,7 +117,7 @@ public class NodeRendererHeadlessTests
         }
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_ContentPresenter_Content_Updates()
     {
         var previous = BuildContentPresenterWindow("Initial");
@@ -132,7 +133,7 @@ public class NodeRendererHeadlessTests
         Assert.Equal("Updated", textBlock.Text);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_ItemsControl_Items_Are_Patched()
     {
         var previous = BuildItemsWindow(itemCount: 2);
@@ -149,7 +150,7 @@ public class NodeRendererHeadlessTests
         Assert.Equal("Item 2", items[^1].Text);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_Boundary_Preserves_Subtree_State()
     {
         var current = BuildBoundaryWindow("Initial");
@@ -167,7 +168,7 @@ public class NodeRendererHeadlessTests
         Assert.Equal(userState, textBox.Text);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_Nested_Boundaries_ShortCircuit()
     {
         var current = BuildNestedBoundaryWindow("Left", "Right");
@@ -185,7 +186,7 @@ public class NodeRendererHeadlessTests
         Assert.Equal("Right", right.Text);
     }
 
-    [Fact]
+    [AvaloniaFact]
     public void Reconcile_SolidColorBrush_With_Same_Color_Does_Not_Set_Property()
     {
         var current = BuildBrushWindow(Colors.Red, opacity: 0.5);
