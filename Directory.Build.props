@@ -16,6 +16,7 @@
     <AvaloniaVersion>12.0.0</AvaloniaVersion>
     <AvaloniaControlsItemsRepeaterVersion>12.0.0</AvaloniaControlsItemsRepeaterVersion>
     <ProDiagnosticsVersion>12.0.0</ProDiagnosticsVersion>
+    <TmdsDbusProtocolVersion>0.92.0</TmdsDbusProtocolVersion>
     <SystemReactiveVersion>6.0.1</SystemReactiveVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == ''">
