@@ -138,11 +138,20 @@ public static partial class NumericUpDownElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> value.
     /// </summary>
-    public static IObservable<System.String?> ObserveWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NumericUpDown
+    public static IObservable<System.String?> ObservePlaceholderText<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NumericUpDown
     {
-        return elementRef.Observe(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.NumericUpDown.PlaceholderTextProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NumericUpDown
+    {
+        return elementRef.Observe(Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty);
     }
 
 

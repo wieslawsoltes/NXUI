@@ -19,7 +19,7 @@ public static partial class NativeMenuItemBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindParent(
+    public static Avalonia.Data.BindingBase BindParent(
         this Avalonia.Controls.NativeMenuItemBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

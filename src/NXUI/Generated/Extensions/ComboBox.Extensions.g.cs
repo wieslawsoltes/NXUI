@@ -32,7 +32,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -78,7 +78,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDropDownOpen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -128,7 +128,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDropDownOpen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -164,7 +164,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDropDownOpen(
+    public static Avalonia.Data.BindingBase BindIsDropDownOpen(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -250,6 +250,244 @@ public static partial class ComboBoxExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsEditable<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithValue(PropertyMetadata.ComboBox_IsEditable, Avalonia.Controls.ComboBox.IsEditableProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsEditable<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithBinding(PropertyMetadata.ComboBox_IsEditable, Avalonia.Controls.ComboBox.IsEditableProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsEditable<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithBinding(PropertyMetadata.ComboBox_IsEditable, Avalonia.Controls.ComboBox.IsEditableProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsEditable<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.ComboBox.IsEditableProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsEditable<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ComboBox.IsEditableProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsEditable<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ComboBox.IsEditableProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.ComboBox.IsEditableProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsEditable<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.IsEditableProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsEditable<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        var descriptor = Avalonia.Controls.ComboBox.IsEditableProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsEditable<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        var descriptor = Avalonia.Controls.ComboBox.IsEditableProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIsEditable(
+        this Avalonia.Controls.ComboBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ComboBox.IsEditableProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsEditable(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsEditable<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsEditable(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsEditable<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsEditableChanged(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ComboBox.IsEditableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsEditableChanged<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ComboBox.IsEditableProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -270,7 +508,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -316,7 +554,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxDropDownHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -366,7 +604,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxDropDownHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -402,7 +640,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxDropDownHeight(
+    public static Avalonia.Data.BindingBase BindMaxDropDownHeight(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +733,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionBoxItem(
+    public static Avalonia.Data.BindingBase BindSelectionBoxItem(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +836,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -644,7 +882,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlaceholderText<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -694,7 +932,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PlaceholderText<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -730,7 +968,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlaceholderText(
+    public static Avalonia.Data.BindingBase BindPlaceholderText(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +1074,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -882,7 +1120,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlaceholderForeground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -932,7 +1170,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PlaceholderForeground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -968,7 +1206,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlaceholderForeground(
+    public static Avalonia.Data.BindingBase BindPlaceholderForeground(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1074,7 +1312,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1120,7 +1358,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1170,7 +1408,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1206,7 +1444,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1404,7 +1642,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1450,7 +1688,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1500,7 +1738,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1536,7 +1774,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1714,6 +1952,244 @@ public static partial class ComboBoxExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ComboBox.TextProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithValue(PropertyMetadata.ComboBox_Text, Avalonia.Controls.ComboBox.TextProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Text<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithBinding(PropertyMetadata.ComboBox_Text, Avalonia.Controls.ComboBox.TextProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Text<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return builder.WithBinding(PropertyMetadata.ComboBox_Text, Avalonia.Controls.ComboBox.TextProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.TextProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.ComboBox.TextProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ComboBox.TextProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ComboBox.TextProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.ComboBox.TextProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.TextProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.TextProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Text<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        var descriptor = Avalonia.Controls.ComboBox.TextProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ComboBox.TextProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Text<T>(
+        this T obj,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
+    {
+        var descriptor = Avalonia.Controls.ComboBox.TextProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ComboBox.TextProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ComboBox.TextProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindText(
+        this Avalonia.Controls.ComboBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ComboBox.TextProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ComboBox.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ComboBox.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextChanged(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ComboBox.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ComboBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextChanged<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ComboBox.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -1734,7 +2210,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBoxItemTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1780,7 +2256,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionBoxItemTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1830,7 +2306,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBoxItemTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1866,7 +2342,7 @@ public static partial class ComboBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionBoxItemTemplate(
+    public static Avalonia.Data.BindingBase BindSelectionBoxItemTemplate(
         this Avalonia.Controls.ComboBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

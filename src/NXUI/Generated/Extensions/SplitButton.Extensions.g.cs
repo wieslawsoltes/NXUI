@@ -32,7 +32,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -78,7 +78,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Command<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -128,7 +128,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -164,7 +164,7 @@ public static partial class SplitButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommand(
+    public static Avalonia.Data.BindingBase BindCommand(
         this Avalonia.Controls.SplitButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -316,7 +316,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CommandParameter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -366,7 +366,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -402,7 +402,7 @@ public static partial class SplitButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommandParameter(
+    public static Avalonia.Data.BindingBase BindCommandParameter(
         this Avalonia.Controls.SplitButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Flyout<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -554,7 +554,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Flyout<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -604,7 +604,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Flyout<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -640,7 +640,7 @@ public static partial class SplitButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlyout(
+    public static Avalonia.Data.BindingBase BindFlyout(
         this Avalonia.Controls.SplitButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HotKey<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -792,7 +792,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HotKey<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -842,7 +842,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T HotKey<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -878,7 +878,7 @@ public static partial class SplitButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHotKey(
+    public static Avalonia.Data.BindingBase BindHotKey(
         this Avalonia.Controls.SplitButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

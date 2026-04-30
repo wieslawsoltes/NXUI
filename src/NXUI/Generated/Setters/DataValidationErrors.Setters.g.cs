@@ -123,7 +123,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataValidationErrorsErrors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrors(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataValidationErrorsErrors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrors(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataValidationErrorsErrors(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataValidationErrorsErrors(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorsProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataValidationErrorsErrors(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataValidationErrorsErrors(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorsProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataValidationErrorsHasErrors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsHasErrors(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataValidationErrorsHasErrors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsHasErrors(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataValidationErrorsHasErrors(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataValidationErrorsHasErrors(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.HasErrorsProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataValidationErrorsHasErrors(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataValidationErrorsHasErrors(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.HasErrorsProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataValidationErrorsErrorConverter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrorConverter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataValidationErrorsErrorConverter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorConverter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataValidationErrorsErrorConverter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataValidationErrorsErrorConverter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataValidationErrorsErrorConverter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataValidationErrorsErrorConverter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataValidationErrorsErrorTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrorTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataValidationErrorsErrorTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataValidationErrorsErrorTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataValidationErrorsErrorTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataValidationErrorsErrorTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataValidationErrorsErrorTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataValidationErrorsOwner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsOwner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataValidationErrorsOwner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsOwner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataValidationErrorsOwner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataValidationErrorsOwner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.OwnerProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataValidationErrorsOwner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataValidationErrorsOwner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.OwnerProperty, binding));
         return keyFrame;

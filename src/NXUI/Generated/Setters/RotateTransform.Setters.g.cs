@@ -123,7 +123,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotateTransformAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotateTransformAngle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotateTransformAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotateTransformAngle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class RotateTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotateTransformAngle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotateTransformAngle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RotateTransform.AngleProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class RotateTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotateTransformAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotateTransformAngle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RotateTransform.AngleProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotateTransformCenterX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotateTransformCenterX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotateTransformCenterX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotateTransformCenterX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class RotateTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotateTransformCenterX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotateTransformCenterX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RotateTransform.CenterXProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class RotateTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotateTransformCenterX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotateTransformCenterX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RotateTransform.CenterXProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotateTransformCenterY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotateTransformCenterY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class RotateTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotateTransformCenterY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotateTransformCenterY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class RotateTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotateTransformCenterY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotateTransformCenterY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RotateTransform.CenterYProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class RotateTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotateTransformCenterY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotateTransformCenterY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RotateTransform.CenterYProperty, binding));
         return keyFrame;

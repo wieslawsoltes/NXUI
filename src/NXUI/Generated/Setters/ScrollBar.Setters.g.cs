@@ -123,7 +123,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarViewportSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarViewportSize(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarViewportSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarViewportSize(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarViewportSize(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarViewportSize(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarVisibility(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarOrientation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarOrientation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarOrientation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarAllowAutoHide(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarAllowAutoHide(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarAllowAutoHide(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarAllowAutoHide(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarAllowAutoHide(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarHideDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarHideDelay(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarHideDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarHideDelay(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarHideDelay(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarHideDelay(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollBarShowDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollBarShowDelay(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ScrollBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollBarShowDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollBarShowDelay(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ScrollBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollBarShowDelay(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ScrollBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, binding));
         return keyFrame;

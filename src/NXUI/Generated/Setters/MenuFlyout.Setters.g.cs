@@ -123,7 +123,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuFlyoutItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemsSource(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuFlyoutItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemsSource(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuFlyoutItemsSource(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuFlyoutItemsSource(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemsSourceProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuFlyoutItemsSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuFlyoutItemsSource(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemsSourceProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuFlyoutItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuFlyoutItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuFlyoutItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuFlyoutItemTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuFlyoutItemTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuFlyoutItemTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuFlyoutItemContainerTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemContainerTheme(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuFlyoutItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuFlyoutItemContainerTheme(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuFlyoutItemContainerTheme(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuFlyoutItemContainerTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuFlyoutItemContainerTheme(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuFlyoutFlyoutPresenterTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutFlyoutPresenterTheme(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuFlyoutFlyoutPresenterTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutFlyoutPresenterTheme(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuFlyoutFlyoutPresenterTheme(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuFlyoutFlyoutPresenterTheme(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuFlyoutFlyoutPresenterTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuFlyoutFlyoutPresenterTheme(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, binding));
         return keyFrame;

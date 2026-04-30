@@ -123,7 +123,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuHorizontalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuHorizontalOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuHorizontalOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuVerticalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuVerticalOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuVerticalOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.VerticalOffsetProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.VerticalOffsetProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacementAnchor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementAnchor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementAnchor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacementAnchor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementAnchorProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementAnchor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacementAnchor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementAnchorProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementConstraintAdjustment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacementConstraintAdjustment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacementGravity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementGravity(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementGravity(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacementGravity(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementGravityProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementGravity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacementGravity(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementGravityProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacementRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementRect(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacementRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementRect(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementRect(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacementRect(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementRectProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacementRect(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementRectProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuWindowManagerAddShadowHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuWindowManagerAddShadowHint(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuWindowManagerAddShadowHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuWindowManagerAddShadowHint(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuWindowManagerAddShadowHint(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuWindowManagerAddShadowHint(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuWindowManagerAddShadowHint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuWindowManagerAddShadowHint(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuPlacementTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementTarget(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuPlacementTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementTarget(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementTarget(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacementTarget(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementTargetProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementTarget(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacementTarget(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementTargetProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContextMenuCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContextMenuCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class ContextMenuSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuCustomPopupPlacementCallback(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuCustomPopupPlacementCallback(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class ContextMenuSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty, binding));
         return keyFrame;

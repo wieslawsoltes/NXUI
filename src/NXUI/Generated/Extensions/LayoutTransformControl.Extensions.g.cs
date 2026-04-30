@@ -32,7 +32,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LayoutTransform<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -78,7 +78,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LayoutTransform<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -128,7 +128,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The target object reference.</returns>
     public static T LayoutTransform<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -164,7 +164,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLayoutTransform(
+    public static Avalonia.Data.BindingBase BindLayoutTransform(
         this Avalonia.Controls.LayoutTransformControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseRenderTransform<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -316,7 +316,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> UseRenderTransform<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -366,7 +366,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The target object reference.</returns>
     public static T UseRenderTransform<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -402,7 +402,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindUseRenderTransform(
+    public static Avalonia.Data.BindingBase BindUseRenderTransform(
         this Avalonia.Controls.LayoutTransformControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -123,7 +123,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRectangleGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRectangleGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRectangleGeometryRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRectangleGeometryRadiusX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRectangleGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRectangleGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRectangleGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRectangleGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRectangleGeometryRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRectangleGeometryRadiusY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRectangleGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRectangleGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRectangleGeometryRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRect(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRectangleGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRectangleGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRectangleGeometryRect(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, binding));
         return keyFrame;

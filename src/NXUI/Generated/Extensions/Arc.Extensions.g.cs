@@ -32,7 +32,7 @@ public static partial class ArcExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StartAngle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -78,7 +78,7 @@ public static partial class ArcExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StartAngle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -128,7 +128,7 @@ public static partial class ArcExtensions
     /// <returns>The target object reference.</returns>
     public static T StartAngle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -164,7 +164,7 @@ public static partial class ArcExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStartAngle(
+    public static Avalonia.Data.BindingBase BindStartAngle(
         this Avalonia.Controls.Shapes.Arc obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ArcExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SweepAngle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -316,7 +316,7 @@ public static partial class ArcExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SweepAngle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -366,7 +366,7 @@ public static partial class ArcExtensions
     /// <returns>The target object reference.</returns>
     public static T SweepAngle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Arc
     {
@@ -402,7 +402,7 @@ public static partial class ArcExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSweepAngle(
+    public static Avalonia.Data.BindingBase BindSweepAngle(
         this Avalonia.Controls.Shapes.Arc obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

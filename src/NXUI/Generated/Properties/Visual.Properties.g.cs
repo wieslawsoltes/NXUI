@@ -39,6 +39,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Visual_OpacityMask => Avalonia.Visual.OpacityMaskProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Visual.CacheModeProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.CacheMode> Visual_CacheMode => Avalonia.Visual.CacheModeProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Visual.EffectProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IEffect> Visual_Effect => Avalonia.Visual.EffectProperty;

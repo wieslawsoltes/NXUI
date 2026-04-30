@@ -32,7 +32,7 @@ public static partial class CarouselExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
     {
@@ -78,7 +78,7 @@ public static partial class CarouselExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PageTransition<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
     {
@@ -128,7 +128,7 @@ public static partial class CarouselExtensions
     /// <returns>The target object reference.</returns>
     public static T PageTransition<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
     {
@@ -164,7 +164,7 @@ public static partial class CarouselExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPageTransition(
+    public static Avalonia.Data.BindingBase BindPageTransition(
         this Avalonia.Controls.Carousel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -244,6 +244,572 @@ public static partial class CarouselExtensions
     public static T OnPageTransitionChanged<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Carousel
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsSwipeEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithValue(PropertyMetadata.Carousel_IsSwipeEnabled, Avalonia.Controls.Carousel.IsSwipeEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsSwipeEnabled<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithBinding(PropertyMetadata.Carousel_IsSwipeEnabled, Avalonia.Controls.Carousel.IsSwipeEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsSwipeEnabled<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithBinding(PropertyMetadata.Carousel_IsSwipeEnabled, Avalonia.Controls.Carousel.IsSwipeEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsSwipeEnabled<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Carousel.IsSwipeEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsSwipeEnabled<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Carousel.IsSwipeEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsSwipeEnabled<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Carousel.IsSwipeEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Carousel.IsSwipeEnabledProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsSwipeEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Carousel
+    {
+        obj[Avalonia.Controls.Carousel.IsSwipeEnabledProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsSwipeEnabled<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        var descriptor = Avalonia.Controls.Carousel.IsSwipeEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsSwipeEnabled<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        var descriptor = Avalonia.Controls.Carousel.IsSwipeEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIsSwipeEnabled(
+        this Avalonia.Controls.Carousel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Carousel.IsSwipeEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsSwipeEnabled(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsSwipeEnabled<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSwipeEnabled(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsSwipeEnabled<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSwipeEnabledChanged(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Carousel.IsSwipeEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsSwipeEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.IsSwipeEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> ViewportFraction<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithValue(PropertyMetadata.Carousel_ViewportFraction, Avalonia.Controls.Carousel.ViewportFractionProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> ViewportFraction<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithBinding(PropertyMetadata.Carousel_ViewportFraction, Avalonia.Controls.Carousel.ViewportFractionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> ViewportFraction<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return builder.WithBinding(PropertyMetadata.Carousel_ViewportFraction, Avalonia.Controls.Carousel.ViewportFractionProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ViewportFraction<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Carousel.ViewportFractionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ViewportFraction<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Carousel.ViewportFractionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ViewportFraction<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Carousel.ViewportFractionProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Carousel.ViewportFractionProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ViewportFraction<T>(this T obj, System.Double value) where T : Avalonia.Controls.Carousel
+    {
+        obj[Avalonia.Controls.Carousel.ViewportFractionProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ViewportFraction<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        var descriptor = Avalonia.Controls.Carousel.ViewportFractionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ViewportFraction<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
+    {
+        var descriptor = Avalonia.Controls.Carousel.ViewportFractionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindViewportFraction(
+        this Avalonia.Controls.Carousel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Carousel.ViewportFractionProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveViewportFraction(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnViewportFraction<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<System.Double>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingViewportFraction(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingViewportFraction<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveViewportFractionChanged(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Carousel.ViewportFractionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnViewportFractionChanged<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Carousel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.ViewportFractionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Carousel.IsSwipingProperty
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIsSwiping(
+        this Avalonia.Controls.Carousel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Carousel.IsSwipingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsSwiping(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Carousel OnIsSwiping(this Avalonia.Controls.Carousel obj, Action<Avalonia.Controls.Carousel, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSwiping(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Carousel OnBindingIsSwiping(this Avalonia.Controls.Carousel obj, Action<Avalonia.Controls.Carousel, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSwipingChanged(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Carousel.IsSwipingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Carousel OnIsSwipingChanged(this Avalonia.Controls.Carousel obj, Action<Avalonia.Controls.Carousel, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Carousel.IsSwipingProperty);
         handler(obj, observable);
         return obj;
     }

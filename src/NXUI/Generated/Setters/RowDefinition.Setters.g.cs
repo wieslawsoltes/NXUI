@@ -123,7 +123,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRowDefinitionMaxHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRowDefinitionMaxHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRowDefinitionMaxHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRowDefinitionMaxHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class RowDefinitionSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRowDefinitionMaxHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRowDefinitionMaxHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.MaxHeightProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class RowDefinitionSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRowDefinitionMaxHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRowDefinitionMaxHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.MaxHeightProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRowDefinitionMinHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRowDefinitionMinHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRowDefinitionMinHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRowDefinitionMinHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class RowDefinitionSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRowDefinitionMinHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRowDefinitionMinHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.MinHeightProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class RowDefinitionSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRowDefinitionMinHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRowDefinitionMinHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.MinHeightProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRowDefinitionHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRowDefinitionHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class RowDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRowDefinitionHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRowDefinitionHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class RowDefinitionSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRowDefinitionHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRowDefinitionHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.HeightProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class RowDefinitionSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRowDefinitionHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRowDefinitionHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RowDefinition.HeightProperty, binding));
         return keyFrame;

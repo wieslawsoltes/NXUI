@@ -32,7 +32,7 @@ public static partial class StackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Spacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -78,7 +78,7 @@ public static partial class StackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Spacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -128,7 +128,7 @@ public static partial class StackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Spacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -164,7 +164,7 @@ public static partial class StackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSpacing(
+    public static Avalonia.Data.BindingBase BindSpacing(
         this Avalonia.Controls.StackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class StackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -316,7 +316,7 @@ public static partial class StackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -366,7 +366,7 @@ public static partial class StackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -402,7 +402,7 @@ public static partial class StackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.StackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class StackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreHorizontalSnapPointsRegular<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -600,7 +600,7 @@ public static partial class StackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreHorizontalSnapPointsRegular<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -650,7 +650,7 @@ public static partial class StackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AreHorizontalSnapPointsRegular<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -686,7 +686,7 @@ public static partial class StackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreHorizontalSnapPointsRegular(
+    public static Avalonia.Data.BindingBase BindAreHorizontalSnapPointsRegular(
         this Avalonia.Controls.StackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class StackPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreVerticalSnapPointsRegular<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -838,7 +838,7 @@ public static partial class StackPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreVerticalSnapPointsRegular<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -888,7 +888,7 @@ public static partial class StackPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T AreVerticalSnapPointsRegular<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.StackPanel
     {
@@ -924,7 +924,7 @@ public static partial class StackPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreVerticalSnapPointsRegular(
+    public static Avalonia.Data.BindingBase BindAreVerticalSnapPointsRegular(
         this Avalonia.Controls.StackPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -16,6 +16,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Tmds.DBus.Protocol" Version="$(TmdsDbusProtocolVersion)" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="*.props">

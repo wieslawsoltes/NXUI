@@ -123,7 +123,7 @@ public static partial class PolylineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPolylinePoints(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPolylinePoints(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class PolylineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPolylinePoints(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPolylinePoints(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class PolylineSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPolylinePoints(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPolylinePoints(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, binding));
         return style;
@@ -163,9 +163,168 @@ public static partial class PolylineSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetPolylineFillRule(this StyleBuilder builder, Avalonia.Media.FillRule value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetPolylineFillRule(this KeyFrameBuilder builder, Avalonia.Media.FillRule value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.Shapes.Polyline.FillRuleProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPolylineFillRule(this Style style, Avalonia.Media.FillRule value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPolylineFillRule(this KeyFrame keyFrame, Avalonia.Media.FillRule value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetPolylineFillRule(this StyleBuilder builder, IObservable<Avalonia.Media.FillRule> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetPolylineFillRule(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FillRule> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPolylineFillRule(this Style style, IObservable<Avalonia.Media.FillRule> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPolylineFillRule(this KeyFrame keyFrame, IObservable<Avalonia.Media.FillRule> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetPolylineFillRule(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetPolylineFillRule(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPolylineFillRule(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPolylineFillRule(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding));
         return keyFrame;
     }
 }

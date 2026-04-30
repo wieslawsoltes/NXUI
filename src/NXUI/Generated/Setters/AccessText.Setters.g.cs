@@ -123,7 +123,7 @@ public static partial class AccessTextSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAccessTextShowAccessKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAccessTextShowAccessKey(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class AccessTextSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAccessTextShowAccessKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAccessTextShowAccessKey(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class AccessTextSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAccessTextShowAccessKey(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAccessTextShowAccessKey(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class AccessTextSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAccessTextShowAccessKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAccessTextShowAccessKey(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, binding));
         return keyFrame;

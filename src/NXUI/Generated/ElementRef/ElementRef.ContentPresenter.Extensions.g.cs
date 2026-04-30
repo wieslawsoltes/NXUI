@@ -156,6 +156,15 @@ public static partial class ContentPresenterElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> value.
     /// </summary>
     public static IObservable<System.Int32> ObserveMaxLines<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter

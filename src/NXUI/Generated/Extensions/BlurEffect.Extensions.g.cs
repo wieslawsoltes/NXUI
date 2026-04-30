@@ -32,7 +32,7 @@ public static partial class BlurEffectExtensions
     /// <returns>The builder instance.</returns>
     public static BlurEffectBuilder Radius(
         this BlurEffectBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class BlurEffectExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.BlurEffect> Radius(
         this ElementRef<Avalonia.Media.BlurEffect> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class BlurEffectExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.BlurEffect Radius(
         this Avalonia.Media.BlurEffect obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class BlurEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRadius(
+    public static Avalonia.Data.BindingBase BindRadius(
         this Avalonia.Media.BlurEffect obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

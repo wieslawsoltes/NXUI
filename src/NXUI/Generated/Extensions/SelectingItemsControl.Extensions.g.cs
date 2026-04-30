@@ -32,7 +32,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -78,7 +78,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AutoScrollToSelectedItem<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -128,7 +128,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T AutoScrollToSelectedItem<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -164,7 +164,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAutoScrollToSelectedItem(
+    public static Avalonia.Data.BindingBase BindAutoScrollToSelectedItem(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -316,7 +316,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedIndex<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -366,7 +366,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedIndex<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -402,7 +402,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedIndex(
+    public static Avalonia.Data.BindingBase BindSelectedIndex(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -554,7 +554,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedItem<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -604,7 +604,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItem<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -640,7 +640,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedItem(
+    public static Avalonia.Data.BindingBase BindSelectedItem(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValue<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -792,7 +792,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedValue<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -842,7 +842,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedValue<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -878,7 +878,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedValue(
+    public static Avalonia.Data.BindingBase BindSelectedValue(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -969,7 +969,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedValueBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static ElementBuilder<T> SelectedValueBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return builder.WithValue(PropertyMetadata.SelectingItemsControl_SelectedValueBinding, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value);
     }
@@ -984,7 +984,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1001,7 +1001,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1015,7 +1015,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> SelectedValueBinding<T>(this ElementRef<T> elementRef, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static ElementRef<T> SelectedValueBinding<T>(this ElementRef<T> elementRef, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return elementRef.SetValue(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value);
     }
@@ -1030,7 +1030,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedValueBinding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1047,7 +1047,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedValueBinding<T>(
         this ElementRef<T> elementRef,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1063,7 +1063,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedValueBinding<T>(this T obj, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T SelectedValueBinding<T>(this T obj, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty] = value;
         return obj;
@@ -1080,7 +1080,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedValueBinding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1100,7 +1100,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedValueBinding<T>(
         this T obj,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1116,7 +1116,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedValueBinding(
+    public static Avalonia.Data.BindingBase BindSelectedValueBinding(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1133,7 +1133,7 @@ public static partial class SelectingItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Data.IBinding?> ObserveSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<Avalonia.Data.BindingBase?> ObserveSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }
@@ -1145,7 +1145,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Data.IBinding?>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Data.BindingBase?>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
         handler(obj, observable);
@@ -1157,7 +1157,7 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Data.IBinding?>> ObserveBindingSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Data.BindingBase?>> ObserveBindingSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }
@@ -1169,7 +1169,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding?>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnBindingSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<Avalonia.Data.BindingBase?>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
         handler(obj, observable);
@@ -1222,7 +1222,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSelected<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1268,7 +1268,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsSelected<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1318,7 +1318,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T IsSelected<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1354,7 +1354,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsSelected(
+    public static Avalonia.Data.BindingBase BindIsSelected(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1460,7 +1460,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextSearchEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1506,7 +1506,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTextSearchEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1556,7 +1556,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTextSearchEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1592,7 +1592,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTextSearchEnabled(
+    public static Avalonia.Data.BindingBase BindIsTextSearchEnabled(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1698,7 +1698,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WrapSelection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1744,7 +1744,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> WrapSelection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1794,7 +1794,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T WrapSelection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1830,7 +1830,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindWrapSelection(
+    public static Avalonia.Data.BindingBase BindWrapSelection(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

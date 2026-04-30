@@ -81,7 +81,7 @@ public class StyleSetterBuilderTests
         var setter = Assert.IsType<Setter>(Assert.Single(style.Setters));
 
         Assert.Equal(Avalonia.Controls.Border.BackgroundProperty, setter.Property);
-        Assert.IsAssignableFrom<IBinding>(setter.Value);
+        Assert.IsAssignableFrom<BindingBase>(setter.Value);
     }
 
     private sealed class SingleValueObservable<T> : IObservable<T>

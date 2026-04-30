@@ -32,7 +32,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SeparatorBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -78,7 +78,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SeparatorBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -128,7 +128,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T SeparatorBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -164,7 +164,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSeparatorBrush(
+    public static Avalonia.Data.BindingBase BindSeparatorBrush(
         this Avalonia.Controls.DataGridColumnHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreSeparatorsVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -316,7 +316,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreSeparatorsVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -366,7 +366,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <returns>The target object reference.</returns>
     public static T AreSeparatorsVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -402,7 +402,7 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreSeparatorsVisible(
+    public static Avalonia.Data.BindingBase BindAreSeparatorsVisible(
         this Avalonia.Controls.DataGridColumnHeader obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

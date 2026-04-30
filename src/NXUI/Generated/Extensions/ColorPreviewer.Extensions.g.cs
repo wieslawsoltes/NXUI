@@ -32,7 +32,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -78,7 +78,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HsvColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -128,7 +128,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The target object reference.</returns>
     public static T HsvColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -164,7 +164,7 @@ public static partial class ColorPreviewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHsvColor(
+    public static Avalonia.Data.BindingBase BindHsvColor(
         this Avalonia.Controls.Primitives.ColorPreviewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -316,7 +316,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsAccentColorsVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -366,7 +366,7 @@ public static partial class ColorPreviewerExtensions
     /// <returns>The target object reference.</returns>
     public static T IsAccentColorsVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -402,7 +402,7 @@ public static partial class ColorPreviewerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsAccentColorsVisible(
+    public static Avalonia.Data.BindingBase BindIsAccentColorsVisible(
         this Avalonia.Controls.Primitives.ColorPreviewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

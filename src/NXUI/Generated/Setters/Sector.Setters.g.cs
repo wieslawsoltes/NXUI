@@ -123,7 +123,7 @@ public static partial class SectorSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSectorStartAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSectorStartAngle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class SectorSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSectorStartAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSectorStartAngle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class SectorSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSectorStartAngle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSectorStartAngle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class SectorSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSectorStartAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSectorStartAngle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class SectorSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetSectorSweepAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSectorSweepAngle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class SectorSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetSectorSweepAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSectorSweepAngle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class SectorSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetSectorSweepAngle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetSectorSweepAngle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class SectorSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSectorSweepAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetSectorSweepAngle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, binding));
         return keyFrame;

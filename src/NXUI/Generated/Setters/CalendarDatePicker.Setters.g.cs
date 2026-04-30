@@ -123,7 +123,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerDisplayDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerDisplayDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerDisplayDate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerDisplayDate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerDisplayDate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerDisplayDate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerDisplayDateStart(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateStart(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateStart(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateStart(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerDisplayDateStart(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerDisplayDateStart(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerDisplayDateStart(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerDisplayDateStart(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerDisplayDateEnd(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateEnd(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateEnd(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateEnd(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerDisplayDateEnd(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerDisplayDateEnd(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerDisplayDateEnd(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerDisplayDateEnd(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerFirstDayOfWeek(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerFirstDayOfWeek(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerFirstDayOfWeek(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerFirstDayOfWeek(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerFirstDayOfWeek(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerFirstDayOfWeek(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerFirstDayOfWeek(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerFirstDayOfWeek(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerIsDropDownOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerIsDropDownOpen(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerIsDropDownOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerIsDropDownOpen(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerIsDropDownOpen(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerIsDropDownOpen(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerIsDropDownOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerIsDropDownOpen(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerIsTodayHighlighted(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerIsTodayHighlighted(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerIsTodayHighlighted(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerIsTodayHighlighted(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerIsTodayHighlighted(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerIsTodayHighlighted(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerIsTodayHighlighted(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerIsTodayHighlighted(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerSelectedDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerSelectedDate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerSelectedDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerSelectedDate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerSelectedDate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerSelectedDate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerSelectedDate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerSelectedDateFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerSelectedDateFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerSelectedDateFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDateFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerSelectedDateFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerSelectedDateFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerSelectedDateFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerSelectedDateFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerCustomDateFormatString(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerCustomDateFormatString(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerCustomDateFormatString(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerCustomDateFormatString(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerCustomDateFormatString(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerCustomDateFormatString(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerCustomDateFormatString(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerCustomDateFormatString(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.TextProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.TextProperty, binding));
         return keyFrame;
@@ -1602,319 +1602,478 @@ public static partial class CalendarDatePickerSetters
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, System.String value)
+    public static StyleBuilder SetCalendarDatePickerPlaceholderText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, System.String value)
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value));
         });
     }
 
-    // Avalonia.Controls.CalendarDatePicker.WatermarkProperty
+    // Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerWatermark(this Style style, System.String value)
+    public static Style SetCalendarDatePickerPlaceholderText(this Style style, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerWatermark(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetCalendarDatePickerPlaceholderText(this KeyFrame keyFrame, System.String value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, IObservable<System.String> observable)
+    public static StyleBuilder SetCalendarDatePickerPlaceholderText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerWatermark(this Style style, IObservable<System.String> observable)
+    public static Style SetCalendarDatePickerPlaceholderText(this Style style, IObservable<System.String> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerWatermark(this KeyFrame keyFrame, IObservable<System.String> observable)
+    public static KeyFrame SetCalendarDatePickerPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerPlaceholderText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerPlaceholderText(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerPlaceholderText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty, binding));
         return keyFrame;
     }
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, System.Boolean value)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingPlaceholder(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, System.Boolean value)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value));
         });
     }
 
-    // Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty
+    // Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerUseFloatingWatermark(this Style style, System.Boolean value)
+    public static Style SetCalendarDatePickerUseFloatingPlaceholder(this Style style, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerUseFloatingWatermark(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrame keyFrame, System.Boolean value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingPlaceholder(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerUseFloatingWatermark(this Style style, IObservable<System.Boolean> observable)
+    public static Style SetCalendarDatePickerUseFloatingPlaceholder(this Style style, IObservable<System.Boolean> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerUseFloatingWatermark(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    public static KeyFrame SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingPlaceholder(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerUseFloatingWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerUseFloatingPlaceholder(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerUseFloatingWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerUseFloatingPlaceholder(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetCalendarDatePickerPlaceholderForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCalendarDatePickerPlaceholderForeground(this Style style, Avalonia.Media.IBrush value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarDatePickerPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetCalendarDatePickerPlaceholderForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCalendarDatePickerPlaceholderForeground(this Style style, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarDatePickerPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetCalendarDatePickerPlaceholderForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetCalendarDatePickerPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCalendarDatePickerPlaceholderForeground(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarDatePickerPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty, binding));
         return keyFrame;
     }
 
@@ -2031,7 +2190,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2204,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2218,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerHorizontalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, binding));
         return style;
@@ -2071,7 +2230,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, binding));
         return keyFrame;
@@ -2190,7 +2349,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCalendarDatePickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2363,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCalendarDatePickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2377,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarDatePickerVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCalendarDatePickerVerticalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, binding));
         return style;
@@ -2230,7 +2389,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarDatePickerVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCalendarDatePickerVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, binding));
         return keyFrame;

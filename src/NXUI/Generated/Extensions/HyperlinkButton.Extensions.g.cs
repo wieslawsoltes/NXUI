@@ -32,7 +32,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisited<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -78,7 +78,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsVisited<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -128,7 +128,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T IsVisited<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -164,7 +164,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsVisited(
+    public static Avalonia.Data.BindingBase BindIsVisited(
         this Avalonia.Controls.HyperlinkButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NavigateUri<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -316,7 +316,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> NavigateUri<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -366,7 +366,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T NavigateUri<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -402,7 +402,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindNavigateUri(
+    public static Avalonia.Data.BindingBase BindNavigateUri(
         this Avalonia.Controls.HyperlinkButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

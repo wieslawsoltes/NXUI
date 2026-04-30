@@ -123,7 +123,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformAngleX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformAngleX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformAngleX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformAngleY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformAngleY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformAngleY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformAngleZ(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleZ(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformAngleZ(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleZ(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleZ(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformAngleZ(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformCenterX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformCenterX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformCenterX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformCenterY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformCenterY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformCenterY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformCenterZ(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterZ(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformCenterZ(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterZ(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterZ(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformCenterZ(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRotate3DTransformDepth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformDepth(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRotate3DTransformDepth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformDepth(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformDepth(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRotate3DTransformDepth(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, binding));
         return keyFrame;

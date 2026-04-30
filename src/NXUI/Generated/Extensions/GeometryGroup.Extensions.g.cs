@@ -32,7 +32,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Children<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -78,7 +78,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Children<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -128,7 +128,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The target object reference.</returns>
     public static T Children<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -164,7 +164,7 @@ public static partial class GeometryGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChildren(
+    public static Avalonia.Data.BindingBase BindChildren(
         this Avalonia.Media.GeometryGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRule<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -316,7 +316,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FillRule<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -366,7 +366,7 @@ public static partial class GeometryGroupExtensions
     /// <returns>The target object reference.</returns>
     public static T FillRule<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryGroup
     {
@@ -402,7 +402,7 @@ public static partial class GeometryGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFillRule(
+    public static Avalonia.Data.BindingBase BindFillRule(
         this Avalonia.Media.GeometryGroup obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

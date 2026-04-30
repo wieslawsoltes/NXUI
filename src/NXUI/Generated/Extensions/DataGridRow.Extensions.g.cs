@@ -32,7 +32,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -78,7 +78,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Header<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -128,7 +128,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The target object reference.</returns>
     public static T Header<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -164,7 +164,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeader(
+    public static Avalonia.Data.BindingBase BindHeader(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSelected<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -316,7 +316,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsSelected<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -366,7 +366,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The target object reference.</returns>
     public static T IsSelected<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -402,7 +402,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsSelected(
+    public static Avalonia.Data.BindingBase BindIsSelected(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +495,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.IsValidProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsValid(
+    public static Avalonia.Data.BindingBase BindIsValid(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DetailsTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -644,7 +644,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DetailsTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -694,7 +694,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The target object reference.</returns>
     public static T DetailsTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -730,7 +730,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDetailsTemplate(
+    public static Avalonia.Data.BindingBase BindDetailsTemplate(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +836,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreDetailsVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -882,7 +882,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AreDetailsVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -932,7 +932,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The target object reference.</returns>
     public static T AreDetailsVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -968,7 +968,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAreDetailsVisible(
+    public static Avalonia.Data.BindingBase BindAreDetailsVisible(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1074,7 +1074,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Index<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -1120,7 +1120,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Index<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -1170,7 +1170,7 @@ public static partial class DataGridRowExtensions
     /// <returns>The target object reference.</returns>
     public static T Index<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRow
     {
@@ -1206,7 +1206,7 @@ public static partial class DataGridRowExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIndex(
+    public static Avalonia.Data.BindingBase BindIndex(
         this Avalonia.Controls.DataGridRow obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -123,7 +123,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxCaretIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxCaretIndex(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxCaretIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxCaretIndex(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxCaretIndex(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxCaretIndex(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxCaretIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxCaretIndex(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, binding));
         return keyFrame;
@@ -171,160 +171,319 @@ public static partial class AutoCompleteBoxSetters
 
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxWatermark(this StyleBuilder builder, System.String value)
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value));
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, value));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxWatermark(this KeyFrameBuilder builder, System.String value)
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, value));
         });
     }
 
-    // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
+    // Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxWatermark(this Style style, System.String value)
+    public static Style SetAutoCompleteBoxPlaceholderText(this Style style, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxWatermark(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetAutoCompleteBoxPlaceholderText(this KeyFrame keyFrame, System.String value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, value));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxWatermark(this StyleBuilder builder, IObservable<System.String> observable)
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding()));
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> using an observable source.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> using an observable source.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxWatermark(this KeyFrameBuilder builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding()));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, observable.ToBinding()));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxWatermark(this Style style, IObservable<System.String> observable)
+    public static Style SetAutoCompleteBoxPlaceholderText(this Style style, IObservable<System.String> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxWatermark(this KeyFrame keyFrame, IObservable<System.String> observable)
+    public static KeyFrame SetAutoCompleteBoxPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
     /// <summary>
-    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
-            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, binding));
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> using a binding.
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> using a binding.
     /// </summary>
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
-            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, binding));
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, binding));
         });
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxWatermark(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxPlaceholderText(this Style style, Avalonia.Data.BindingBase binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxWatermark(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxPlaceholderText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxPlaceholderForeground(this Style style, Avalonia.Media.IBrush value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxPlaceholderForeground(this Style style, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxPlaceholderForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxPlaceholderForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxPlaceholderForeground(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty, binding));
         return keyFrame;
     }
 
@@ -441,7 +600,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxMinimumPrefixLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxMinimumPrefixLength(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +614,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxMinimumPrefixLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxMinimumPrefixLength(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +628,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxMinimumPrefixLength(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxMinimumPrefixLength(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, binding));
         return style;
@@ -481,7 +640,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxMinimumPrefixLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxMinimumPrefixLength(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, binding));
         return keyFrame;
@@ -600,7 +759,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxMinimumPopulateDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxMinimumPopulateDelay(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +773,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxMinimumPopulateDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxMinimumPopulateDelay(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +787,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxMinimumPopulateDelay(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxMinimumPopulateDelay(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, binding));
         return style;
@@ -640,7 +799,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxMinimumPopulateDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxMinimumPopulateDelay(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, binding));
         return keyFrame;
@@ -759,7 +918,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxMaxDropDownHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxMaxDropDownHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +932,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxMaxDropDownHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxMaxDropDownHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +946,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxMaxDropDownHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxMaxDropDownHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, binding));
         return style;
@@ -799,7 +958,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxMaxDropDownHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxMaxDropDownHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, binding));
         return keyFrame;
@@ -918,7 +1077,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxIsTextCompletionEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxIsTextCompletionEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +1091,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxIsTextCompletionEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxIsTextCompletionEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +1105,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxIsTextCompletionEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxIsTextCompletionEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, binding));
         return style;
@@ -958,7 +1117,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxIsTextCompletionEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxIsTextCompletionEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, binding));
         return keyFrame;
@@ -1077,7 +1236,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxItemTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1250,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1264,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxItemTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, binding));
         return style;
@@ -1117,9 +1276,168 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxItemTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxItemTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this StyleBuilder builder, System.Boolean value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrameBuilder builder, System.Boolean value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxClearSelectionOnLostFocus(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this StyleBuilder builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxClearSelectionOnLostFocus(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxClearSelectionOnLostFocus(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxClearSelectionOnLostFocus(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty, binding));
         return keyFrame;
     }
 
@@ -1236,7 +1554,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxIsDropDownOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxIsDropDownOpen(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1568,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxIsDropDownOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxIsDropDownOpen(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1582,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxIsDropDownOpen(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxIsDropDownOpen(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, binding));
         return style;
@@ -1276,7 +1594,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxIsDropDownOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxIsDropDownOpen(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, binding));
         return keyFrame;
@@ -1395,7 +1713,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxSelectedItem(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1727,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1741,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxSelectedItem(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, binding));
         return style;
@@ -1435,7 +1753,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxSelectedItem(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, binding));
         return keyFrame;
@@ -1554,7 +1872,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1886,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1900,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextProperty, binding));
         return style;
@@ -1594,7 +1912,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextProperty, binding));
         return keyFrame;
@@ -1713,7 +2031,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxFilterMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxFilterMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +2045,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxFilterMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxFilterMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +2059,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxFilterMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxFilterMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, binding));
         return style;
@@ -1753,7 +2071,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxFilterMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxFilterMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, binding));
         return keyFrame;
@@ -1872,7 +2190,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxItemFilter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxItemFilter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +2204,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxItemFilter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxItemFilter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +2218,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxItemFilter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxItemFilter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, binding));
         return style;
@@ -1912,7 +2230,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxItemFilter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxItemFilter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, binding));
         return keyFrame;
@@ -2031,7 +2349,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxTextFilter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxTextFilter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2363,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxTextFilter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxTextFilter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2377,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxTextFilter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxTextFilter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, binding));
         return style;
@@ -2071,7 +2389,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxTextFilter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxTextFilter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, binding));
         return keyFrame;
@@ -2190,7 +2508,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxItemSelector(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxItemSelector(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2522,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxItemSelector(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxItemSelector(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2536,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxItemSelector(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxItemSelector(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, binding));
         return style;
@@ -2230,7 +2548,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxItemSelector(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxItemSelector(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, binding));
         return keyFrame;
@@ -2349,7 +2667,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxTextSelector(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxTextSelector(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2681,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxTextSelector(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxTextSelector(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2695,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxTextSelector(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxTextSelector(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, binding));
         return style;
@@ -2389,7 +2707,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxTextSelector(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxTextSelector(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, binding));
         return keyFrame;
@@ -2508,7 +2826,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxItemsSource(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2840,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxItemsSource(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2854,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxItemsSource(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxItemsSource(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, binding));
         return style;
@@ -2548,7 +2866,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxItemsSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxItemsSource(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, binding));
         return keyFrame;
@@ -2667,7 +2985,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxAsyncPopulator(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxAsyncPopulator(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2999,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxAsyncPopulator(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxAsyncPopulator(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +3013,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxAsyncPopulator(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxAsyncPopulator(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, binding));
         return style;
@@ -2707,7 +3025,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxAsyncPopulator(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxAsyncPopulator(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, binding));
         return keyFrame;
@@ -2826,7 +3144,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxMaxLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxMaxLength(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +3158,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxMaxLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxMaxLength(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +3172,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxMaxLength(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxMaxLength(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, binding));
         return style;
@@ -2866,7 +3184,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxMaxLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxMaxLength(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, binding));
         return keyFrame;
@@ -2985,7 +3303,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxInnerLeftContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxInnerLeftContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +3317,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxInnerLeftContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3331,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxInnerLeftContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxInnerLeftContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, binding));
         return style;
@@ -3025,7 +3343,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, binding));
         return keyFrame;
@@ -3144,7 +3462,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetAutoCompleteBoxInnerRightContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAutoCompleteBoxInnerRightContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3476,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetAutoCompleteBoxInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAutoCompleteBoxInnerRightContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3490,7 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetAutoCompleteBoxInnerRightContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetAutoCompleteBoxInnerRightContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, binding));
         return style;
@@ -3184,9 +3502,116 @@ public static partial class AutoCompleteBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAutoCompleteBoxInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetAutoCompleteBoxInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxValueMemberBinding(this StyleBuilder builder, Avalonia.Data.BindingBase value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxValueMemberBinding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxValueMemberBinding(this Style style, Avalonia.Data.BindingBase value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxValueMemberBinding(this KeyFrame keyFrame, Avalonia.Data.BindingBase value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetAutoCompleteBoxValueMemberBinding(this StyleBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetAutoCompleteBoxValueMemberBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.BindingBase> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxValueMemberBinding(this Style style, IObservable<Avalonia.Data.BindingBase> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxValueMemberBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.BindingBase> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty, observable.ToBinding()));
         return keyFrame;
     }
 

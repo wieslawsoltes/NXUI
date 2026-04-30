@@ -32,7 +32,7 @@ public static partial class DataGridDetailsPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static DataGridDetailsPresenterBuilder ContentHeight(
         this DataGridDetailsPresenterBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class DataGridDetailsPresenterExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Controls.Primitives.DataGridDetailsPresenter> ContentHeight(
         this ElementRef<Avalonia.Controls.Primitives.DataGridDetailsPresenter> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class DataGridDetailsPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.DataGridDetailsPresenter ContentHeight(
         this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class DataGridDetailsPresenterExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContentHeight(
+    public static Avalonia.Data.BindingBase BindContentHeight(
         this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

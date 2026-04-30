@@ -30,15 +30,6 @@ public static partial class WindowElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value.
-    /// </summary>
-    public static IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> ObserveExtendClientAreaChromeHints<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
-    {
-        return elementRef.Observe(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-    }
-
-
-    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> value.
     /// </summary>
     public static IObservable<System.Double> ObserveExtendClientAreaTitleBarHeightHint<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
@@ -75,11 +66,11 @@ public static partial class WindowElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.Window.WindowDecorationsProperty"/> value.
     /// </summary>
-    public static IObservable<Avalonia.Controls.SystemDecorations> ObserveSystemDecorations<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
+    public static IObservable<Avalonia.Controls.WindowDecorations> ObserveWindowDecorations<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
     {
-        return elementRef.Observe(Avalonia.Controls.Window.SystemDecorationsProperty);
+        return elementRef.Observe(Avalonia.Controls.Window.WindowDecorationsProperty);
     }
 
 
@@ -152,6 +143,24 @@ public static partial class WindowElementRefExtensions
     public static IObservable<System.Boolean> ObserveCanResize<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
     {
         return elementRef.Observe(Avalonia.Controls.Window.CanResizeProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Window.CanMinimizeProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveCanMinimize<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
+    {
+        return elementRef.Observe(Avalonia.Controls.Window.CanMinimizeProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Window.CanMaximizeProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveCanMaximize<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Window
+    {
+        return elementRef.Observe(Avalonia.Controls.Window.CanMaximizeProperty);
     }
 
 }

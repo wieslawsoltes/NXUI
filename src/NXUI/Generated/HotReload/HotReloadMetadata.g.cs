@@ -19,282 +19,285 @@ internal static partial class TypeMetadata
     internal const int Avalonia_Controls_ColumnDefinition = 11;
     internal const int Avalonia_Controls_ComboBox = 12;
     internal const int Avalonia_Controls_ComboBoxItem = 13;
-    internal const int Avalonia_Controls_ContentControl = 14;
-    internal const int Avalonia_Controls_ContextMenu = 15;
-    internal const int Avalonia_Controls_Control = 16;
-    internal const int Avalonia_Controls_DataValidationErrors = 17;
-    internal const int Avalonia_Controls_DatePicker = 18;
-    internal const int Avalonia_Controls_DatePickerPresenter = 19;
-    internal const int Avalonia_Controls_TimePicker = 20;
-    internal const int Avalonia_Controls_TimePickerPresenter = 21;
-    internal const int Avalonia_Controls_Decorator = 22;
-    internal const int Avalonia_Controls_DefinitionBase = 23;
-    internal const int Avalonia_Controls_DockPanel = 24;
-    internal const int Avalonia_Controls_DropDownButton = 25;
-    internal const int Avalonia_Controls_Expander = 26;
-    internal const int Avalonia_Controls_ExperimentalAcrylicBorder = 27;
-    internal const int Avalonia_Controls_Flyout = 28;
-    internal const int Avalonia_Controls_FlyoutPresenter = 29;
-    internal const int Avalonia_Controls_MenuFlyout = 30;
-    internal const int Avalonia_Controls_MenuFlyoutPresenter = 31;
-    internal const int Avalonia_Controls_Grid = 32;
-    internal const int Avalonia_Controls_GridSplitter = 33;
-    internal const int Avalonia_Controls_HyperlinkButton = 34;
-    internal const int Avalonia_Controls_IconElement = 35;
-    internal const int Avalonia_Controls_Image = 36;
-    internal const int Avalonia_Controls_ItemsControl = 37;
-    internal const int Avalonia_Controls_Label = 38;
-    internal const int Avalonia_Controls_LayoutTransformControl = 39;
-    internal const int Avalonia_Controls_ListBox = 40;
-    internal const int Avalonia_Controls_ListBoxItem = 41;
-    internal const int Avalonia_Controls_MaskedTextBox = 42;
-    internal const int Avalonia_Controls_Menu = 43;
-    internal const int Avalonia_Controls_MenuBase = 44;
-    internal const int Avalonia_Controls_MenuItem = 45;
-    internal const int Avalonia_Controls_NativeControlHost = 46;
-    internal const int Avalonia_Controls_NativeMenu = 47;
-    internal const int Avalonia_Controls_NativeMenuBar = 48;
-    internal const int Avalonia_Controls_NativeMenuItem = 49;
-    internal const int Avalonia_Controls_NativeMenuItemBase = 50;
-    internal const int Avalonia_Controls_NativeMenuItemSeparator = 51;
-    internal const int Avalonia_Controls_ReversibleStackPanel = 52;
-    internal const int Avalonia_Controls_NumericUpDown = 53;
-    internal const int Avalonia_Controls_Panel = 54;
-    internal const int Avalonia_Controls_PathIcon = 55;
-    internal const int Avalonia_Controls_ProgressBar = 56;
-    internal const int Avalonia_Controls_RefreshContainer = 57;
-    internal const int Avalonia_Controls_RefreshVisualizer = 58;
-    internal const int Avalonia_Controls_RadioButton = 59;
-    internal const int Avalonia_Controls_RelativePanel = 60;
-    internal const int Avalonia_Controls_RepeatButton = 61;
-    internal const int Avalonia_Controls_RowDefinition = 62;
-    internal const int Avalonia_Controls_ScrollViewer = 63;
-    internal const int Avalonia_Controls_SelectableTextBlock = 64;
-    internal const int Avalonia_Controls_Separator = 65;
-    internal const int Avalonia_Controls_Slider = 66;
-    internal const int Avalonia_Controls_Spinner = 67;
-    internal const int Avalonia_Controls_SplitButton = 68;
-    internal const int Avalonia_Controls_ToggleSplitButton = 69;
-    internal const int Avalonia_Controls_SplitView = 70;
-    internal const int Avalonia_Controls_StackPanel = 71;
-    internal const int Avalonia_Controls_TabControl = 72;
-    internal const int Avalonia_Controls_TabItem = 73;
-    internal const int Avalonia_Controls_TextBlock = 74;
-    internal const int Avalonia_Controls_TextBox = 75;
-    internal const int Avalonia_Controls_ThemeVariantScope = 76;
-    internal const int Avalonia_Controls_TickBar = 77;
-    internal const int Avalonia_Controls_ToggleSwitch = 78;
-    internal const int Avalonia_Controls_ToolTip = 79;
-    internal const int Avalonia_Controls_TopLevel = 80;
-    internal const int Avalonia_Controls_TransitioningContentControl = 81;
-    internal const int Avalonia_Controls_TrayIcon = 82;
-    internal const int Avalonia_Controls_TreeView = 83;
-    internal const int Avalonia_Controls_TreeViewItem = 84;
-    internal const int Avalonia_Controls_UserControl = 85;
-    internal const int Avalonia_Controls_Viewbox = 86;
-    internal const int Avalonia_Controls_VirtualizingCarouselPanel = 87;
-    internal const int Avalonia_Controls_VirtualizingPanel = 88;
-    internal const int Avalonia_Controls_VirtualizingStackPanel = 89;
-    internal const int Avalonia_Controls_Window = 90;
-    internal const int Avalonia_Controls_WindowBase = 91;
-    internal const int Avalonia_Controls_WrapPanel = 92;
-    internal const int Avalonia_Controls_Shapes_Arc = 93;
-    internal const int Avalonia_Controls_Shapes_Ellipse = 94;
-    internal const int Avalonia_Controls_Shapes_Line = 95;
-    internal const int Avalonia_Controls_Shapes_Path = 96;
-    internal const int Avalonia_Controls_Shapes_Polygon = 97;
-    internal const int Avalonia_Controls_Shapes_Polyline = 98;
-    internal const int Avalonia_Controls_Shapes_Rectangle = 99;
-    internal const int Avalonia_Controls_Shapes_Sector = 100;
-    internal const int Avalonia_Controls_Shapes_Shape = 101;
-    internal const int Avalonia_Controls_Remote_RemoteWidget = 102;
-    internal const int Avalonia_Controls_Presenters_ContentPresenter = 103;
-    internal const int Avalonia_Controls_Presenters_ItemsPresenter = 104;
-    internal const int Avalonia_Controls_Presenters_ScrollContentPresenter = 105;
-    internal const int Avalonia_Controls_Presenters_TextPresenter = 106;
-    internal const int Avalonia_Controls_Notifications_NotificationCard = 107;
-    internal const int Avalonia_Controls_Notifications_WindowNotificationManager = 108;
-    internal const int Avalonia_Controls_Embedding_EmbeddableControlRoot = 109;
-    internal const int Avalonia_Controls_Documents_Bold = 110;
-    internal const int Avalonia_Controls_Documents_Inline = 111;
-    internal const int Avalonia_Controls_Documents_InlineUIContainer = 112;
-    internal const int Avalonia_Controls_Documents_Italic = 113;
-    internal const int Avalonia_Controls_Documents_LineBreak = 114;
-    internal const int Avalonia_Controls_Documents_Run = 115;
-    internal const int Avalonia_Controls_Documents_Span = 116;
-    internal const int Avalonia_Controls_Documents_TextElement = 117;
-    internal const int Avalonia_Controls_Documents_Underline = 118;
-    internal const int Avalonia_Controls_Chrome_CaptionButtons = 119;
-    internal const int Avalonia_Controls_Chrome_TitleBar = 120;
-    internal const int Avalonia_Controls_Primitives_CalendarButton = 121;
-    internal const int Avalonia_Controls_Primitives_CalendarDayButton = 122;
-    internal const int Avalonia_Controls_Primitives_CalendarItem = 123;
-    internal const int Avalonia_Controls_Primitives_DateTimePickerPanel = 124;
-    internal const int Avalonia_Controls_Primitives_PickerPresenterBase = 125;
-    internal const int Avalonia_Controls_Primitives_FlyoutBase = 126;
-    internal const int Avalonia_Controls_Primitives_PopupFlyoutBase = 127;
-    internal const int Avalonia_Controls_Primitives_AccessText = 128;
-    internal const int Avalonia_Controls_Primitives_AdornerLayer = 129;
-    internal const int Avalonia_Controls_Primitives_ChromeOverlayLayer = 130;
-    internal const int Avalonia_Controls_Primitives_HeaderedContentControl = 131;
-    internal const int Avalonia_Controls_Primitives_HeaderedItemsControl = 132;
-    internal const int Avalonia_Controls_Primitives_HeaderedSelectingItemsControl = 133;
-    internal const int Avalonia_Controls_Primitives_LightDismissOverlayLayer = 134;
-    internal const int Avalonia_Controls_Primitives_OverlayLayer = 135;
-    internal const int Avalonia_Controls_Primitives_OverlayPopupHost = 136;
-    internal const int Avalonia_Controls_Primitives_Popup = 137;
-    internal const int Avalonia_Controls_Primitives_PopupRoot = 138;
-    internal const int Avalonia_Controls_Primitives_RangeBase = 139;
-    internal const int Avalonia_Controls_Primitives_ScrollBar = 140;
-    internal const int Avalonia_Controls_Primitives_SelectingItemsControl = 141;
-    internal const int Avalonia_Controls_Primitives_TabStrip = 142;
-    internal const int Avalonia_Controls_Primitives_TabStripItem = 143;
-    internal const int Avalonia_Controls_Primitives_TemplatedControl = 144;
-    internal const int Avalonia_Controls_Primitives_TextSelectionHandle = 145;
-    internal const int Avalonia_Controls_Primitives_TextSelectorLayer = 146;
-    internal const int Avalonia_Controls_Primitives_Thumb = 147;
-    internal const int Avalonia_Controls_Primitives_ToggleButton = 148;
-    internal const int Avalonia_Controls_Primitives_Track = 149;
-    internal const int Avalonia_Controls_Primitives_UniformGrid = 150;
-    internal const int Avalonia_Controls_Primitives_VisualLayerManager = 151;
-    internal const int Avalonia_Controls_Primitives_SplitViewTemplateSettings = 152;
-    internal const int Avalonia_StyledElement = 153;
-    internal const int Avalonia_Visual = 154;
-    internal const int Avalonia_Styling_ContainerQuery = 155;
-    internal const int Avalonia_Styling_ControlTheme = 156;
-    internal const int Avalonia_Styling_Style = 157;
-    internal const int Avalonia_Styling_StyleBase = 158;
-    internal const int Avalonia_Styling_Styles = 159;
-    internal const int Avalonia_Layout_Layoutable = 160;
-    internal const int Avalonia_Interactivity_Interactive = 161;
-    internal const int Avalonia_Input_PinchGestureRecognizer = 162;
-    internal const int Avalonia_Input_PullGestureRecognizer = 163;
-    internal const int Avalonia_Input_InputElement = 164;
-    internal const int Avalonia_Input_KeyBinding = 165;
-    internal const int Avalonia_Input_GestureRecognizers_GestureRecognizer = 166;
-    internal const int Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer = 167;
-    internal const int Avalonia_Controls_ResourceDictionary = 168;
-    internal const int Avalonia_Controls_ResourceProvider = 169;
-    internal const int Avalonia_Media_CombinedGeometry = 170;
-    internal const int Avalonia_Media_ArcSegment = 171;
-    internal const int Avalonia_Media_BezierSegment = 172;
-    internal const int Avalonia_Media_Brush = 173;
-    internal const int Avalonia_Media_ConicGradientBrush = 174;
-    internal const int Avalonia_Media_DashStyle = 175;
-    internal const int Avalonia_Media_Drawing = 176;
-    internal const int Avalonia_Media_DrawingBrush = 177;
-    internal const int Avalonia_Media_DrawingGroup = 178;
-    internal const int Avalonia_Media_DrawingImage = 179;
-    internal const int Avalonia_Media_BlurEffect = 180;
-    internal const int Avalonia_Media_DropShadowEffectBase = 181;
-    internal const int Avalonia_Media_DropShadowEffect = 182;
-    internal const int Avalonia_Media_DropShadowDirectionEffect = 183;
-    internal const int Avalonia_Media_Effect = 184;
-    internal const int Avalonia_Media_EllipseGeometry = 185;
-    internal const int Avalonia_Media_ExperimentalAcrylicMaterial = 186;
-    internal const int Avalonia_Media_Geometry = 187;
-    internal const int Avalonia_Media_GeometryDrawing = 188;
-    internal const int Avalonia_Media_GeometryGroup = 189;
-    internal const int Avalonia_Media_GlyphRunDrawing = 190;
-    internal const int Avalonia_Media_GradientBrush = 191;
-    internal const int Avalonia_Media_GradientStop = 192;
-    internal const int Avalonia_Media_ImageBrush = 193;
-    internal const int Avalonia_Media_ImageDrawing = 194;
-    internal const int Avalonia_Media_LinearGradientBrush = 195;
-    internal const int Avalonia_Media_LineGeometry = 196;
-    internal const int Avalonia_Media_LineSegment = 197;
-    internal const int Avalonia_Media_MatrixTransform = 198;
-    internal const int Avalonia_Media_PathFigure = 199;
-    internal const int Avalonia_Media_PathGeometry = 200;
-    internal const int Avalonia_Media_PathSegment = 201;
-    internal const int Avalonia_Media_Pen = 202;
-    internal const int Avalonia_Media_PolyBezierSegment = 203;
-    internal const int Avalonia_Media_PolylineGeometry = 204;
-    internal const int Avalonia_Media_PolyLineSegment = 205;
-    internal const int Avalonia_Media_QuadraticBezierSegment = 206;
-    internal const int Avalonia_Media_RadialGradientBrush = 207;
-    internal const int Avalonia_Media_RectangleGeometry = 208;
-    internal const int Avalonia_Media_RotateTransform = 209;
-    internal const int Avalonia_Media_ScaleTransform = 210;
-    internal const int Avalonia_Media_SkewTransform = 211;
-    internal const int Avalonia_Media_SolidColorBrush = 212;
-    internal const int Avalonia_Media_StreamGeometry = 213;
-    internal const int Avalonia_Media_TextDecoration = 214;
-    internal const int Avalonia_Media_TileBrush = 215;
-    internal const int Avalonia_Media_Transform = 216;
-    internal const int Avalonia_Media_TransformGroup = 217;
-    internal const int Avalonia_Media_TranslateTransform = 218;
-    internal const int Avalonia_Media_VisualBrush = 219;
-    internal const int Avalonia_Media_Rotate3DTransform = 220;
-    internal const int Avalonia_Media_Imaging_CroppedBitmap = 221;
-    internal const int Avalonia_Animation_Animatable = 222;
-    internal const int Avalonia_Animation_Animation = 223;
-    internal const int Avalonia_Animation_InterpolatingTransitionBase_T_ = 224;
-    internal const int Avalonia_Animation_KeyFrame = 225;
-    internal const int Avalonia_Animation_KeySpline = 226;
-    internal const int Avalonia_Animation_Transition_T_ = 227;
-    internal const int Avalonia_Animation_TransitionBase = 228;
-    internal const int Avalonia_Animation_BoolTransition = 229;
-    internal const int Avalonia_Animation_BoxShadowsTransition = 230;
-    internal const int Avalonia_Animation_BrushTransition = 231;
-    internal const int Avalonia_Animation_ColorTransition = 232;
-    internal const int Avalonia_Animation_CornerRadiusTransition = 233;
-    internal const int Avalonia_Animation_DoubleTransition = 234;
-    internal const int Avalonia_Animation_FloatTransition = 235;
-    internal const int Avalonia_Animation_IntegerTransition = 236;
-    internal const int Avalonia_Animation_PointTransition = 237;
-    internal const int Avalonia_Animation_RelativePointTransition = 238;
-    internal const int Avalonia_Animation_SizeTransition = 239;
-    internal const int Avalonia_Animation_ThicknessTransition = 240;
-    internal const int Avalonia_Animation_TransformOperationsTransition = 241;
-    internal const int Avalonia_Animation_VectorTransition = 242;
-    internal const int Avalonia_Animation_EffectTransition = 243;
-    internal const int Avalonia_Controls_ColorPicker = 244;
-    internal const int Avalonia_Controls_ColorView = 245;
-    internal const int Avalonia_Controls_Primitives_ColorPreviewer = 246;
-    internal const int Avalonia_Controls_Primitives_ColorSlider = 247;
-    internal const int Avalonia_Controls_Primitives_ColorSpectrum = 248;
-    internal const int Avalonia_Layout_AttachedLayout = 249;
-    internal const int Avalonia_Layout_LayoutContext = 250;
-    internal const int Avalonia_Layout_NonVirtualizingLayout = 251;
-    internal const int Avalonia_Layout_NonVirtualizingLayoutContext = 252;
-    internal const int Avalonia_Layout_NonVirtualizingStackLayout = 253;
-    internal const int Avalonia_Layout_StackLayout = 254;
-    internal const int Avalonia_Layout_UniformGridLayout = 255;
-    internal const int Avalonia_Layout_VirtualizingLayout = 256;
-    internal const int Avalonia_Layout_VirtualizingLayoutContext = 257;
-    internal const int Avalonia_Layout_VirtualLayoutContextAdapter = 258;
-    internal const int Avalonia_Layout_WrapLayout = 259;
-    internal const int Avalonia_Controls_ItemsRepeater = 260;
-    internal const int Avalonia_Controls_DataGrid = 261;
-    internal const int Avalonia_Controls_DataGridBoundColumn = 262;
-    internal const int Avalonia_Controls_DataGridCell = 263;
-    internal const int Avalonia_Controls_DataGridCheckBoxColumn = 264;
-    internal const int Avalonia_Controls_DataGridColumn = 265;
-    internal const int Avalonia_Controls_DataGridColumnHeader = 266;
-    internal const int Avalonia_Controls_DataGridRow = 267;
-    internal const int Avalonia_Controls_DataGridRowGroupHeader = 268;
-    internal const int Avalonia_Controls_DataGridTemplateColumn = 269;
-    internal const int Avalonia_Controls_DataGridTextColumn = 270;
-    internal const int Avalonia_Controls_Primitives_DataGridRowHeader = 271;
-    internal const int Avalonia_Controls_Primitives_DataGridCellsPresenter = 272;
-    internal const int Avalonia_Controls_Primitives_DataGridColumnHeadersPresenter = 273;
-    internal const int Avalonia_Controls_Primitives_DataGridDetailsPresenter = 274;
-    internal const int Avalonia_Controls_Primitives_DataGridFrozenGrid = 275;
-    internal const int Avalonia_Controls_Primitives_DataGridRowsPresenter = 276;
-    internal const int Avalonia_Controls_TreeDataGrid = 277;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridCell = 278;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridCellsPresenter = 279;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridCheckBoxCell = 280;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridColumnarPresenterBase_TItem_ = 281;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridColumnHeader = 282;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridColumnHeadersPresenter = 283;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridExpanderCell = 284;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridPresenterBase_TItem_ = 285;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridRow = 286;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridRowsPresenter = 287;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridTemplateCell = 288;
-    internal const int Avalonia_Controls_Primitives_TreeDataGridTextCell = 289;
+    internal const int Avalonia_Controls_CommandBar = 14;
+    internal const int Avalonia_Controls_CommandBarButton = 15;
+    internal const int Avalonia_Controls_CommandBarSeparator = 16;
+    internal const int Avalonia_Controls_CommandBarToggleButton = 17;
+    internal const int Avalonia_Controls_ContentControl = 18;
+    internal const int Avalonia_Controls_ContextMenu = 19;
+    internal const int Avalonia_Controls_Control = 20;
+    internal const int Avalonia_Controls_DataValidationErrors = 21;
+    internal const int Avalonia_Controls_DatePicker = 22;
+    internal const int Avalonia_Controls_DatePickerPresenter = 23;
+    internal const int Avalonia_Controls_TimePicker = 24;
+    internal const int Avalonia_Controls_TimePickerPresenter = 25;
+    internal const int Avalonia_Controls_Decorator = 26;
+    internal const int Avalonia_Controls_DefinitionBase = 27;
+    internal const int Avalonia_Controls_DockPanel = 28;
+    internal const int Avalonia_Controls_DropDownButton = 29;
+    internal const int Avalonia_Controls_Expander = 30;
+    internal const int Avalonia_Controls_ExperimentalAcrylicBorder = 31;
+    internal const int Avalonia_Controls_Flyout = 32;
+    internal const int Avalonia_Controls_FlyoutPresenter = 33;
+    internal const int Avalonia_Controls_MenuFlyout = 34;
+    internal const int Avalonia_Controls_MenuFlyoutPresenter = 35;
+    internal const int Avalonia_Controls_Grid = 36;
+    internal const int Avalonia_Controls_GridSplitter = 37;
+    internal const int Avalonia_Controls_GroupBox = 38;
+    internal const int Avalonia_Controls_HyperlinkButton = 39;
+    internal const int Avalonia_Controls_IconElement = 40;
+    internal const int Avalonia_Controls_Image = 41;
+    internal const int Avalonia_Controls_ItemsControl = 42;
+    internal const int Avalonia_Controls_Label = 43;
+    internal const int Avalonia_Controls_LayoutTransformControl = 44;
+    internal const int Avalonia_Controls_ListBox = 45;
+    internal const int Avalonia_Controls_ListBoxItem = 46;
+    internal const int Avalonia_Controls_MaskedTextBox = 47;
+    internal const int Avalonia_Controls_Menu = 48;
+    internal const int Avalonia_Controls_MenuBase = 49;
+    internal const int Avalonia_Controls_MenuItem = 50;
+    internal const int Avalonia_Controls_NativeControlHost = 51;
+    internal const int Avalonia_Controls_NativeMenu = 52;
+    internal const int Avalonia_Controls_NativeMenuBar = 53;
+    internal const int Avalonia_Controls_NativeMenuItem = 54;
+    internal const int Avalonia_Controls_NativeMenuItemBase = 55;
+    internal const int Avalonia_Controls_NativeMenuItemSeparator = 56;
+    internal const int Avalonia_Controls_ReversibleStackPanel = 57;
+    internal const int Avalonia_Controls_NumericUpDown = 58;
+    internal const int Avalonia_Controls_CarouselPage = 59;
+    internal const int Avalonia_Controls_ContentPage = 60;
+    internal const int Avalonia_Controls_DrawerPage = 61;
+    internal const int Avalonia_Controls_MultiPage = 62;
+    internal const int Avalonia_Controls_NavigationPage = 63;
+    internal const int Avalonia_Controls_Page = 64;
+    internal const int Avalonia_Controls_PageNavigationHost = 65;
+    internal const int Avalonia_Controls_SelectingMultiPage = 66;
+    internal const int Avalonia_Controls_TabbedPage = 67;
+    internal const int Avalonia_Controls_Panel = 68;
+    internal const int Avalonia_Controls_PathIcon = 69;
+    internal const int Avalonia_Controls_PipsPager = 70;
+    internal const int Avalonia_Controls_ProgressBar = 71;
+    internal const int Avalonia_Controls_RefreshContainer = 72;
+    internal const int Avalonia_Controls_RefreshVisualizer = 73;
+    internal const int Avalonia_Controls_RadioButton = 74;
+    internal const int Avalonia_Controls_RelativePanel = 75;
+    internal const int Avalonia_Controls_RepeatButton = 76;
+    internal const int Avalonia_Controls_RowDefinition = 77;
+    internal const int Avalonia_Controls_ScrollViewer = 78;
+    internal const int Avalonia_Controls_SelectableTextBlock = 79;
+    internal const int Avalonia_Controls_Separator = 80;
+    internal const int Avalonia_Controls_Slider = 81;
+    internal const int Avalonia_Controls_Spinner = 82;
+    internal const int Avalonia_Controls_SplitButton = 83;
+    internal const int Avalonia_Controls_ToggleSplitButton = 84;
+    internal const int Avalonia_Controls_SplitView = 85;
+    internal const int Avalonia_Controls_StackPanel = 86;
+    internal const int Avalonia_Controls_TabControl = 87;
+    internal const int Avalonia_Controls_TabItem = 88;
+    internal const int Avalonia_Controls_TextBlock = 89;
+    internal const int Avalonia_Controls_TextBox = 90;
+    internal const int Avalonia_Controls_ThemeVariantScope = 91;
+    internal const int Avalonia_Controls_TickBar = 92;
+    internal const int Avalonia_Controls_ToggleSwitch = 93;
+    internal const int Avalonia_Controls_ToolTip = 94;
+    internal const int Avalonia_Controls_TopLevel = 95;
+    internal const int Avalonia_Controls_TransitioningContentControl = 96;
+    internal const int Avalonia_Controls_TrayIcon = 97;
+    internal const int Avalonia_Controls_TreeView = 98;
+    internal const int Avalonia_Controls_TreeViewItem = 99;
+    internal const int Avalonia_Controls_UserControl = 100;
+    internal const int Avalonia_Controls_Viewbox = 101;
+    internal const int Avalonia_Controls_VirtualizingCarouselPanel = 102;
+    internal const int Avalonia_Controls_VirtualizingPanel = 103;
+    internal const int Avalonia_Controls_VirtualizingStackPanel = 104;
+    internal const int Avalonia_Controls_Window = 105;
+    internal const int Avalonia_Controls_WindowBase = 106;
+    internal const int Avalonia_Controls_WrapPanel = 107;
+    internal const int Avalonia_Controls_Shapes_Arc = 108;
+    internal const int Avalonia_Controls_Shapes_Ellipse = 109;
+    internal const int Avalonia_Controls_Shapes_Line = 110;
+    internal const int Avalonia_Controls_Shapes_Path = 111;
+    internal const int Avalonia_Controls_Shapes_Polygon = 112;
+    internal const int Avalonia_Controls_Shapes_Polyline = 113;
+    internal const int Avalonia_Controls_Shapes_Rectangle = 114;
+    internal const int Avalonia_Controls_Shapes_Sector = 115;
+    internal const int Avalonia_Controls_Shapes_Shape = 116;
+    internal const int Avalonia_Controls_Presenters_ContentPresenter = 117;
+    internal const int Avalonia_Controls_Presenters_ItemsPresenter = 118;
+    internal const int Avalonia_Controls_Presenters_ScrollContentPresenter = 119;
+    internal const int Avalonia_Controls_Presenters_TextPresenter = 120;
+    internal const int Avalonia_Controls_Notifications_NotificationCard = 121;
+    internal const int Avalonia_Controls_Notifications_WindowNotificationManager = 122;
+    internal const int Avalonia_Controls_Embedding_EmbeddableControlRoot = 123;
+    internal const int Avalonia_Controls_Documents_Bold = 124;
+    internal const int Avalonia_Controls_Documents_Inline = 125;
+    internal const int Avalonia_Controls_Documents_InlineUIContainer = 126;
+    internal const int Avalonia_Controls_Documents_Italic = 127;
+    internal const int Avalonia_Controls_Documents_LineBreak = 128;
+    internal const int Avalonia_Controls_Documents_Run = 129;
+    internal const int Avalonia_Controls_Documents_Span = 130;
+    internal const int Avalonia_Controls_Documents_TextElement = 131;
+    internal const int Avalonia_Controls_Documents_Underline = 132;
+    internal const int Avalonia_Controls_Chrome_WindowDrawnDecorations = 133;
+    internal const int Avalonia_Controls_Chrome_WindowDrawnDecorationsContent = 134;
+    internal const int Avalonia_Controls_Primitives_CalendarButton = 135;
+    internal const int Avalonia_Controls_Primitives_CalendarDayButton = 136;
+    internal const int Avalonia_Controls_Primitives_CalendarItem = 137;
+    internal const int Avalonia_Controls_Primitives_DateTimePickerPanel = 138;
+    internal const int Avalonia_Controls_Primitives_PickerPresenterBase = 139;
+    internal const int Avalonia_Controls_Primitives_FlyoutBase = 140;
+    internal const int Avalonia_Controls_Primitives_PopupFlyoutBase = 141;
+    internal const int Avalonia_Controls_Primitives_PipsPagerTemplateSettings = 142;
+    internal const int Avalonia_Controls_Primitives_AccessText = 143;
+    internal const int Avalonia_Controls_Primitives_AdornerLayer = 144;
+    internal const int Avalonia_Controls_Primitives_HeaderedContentControl = 145;
+    internal const int Avalonia_Controls_Primitives_HeaderedItemsControl = 146;
+    internal const int Avalonia_Controls_Primitives_HeaderedSelectingItemsControl = 147;
+    internal const int Avalonia_Controls_Primitives_OverlayLayer = 148;
+    internal const int Avalonia_Controls_Primitives_OverlayPopupHost = 149;
+    internal const int Avalonia_Controls_Primitives_Popup = 150;
+    internal const int Avalonia_Controls_Primitives_PopupRoot = 151;
+    internal const int Avalonia_Controls_Primitives_RangeBase = 152;
+    internal const int Avalonia_Controls_Primitives_ScrollBar = 153;
+    internal const int Avalonia_Controls_Primitives_SelectingItemsControl = 154;
+    internal const int Avalonia_Controls_Primitives_TabStrip = 155;
+    internal const int Avalonia_Controls_Primitives_TabStripItem = 156;
+    internal const int Avalonia_Controls_Primitives_TemplatedControl = 157;
+    internal const int Avalonia_Controls_Primitives_TextSelectionHandle = 158;
+    internal const int Avalonia_Controls_Primitives_TextSelectorLayer = 159;
+    internal const int Avalonia_Controls_Primitives_Thumb = 160;
+    internal const int Avalonia_Controls_Primitives_ToggleButton = 161;
+    internal const int Avalonia_Controls_Primitives_Track = 162;
+    internal const int Avalonia_Controls_Primitives_UniformGrid = 163;
+    internal const int Avalonia_Controls_Primitives_VisualLayerManager = 164;
+    internal const int Avalonia_Controls_Primitives_SplitViewTemplateSettings = 165;
+    internal const int Avalonia_StyledElement = 166;
+    internal const int Avalonia_Visual = 167;
+    internal const int Avalonia_Styling_ContainerQuery = 168;
+    internal const int Avalonia_Styling_ControlTheme = 169;
+    internal const int Avalonia_Styling_Style = 170;
+    internal const int Avalonia_Styling_StyleBase = 171;
+    internal const int Avalonia_Styling_Styles = 172;
+    internal const int Avalonia_Layout_Layoutable = 173;
+    internal const int Avalonia_Interactivity_Interactive = 174;
+    internal const int Avalonia_Input_PinchGestureRecognizer = 175;
+    internal const int Avalonia_Input_PullGestureRecognizer = 176;
+    internal const int Avalonia_Input_InputElement = 177;
+    internal const int Avalonia_Input_KeyBinding = 178;
+    internal const int Avalonia_Input_GestureRecognizers_GestureRecognizer = 179;
+    internal const int Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer = 180;
+    internal const int Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer = 181;
+    internal const int Avalonia_Controls_ResourceDictionary = 182;
+    internal const int Avalonia_Controls_ResourceProvider = 183;
+    internal const int Avalonia_Media_CombinedGeometry = 184;
+    internal const int Avalonia_Media_ArcSegment = 185;
+    internal const int Avalonia_Media_BezierSegment = 186;
+    internal const int Avalonia_Media_BitmapCache = 187;
+    internal const int Avalonia_Media_Brush = 188;
+    internal const int Avalonia_Media_CacheMode = 189;
+    internal const int Avalonia_Media_ConicGradientBrush = 190;
+    internal const int Avalonia_Media_DashStyle = 191;
+    internal const int Avalonia_Media_Drawing = 192;
+    internal const int Avalonia_Media_DrawingBrush = 193;
+    internal const int Avalonia_Media_DrawingGroup = 194;
+    internal const int Avalonia_Media_DrawingImage = 195;
+    internal const int Avalonia_Media_BlurEffect = 196;
+    internal const int Avalonia_Media_DropShadowEffectBase = 197;
+    internal const int Avalonia_Media_DropShadowEffect = 198;
+    internal const int Avalonia_Media_DropShadowDirectionEffect = 199;
+    internal const int Avalonia_Media_Effect = 200;
+    internal const int Avalonia_Media_EllipseGeometry = 201;
+    internal const int Avalonia_Media_ExperimentalAcrylicMaterial = 202;
+    internal const int Avalonia_Media_Geometry = 203;
+    internal const int Avalonia_Media_GeometryDrawing = 204;
+    internal const int Avalonia_Media_GeometryGroup = 205;
+    internal const int Avalonia_Media_GlyphRunDrawing = 206;
+    internal const int Avalonia_Media_GradientBrush = 207;
+    internal const int Avalonia_Media_GradientStop = 208;
+    internal const int Avalonia_Media_ImageBrush = 209;
+    internal const int Avalonia_Media_ImageDrawing = 210;
+    internal const int Avalonia_Media_LinearGradientBrush = 211;
+    internal const int Avalonia_Media_LineGeometry = 212;
+    internal const int Avalonia_Media_LineSegment = 213;
+    internal const int Avalonia_Media_MatrixTransform = 214;
+    internal const int Avalonia_Media_PathFigure = 215;
+    internal const int Avalonia_Media_PathGeometry = 216;
+    internal const int Avalonia_Media_PathSegment = 217;
+    internal const int Avalonia_Media_Pen = 218;
+    internal const int Avalonia_Media_PolyBezierSegment = 219;
+    internal const int Avalonia_Media_PolylineGeometry = 220;
+    internal const int Avalonia_Media_PolyLineSegment = 221;
+    internal const int Avalonia_Media_QuadraticBezierSegment = 222;
+    internal const int Avalonia_Media_RadialGradientBrush = 223;
+    internal const int Avalonia_Media_RectangleGeometry = 224;
+    internal const int Avalonia_Media_RotateTransform = 225;
+    internal const int Avalonia_Media_ScaleTransform = 226;
+    internal const int Avalonia_Media_SkewTransform = 227;
+    internal const int Avalonia_Media_SolidColorBrush = 228;
+    internal const int Avalonia_Media_StreamGeometry = 229;
+    internal const int Avalonia_Media_TextDecoration = 230;
+    internal const int Avalonia_Media_TileBrush = 231;
+    internal const int Avalonia_Media_Transform = 232;
+    internal const int Avalonia_Media_TransformGroup = 233;
+    internal const int Avalonia_Media_TranslateTransform = 234;
+    internal const int Avalonia_Media_VisualBrush = 235;
+    internal const int Avalonia_Media_Rotate3DTransform = 236;
+    internal const int Avalonia_Media_Imaging_CroppedBitmap = 237;
+    internal const int Avalonia_Animation_Animatable = 238;
+    internal const int Avalonia_Animation_Animation = 239;
+    internal const int Avalonia_Animation_InterpolatingTransitionBase_T_ = 240;
+    internal const int Avalonia_Animation_KeyFrame = 241;
+    internal const int Avalonia_Animation_KeySpline = 242;
+    internal const int Avalonia_Animation_Transition_T_ = 243;
+    internal const int Avalonia_Animation_TransitionBase = 244;
+    internal const int Avalonia_Animation_BoolTransition = 245;
+    internal const int Avalonia_Animation_BoxShadowsTransition = 246;
+    internal const int Avalonia_Animation_BrushTransition = 247;
+    internal const int Avalonia_Animation_ColorTransition = 248;
+    internal const int Avalonia_Animation_CornerRadiusTransition = 249;
+    internal const int Avalonia_Animation_DoubleTransition = 250;
+    internal const int Avalonia_Animation_FloatTransition = 251;
+    internal const int Avalonia_Animation_IntegerTransition = 252;
+    internal const int Avalonia_Animation_PointTransition = 253;
+    internal const int Avalonia_Animation_RelativePointTransition = 254;
+    internal const int Avalonia_Animation_SizeTransition = 255;
+    internal const int Avalonia_Animation_ThicknessTransition = 256;
+    internal const int Avalonia_Animation_TransformOperationsTransition = 257;
+    internal const int Avalonia_Animation_VectorTransition = 258;
+    internal const int Avalonia_Animation_EffectTransition = 259;
+    internal const int Avalonia_Controls_ColorPicker = 260;
+    internal const int Avalonia_Controls_ColorView = 261;
+    internal const int Avalonia_Controls_Primitives_ColorPreviewer = 262;
+    internal const int Avalonia_Controls_Primitives_ColorSlider = 263;
+    internal const int Avalonia_Controls_Primitives_ColorSpectrum = 264;
+    internal const int Avalonia_Layout_AttachedLayout = 265;
+    internal const int Avalonia_Layout_LayoutContext = 266;
+    internal const int Avalonia_Layout_NonVirtualizingLayout = 267;
+    internal const int Avalonia_Layout_NonVirtualizingLayoutContext = 268;
+    internal const int Avalonia_Layout_NonVirtualizingStackLayout = 269;
+    internal const int Avalonia_Layout_StackLayout = 270;
+    internal const int Avalonia_Layout_UniformGridLayout = 271;
+    internal const int Avalonia_Layout_VirtualizingLayout = 272;
+    internal const int Avalonia_Layout_VirtualizingLayoutContext = 273;
+    internal const int Avalonia_Layout_VirtualLayoutContextAdapter = 274;
+    internal const int Avalonia_Layout_WrapLayout = 275;
+    internal const int Avalonia_Controls_ItemsRepeater = 276;
+    internal const int Avalonia_Controls_DataGrid = 277;
+    internal const int Avalonia_Controls_DataGridBoundColumn = 278;
+    internal const int Avalonia_Controls_DataGridCell = 279;
+    internal const int Avalonia_Controls_DataGridCheckBoxColumn = 280;
+    internal const int Avalonia_Controls_DataGridColumn = 281;
+    internal const int Avalonia_Controls_DataGridColumnHeader = 282;
+    internal const int Avalonia_Controls_DataGridRow = 283;
+    internal const int Avalonia_Controls_DataGridRowGroupHeader = 284;
+    internal const int Avalonia_Controls_DataGridTemplateColumn = 285;
+    internal const int Avalonia_Controls_DataGridTextColumn = 286;
+    internal const int Avalonia_Controls_Primitives_DataGridRowHeader = 287;
+    internal const int Avalonia_Controls_Primitives_DataGridCellsPresenter = 288;
+    internal const int Avalonia_Controls_Primitives_DataGridColumnHeadersPresenter = 289;
+    internal const int Avalonia_Controls_Primitives_DataGridDetailsPresenter = 290;
+    internal const int Avalonia_Controls_Primitives_DataGridFrozenGrid = 291;
+    internal const int Avalonia_Controls_Primitives_DataGridRowsPresenter = 292;
 
     private static partial TypeMetadataEntry[] CreateEntries()
         => new[]
@@ -312,6 +315,10 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_ColumnDefinition, typeof(Avalonia.Controls.ColumnDefinition), "Avalonia.Controls.ColumnDefinition"),
             new TypeMetadataEntry(Avalonia_Controls_ComboBox, typeof(Avalonia.Controls.ComboBox), "Avalonia.Controls.ComboBox"),
             new TypeMetadataEntry(Avalonia_Controls_ComboBoxItem, typeof(Avalonia.Controls.ComboBoxItem), "Avalonia.Controls.ComboBoxItem"),
+            new TypeMetadataEntry(Avalonia_Controls_CommandBar, typeof(Avalonia.Controls.CommandBar), "Avalonia.Controls.CommandBar"),
+            new TypeMetadataEntry(Avalonia_Controls_CommandBarButton, typeof(Avalonia.Controls.CommandBarButton), "Avalonia.Controls.CommandBarButton"),
+            new TypeMetadataEntry(Avalonia_Controls_CommandBarSeparator, typeof(Avalonia.Controls.CommandBarSeparator), "Avalonia.Controls.CommandBarSeparator"),
+            new TypeMetadataEntry(Avalonia_Controls_CommandBarToggleButton, typeof(Avalonia.Controls.CommandBarToggleButton), "Avalonia.Controls.CommandBarToggleButton"),
             new TypeMetadataEntry(Avalonia_Controls_ContentControl, typeof(Avalonia.Controls.ContentControl), "Avalonia.Controls.ContentControl"),
             new TypeMetadataEntry(Avalonia_Controls_ContextMenu, typeof(Avalonia.Controls.ContextMenu), "Avalonia.Controls.ContextMenu"),
             new TypeMetadataEntry(Avalonia_Controls_Control, typeof(Avalonia.Controls.Control), "Avalonia.Controls.Control"),
@@ -332,6 +339,7 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_MenuFlyoutPresenter, typeof(Avalonia.Controls.MenuFlyoutPresenter), "Avalonia.Controls.MenuFlyoutPresenter"),
             new TypeMetadataEntry(Avalonia_Controls_Grid, typeof(Avalonia.Controls.Grid), "Avalonia.Controls.Grid"),
             new TypeMetadataEntry(Avalonia_Controls_GridSplitter, typeof(Avalonia.Controls.GridSplitter), "Avalonia.Controls.GridSplitter"),
+            new TypeMetadataEntry(Avalonia_Controls_GroupBox, typeof(Avalonia.Controls.GroupBox), "Avalonia.Controls.GroupBox"),
             new TypeMetadataEntry(Avalonia_Controls_HyperlinkButton, typeof(Avalonia.Controls.HyperlinkButton), "Avalonia.Controls.HyperlinkButton"),
             new TypeMetadataEntry(Avalonia_Controls_IconElement, typeof(Avalonia.Controls.IconElement), "Avalonia.Controls.IconElement"),
             new TypeMetadataEntry(Avalonia_Controls_Image, typeof(Avalonia.Controls.Image), "Avalonia.Controls.Image"),
@@ -352,8 +360,18 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_NativeMenuItemSeparator, typeof(Avalonia.Controls.NativeMenuItemSeparator), "Avalonia.Controls.NativeMenuItemSeparator"),
             new TypeMetadataEntry(Avalonia_Controls_ReversibleStackPanel, typeof(Avalonia.Controls.ReversibleStackPanel), "Avalonia.Controls.ReversibleStackPanel"),
             new TypeMetadataEntry(Avalonia_Controls_NumericUpDown, typeof(Avalonia.Controls.NumericUpDown), "Avalonia.Controls.NumericUpDown"),
+            new TypeMetadataEntry(Avalonia_Controls_CarouselPage, typeof(Avalonia.Controls.CarouselPage), "Avalonia.Controls.CarouselPage"),
+            new TypeMetadataEntry(Avalonia_Controls_ContentPage, typeof(Avalonia.Controls.ContentPage), "Avalonia.Controls.ContentPage"),
+            new TypeMetadataEntry(Avalonia_Controls_DrawerPage, typeof(Avalonia.Controls.DrawerPage), "Avalonia.Controls.DrawerPage"),
+            new TypeMetadataEntry(Avalonia_Controls_MultiPage, typeof(Avalonia.Controls.MultiPage), "Avalonia.Controls.MultiPage"),
+            new TypeMetadataEntry(Avalonia_Controls_NavigationPage, typeof(Avalonia.Controls.NavigationPage), "Avalonia.Controls.NavigationPage"),
+            new TypeMetadataEntry(Avalonia_Controls_Page, typeof(Avalonia.Controls.Page), "Avalonia.Controls.Page"),
+            new TypeMetadataEntry(Avalonia_Controls_PageNavigationHost, typeof(Avalonia.Controls.PageNavigationHost), "Avalonia.Controls.PageNavigationHost"),
+            new TypeMetadataEntry(Avalonia_Controls_SelectingMultiPage, typeof(Avalonia.Controls.SelectingMultiPage), "Avalonia.Controls.SelectingMultiPage"),
+            new TypeMetadataEntry(Avalonia_Controls_TabbedPage, typeof(Avalonia.Controls.TabbedPage), "Avalonia.Controls.TabbedPage"),
             new TypeMetadataEntry(Avalonia_Controls_Panel, typeof(Avalonia.Controls.Panel), "Avalonia.Controls.Panel"),
             new TypeMetadataEntry(Avalonia_Controls_PathIcon, typeof(Avalonia.Controls.PathIcon), "Avalonia.Controls.PathIcon"),
+            new TypeMetadataEntry(Avalonia_Controls_PipsPager, typeof(Avalonia.Controls.PipsPager), "Avalonia.Controls.PipsPager"),
             new TypeMetadataEntry(Avalonia_Controls_ProgressBar, typeof(Avalonia.Controls.ProgressBar), "Avalonia.Controls.ProgressBar"),
             new TypeMetadataEntry(Avalonia_Controls_RefreshContainer, typeof(Avalonia.Controls.RefreshContainer), "Avalonia.Controls.RefreshContainer"),
             new TypeMetadataEntry(Avalonia_Controls_RefreshVisualizer, typeof(Avalonia.Controls.RefreshVisualizer), "Avalonia.Controls.RefreshVisualizer"),
@@ -400,7 +418,6 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_Shapes_Rectangle, typeof(Avalonia.Controls.Shapes.Rectangle), "Avalonia.Controls.Shapes.Rectangle"),
             new TypeMetadataEntry(Avalonia_Controls_Shapes_Sector, typeof(Avalonia.Controls.Shapes.Sector), "Avalonia.Controls.Shapes.Sector"),
             new TypeMetadataEntry(Avalonia_Controls_Shapes_Shape, typeof(Avalonia.Controls.Shapes.Shape), "Avalonia.Controls.Shapes.Shape"),
-            new TypeMetadataEntry(Avalonia_Controls_Remote_RemoteWidget, typeof(Avalonia.Controls.Remote.RemoteWidget), "Avalonia.Controls.Remote.RemoteWidget"),
             new TypeMetadataEntry(Avalonia_Controls_Presenters_ContentPresenter, typeof(Avalonia.Controls.Presenters.ContentPresenter), "Avalonia.Controls.Presenters.ContentPresenter"),
             new TypeMetadataEntry(Avalonia_Controls_Presenters_ItemsPresenter, typeof(Avalonia.Controls.Presenters.ItemsPresenter), "Avalonia.Controls.Presenters.ItemsPresenter"),
             new TypeMetadataEntry(Avalonia_Controls_Presenters_ScrollContentPresenter, typeof(Avalonia.Controls.Presenters.ScrollContentPresenter), "Avalonia.Controls.Presenters.ScrollContentPresenter"),
@@ -417,8 +434,8 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_Documents_Span, typeof(Avalonia.Controls.Documents.Span), "Avalonia.Controls.Documents.Span"),
             new TypeMetadataEntry(Avalonia_Controls_Documents_TextElement, typeof(Avalonia.Controls.Documents.TextElement), "Avalonia.Controls.Documents.TextElement"),
             new TypeMetadataEntry(Avalonia_Controls_Documents_Underline, typeof(Avalonia.Controls.Documents.Underline), "Avalonia.Controls.Documents.Underline"),
-            new TypeMetadataEntry(Avalonia_Controls_Chrome_CaptionButtons, typeof(Avalonia.Controls.Chrome.CaptionButtons), "Avalonia.Controls.Chrome.CaptionButtons"),
-            new TypeMetadataEntry(Avalonia_Controls_Chrome_TitleBar, typeof(Avalonia.Controls.Chrome.TitleBar), "Avalonia.Controls.Chrome.TitleBar"),
+            new TypeMetadataEntry(Avalonia_Controls_Chrome_WindowDrawnDecorations, typeof(Avalonia.Controls.Chrome.WindowDrawnDecorations), "Avalonia.Controls.Chrome.WindowDrawnDecorations"),
+            new TypeMetadataEntry(Avalonia_Controls_Chrome_WindowDrawnDecorationsContent, typeof(Avalonia.Controls.Chrome.WindowDrawnDecorationsContent), "Avalonia.Controls.Chrome.WindowDrawnDecorationsContent"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_CalendarButton, typeof(Avalonia.Controls.Primitives.CalendarButton), "Avalonia.Controls.Primitives.CalendarButton"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_CalendarDayButton, typeof(Avalonia.Controls.Primitives.CalendarDayButton), "Avalonia.Controls.Primitives.CalendarDayButton"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_CalendarItem, typeof(Avalonia.Controls.Primitives.CalendarItem), "Avalonia.Controls.Primitives.CalendarItem"),
@@ -426,13 +443,12 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_Primitives_PickerPresenterBase, typeof(Avalonia.Controls.Primitives.PickerPresenterBase), "Avalonia.Controls.Primitives.PickerPresenterBase"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_FlyoutBase, typeof(Avalonia.Controls.Primitives.FlyoutBase), "Avalonia.Controls.Primitives.FlyoutBase"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_PopupFlyoutBase, typeof(Avalonia.Controls.Primitives.PopupFlyoutBase), "Avalonia.Controls.Primitives.PopupFlyoutBase"),
+            new TypeMetadataEntry(Avalonia_Controls_Primitives_PipsPagerTemplateSettings, typeof(Avalonia.Controls.Primitives.PipsPagerTemplateSettings), "Avalonia.Controls.Primitives.PipsPagerTemplateSettings"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_AccessText, typeof(Avalonia.Controls.Primitives.AccessText), "Avalonia.Controls.Primitives.AccessText"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_AdornerLayer, typeof(Avalonia.Controls.Primitives.AdornerLayer), "Avalonia.Controls.Primitives.AdornerLayer"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_ChromeOverlayLayer, typeof(Avalonia.Controls.Primitives.ChromeOverlayLayer), "Avalonia.Controls.Primitives.ChromeOverlayLayer"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_HeaderedContentControl, typeof(Avalonia.Controls.Primitives.HeaderedContentControl), "Avalonia.Controls.Primitives.HeaderedContentControl"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_HeaderedItemsControl, typeof(Avalonia.Controls.Primitives.HeaderedItemsControl), "Avalonia.Controls.Primitives.HeaderedItemsControl"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_HeaderedSelectingItemsControl, typeof(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl), "Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_LightDismissOverlayLayer, typeof(Avalonia.Controls.Primitives.LightDismissOverlayLayer), "Avalonia.Controls.Primitives.LightDismissOverlayLayer"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_OverlayLayer, typeof(Avalonia.Controls.Primitives.OverlayLayer), "Avalonia.Controls.Primitives.OverlayLayer"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_OverlayPopupHost, typeof(Avalonia.Controls.Primitives.OverlayPopupHost), "Avalonia.Controls.Primitives.OverlayPopupHost"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_Popup, typeof(Avalonia.Controls.Primitives.Popup), "Avalonia.Controls.Primitives.Popup"),
@@ -466,12 +482,15 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Input_KeyBinding, typeof(Avalonia.Input.KeyBinding), "Avalonia.Input.KeyBinding"),
             new TypeMetadataEntry(Avalonia_Input_GestureRecognizers_GestureRecognizer, typeof(Avalonia.Input.GestureRecognizers.GestureRecognizer), "Avalonia.Input.GestureRecognizers.GestureRecognizer"),
             new TypeMetadataEntry(Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer, typeof(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer), "Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"),
+            new TypeMetadataEntry(Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, typeof(Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer), "Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer"),
             new TypeMetadataEntry(Avalonia_Controls_ResourceDictionary, typeof(Avalonia.Controls.ResourceDictionary), "Avalonia.Controls.ResourceDictionary"),
             new TypeMetadataEntry(Avalonia_Controls_ResourceProvider, typeof(Avalonia.Controls.ResourceProvider), "Avalonia.Controls.ResourceProvider"),
             new TypeMetadataEntry(Avalonia_Media_CombinedGeometry, typeof(Avalonia.Media.CombinedGeometry), "Avalonia.Media.CombinedGeometry"),
             new TypeMetadataEntry(Avalonia_Media_ArcSegment, typeof(Avalonia.Media.ArcSegment), "Avalonia.Media.ArcSegment"),
             new TypeMetadataEntry(Avalonia_Media_BezierSegment, typeof(Avalonia.Media.BezierSegment), "Avalonia.Media.BezierSegment"),
+            new TypeMetadataEntry(Avalonia_Media_BitmapCache, typeof(Avalonia.Media.BitmapCache), "Avalonia.Media.BitmapCache"),
             new TypeMetadataEntry(Avalonia_Media_Brush, typeof(Avalonia.Media.Brush), "Avalonia.Media.Brush"),
+            new TypeMetadataEntry(Avalonia_Media_CacheMode, typeof(Avalonia.Media.CacheMode), "Avalonia.Media.CacheMode"),
             new TypeMetadataEntry(Avalonia_Media_ConicGradientBrush, typeof(Avalonia.Media.ConicGradientBrush), "Avalonia.Media.ConicGradientBrush"),
             new TypeMetadataEntry(Avalonia_Media_DashStyle, typeof(Avalonia.Media.DashStyle), "Avalonia.Media.DashStyle"),
             new TypeMetadataEntry(Avalonia_Media_Drawing, typeof(Avalonia.Media.Drawing), "Avalonia.Media.Drawing"),
@@ -575,19 +594,6 @@ internal static partial class TypeMetadata
             new TypeMetadataEntry(Avalonia_Controls_Primitives_DataGridDetailsPresenter, typeof(Avalonia.Controls.Primitives.DataGridDetailsPresenter), "Avalonia.Controls.Primitives.DataGridDetailsPresenter"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_DataGridFrozenGrid, typeof(Avalonia.Controls.Primitives.DataGridFrozenGrid), "Avalonia.Controls.Primitives.DataGridFrozenGrid"),
             new TypeMetadataEntry(Avalonia_Controls_Primitives_DataGridRowsPresenter, typeof(Avalonia.Controls.Primitives.DataGridRowsPresenter), "Avalonia.Controls.Primitives.DataGridRowsPresenter"),
-            new TypeMetadataEntry(Avalonia_Controls_TreeDataGrid, typeof(Avalonia.Controls.TreeDataGrid), "Avalonia.Controls.TreeDataGrid"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridCell, typeof(Avalonia.Controls.Primitives.TreeDataGridCell), "Avalonia.Controls.Primitives.TreeDataGridCell"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridCellsPresenter, typeof(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter), "Avalonia.Controls.Primitives.TreeDataGridCellsPresenter"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridCheckBoxCell, typeof(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell), "Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridColumnarPresenterBase_TItem_, typeof(Avalonia.Controls.Primitives.TreeDataGridColumnarPresenterBase<>), "Avalonia.Controls.Primitives.TreeDataGridColumnarPresenterBase`1"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridColumnHeader, typeof(Avalonia.Controls.Primitives.TreeDataGridColumnHeader), "Avalonia.Controls.Primitives.TreeDataGridColumnHeader"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridColumnHeadersPresenter, typeof(Avalonia.Controls.Primitives.TreeDataGridColumnHeadersPresenter), "Avalonia.Controls.Primitives.TreeDataGridColumnHeadersPresenter"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridExpanderCell, typeof(Avalonia.Controls.Primitives.TreeDataGridExpanderCell), "Avalonia.Controls.Primitives.TreeDataGridExpanderCell"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridPresenterBase_TItem_, typeof(Avalonia.Controls.Primitives.TreeDataGridPresenterBase<>), "Avalonia.Controls.Primitives.TreeDataGridPresenterBase`1"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridRow, typeof(Avalonia.Controls.Primitives.TreeDataGridRow), "Avalonia.Controls.Primitives.TreeDataGridRow"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridRowsPresenter, typeof(Avalonia.Controls.Primitives.TreeDataGridRowsPresenter), "Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridTemplateCell, typeof(Avalonia.Controls.Primitives.TreeDataGridTemplateCell), "Avalonia.Controls.Primitives.TreeDataGridTemplateCell"),
-            new TypeMetadataEntry(Avalonia_Controls_Primitives_TreeDataGridTextCell, typeof(Avalonia.Controls.Primitives.TreeDataGridTextCell), "Avalonia.Controls.Primitives.TreeDataGridTextCell"),
         };
 }
 
@@ -598,1032 +604,1161 @@ internal static partial class PropertyMetadata
     internal const int Application_RequestedThemeVariant = 3;
     internal const int Application_Name = 4;
     internal const int AutoCompleteBox_CaretIndex = 5;
-    internal const int AutoCompleteBox_Watermark = 6;
-    internal const int AutoCompleteBox_MinimumPrefixLength = 7;
-    internal const int AutoCompleteBox_MinimumPopulateDelay = 8;
-    internal const int AutoCompleteBox_MaxDropDownHeight = 9;
-    internal const int AutoCompleteBox_IsTextCompletionEnabled = 10;
-    internal const int AutoCompleteBox_ItemTemplate = 11;
-    internal const int AutoCompleteBox_IsDropDownOpen = 12;
-    internal const int AutoCompleteBox_SelectedItem = 13;
-    internal const int AutoCompleteBox_Text = 14;
-    internal const int AutoCompleteBox_SearchText = 15;
-    internal const int AutoCompleteBox_FilterMode = 16;
-    internal const int AutoCompleteBox_ItemFilter = 17;
-    internal const int AutoCompleteBox_TextFilter = 18;
-    internal const int AutoCompleteBox_ItemSelector = 19;
-    internal const int AutoCompleteBox_TextSelector = 20;
-    internal const int AutoCompleteBox_ItemsSource = 21;
-    internal const int AutoCompleteBox_AsyncPopulator = 22;
-    internal const int AutoCompleteBox_MaxLength = 23;
-    internal const int AutoCompleteBox_InnerLeftContent = 24;
-    internal const int AutoCompleteBox_InnerRightContent = 25;
-    internal const int Border_Background = 26;
-    internal const int Border_BackgroundSizing = 27;
-    internal const int Border_BorderBrush = 28;
-    internal const int Border_BorderThickness = 29;
-    internal const int Border_CornerRadius = 30;
-    internal const int Border_BoxShadow = 31;
-    internal const int Button_ClickMode = 32;
-    internal const int Button_Command = 33;
-    internal const int Button_HotKey = 34;
-    internal const int Button_CommandParameter = 35;
-    internal const int Button_IsDefault = 36;
-    internal const int Button_IsCancel = 37;
-    internal const int Button_IsPressed = 38;
-    internal const int Button_Flyout = 39;
-    internal const int ButtonSpinner_AllowSpin = 40;
-    internal const int ButtonSpinner_ShowButtonSpinner = 41;
-    internal const int ButtonSpinner_ButtonSpinnerLocation = 42;
-    internal const int CalendarDatePicker_DisplayDate = 43;
-    internal const int CalendarDatePicker_DisplayDateStart = 44;
-    internal const int CalendarDatePicker_DisplayDateEnd = 45;
-    internal const int CalendarDatePicker_FirstDayOfWeek = 46;
-    internal const int CalendarDatePicker_IsDropDownOpen = 47;
-    internal const int CalendarDatePicker_IsTodayHighlighted = 48;
-    internal const int CalendarDatePicker_SelectedDate = 49;
-    internal const int CalendarDatePicker_SelectedDateFormat = 50;
-    internal const int CalendarDatePicker_CustomDateFormatString = 51;
-    internal const int CalendarDatePicker_Text = 52;
-    internal const int CalendarDatePicker_Watermark = 53;
-    internal const int CalendarDatePicker_UseFloatingWatermark = 54;
-    internal const int CalendarDatePicker_HorizontalContentAlignment = 55;
-    internal const int CalendarDatePicker_VerticalContentAlignment = 56;
-    internal const int Calendar_FirstDayOfWeek = 57;
-    internal const int Calendar_IsTodayHighlighted = 58;
-    internal const int Calendar_HeaderBackground = 59;
-    internal const int Calendar_DisplayMode = 60;
-    internal const int Calendar_SelectionMode = 61;
-    internal const int Calendar_SelectedDate = 62;
-    internal const int Calendar_DisplayDate = 63;
-    internal const int Calendar_DisplayDateStart = 64;
-    internal const int Calendar_DisplayDateEnd = 65;
-    internal const int Canvas_Left = 66;
-    internal const int Canvas_Top = 67;
-    internal const int Canvas_Right = 68;
-    internal const int Canvas_Bottom = 69;
-    internal const int Carousel_PageTransition = 70;
-    internal const int ColumnDefinition_MaxWidth = 71;
-    internal const int ColumnDefinition_MinWidth = 72;
-    internal const int ColumnDefinition_Width = 73;
-    internal const int ComboBox_IsDropDownOpen = 74;
-    internal const int ComboBox_MaxDropDownHeight = 75;
-    internal const int ComboBox_SelectionBoxItem = 76;
-    internal const int ComboBox_PlaceholderText = 77;
-    internal const int ComboBox_PlaceholderForeground = 78;
-    internal const int ComboBox_HorizontalContentAlignment = 79;
-    internal const int ComboBox_VerticalContentAlignment = 80;
-    internal const int ComboBox_SelectionBoxItemTemplate = 81;
-    internal const int ContentControl_Content = 82;
-    internal const int ContentControl_ContentTemplate = 83;
-    internal const int ContentControl_HorizontalContentAlignment = 84;
-    internal const int ContentControl_VerticalContentAlignment = 85;
-    internal const int ContextMenu_HorizontalOffset = 86;
-    internal const int ContextMenu_VerticalOffset = 87;
-    internal const int ContextMenu_PlacementAnchor = 88;
-    internal const int ContextMenu_PlacementConstraintAdjustment = 89;
-    internal const int ContextMenu_PlacementGravity = 90;
-    internal const int ContextMenu_Placement = 91;
-    internal const int ContextMenu_PlacementRect = 92;
-    internal const int ContextMenu_WindowManagerAddShadowHint = 93;
-    internal const int ContextMenu_PlacementTarget = 94;
-    internal const int ContextMenu_CustomPopupPlacementCallback = 95;
-    internal const int Control_FocusAdorner = 96;
-    internal const int Control_Tag = 97;
-    internal const int Control_ContextMenu = 98;
-    internal const int Control_ContextFlyout = 99;
-    internal const int DataValidationErrors_Errors = 100;
-    internal const int DataValidationErrors_HasErrors = 101;
-    internal const int DataValidationErrors_ErrorConverter = 102;
-    internal const int DataValidationErrors_ErrorTemplate = 103;
-    internal const int DataValidationErrors_Owner = 104;
-    internal const int DatePicker_DayFormat = 105;
-    internal const int DatePicker_DayVisible = 106;
-    internal const int DatePicker_MaxYear = 107;
-    internal const int DatePicker_MinYear = 108;
-    internal const int DatePicker_MonthFormat = 109;
-    internal const int DatePicker_MonthVisible = 110;
-    internal const int DatePicker_YearFormat = 111;
-    internal const int DatePicker_YearVisible = 112;
-    internal const int DatePicker_SelectedDate = 113;
-    internal const int DatePickerPresenter_Date = 114;
-    internal const int DatePickerPresenter_DayFormat = 115;
-    internal const int DatePickerPresenter_DayVisible = 116;
-    internal const int DatePickerPresenter_MaxYear = 117;
-    internal const int DatePickerPresenter_MinYear = 118;
-    internal const int DatePickerPresenter_MonthFormat = 119;
-    internal const int DatePickerPresenter_MonthVisible = 120;
-    internal const int DatePickerPresenter_YearFormat = 121;
-    internal const int DatePickerPresenter_YearVisible = 122;
-    internal const int TimePicker_MinuteIncrement = 123;
-    internal const int TimePicker_SecondIncrement = 124;
-    internal const int TimePicker_ClockIdentifier = 125;
-    internal const int TimePicker_UseSeconds = 126;
-    internal const int TimePicker_SelectedTime = 127;
-    internal const int TimePickerPresenter_MinuteIncrement = 128;
-    internal const int TimePickerPresenter_SecondIncrement = 129;
-    internal const int TimePickerPresenter_ClockIdentifier = 130;
-    internal const int TimePickerPresenter_UseSeconds = 131;
-    internal const int TimePickerPresenter_Time = 132;
-    internal const int Decorator_Child = 133;
-    internal const int Decorator_Padding = 134;
-    internal const int DefinitionBase_SharedSizeGroup = 135;
-    internal const int DockPanel_Dock = 136;
-    internal const int DockPanel_LastChildFill = 137;
-    internal const int DockPanel_HorizontalSpacing = 138;
-    internal const int DockPanel_VerticalSpacing = 139;
-    internal const int Expander_ContentTransition = 140;
-    internal const int Expander_ExpandDirection = 141;
-    internal const int Expander_IsExpanded = 142;
-    internal const int ExperimentalAcrylicBorder_CornerRadius = 143;
-    internal const int ExperimentalAcrylicBorder_Material = 144;
-    internal const int Flyout_Content = 145;
-    internal const int Flyout_ContentTemplate = 146;
-    internal const int Flyout_FlyoutPresenterTheme = 147;
-    internal const int MenuFlyout_ItemsSource = 148;
-    internal const int MenuFlyout_ItemTemplate = 149;
-    internal const int MenuFlyout_ItemContainerTheme = 150;
-    internal const int MenuFlyout_FlyoutPresenterTheme = 151;
-    internal const int Grid_ShowGridLines = 152;
-    internal const int Grid_RowSpacing = 153;
-    internal const int Grid_ColumnSpacing = 154;
-    internal const int Grid_Column = 155;
-    internal const int Grid_Row = 156;
-    internal const int Grid_ColumnSpan = 157;
-    internal const int Grid_RowSpan = 158;
-    internal const int Grid_IsSharedSizeScope = 159;
-    internal const int GridSplitter_ResizeDirection = 160;
-    internal const int GridSplitter_ResizeBehavior = 161;
-    internal const int GridSplitter_ShowsPreview = 162;
-    internal const int GridSplitter_KeyboardIncrement = 163;
-    internal const int GridSplitter_DragIncrement = 164;
-    internal const int GridSplitter_PreviewContent = 165;
-    internal const int HyperlinkButton_IsVisited = 166;
-    internal const int HyperlinkButton_NavigateUri = 167;
-    internal const int Image_Source = 168;
-    internal const int Image_BlendMode = 169;
-    internal const int Image_Stretch = 170;
-    internal const int Image_StretchDirection = 171;
-    internal const int ItemsControl_ItemContainerTheme = 172;
-    internal const int ItemsControl_ItemCount = 173;
-    internal const int ItemsControl_ItemsPanel = 174;
-    internal const int ItemsControl_ItemsSource = 175;
-    internal const int ItemsControl_ItemTemplate = 176;
-    internal const int ItemsControl_DisplayMemberBinding = 177;
-    internal const int Label_Target = 178;
-    internal const int LayoutTransformControl_LayoutTransform = 179;
-    internal const int LayoutTransformControl_UseRenderTransform = 180;
-    internal const int ListBox_Scroll = 181;
-    internal const int ListBox_SelectedItems = 182;
-    internal const int ListBox_Selection = 183;
-    internal const int ListBox_SelectionMode = 184;
-    internal const int ListBoxItem_IsSelected = 185;
-    internal const int MaskedTextBox_AsciiOnly = 186;
-    internal const int MaskedTextBox_Culture = 187;
-    internal const int MaskedTextBox_HidePromptOnLeave = 188;
-    internal const int MaskedTextBox_MaskCompleted = 189;
-    internal const int MaskedTextBox_MaskFull = 190;
-    internal const int MaskedTextBox_Mask = 191;
-    internal const int MaskedTextBox_PromptChar = 192;
-    internal const int MaskedTextBox_ResetOnPrompt = 193;
-    internal const int MaskedTextBox_ResetOnSpace = 194;
-    internal const int MenuBase_IsOpen = 195;
-    internal const int MenuItem_Command = 196;
-    internal const int MenuItem_HotKey = 197;
-    internal const int MenuItem_CommandParameter = 198;
-    internal const int MenuItem_Icon = 199;
-    internal const int MenuItem_InputGesture = 200;
-    internal const int MenuItem_IsSubMenuOpen = 201;
-    internal const int MenuItem_StaysOpenOnClick = 202;
-    internal const int MenuItem_ToggleType = 203;
-    internal const int MenuItem_IsChecked = 204;
-    internal const int MenuItem_GroupName = 205;
-    internal const int NativeMenu_Parent = 206;
-    internal const int NativeMenu_IsNativeMenuExported = 207;
-    internal const int NativeMenu_Menu = 208;
-    internal const int NativeMenuBar_EnableMenuItemClickForwarding = 209;
-    internal const int NativeMenuItem_Menu = 210;
-    internal const int NativeMenuItem_Icon = 211;
-    internal const int NativeMenuItem_Header = 212;
-    internal const int NativeMenuItem_ToolTip = 213;
-    internal const int NativeMenuItem_Gesture = 214;
-    internal const int NativeMenuItem_IsChecked = 215;
-    internal const int NativeMenuItem_ToggleType = 216;
-    internal const int NativeMenuItem_Command = 217;
-    internal const int NativeMenuItem_CommandParameter = 218;
-    internal const int NativeMenuItem_IsEnabled = 219;
-    internal const int NativeMenuItem_IsVisible = 220;
-    internal const int NativeMenuItemBase_Parent = 221;
-    internal const int ReversibleStackPanel_ReverseOrder = 222;
-    internal const int NumericUpDown_AllowSpin = 223;
-    internal const int NumericUpDown_ButtonSpinnerLocation = 224;
-    internal const int NumericUpDown_ShowButtonSpinner = 225;
-    internal const int NumericUpDown_ClipValueToMinMax = 226;
-    internal const int NumericUpDown_NumberFormat = 227;
-    internal const int NumericUpDown_FormatString = 228;
-    internal const int NumericUpDown_Increment = 229;
-    internal const int NumericUpDown_IsReadOnly = 230;
-    internal const int NumericUpDown_Maximum = 231;
-    internal const int NumericUpDown_Minimum = 232;
-    internal const int NumericUpDown_ParsingNumberStyle = 233;
-    internal const int NumericUpDown_Text = 234;
-    internal const int NumericUpDown_TextConverter = 235;
-    internal const int NumericUpDown_Value = 236;
-    internal const int NumericUpDown_Watermark = 237;
-    internal const int NumericUpDown_HorizontalContentAlignment = 238;
-    internal const int NumericUpDown_VerticalContentAlignment = 239;
-    internal const int NumericUpDown_TextAlignment = 240;
-    internal const int NumericUpDown_InnerLeftContent = 241;
-    internal const int NumericUpDown_InnerRightContent = 242;
-    internal const int Panel_Background = 243;
-    internal const int PathIcon_Data = 244;
-    internal const int ProgressBar_IsIndeterminate = 245;
-    internal const int ProgressBar_ShowProgressText = 246;
-    internal const int ProgressBar_ProgressTextFormat = 247;
-    internal const int ProgressBar_Orientation = 248;
-    internal const int ProgressBar_Percentage = 249;
-    internal const int RefreshContainer_Visualizer = 250;
-    internal const int RefreshContainer_PullDirection = 251;
-    internal const int RefreshVisualizer_RefreshVisualizerState = 252;
-    internal const int RefreshVisualizer_Orientation = 253;
-    internal const int RadioButton_GroupName = 254;
-    internal const int RelativePanel_Above = 255;
-    internal const int RelativePanel_AlignBottomWithPanel = 256;
-    internal const int RelativePanel_AlignBottomWith = 257;
-    internal const int RelativePanel_AlignHorizontalCenterWithPanel = 258;
-    internal const int RelativePanel_AlignLeftWithPanel = 259;
-    internal const int RelativePanel_AlignLeftWith = 260;
-    internal const int RelativePanel_AlignRightWithPanel = 261;
-    internal const int RelativePanel_AlignRightWith = 262;
-    internal const int RelativePanel_AlignTopWithPanel = 263;
-    internal const int RelativePanel_AlignTopWith = 264;
-    internal const int RelativePanel_AlignVerticalCenterWithPanel = 265;
-    internal const int RelativePanel_AlignVerticalCenterWith = 266;
-    internal const int RelativePanel_Below = 267;
-    internal const int RelativePanel_LeftOf = 268;
-    internal const int RelativePanel_RightOf = 269;
-    internal const int RelativePanel_AlignHorizontalCenterWith = 270;
-    internal const int RepeatButton_Interval = 271;
-    internal const int RepeatButton_Delay = 272;
-    internal const int RowDefinition_MaxHeight = 273;
-    internal const int RowDefinition_MinHeight = 274;
-    internal const int RowDefinition_Height = 275;
-    internal const int ScrollViewer_BringIntoViewOnFocusChange = 276;
-    internal const int ScrollViewer_Extent = 277;
-    internal const int ScrollViewer_Offset = 278;
-    internal const int ScrollViewer_Viewport = 279;
-    internal const int ScrollViewer_LargeChange = 280;
-    internal const int ScrollViewer_SmallChange = 281;
-    internal const int ScrollViewer_ScrollBarMaximum = 282;
-    internal const int ScrollViewer_HorizontalScrollBarVisibility = 283;
-    internal const int ScrollViewer_HorizontalSnapPointsType = 284;
-    internal const int ScrollViewer_VerticalSnapPointsType = 285;
-    internal const int ScrollViewer_HorizontalSnapPointsAlignment = 286;
-    internal const int ScrollViewer_VerticalSnapPointsAlignment = 287;
-    internal const int ScrollViewer_VerticalScrollBarVisibility = 288;
-    internal const int ScrollViewer_IsExpanded = 289;
-    internal const int ScrollViewer_AllowAutoHide = 290;
-    internal const int ScrollViewer_IsScrollChainingEnabled = 291;
-    internal const int ScrollViewer_IsScrollInertiaEnabled = 292;
-    internal const int ScrollViewer_IsDeferredScrollingEnabled = 293;
-    internal const int SelectableTextBlock_SelectionStart = 294;
-    internal const int SelectableTextBlock_SelectionEnd = 295;
-    internal const int SelectableTextBlock_SelectedText = 296;
-    internal const int SelectableTextBlock_SelectionBrush = 297;
-    internal const int SelectableTextBlock_SelectionForegroundBrush = 298;
-    internal const int SelectableTextBlock_CanCopy = 299;
-    internal const int Slider_Orientation = 300;
-    internal const int Slider_IsDirectionReversed = 301;
-    internal const int Slider_IsSnapToTickEnabled = 302;
-    internal const int Slider_TickFrequency = 303;
-    internal const int Slider_TickPlacement = 304;
-    internal const int Slider_Ticks = 305;
-    internal const int Spinner_ValidSpinDirection = 306;
-    internal const int SplitButton_Command = 307;
-    internal const int SplitButton_CommandParameter = 308;
-    internal const int SplitButton_Flyout = 309;
-    internal const int SplitButton_HotKey = 310;
-    internal const int ToggleSplitButton_IsChecked = 311;
-    internal const int SplitView_CompactPaneLength = 312;
-    internal const int SplitView_DisplayMode = 313;
-    internal const int SplitView_IsPaneOpen = 314;
-    internal const int SplitView_OpenPaneLength = 315;
-    internal const int SplitView_PaneBackground = 316;
-    internal const int SplitView_PanePlacement = 317;
-    internal const int SplitView_Pane = 318;
-    internal const int SplitView_PaneTemplate = 319;
-    internal const int SplitView_UseLightDismissOverlayMode = 320;
-    internal const int SplitView_TemplateSettings = 321;
-    internal const int StackPanel_Spacing = 322;
-    internal const int StackPanel_Orientation = 323;
-    internal const int StackPanel_AreHorizontalSnapPointsRegular = 324;
-    internal const int StackPanel_AreVerticalSnapPointsRegular = 325;
-    internal const int TabControl_TabStripPlacement = 326;
-    internal const int TabControl_HorizontalContentAlignment = 327;
-    internal const int TabControl_VerticalContentAlignment = 328;
-    internal const int TabControl_ContentTemplate = 329;
-    internal const int TabControl_SelectedContent = 330;
-    internal const int TabControl_SelectedContentTemplate = 331;
-    internal const int TabItem_TabStripPlacement = 332;
-    internal const int TabItem_IsSelected = 333;
-    internal const int TextBlock_Background = 334;
-    internal const int TextBlock_Padding = 335;
-    internal const int TextBlock_FontFamily = 336;
-    internal const int TextBlock_FontSize = 337;
-    internal const int TextBlock_FontStyle = 338;
-    internal const int TextBlock_FontWeight = 339;
-    internal const int TextBlock_FontStretch = 340;
-    internal const int TextBlock_Foreground = 341;
-    internal const int TextBlock_BaselineOffset = 342;
-    internal const int TextBlock_LineHeight = 343;
-    internal const int TextBlock_LineSpacing = 344;
-    internal const int TextBlock_LetterSpacing = 345;
-    internal const int TextBlock_MaxLines = 346;
-    internal const int TextBlock_Text = 347;
-    internal const int TextBlock_TextAlignment = 348;
-    internal const int TextBlock_TextWrapping = 349;
-    internal const int TextBlock_TextTrimming = 350;
-    internal const int TextBlock_TextDecorations = 351;
-    internal const int TextBlock_FontFeatures = 352;
-    internal const int TextBlock_Inlines = 353;
-    internal const int TextBox_IsInactiveSelectionHighlightEnabled = 354;
-    internal const int TextBox_ClearSelectionOnLostFocus = 355;
-    internal const int TextBox_AcceptsReturn = 356;
-    internal const int TextBox_AcceptsTab = 357;
-    internal const int TextBox_CaretIndex = 358;
-    internal const int TextBox_IsReadOnly = 359;
-    internal const int TextBox_PasswordChar = 360;
-    internal const int TextBox_SelectionBrush = 361;
-    internal const int TextBox_SelectionForegroundBrush = 362;
-    internal const int TextBox_CaretBrush = 363;
-    internal const int TextBox_CaretBlinkInterval = 364;
-    internal const int TextBox_SelectionStart = 365;
-    internal const int TextBox_SelectionEnd = 366;
-    internal const int TextBox_MaxLength = 367;
-    internal const int TextBox_MaxLines = 368;
-    internal const int TextBox_MinLines = 369;
-    internal const int TextBox_Text = 370;
-    internal const int TextBox_TextAlignment = 371;
-    internal const int TextBox_HorizontalContentAlignment = 372;
-    internal const int TextBox_VerticalContentAlignment = 373;
-    internal const int TextBox_TextWrapping = 374;
-    internal const int TextBox_LineHeight = 375;
-    internal const int TextBox_LetterSpacing = 376;
-    internal const int TextBox_Watermark = 377;
-    internal const int TextBox_UseFloatingWatermark = 378;
-    internal const int TextBox_NewLine = 379;
-    internal const int TextBox_InnerLeftContent = 380;
-    internal const int TextBox_InnerRightContent = 381;
-    internal const int TextBox_RevealPassword = 382;
-    internal const int TextBox_CanCut = 383;
-    internal const int TextBox_CanCopy = 384;
-    internal const int TextBox_CanPaste = 385;
-    internal const int TextBox_IsUndoEnabled = 386;
-    internal const int TextBox_UndoLimit = 387;
-    internal const int TextBox_CanUndo = 388;
-    internal const int TextBox_CanRedo = 389;
-    internal const int ThemeVariantScope_ActualThemeVariant = 390;
-    internal const int ThemeVariantScope_RequestedThemeVariant = 391;
-    internal const int TickBar_Fill = 392;
-    internal const int TickBar_Minimum = 393;
-    internal const int TickBar_Maximum = 394;
-    internal const int TickBar_TickFrequency = 395;
-    internal const int TickBar_Orientation = 396;
-    internal const int TickBar_Ticks = 397;
-    internal const int TickBar_IsDirectionReversed = 398;
-    internal const int TickBar_Placement = 399;
-    internal const int TickBar_ReservedSpace = 400;
-    internal const int ToggleSwitch_OffContent = 401;
-    internal const int ToggleSwitch_OffContentTemplate = 402;
-    internal const int ToggleSwitch_OnContent = 403;
-    internal const int ToggleSwitch_OnContentTemplate = 404;
-    internal const int ToggleSwitch_KnobTransitions = 405;
-    internal const int ToolTip_Tip = 406;
-    internal const int ToolTip_IsOpen = 407;
-    internal const int ToolTip_Placement = 408;
-    internal const int ToolTip_HorizontalOffset = 409;
-    internal const int ToolTip_VerticalOffset = 410;
-    internal const int ToolTip_CustomPopupPlacementCallback = 411;
-    internal const int ToolTip_ShowDelay = 412;
-    internal const int ToolTip_BetweenShowDelay = 413;
-    internal const int ToolTip_ShowOnDisabled = 414;
-    internal const int ToolTip_ServiceEnabled = 415;
-    internal const int TopLevel_ClientSize = 416;
-    internal const int TopLevel_FrameSize = 417;
-    internal const int TopLevel_PointerOverElement = 418;
-    internal const int TopLevel_TransparencyLevelHint = 419;
-    internal const int TopLevel_ActualTransparencyLevel = 420;
-    internal const int TopLevel_TransparencyBackgroundFallback = 421;
-    internal const int TopLevel_ActualThemeVariant = 422;
-    internal const int TopLevel_RequestedThemeVariant = 423;
-    internal const int TopLevel_SystemBarColor = 424;
-    internal const int TopLevel_AutoSafeAreaPadding = 425;
-    internal const int TransitioningContentControl_PageTransition = 426;
-    internal const int TransitioningContentControl_IsTransitionReversed = 427;
-    internal const int TrayIcon_Command = 428;
-    internal const int TrayIcon_CommandParameter = 429;
-    internal const int TrayIcon_Icons = 430;
-    internal const int TrayIcon_Menu = 431;
-    internal const int TrayIcon_Icon = 432;
-    internal const int TrayIcon_ToolTipText = 433;
-    internal const int TrayIcon_IsVisible = 434;
-    internal const int TreeView_AutoScrollToSelectedItem = 435;
-    internal const int TreeView_SelectedItem = 436;
-    internal const int TreeView_SelectedItems = 437;
-    internal const int TreeView_SelectionMode = 438;
-    internal const int TreeViewItem_IsExpanded = 439;
-    internal const int TreeViewItem_IsSelected = 440;
-    internal const int TreeViewItem_Level = 441;
-    internal const int Viewbox_Stretch = 442;
-    internal const int Viewbox_StretchDirection = 443;
-    internal const int Viewbox_Child = 444;
-    internal const int VirtualizingStackPanel_Orientation = 445;
-    internal const int VirtualizingStackPanel_AreHorizontalSnapPointsRegular = 446;
-    internal const int VirtualizingStackPanel_AreVerticalSnapPointsRegular = 447;
-    internal const int Window_SizeToContent = 448;
-    internal const int Window_ExtendClientAreaToDecorationsHint = 449;
-    internal const int Window_ExtendClientAreaChromeHints = 450;
-    internal const int Window_ExtendClientAreaTitleBarHeightHint = 451;
-    internal const int Window_IsExtendedIntoWindowDecorations = 452;
-    internal const int Window_WindowDecorationMargin = 453;
-    internal const int Window_OffScreenMargin = 454;
-    internal const int Window_SystemDecorations = 455;
-    internal const int Window_ShowActivated = 456;
-    internal const int Window_ShowInTaskbar = 457;
-    internal const int Window_ClosingBehavior = 458;
-    internal const int Window_WindowState = 459;
-    internal const int Window_Title = 460;
-    internal const int Window_Icon = 461;
-    internal const int Window_WindowStartupLocation = 462;
-    internal const int Window_CanResize = 463;
-    internal const int WindowBase_IsActive = 464;
-    internal const int WindowBase_Owner = 465;
-    internal const int WindowBase_Topmost = 466;
-    internal const int WrapPanel_ItemSpacing = 467;
-    internal const int WrapPanel_LineSpacing = 468;
-    internal const int WrapPanel_Orientation = 469;
-    internal const int WrapPanel_ItemsAlignment = 470;
-    internal const int WrapPanel_ItemWidth = 471;
-    internal const int WrapPanel_ItemHeight = 472;
-    internal const int Arc_StartAngle = 473;
-    internal const int Arc_SweepAngle = 474;
-    internal const int Line_StartPoint = 475;
-    internal const int Line_EndPoint = 476;
-    internal const int Path_Data = 477;
-    internal const int Polygon_Points = 478;
-    internal const int Polyline_Points = 479;
-    internal const int Rectangle_RadiusX = 480;
-    internal const int Rectangle_RadiusY = 481;
-    internal const int Sector_StartAngle = 482;
-    internal const int Sector_SweepAngle = 483;
-    internal const int Shape_Fill = 484;
-    internal const int Shape_Stretch = 485;
-    internal const int Shape_Stroke = 486;
-    internal const int Shape_StrokeDashArray = 487;
-    internal const int Shape_StrokeDashOffset = 488;
-    internal const int Shape_StrokeThickness = 489;
-    internal const int Shape_StrokeLineCap = 490;
-    internal const int Shape_StrokeJoin = 491;
-    internal const int ContentPresenter_Background = 492;
-    internal const int ContentPresenter_BackgroundSizing = 493;
-    internal const int ContentPresenter_BorderBrush = 494;
-    internal const int ContentPresenter_BorderThickness = 495;
-    internal const int ContentPresenter_CornerRadius = 496;
-    internal const int ContentPresenter_BoxShadow = 497;
-    internal const int ContentPresenter_Foreground = 498;
-    internal const int ContentPresenter_FontFamily = 499;
-    internal const int ContentPresenter_FontSize = 500;
-    internal const int ContentPresenter_FontStyle = 501;
-    internal const int ContentPresenter_FontWeight = 502;
-    internal const int ContentPresenter_FontStretch = 503;
-    internal const int ContentPresenter_TextAlignment = 504;
-    internal const int ContentPresenter_TextWrapping = 505;
-    internal const int ContentPresenter_TextTrimming = 506;
-    internal const int ContentPresenter_LineHeight = 507;
-    internal const int ContentPresenter_MaxLines = 508;
-    internal const int ContentPresenter_Child = 509;
-    internal const int ContentPresenter_Content = 510;
-    internal const int ContentPresenter_ContentTemplate = 511;
-    internal const int ContentPresenter_HorizontalContentAlignment = 512;
-    internal const int ContentPresenter_VerticalContentAlignment = 513;
-    internal const int ContentPresenter_Padding = 514;
-    internal const int ContentPresenter_RecognizesAccessKey = 515;
-    internal const int ItemsPresenter_ItemsPanel = 516;
-    internal const int ScrollContentPresenter_CanHorizontallyScroll = 517;
-    internal const int ScrollContentPresenter_CanVerticallyScroll = 518;
-    internal const int ScrollContentPresenter_Extent = 519;
-    internal const int ScrollContentPresenter_Offset = 520;
-    internal const int ScrollContentPresenter_Viewport = 521;
-    internal const int ScrollContentPresenter_HorizontalSnapPointsType = 522;
-    internal const int ScrollContentPresenter_VerticalSnapPointsType = 523;
-    internal const int ScrollContentPresenter_HorizontalSnapPointsAlignment = 524;
-    internal const int ScrollContentPresenter_VerticalSnapPointsAlignment = 525;
-    internal const int ScrollContentPresenter_IsScrollChainingEnabled = 526;
-    internal const int TextPresenter_ShowSelectionHighlight = 527;
-    internal const int TextPresenter_CaretIndex = 528;
-    internal const int TextPresenter_RevealPassword = 529;
-    internal const int TextPresenter_PasswordChar = 530;
-    internal const int TextPresenter_SelectionBrush = 531;
-    internal const int TextPresenter_SelectionForegroundBrush = 532;
-    internal const int TextPresenter_CaretBrush = 533;
-    internal const int TextPresenter_CaretBlinkInterval = 534;
-    internal const int TextPresenter_SelectionStart = 535;
-    internal const int TextPresenter_SelectionEnd = 536;
-    internal const int TextPresenter_Text = 537;
-    internal const int TextPresenter_PreeditText = 538;
-    internal const int TextPresenter_PreeditTextCursorPosition = 539;
-    internal const int TextPresenter_TextAlignment = 540;
-    internal const int TextPresenter_TextWrapping = 541;
-    internal const int TextPresenter_LineHeight = 542;
-    internal const int TextPresenter_LetterSpacing = 543;
-    internal const int TextPresenter_Background = 544;
-    internal const int NotificationCard_IsClosing = 545;
-    internal const int NotificationCard_IsClosed = 546;
-    internal const int NotificationCard_NotificationType = 547;
-    internal const int NotificationCard_CloseOnClick = 548;
-    internal const int WindowNotificationManager_Position = 549;
-    internal const int WindowNotificationManager_MaxItems = 550;
-    internal const int Inline_TextDecorations = 551;
-    internal const int Inline_BaselineAlignment = 552;
-    internal const int InlineUIContainer_Child = 553;
-    internal const int Run_Text = 554;
-    internal const int Span_Inlines = 555;
-    internal const int TextElement_Background = 556;
-    internal const int TextElement_FontFamily = 557;
-    internal const int TextElement_FontFeatures = 558;
-    internal const int TextElement_FontSize = 559;
-    internal const int TextElement_FontStyle = 560;
-    internal const int TextElement_FontWeight = 561;
-    internal const int TextElement_FontStretch = 562;
-    internal const int TextElement_Foreground = 563;
-    internal const int CalendarItem_HeaderBackground = 564;
-    internal const int CalendarItem_DayTitleTemplate = 565;
-    internal const int DateTimePickerPanel_ItemHeight = 566;
-    internal const int DateTimePickerPanel_PanelType = 567;
-    internal const int DateTimePickerPanel_ItemFormat = 568;
-    internal const int DateTimePickerPanel_ShouldLoop = 569;
-    internal const int FlyoutBase_IsOpen = 570;
-    internal const int FlyoutBase_Target = 571;
-    internal const int FlyoutBase_AttachedFlyout = 572;
-    internal const int PopupFlyoutBase_Placement = 573;
-    internal const int PopupFlyoutBase_HorizontalOffset = 574;
-    internal const int PopupFlyoutBase_VerticalOffset = 575;
-    internal const int PopupFlyoutBase_PlacementAnchor = 576;
-    internal const int PopupFlyoutBase_PlacementGravity = 577;
-    internal const int PopupFlyoutBase_CustomPopupPlacementCallback = 578;
-    internal const int PopupFlyoutBase_ShowMode = 579;
-    internal const int PopupFlyoutBase_OverlayDismissEventPassThrough = 580;
-    internal const int PopupFlyoutBase_OverlayInputPassThroughElement = 581;
-    internal const int PopupFlyoutBase_PlacementConstraintAdjustment = 582;
-    internal const int AccessText_ShowAccessKey = 583;
-    internal const int AdornerLayer_AdornedElement = 584;
-    internal const int AdornerLayer_IsClipEnabled = 585;
-    internal const int AdornerLayer_Adorner = 586;
-    internal const int AdornerLayer_DefaultFocusAdorner = 587;
-    internal const int HeaderedContentControl_Header = 588;
-    internal const int HeaderedContentControl_HeaderTemplate = 589;
-    internal const int HeaderedItemsControl_Header = 590;
-    internal const int HeaderedItemsControl_HeaderTemplate = 591;
-    internal const int HeaderedSelectingItemsControl_Header = 592;
-    internal const int HeaderedSelectingItemsControl_HeaderTemplate = 593;
-    internal const int OverlayPopupHost_Transform = 594;
-    internal const int Popup_WindowManagerAddShadowHint = 595;
-    internal const int Popup_Child = 596;
-    internal const int Popup_InheritsTransform = 597;
-    internal const int Popup_IsOpen = 598;
-    internal const int Popup_PlacementAnchor = 599;
-    internal const int Popup_PlacementConstraintAdjustment = 600;
-    internal const int Popup_PlacementGravity = 601;
-    internal const int Popup_Placement = 602;
-    internal const int Popup_PlacementRect = 603;
-    internal const int Popup_PlacementTarget = 604;
-    internal const int Popup_CustomPopupPlacementCallback = 605;
-    internal const int Popup_OverlayDismissEventPassThrough = 606;
-    internal const int Popup_OverlayInputPassThroughElement = 607;
-    internal const int Popup_HorizontalOffset = 608;
-    internal const int Popup_IsLightDismissEnabled = 609;
-    internal const int Popup_VerticalOffset = 610;
-    internal const int Popup_Topmost = 611;
-    internal const int Popup_TakesFocusFromNativeControl = 612;
-    internal const int Popup_ShouldUseOverlayLayer = 613;
-    internal const int Popup_IsUsingOverlayLayer = 614;
-    internal const int PopupRoot_Transform = 615;
-    internal const int PopupRoot_WindowManagerAddShadowHint = 616;
-    internal const int RangeBase_Minimum = 617;
-    internal const int RangeBase_Maximum = 618;
-    internal const int RangeBase_Value = 619;
-    internal const int RangeBase_SmallChange = 620;
-    internal const int RangeBase_LargeChange = 621;
-    internal const int ScrollBar_ViewportSize = 622;
-    internal const int ScrollBar_Visibility = 623;
-    internal const int ScrollBar_Orientation = 624;
-    internal const int ScrollBar_IsExpanded = 625;
-    internal const int ScrollBar_AllowAutoHide = 626;
-    internal const int ScrollBar_HideDelay = 627;
-    internal const int ScrollBar_ShowDelay = 628;
-    internal const int SelectingItemsControl_AutoScrollToSelectedItem = 629;
-    internal const int SelectingItemsControl_SelectedIndex = 630;
-    internal const int SelectingItemsControl_SelectedItem = 631;
-    internal const int SelectingItemsControl_SelectedValue = 632;
-    internal const int SelectingItemsControl_SelectedValueBinding = 633;
-    internal const int SelectingItemsControl_IsSelected = 634;
-    internal const int SelectingItemsControl_IsTextSearchEnabled = 635;
-    internal const int SelectingItemsControl_WrapSelection = 636;
-    internal const int TemplatedControl_Background = 637;
-    internal const int TemplatedControl_BackgroundSizing = 638;
-    internal const int TemplatedControl_BorderBrush = 639;
-    internal const int TemplatedControl_BorderThickness = 640;
-    internal const int TemplatedControl_CornerRadius = 641;
-    internal const int TemplatedControl_FontFamily = 642;
-    internal const int TemplatedControl_FontFeatures = 643;
-    internal const int TemplatedControl_FontSize = 644;
-    internal const int TemplatedControl_FontStyle = 645;
-    internal const int TemplatedControl_FontWeight = 646;
-    internal const int TemplatedControl_FontStretch = 647;
-    internal const int TemplatedControl_Foreground = 648;
-    internal const int TemplatedControl_Padding = 649;
-    internal const int TemplatedControl_Template = 650;
-    internal const int TemplatedControl_IsTemplateFocusTarget = 651;
-    internal const int ToggleButton_IsChecked = 652;
-    internal const int ToggleButton_IsThreeState = 653;
-    internal const int Track_Minimum = 654;
-    internal const int Track_Maximum = 655;
-    internal const int Track_Value = 656;
-    internal const int Track_ViewportSize = 657;
-    internal const int Track_Orientation = 658;
-    internal const int Track_Thumb = 659;
-    internal const int Track_IncreaseButton = 660;
-    internal const int Track_DecreaseButton = 661;
-    internal const int Track_IsDirectionReversed = 662;
-    internal const int Track_IgnoreThumbDrag = 663;
-    internal const int Track_DeferThumbDrag = 664;
-    internal const int UniformGrid_Rows = 665;
-    internal const int UniformGrid_Columns = 666;
-    internal const int UniformGrid_FirstColumn = 667;
-    internal const int UniformGrid_RowSpacing = 668;
-    internal const int UniformGrid_ColumnSpacing = 669;
-    internal const int VisualLayerManager_ChromeOverlayLayer = 670;
-    internal const int SplitViewTemplateSettings_ClosedPaneWidth = 671;
-    internal const int SplitViewTemplateSettings_PaneColumnGridLength = 672;
-    internal const int StyledElement_DataContext = 673;
-    internal const int StyledElement_Name = 674;
-    internal const int StyledElement_Parent = 675;
-    internal const int StyledElement_TemplatedParent = 676;
-    internal const int StyledElement_Theme = 677;
-    internal const int Visual_Bounds = 678;
-    internal const int Visual_ClipToBounds = 679;
-    internal const int Visual_Clip = 680;
-    internal const int Visual_IsVisible = 681;
-    internal const int Visual_Opacity = 682;
-    internal const int Visual_OpacityMask = 683;
-    internal const int Visual_Effect = 684;
-    internal const int Visual_HasMirrorTransform = 685;
-    internal const int Visual_RenderTransform = 686;
-    internal const int Visual_RenderTransformOrigin = 687;
-    internal const int Visual_FlowDirection = 688;
-    internal const int Visual_VisualParent = 689;
-    internal const int Visual_ZIndex = 690;
-    internal const int Layoutable_DesiredSize = 691;
-    internal const int Layoutable_Width = 692;
-    internal const int Layoutable_Height = 693;
-    internal const int Layoutable_MinWidth = 694;
-    internal const int Layoutable_MaxWidth = 695;
-    internal const int Layoutable_MinHeight = 696;
-    internal const int Layoutable_MaxHeight = 697;
-    internal const int Layoutable_Margin = 698;
-    internal const int Layoutable_HorizontalAlignment = 699;
-    internal const int Layoutable_VerticalAlignment = 700;
-    internal const int Layoutable_UseLayoutRounding = 701;
-    internal const int PullGestureRecognizer_PullDirection = 702;
-    internal const int InputElement_Focusable = 703;
-    internal const int InputElement_IsEnabled = 704;
-    internal const int InputElement_IsEffectivelyEnabled = 705;
-    internal const int InputElement_Cursor = 706;
-    internal const int InputElement_IsKeyboardFocusWithin = 707;
-    internal const int InputElement_IsFocused = 708;
-    internal const int InputElement_IsHitTestVisible = 709;
-    internal const int InputElement_IsPointerOver = 710;
-    internal const int InputElement_IsTabStop = 711;
-    internal const int InputElement_TabIndex = 712;
-    internal const int KeyBinding_Command = 713;
-    internal const int KeyBinding_CommandParameter = 714;
-    internal const int KeyBinding_Gesture = 715;
-    internal const int ScrollGestureRecognizer_CanHorizontallyScroll = 716;
-    internal const int ScrollGestureRecognizer_CanVerticallyScroll = 717;
-    internal const int ScrollGestureRecognizer_IsScrollInertiaEnabled = 718;
-    internal const int ScrollGestureRecognizer_ScrollStartDistance = 719;
-    internal const int CombinedGeometry_Geometry1 = 720;
-    internal const int CombinedGeometry_Geometry2 = 721;
-    internal const int CombinedGeometry_GeometryCombineMode = 722;
-    internal const int ArcSegment_IsLargeArc = 723;
-    internal const int ArcSegment_Point = 724;
-    internal const int ArcSegment_RotationAngle = 725;
-    internal const int ArcSegment_Size = 726;
-    internal const int ArcSegment_SweepDirection = 727;
-    internal const int BezierSegment_Point1 = 728;
-    internal const int BezierSegment_Point2 = 729;
-    internal const int BezierSegment_Point3 = 730;
-    internal const int Brush_Opacity = 731;
-    internal const int Brush_Transform = 732;
-    internal const int Brush_TransformOrigin = 733;
-    internal const int ConicGradientBrush_Center = 734;
-    internal const int ConicGradientBrush_Angle = 735;
-    internal const int DashStyle_Dashes = 736;
-    internal const int DashStyle_Offset = 737;
-    internal const int DrawingBrush_Drawing = 738;
-    internal const int DrawingGroup_Opacity = 739;
-    internal const int DrawingGroup_Transform = 740;
-    internal const int DrawingGroup_ClipGeometry = 741;
-    internal const int DrawingGroup_OpacityMask = 742;
-    internal const int DrawingGroup_Children = 743;
-    internal const int DrawingImage_Drawing = 744;
-    internal const int BlurEffect_Radius = 745;
-    internal const int DropShadowEffectBase_BlurRadius = 746;
-    internal const int DropShadowEffectBase_Color = 747;
-    internal const int DropShadowEffectBase_Opacity = 748;
-    internal const int DropShadowEffect_OffsetX = 749;
-    internal const int DropShadowEffect_OffsetY = 750;
-    internal const int DropShadowDirectionEffect_ShadowDepth = 751;
-    internal const int DropShadowDirectionEffect_Direction = 752;
-    internal const int EllipseGeometry_Rect = 753;
-    internal const int EllipseGeometry_RadiusX = 754;
-    internal const int EllipseGeometry_RadiusY = 755;
-    internal const int EllipseGeometry_Center = 756;
-    internal const int ExperimentalAcrylicMaterial_TintColor = 757;
-    internal const int ExperimentalAcrylicMaterial_BackgroundSource = 758;
-    internal const int ExperimentalAcrylicMaterial_TintOpacity = 759;
-    internal const int ExperimentalAcrylicMaterial_MaterialOpacity = 760;
-    internal const int ExperimentalAcrylicMaterial_PlatformTransparencyCompensationLevel = 761;
-    internal const int ExperimentalAcrylicMaterial_FallbackColor = 762;
-    internal const int Geometry_Transform = 763;
-    internal const int GeometryDrawing_Geometry = 764;
-    internal const int GeometryDrawing_Brush = 765;
-    internal const int GeometryDrawing_Pen = 766;
-    internal const int GeometryGroup_Children = 767;
-    internal const int GeometryGroup_FillRule = 768;
-    internal const int GlyphRunDrawing_Foreground = 769;
-    internal const int GlyphRunDrawing_GlyphRun = 770;
-    internal const int GradientBrush_SpreadMethod = 771;
-    internal const int GradientBrush_GradientStops = 772;
-    internal const int GradientStop_Offset = 773;
-    internal const int GradientStop_Color = 774;
-    internal const int ImageBrush_Source = 775;
-    internal const int ImageDrawing_ImageSource = 776;
-    internal const int ImageDrawing_Rect = 777;
-    internal const int LinearGradientBrush_StartPoint = 778;
-    internal const int LinearGradientBrush_EndPoint = 779;
-    internal const int LineGeometry_StartPoint = 780;
-    internal const int LineGeometry_EndPoint = 781;
-    internal const int LineSegment_Point = 782;
-    internal const int MatrixTransform_Matrix = 783;
-    internal const int PathFigure_IsClosed = 784;
-    internal const int PathFigure_IsFilled = 785;
-    internal const int PathFigure_Segments = 786;
-    internal const int PathFigure_StartPoint = 787;
-    internal const int PathGeometry_Figures = 788;
-    internal const int PathGeometry_FillRule = 789;
-    internal const int PathSegment_IsStroked = 790;
-    internal const int Pen_Brush = 791;
-    internal const int Pen_Thickness = 792;
-    internal const int Pen_DashStyle = 793;
-    internal const int Pen_LineCap = 794;
-    internal const int Pen_LineJoin = 795;
-    internal const int Pen_MiterLimit = 796;
-    internal const int PolyBezierSegment_Points = 797;
-    internal const int PolylineGeometry_Points = 798;
-    internal const int PolylineGeometry_IsFilled = 799;
-    internal const int PolyLineSegment_Points = 800;
-    internal const int QuadraticBezierSegment_Point1 = 801;
-    internal const int QuadraticBezierSegment_Point2 = 802;
-    internal const int RadialGradientBrush_Center = 803;
-    internal const int RadialGradientBrush_GradientOrigin = 804;
-    internal const int RadialGradientBrush_RadiusX = 805;
-    internal const int RadialGradientBrush_RadiusY = 806;
-    internal const int RectangleGeometry_RadiusX = 807;
-    internal const int RectangleGeometry_RadiusY = 808;
-    internal const int RectangleGeometry_Rect = 809;
-    internal const int RotateTransform_Angle = 810;
-    internal const int RotateTransform_CenterX = 811;
-    internal const int RotateTransform_CenterY = 812;
-    internal const int ScaleTransform_ScaleX = 813;
-    internal const int ScaleTransform_ScaleY = 814;
-    internal const int SkewTransform_AngleX = 815;
-    internal const int SkewTransform_AngleY = 816;
-    internal const int SolidColorBrush_Color = 817;
-    internal const int TextDecoration_Location = 818;
-    internal const int TextDecoration_Stroke = 819;
-    internal const int TextDecoration_StrokeThicknessUnit = 820;
-    internal const int TextDecoration_StrokeDashArray = 821;
-    internal const int TextDecoration_StrokeDashOffset = 822;
-    internal const int TextDecoration_StrokeThickness = 823;
-    internal const int TextDecoration_StrokeLineCap = 824;
-    internal const int TextDecoration_StrokeOffset = 825;
-    internal const int TextDecoration_StrokeOffsetUnit = 826;
-    internal const int TileBrush_AlignmentX = 827;
-    internal const int TileBrush_AlignmentY = 828;
-    internal const int TileBrush_DestinationRect = 829;
-    internal const int TileBrush_SourceRect = 830;
-    internal const int TileBrush_Stretch = 831;
-    internal const int TileBrush_TileMode = 832;
-    internal const int TransformGroup_Children = 833;
-    internal const int TranslateTransform_X = 834;
-    internal const int TranslateTransform_Y = 835;
-    internal const int VisualBrush_Visual = 836;
-    internal const int Rotate3DTransform_AngleX = 837;
-    internal const int Rotate3DTransform_AngleY = 838;
-    internal const int Rotate3DTransform_AngleZ = 839;
-    internal const int Rotate3DTransform_CenterX = 840;
-    internal const int Rotate3DTransform_CenterY = 841;
-    internal const int Rotate3DTransform_CenterZ = 842;
-    internal const int Rotate3DTransform_Depth = 843;
-    internal const int CroppedBitmap_Source = 844;
-    internal const int CroppedBitmap_SourceRect = 845;
-    internal const int Animatable_Transitions = 846;
-    internal const int Animation_Duration = 847;
-    internal const int Animation_IterationCount = 848;
-    internal const int Animation_PlaybackDirection = 849;
-    internal const int Animation_FillMode = 850;
-    internal const int Animation_Easing = 851;
-    internal const int Animation_Delay = 852;
-    internal const int Animation_DelayBetweenIterations = 853;
-    internal const int Animation_SpeedRatio = 854;
-    internal const int TransitionBase_Duration = 855;
-    internal const int TransitionBase_Delay = 856;
-    internal const int TransitionBase_Easing = 857;
-    internal const int TransitionBase_Property = 858;
-    internal const int ColorPicker_Content = 859;
-    internal const int ColorPicker_ContentTemplate = 860;
-    internal const int ColorPicker_HorizontalContentAlignment = 861;
-    internal const int ColorPicker_VerticalContentAlignment = 862;
-    internal const int ColorView_Color = 863;
-    internal const int ColorView_ColorModel = 864;
-    internal const int ColorView_ColorSpectrumComponents = 865;
-    internal const int ColorView_ColorSpectrumShape = 866;
-    internal const int ColorView_HexInputAlphaPosition = 867;
-    internal const int ColorView_HsvColor = 868;
-    internal const int ColorView_IsAccentColorsVisible = 869;
-    internal const int ColorView_IsAlphaEnabled = 870;
-    internal const int ColorView_IsAlphaVisible = 871;
-    internal const int ColorView_IsColorComponentsVisible = 872;
-    internal const int ColorView_IsColorModelVisible = 873;
-    internal const int ColorView_IsColorPaletteVisible = 874;
-    internal const int ColorView_IsColorPreviewVisible = 875;
-    internal const int ColorView_IsColorSpectrumVisible = 876;
-    internal const int ColorView_IsColorSpectrumSliderVisible = 877;
-    internal const int ColorView_IsComponentSliderVisible = 878;
-    internal const int ColorView_IsComponentTextInputVisible = 879;
-    internal const int ColorView_IsHexInputVisible = 880;
-    internal const int ColorView_MaxHue = 881;
-    internal const int ColorView_MaxSaturation = 882;
-    internal const int ColorView_MaxValue = 883;
-    internal const int ColorView_MinHue = 884;
-    internal const int ColorView_MinSaturation = 885;
-    internal const int ColorView_MinValue = 886;
-    internal const int ColorView_PaletteColors = 887;
-    internal const int ColorView_PaletteColumnCount = 888;
-    internal const int ColorView_Palette = 889;
-    internal const int ColorView_SelectedIndex = 890;
-    internal const int ColorPreviewer_HsvColor = 891;
-    internal const int ColorPreviewer_IsAccentColorsVisible = 892;
-    internal const int ColorSlider_Color = 893;
-    internal const int ColorSlider_ColorComponent = 894;
-    internal const int ColorSlider_ColorModel = 895;
-    internal const int ColorSlider_HsvColor = 896;
-    internal const int ColorSlider_IsAlphaVisible = 897;
-    internal const int ColorSlider_IsPerceptive = 898;
-    internal const int ColorSlider_IsRoundingEnabled = 899;
-    internal const int ColorSpectrum_Color = 900;
-    internal const int ColorSpectrum_Components = 901;
-    internal const int ColorSpectrum_HsvColor = 902;
-    internal const int ColorSpectrum_MaxHue = 903;
-    internal const int ColorSpectrum_MaxSaturation = 904;
-    internal const int ColorSpectrum_MaxValue = 905;
-    internal const int ColorSpectrum_MinHue = 906;
-    internal const int ColorSpectrum_MinSaturation = 907;
-    internal const int ColorSpectrum_MinValue = 908;
-    internal const int ColorSpectrum_Shape = 909;
-    internal const int ColorSpectrum_ThirdComponent = 910;
-    internal const int NonVirtualizingStackLayout_Orientation = 911;
-    internal const int NonVirtualizingStackLayout_Spacing = 912;
-    internal const int StackLayout_DisableVirtualization = 913;
-    internal const int StackLayout_Orientation = 914;
-    internal const int StackLayout_Spacing = 915;
-    internal const int UniformGridLayout_ItemsJustification = 916;
-    internal const int UniformGridLayout_ItemsStretch = 917;
-    internal const int UniformGridLayout_MinColumnSpacing = 918;
-    internal const int UniformGridLayout_MinItemHeight = 919;
-    internal const int UniformGridLayout_MinItemWidth = 920;
-    internal const int UniformGridLayout_MinRowSpacing = 921;
-    internal const int UniformGridLayout_MaximumRowsOrColumns = 922;
-    internal const int UniformGridLayout_Orientation = 923;
-    internal const int WrapLayout_HorizontalSpacing = 924;
-    internal const int WrapLayout_VerticalSpacing = 925;
-    internal const int WrapLayout_Orientation = 926;
-    internal const int ItemsRepeater_HorizontalCacheLength = 927;
-    internal const int ItemsRepeater_ItemTemplate = 928;
-    internal const int ItemsRepeater_ItemsSource = 929;
-    internal const int ItemsRepeater_Layout = 930;
-    internal const int ItemsRepeater_VerticalCacheLength = 931;
-    internal const int DataGrid_CanUserReorderColumns = 932;
-    internal const int DataGrid_CanUserResizeColumns = 933;
-    internal const int DataGrid_CanUserSortColumns = 934;
-    internal const int DataGrid_ColumnHeaderHeight = 935;
-    internal const int DataGrid_ColumnWidth = 936;
-    internal const int DataGrid_RowTheme = 937;
-    internal const int DataGrid_CellTheme = 938;
-    internal const int DataGrid_ColumnHeaderTheme = 939;
-    internal const int DataGrid_RowGroupTheme = 940;
-    internal const int DataGrid_FrozenColumnCount = 941;
-    internal const int DataGrid_GridLinesVisibility = 942;
-    internal const int DataGrid_HeadersVisibility = 943;
-    internal const int DataGrid_HorizontalGridLinesBrush = 944;
-    internal const int DataGrid_HorizontalScrollBarVisibility = 945;
-    internal const int DataGrid_IsReadOnly = 946;
-    internal const int DataGrid_AreRowGroupHeadersFrozen = 947;
-    internal const int DataGrid_IsScrollInertiaEnabled = 948;
-    internal const int DataGrid_IsValid = 949;
-    internal const int DataGrid_MaxColumnWidth = 950;
-    internal const int DataGrid_MinColumnWidth = 951;
-    internal const int DataGrid_RowBackground = 952;
-    internal const int DataGrid_RowHeight = 953;
-    internal const int DataGrid_RowHeaderWidth = 954;
-    internal const int DataGrid_SelectionMode = 955;
-    internal const int DataGrid_VerticalGridLinesBrush = 956;
-    internal const int DataGrid_VerticalScrollBarVisibility = 957;
-    internal const int DataGrid_DropLocationIndicatorTemplate = 958;
-    internal const int DataGrid_SelectedIndex = 959;
-    internal const int DataGrid_SelectedItem = 960;
-    internal const int DataGrid_ClipboardCopyMode = 961;
-    internal const int DataGrid_AutoGenerateColumns = 962;
-    internal const int DataGrid_ItemsSource = 963;
-    internal const int DataGrid_AreRowDetailsFrozen = 964;
-    internal const int DataGrid_RowDetailsTemplate = 965;
-    internal const int DataGrid_RowDetailsVisibilityMode = 966;
-    internal const int DataGrid_CollectionView = 967;
-    internal const int DataGridCell_IsValid = 968;
-    internal const int DataGridCheckBoxColumn_IsThreeState = 969;
-    internal const int DataGridColumn_IsVisible = 970;
-    internal const int DataGridColumn_CellTheme = 971;
-    internal const int DataGridColumn_Header = 972;
-    internal const int DataGridColumn_HeaderTemplate = 973;
-    internal const int DataGridColumn_Width = 974;
-    internal const int DataGridColumnHeader_SeparatorBrush = 975;
-    internal const int DataGridColumnHeader_AreSeparatorsVisible = 976;
-    internal const int DataGridRow_Header = 977;
-    internal const int DataGridRow_IsSelected = 978;
-    internal const int DataGridRow_IsValid = 979;
-    internal const int DataGridRow_DetailsTemplate = 980;
-    internal const int DataGridRow_AreDetailsVisible = 981;
-    internal const int DataGridRow_Index = 982;
-    internal const int DataGridRowGroupHeader_IsItemCountVisible = 983;
-    internal const int DataGridRowGroupHeader_ItemCountFormat = 984;
-    internal const int DataGridRowGroupHeader_PropertyName = 985;
-    internal const int DataGridRowGroupHeader_IsPropertyNameVisible = 986;
-    internal const int DataGridRowGroupHeader_SublevelIndent = 987;
-    internal const int DataGridTemplateColumn_CellTemplate = 988;
-    internal const int DataGridTemplateColumn_CellEditingTemplate = 989;
-    internal const int DataGridTextColumn_FontFamily = 990;
-    internal const int DataGridTextColumn_FontSize = 991;
-    internal const int DataGridTextColumn_FontStyle = 992;
-    internal const int DataGridTextColumn_FontWeight = 993;
-    internal const int DataGridTextColumn_FontStretch = 994;
-    internal const int DataGridTextColumn_Foreground = 995;
-    internal const int DataGridRowHeader_SeparatorBrush = 996;
-    internal const int DataGridRowHeader_AreSeparatorsVisible = 997;
-    internal const int DataGridDetailsPresenter_ContentHeight = 998;
-    internal const int DataGridFrozenGrid_IsFrozen = 999;
-    internal const int TreeDataGrid_AutoDragDropRows = 1000;
-    internal const int TreeDataGrid_CanUserResizeColumns = 1001;
-    internal const int TreeDataGrid_CanUserSortColumns = 1002;
-    internal const int TreeDataGrid_Columns = 1003;
-    internal const int TreeDataGrid_ElementFactory = 1004;
-    internal const int TreeDataGrid_Rows = 1005;
-    internal const int TreeDataGrid_Scroll = 1006;
-    internal const int TreeDataGrid_ShowColumnHeaders = 1007;
-    internal const int TreeDataGrid_Source = 1008;
-    internal const int TreeDataGridCell_IsSelected = 1009;
-    internal const int TreeDataGridCellsPresenter_Rows = 1010;
-    internal const int TreeDataGridCheckBoxCell_IsReadOnly = 1011;
-    internal const int TreeDataGridCheckBoxCell_IsThreeState = 1012;
-    internal const int TreeDataGridCheckBoxCell_Value = 1013;
-    internal const int TreeDataGridColumnHeader_CanUserResize = 1014;
-    internal const int TreeDataGridColumnHeader_Header = 1015;
-    internal const int TreeDataGridColumnHeader_SortDirection = 1016;
-    internal const int TreeDataGridExpanderCell_Indent = 1017;
-    internal const int TreeDataGridExpanderCell_IsExpanded = 1018;
-    internal const int TreeDataGridExpanderCell_ShowExpander = 1019;
-    internal const int TreeDataGridRow_Columns = 1020;
-    internal const int TreeDataGridRow_ElementFactory = 1021;
-    internal const int TreeDataGridRow_IsSelected = 1022;
-    internal const int TreeDataGridRow_Rows = 1023;
-    internal const int TreeDataGridRowsPresenter_Columns = 1024;
-    internal const int TreeDataGridTemplateCell_Content = 1025;
-    internal const int TreeDataGridTemplateCell_ContentTemplate = 1026;
-    internal const int TreeDataGridTemplateCell_EditingTemplate = 1027;
-    internal const int TreeDataGridTextCell_TextTrimming = 1028;
-    internal const int TreeDataGridTextCell_TextWrapping = 1029;
-    internal const int TreeDataGridTextCell_Value = 1030;
-    internal const int TreeDataGridTextCell_TextAlignment = 1031;
+    internal const int AutoCompleteBox_PlaceholderText = 6;
+    internal const int AutoCompleteBox_PlaceholderForeground = 7;
+    internal const int AutoCompleteBox_MinimumPrefixLength = 8;
+    internal const int AutoCompleteBox_MinimumPopulateDelay = 9;
+    internal const int AutoCompleteBox_MaxDropDownHeight = 10;
+    internal const int AutoCompleteBox_IsTextCompletionEnabled = 11;
+    internal const int AutoCompleteBox_ItemTemplate = 12;
+    internal const int AutoCompleteBox_ClearSelectionOnLostFocus = 13;
+    internal const int AutoCompleteBox_IsDropDownOpen = 14;
+    internal const int AutoCompleteBox_SelectedItem = 15;
+    internal const int AutoCompleteBox_Text = 16;
+    internal const int AutoCompleteBox_SearchText = 17;
+    internal const int AutoCompleteBox_FilterMode = 18;
+    internal const int AutoCompleteBox_ItemFilter = 19;
+    internal const int AutoCompleteBox_TextFilter = 20;
+    internal const int AutoCompleteBox_ItemSelector = 21;
+    internal const int AutoCompleteBox_TextSelector = 22;
+    internal const int AutoCompleteBox_ItemsSource = 23;
+    internal const int AutoCompleteBox_AsyncPopulator = 24;
+    internal const int AutoCompleteBox_MaxLength = 25;
+    internal const int AutoCompleteBox_InnerLeftContent = 26;
+    internal const int AutoCompleteBox_InnerRightContent = 27;
+    internal const int AutoCompleteBox_ValueMemberBinding = 28;
+    internal const int Border_Background = 29;
+    internal const int Border_BackgroundSizing = 30;
+    internal const int Border_BorderBrush = 31;
+    internal const int Border_BorderThickness = 32;
+    internal const int Border_CornerRadius = 33;
+    internal const int Border_BoxShadow = 34;
+    internal const int Button_ClickMode = 35;
+    internal const int Button_Command = 36;
+    internal const int Button_HotKey = 37;
+    internal const int Button_CommandParameter = 38;
+    internal const int Button_IsDefault = 39;
+    internal const int Button_IsCancel = 40;
+    internal const int Button_IsPressed = 41;
+    internal const int Button_Flyout = 42;
+    internal const int ButtonSpinner_AllowSpin = 43;
+    internal const int ButtonSpinner_ShowButtonSpinner = 44;
+    internal const int ButtonSpinner_ButtonSpinnerLocation = 45;
+    internal const int CalendarDatePicker_DisplayDate = 46;
+    internal const int CalendarDatePicker_DisplayDateStart = 47;
+    internal const int CalendarDatePicker_DisplayDateEnd = 48;
+    internal const int CalendarDatePicker_FirstDayOfWeek = 49;
+    internal const int CalendarDatePicker_IsDropDownOpen = 50;
+    internal const int CalendarDatePicker_IsTodayHighlighted = 51;
+    internal const int CalendarDatePicker_SelectedDate = 52;
+    internal const int CalendarDatePicker_SelectedDateFormat = 53;
+    internal const int CalendarDatePicker_CustomDateFormatString = 54;
+    internal const int CalendarDatePicker_Text = 55;
+    internal const int CalendarDatePicker_PlaceholderText = 56;
+    internal const int CalendarDatePicker_UseFloatingPlaceholder = 57;
+    internal const int CalendarDatePicker_PlaceholderForeground = 58;
+    internal const int CalendarDatePicker_HorizontalContentAlignment = 59;
+    internal const int CalendarDatePicker_VerticalContentAlignment = 60;
+    internal const int Calendar_FirstDayOfWeek = 61;
+    internal const int Calendar_IsTodayHighlighted = 62;
+    internal const int Calendar_HeaderBackground = 63;
+    internal const int Calendar_DisplayMode = 64;
+    internal const int Calendar_SelectionMode = 65;
+    internal const int Calendar_AllowTapRangeSelection = 66;
+    internal const int Calendar_SelectedDate = 67;
+    internal const int Calendar_DisplayDate = 68;
+    internal const int Calendar_DisplayDateStart = 69;
+    internal const int Calendar_DisplayDateEnd = 70;
+    internal const int Canvas_Left = 71;
+    internal const int Canvas_Top = 72;
+    internal const int Canvas_Right = 73;
+    internal const int Canvas_Bottom = 74;
+    internal const int Carousel_PageTransition = 75;
+    internal const int Carousel_IsSwipeEnabled = 76;
+    internal const int Carousel_ViewportFraction = 77;
+    internal const int Carousel_IsSwiping = 78;
+    internal const int ColumnDefinition_MaxWidth = 79;
+    internal const int ColumnDefinition_MinWidth = 80;
+    internal const int ColumnDefinition_Width = 81;
+    internal const int ComboBox_IsDropDownOpen = 82;
+    internal const int ComboBox_IsEditable = 83;
+    internal const int ComboBox_MaxDropDownHeight = 84;
+    internal const int ComboBox_SelectionBoxItem = 85;
+    internal const int ComboBox_PlaceholderText = 86;
+    internal const int ComboBox_PlaceholderForeground = 87;
+    internal const int ComboBox_HorizontalContentAlignment = 88;
+    internal const int ComboBox_VerticalContentAlignment = 89;
+    internal const int ComboBox_Text = 90;
+    internal const int ComboBox_SelectionBoxItemTemplate = 91;
+    internal const int CommandBar_PrimaryCommands = 92;
+    internal const int CommandBar_SecondaryCommands = 93;
+    internal const int CommandBar_Content = 94;
+    internal const int CommandBar_DefaultLabelPosition = 95;
+    internal const int CommandBar_IsDynamicOverflowEnabled = 96;
+    internal const int CommandBar_OverflowButtonVisibility = 97;
+    internal const int CommandBar_IsOpen = 98;
+    internal const int CommandBar_IsSticky = 99;
+    internal const int CommandBar_ItemWidthBottom = 100;
+    internal const int CommandBar_ItemWidthRight = 101;
+    internal const int CommandBar_ItemWidthCollapsed = 102;
+    internal const int CommandBar_HasSecondaryCommands = 103;
+    internal const int CommandBar_IsOverflowButtonVisible = 104;
+    internal const int CommandBarButton_Label = 105;
+    internal const int CommandBarButton_Icon = 106;
+    internal const int CommandBarButton_IsCompact = 107;
+    internal const int CommandBarButton_DynamicOverflowOrder = 108;
+    internal const int CommandBarButton_LabelPosition = 109;
+    internal const int CommandBarButton_IsInOverflow = 110;
+    internal const int CommandBarSeparator_IsCompact = 111;
+    internal const int CommandBarSeparator_IsInOverflow = 112;
+    internal const int CommandBarToggleButton_Label = 113;
+    internal const int CommandBarToggleButton_Icon = 114;
+    internal const int CommandBarToggleButton_IsCompact = 115;
+    internal const int CommandBarToggleButton_DynamicOverflowOrder = 116;
+    internal const int CommandBarToggleButton_LabelPosition = 117;
+    internal const int CommandBarToggleButton_IsInOverflow = 118;
+    internal const int ContentControl_Content = 119;
+    internal const int ContentControl_ContentTemplate = 120;
+    internal const int ContentControl_HorizontalContentAlignment = 121;
+    internal const int ContentControl_VerticalContentAlignment = 122;
+    internal const int ContextMenu_HorizontalOffset = 123;
+    internal const int ContextMenu_VerticalOffset = 124;
+    internal const int ContextMenu_PlacementAnchor = 125;
+    internal const int ContextMenu_PlacementConstraintAdjustment = 126;
+    internal const int ContextMenu_PlacementGravity = 127;
+    internal const int ContextMenu_Placement = 128;
+    internal const int ContextMenu_PlacementRect = 129;
+    internal const int ContextMenu_WindowManagerAddShadowHint = 130;
+    internal const int ContextMenu_PlacementTarget = 131;
+    internal const int ContextMenu_CustomPopupPlacementCallback = 132;
+    internal const int Control_FocusAdorner = 133;
+    internal const int Control_Tag = 134;
+    internal const int Control_ContextMenu = 135;
+    internal const int Control_ContextFlyout = 136;
+    internal const int DataValidationErrors_Errors = 137;
+    internal const int DataValidationErrors_HasErrors = 138;
+    internal const int DataValidationErrors_ErrorConverter = 139;
+    internal const int DataValidationErrors_ErrorTemplate = 140;
+    internal const int DataValidationErrors_Owner = 141;
+    internal const int DatePicker_DayFormat = 142;
+    internal const int DatePicker_DayVisible = 143;
+    internal const int DatePicker_MaxYear = 144;
+    internal const int DatePicker_MinYear = 145;
+    internal const int DatePicker_MonthFormat = 146;
+    internal const int DatePicker_MonthVisible = 147;
+    internal const int DatePicker_YearFormat = 148;
+    internal const int DatePicker_YearVisible = 149;
+    internal const int DatePicker_SelectedDate = 150;
+    internal const int DatePickerPresenter_Date = 151;
+    internal const int DatePickerPresenter_DayFormat = 152;
+    internal const int DatePickerPresenter_DayVisible = 153;
+    internal const int DatePickerPresenter_MaxYear = 154;
+    internal const int DatePickerPresenter_MinYear = 155;
+    internal const int DatePickerPresenter_MonthFormat = 156;
+    internal const int DatePickerPresenter_MonthVisible = 157;
+    internal const int DatePickerPresenter_YearFormat = 158;
+    internal const int DatePickerPresenter_YearVisible = 159;
+    internal const int TimePicker_MinuteIncrement = 160;
+    internal const int TimePicker_SecondIncrement = 161;
+    internal const int TimePicker_ClockIdentifier = 162;
+    internal const int TimePicker_UseSeconds = 163;
+    internal const int TimePicker_SelectedTime = 164;
+    internal const int TimePickerPresenter_MinuteIncrement = 165;
+    internal const int TimePickerPresenter_SecondIncrement = 166;
+    internal const int TimePickerPresenter_ClockIdentifier = 167;
+    internal const int TimePickerPresenter_UseSeconds = 168;
+    internal const int TimePickerPresenter_Time = 169;
+    internal const int Decorator_Child = 170;
+    internal const int Decorator_Padding = 171;
+    internal const int DefinitionBase_SharedSizeGroup = 172;
+    internal const int DockPanel_Dock = 173;
+    internal const int DockPanel_LastChildFill = 174;
+    internal const int DockPanel_HorizontalSpacing = 175;
+    internal const int DockPanel_VerticalSpacing = 176;
+    internal const int Expander_ContentTransition = 177;
+    internal const int Expander_ExpandDirection = 178;
+    internal const int Expander_IsExpanded = 179;
+    internal const int ExperimentalAcrylicBorder_CornerRadius = 180;
+    internal const int ExperimentalAcrylicBorder_Material = 181;
+    internal const int Flyout_Content = 182;
+    internal const int Flyout_ContentTemplate = 183;
+    internal const int Flyout_FlyoutPresenterTheme = 184;
+    internal const int MenuFlyout_ItemsSource = 185;
+    internal const int MenuFlyout_ItemTemplate = 186;
+    internal const int MenuFlyout_ItemContainerTheme = 187;
+    internal const int MenuFlyout_FlyoutPresenterTheme = 188;
+    internal const int Grid_ShowGridLines = 189;
+    internal const int Grid_RowSpacing = 190;
+    internal const int Grid_ColumnSpacing = 191;
+    internal const int Grid_Column = 192;
+    internal const int Grid_Row = 193;
+    internal const int Grid_ColumnSpan = 194;
+    internal const int Grid_RowSpan = 195;
+    internal const int Grid_IsSharedSizeScope = 196;
+    internal const int GridSplitter_ResizeDirection = 197;
+    internal const int GridSplitter_ResizeBehavior = 198;
+    internal const int GridSplitter_ShowsPreview = 199;
+    internal const int GridSplitter_KeyboardIncrement = 200;
+    internal const int GridSplitter_DragIncrement = 201;
+    internal const int GridSplitter_PreviewContent = 202;
+    internal const int HyperlinkButton_IsVisited = 203;
+    internal const int HyperlinkButton_NavigateUri = 204;
+    internal const int Image_Source = 205;
+    internal const int Image_BlendMode = 206;
+    internal const int Image_Stretch = 207;
+    internal const int Image_StretchDirection = 208;
+    internal const int ItemsControl_ItemContainerTheme = 209;
+    internal const int ItemsControl_ItemCount = 210;
+    internal const int ItemsControl_ItemsPanel = 211;
+    internal const int ItemsControl_ItemsSource = 212;
+    internal const int ItemsControl_ItemTemplate = 213;
+    internal const int ItemsControl_DisplayMemberBinding = 214;
+    internal const int Label_Target = 215;
+    internal const int LayoutTransformControl_LayoutTransform = 216;
+    internal const int LayoutTransformControl_UseRenderTransform = 217;
+    internal const int ListBox_Scroll = 218;
+    internal const int ListBox_SelectedItems = 219;
+    internal const int ListBox_Selection = 220;
+    internal const int ListBox_SelectionMode = 221;
+    internal const int ListBoxItem_IsSelected = 222;
+    internal const int MaskedTextBox_AsciiOnly = 223;
+    internal const int MaskedTextBox_Culture = 224;
+    internal const int MaskedTextBox_HidePromptOnLeave = 225;
+    internal const int MaskedTextBox_MaskCompleted = 226;
+    internal const int MaskedTextBox_MaskFull = 227;
+    internal const int MaskedTextBox_Mask = 228;
+    internal const int MaskedTextBox_PromptChar = 229;
+    internal const int MaskedTextBox_ResetOnPrompt = 230;
+    internal const int MaskedTextBox_ResetOnSpace = 231;
+    internal const int MenuBase_IsOpen = 232;
+    internal const int MenuItem_Command = 233;
+    internal const int MenuItem_HotKey = 234;
+    internal const int MenuItem_CommandParameter = 235;
+    internal const int MenuItem_Icon = 236;
+    internal const int MenuItem_InputGesture = 237;
+    internal const int MenuItem_IsSubMenuOpen = 238;
+    internal const int MenuItem_StaysOpenOnClick = 239;
+    internal const int MenuItem_ToggleType = 240;
+    internal const int MenuItem_IsChecked = 241;
+    internal const int MenuItem_GroupName = 242;
+    internal const int NativeMenu_Parent = 243;
+    internal const int NativeMenu_IsNativeMenuExported = 244;
+    internal const int NativeMenu_Menu = 245;
+    internal const int NativeMenuItem_Menu = 246;
+    internal const int NativeMenuItem_Icon = 247;
+    internal const int NativeMenuItem_Header = 248;
+    internal const int NativeMenuItem_ToolTip = 249;
+    internal const int NativeMenuItem_Gesture = 250;
+    internal const int NativeMenuItem_IsChecked = 251;
+    internal const int NativeMenuItem_ToggleType = 252;
+    internal const int NativeMenuItem_Command = 253;
+    internal const int NativeMenuItem_CommandParameter = 254;
+    internal const int NativeMenuItem_IsEnabled = 255;
+    internal const int NativeMenuItem_IsVisible = 256;
+    internal const int NativeMenuItemBase_Parent = 257;
+    internal const int ReversibleStackPanel_ReverseOrder = 258;
+    internal const int NumericUpDown_AllowSpin = 259;
+    internal const int NumericUpDown_ButtonSpinnerLocation = 260;
+    internal const int NumericUpDown_ShowButtonSpinner = 261;
+    internal const int NumericUpDown_ClipValueToMinMax = 262;
+    internal const int NumericUpDown_NumberFormat = 263;
+    internal const int NumericUpDown_FormatString = 264;
+    internal const int NumericUpDown_Increment = 265;
+    internal const int NumericUpDown_IsReadOnly = 266;
+    internal const int NumericUpDown_Maximum = 267;
+    internal const int NumericUpDown_Minimum = 268;
+    internal const int NumericUpDown_ParsingNumberStyle = 269;
+    internal const int NumericUpDown_Text = 270;
+    internal const int NumericUpDown_TextConverter = 271;
+    internal const int NumericUpDown_Value = 272;
+    internal const int NumericUpDown_PlaceholderText = 273;
+    internal const int NumericUpDown_PlaceholderForeground = 274;
+    internal const int NumericUpDown_HorizontalContentAlignment = 275;
+    internal const int NumericUpDown_VerticalContentAlignment = 276;
+    internal const int NumericUpDown_TextAlignment = 277;
+    internal const int NumericUpDown_InnerLeftContent = 278;
+    internal const int NumericUpDown_InnerRightContent = 279;
+    internal const int CarouselPage_ItemsPanel = 280;
+    internal const int CarouselPage_PageTransition = 281;
+    internal const int CarouselPage_IsGestureEnabled = 282;
+    internal const int CarouselPage_IsKeyboardNavigationEnabled = 283;
+    internal const int ContentPage_Content = 284;
+    internal const int ContentPage_ContentTemplate = 285;
+    internal const int ContentPage_AutomaticallyApplySafeAreaPadding = 286;
+    internal const int ContentPage_TopCommandBar = 287;
+    internal const int ContentPage_BottomCommandBar = 288;
+    internal const int ContentPage_HorizontalContentAlignment = 289;
+    internal const int ContentPage_VerticalContentAlignment = 290;
+    internal const int DrawerPage_Drawer = 291;
+    internal const int DrawerPage_Content = 292;
+    internal const int DrawerPage_IsOpen = 293;
+    internal const int DrawerPage_DrawerLength = 294;
+    internal const int DrawerPage_CompactDrawerLength = 295;
+    internal const int DrawerPage_DrawerBreakpointLength = 296;
+    internal const int DrawerPage_IsGestureEnabled = 297;
+    internal const int DrawerPage_DrawerBehavior = 298;
+    internal const int DrawerPage_DrawerLayoutBehavior = 299;
+    internal const int DrawerPage_DrawerPlacement = 300;
+    internal const int DrawerPage_DrawerHeader = 301;
+    internal const int DrawerPage_DrawerFooter = 302;
+    internal const int DrawerPage_DrawerHeaderTemplate = 303;
+    internal const int DrawerPage_DrawerFooterTemplate = 304;
+    internal const int DrawerPage_DrawerIcon = 305;
+    internal const int DrawerPage_DrawerIconTemplate = 306;
+    internal const int DrawerPage_DrawerTemplate = 307;
+    internal const int DrawerPage_ContentTemplate = 308;
+    internal const int DrawerPage_DrawerBackground = 309;
+    internal const int DrawerPage_DrawerHeaderBackground = 310;
+    internal const int DrawerPage_DrawerHeaderForeground = 311;
+    internal const int DrawerPage_DrawerFooterBackground = 312;
+    internal const int DrawerPage_DrawerFooterForeground = 313;
+    internal const int DrawerPage_BackdropBrush = 314;
+    internal const int DrawerPage_HorizontalContentAlignment = 315;
+    internal const int DrawerPage_VerticalContentAlignment = 316;
+    internal const int DrawerPage_DisplayMode = 317;
+    internal const int MultiPage_Pages = 318;
+    internal const int MultiPage_ItemsSource = 319;
+    internal const int MultiPage_PageTemplate = 320;
+    internal const int NavigationPage_Content = 321;
+    internal const int NavigationPage_PageTransition = 322;
+    internal const int NavigationPage_ModalTransition = 323;
+    internal const int NavigationPage_IsBackButtonEffectivelyVisible = 324;
+    internal const int NavigationPage_BarLayoutBehavior = 325;
+    internal const int NavigationPage_HasShadow = 326;
+    internal const int NavigationPage_BarHeight = 327;
+    internal const int NavigationPage_BarHeightOverride = 328;
+    internal const int NavigationPage_EffectiveBarHeight = 329;
+    internal const int NavigationPage_BackButtonContent = 330;
+    internal const int NavigationPage_HasBackButton = 331;
+    internal const int NavigationPage_IsBackButtonVisible = 332;
+    internal const int NavigationPage_TopCommandBar = 333;
+    internal const int NavigationPage_BottomCommandBar = 334;
+    internal const int NavigationPage_HasNavigationBar = 335;
+    internal const int NavigationPage_IsGestureEnabled = 336;
+    internal const int NavigationPage_IsNavigating = 337;
+    internal const int NavigationPage_CanGoBack = 338;
+    internal const int NavigationPage_IsBackButtonEnabled = 339;
+    internal const int Page_SafeAreaPadding = 340;
+    internal const int Page_Header = 341;
+    internal const int Page_HeaderTemplate = 342;
+    internal const int Page_Icon = 343;
+    internal const int Page_IconTemplate = 344;
+    internal const int Page_CurrentPage = 345;
+    internal const int Page_IsInNavigationPage = 346;
+    internal const int Page_Navigation = 347;
+    internal const int PageNavigationHost_Page = 348;
+    internal const int SelectingMultiPage_SelectedIndex = 349;
+    internal const int SelectingMultiPage_SelectedPage = 350;
+    internal const int TabbedPage_TabPlacement = 351;
+    internal const int TabbedPage_IsKeyboardNavigationEnabled = 352;
+    internal const int TabbedPage_IsGestureEnabled = 353;
+    internal const int TabbedPage_PageTransition = 354;
+    internal const int TabbedPage_IndicatorTemplate = 355;
+    internal const int TabbedPage_IsTabEnabled = 356;
+    internal const int Panel_Background = 357;
+    internal const int PathIcon_Data = 358;
+    internal const int PipsPager_MaxVisiblePips = 359;
+    internal const int PipsPager_IsNextButtonVisible = 360;
+    internal const int PipsPager_NumberOfPages = 361;
+    internal const int PipsPager_Orientation = 362;
+    internal const int PipsPager_IsPreviousButtonVisible = 363;
+    internal const int PipsPager_SelectedPageIndex = 364;
+    internal const int PipsPager_TemplateSettings = 365;
+    internal const int PipsPager_PreviousButtonTheme = 366;
+    internal const int PipsPager_NextButtonTheme = 367;
+    internal const int ProgressBar_IsIndeterminate = 368;
+    internal const int ProgressBar_ShowProgressText = 369;
+    internal const int ProgressBar_ProgressTextFormat = 370;
+    internal const int ProgressBar_Orientation = 371;
+    internal const int ProgressBar_Percentage = 372;
+    internal const int RefreshContainer_Visualizer = 373;
+    internal const int RefreshContainer_PullDirection = 374;
+    internal const int RefreshVisualizer_RefreshVisualizerState = 375;
+    internal const int RefreshVisualizer_Orientation = 376;
+    internal const int RadioButton_GroupName = 377;
+    internal const int RelativePanel_Above = 378;
+    internal const int RelativePanel_AlignBottomWithPanel = 379;
+    internal const int RelativePanel_AlignBottomWith = 380;
+    internal const int RelativePanel_AlignHorizontalCenterWithPanel = 381;
+    internal const int RelativePanel_AlignLeftWithPanel = 382;
+    internal const int RelativePanel_AlignLeftWith = 383;
+    internal const int RelativePanel_AlignRightWithPanel = 384;
+    internal const int RelativePanel_AlignRightWith = 385;
+    internal const int RelativePanel_AlignTopWithPanel = 386;
+    internal const int RelativePanel_AlignTopWith = 387;
+    internal const int RelativePanel_AlignVerticalCenterWithPanel = 388;
+    internal const int RelativePanel_AlignVerticalCenterWith = 389;
+    internal const int RelativePanel_Below = 390;
+    internal const int RelativePanel_LeftOf = 391;
+    internal const int RelativePanel_RightOf = 392;
+    internal const int RelativePanel_AlignHorizontalCenterWith = 393;
+    internal const int RepeatButton_Interval = 394;
+    internal const int RepeatButton_Delay = 395;
+    internal const int RowDefinition_MaxHeight = 396;
+    internal const int RowDefinition_MinHeight = 397;
+    internal const int RowDefinition_Height = 398;
+    internal const int ScrollViewer_BringIntoViewOnFocusChange = 399;
+    internal const int ScrollViewer_Extent = 400;
+    internal const int ScrollViewer_Offset = 401;
+    internal const int ScrollViewer_Viewport = 402;
+    internal const int ScrollViewer_LargeChange = 403;
+    internal const int ScrollViewer_SmallChange = 404;
+    internal const int ScrollViewer_ScrollBarMaximum = 405;
+    internal const int ScrollViewer_HorizontalScrollBarVisibility = 406;
+    internal const int ScrollViewer_HorizontalSnapPointsType = 407;
+    internal const int ScrollViewer_VerticalSnapPointsType = 408;
+    internal const int ScrollViewer_HorizontalSnapPointsAlignment = 409;
+    internal const int ScrollViewer_VerticalSnapPointsAlignment = 410;
+    internal const int ScrollViewer_VerticalScrollBarVisibility = 411;
+    internal const int ScrollViewer_IsExpanded = 412;
+    internal const int ScrollViewer_AllowAutoHide = 413;
+    internal const int ScrollViewer_IsScrollChainingEnabled = 414;
+    internal const int ScrollViewer_IsScrollInertiaEnabled = 415;
+    internal const int ScrollViewer_IsDeferredScrollingEnabled = 416;
+    internal const int SelectableTextBlock_SelectionStart = 417;
+    internal const int SelectableTextBlock_SelectionEnd = 418;
+    internal const int SelectableTextBlock_SelectedText = 419;
+    internal const int SelectableTextBlock_SelectionBrush = 420;
+    internal const int SelectableTextBlock_SelectionForegroundBrush = 421;
+    internal const int SelectableTextBlock_CanCopy = 422;
+    internal const int Slider_Orientation = 423;
+    internal const int Slider_IsDirectionReversed = 424;
+    internal const int Slider_IsSnapToTickEnabled = 425;
+    internal const int Slider_TickFrequency = 426;
+    internal const int Slider_TickPlacement = 427;
+    internal const int Slider_Ticks = 428;
+    internal const int Spinner_ValidSpinDirection = 429;
+    internal const int SplitButton_Command = 430;
+    internal const int SplitButton_CommandParameter = 431;
+    internal const int SplitButton_Flyout = 432;
+    internal const int SplitButton_HotKey = 433;
+    internal const int ToggleSplitButton_IsChecked = 434;
+    internal const int SplitView_CompactPaneLength = 435;
+    internal const int SplitView_DisplayMode = 436;
+    internal const int SplitView_IsPaneOpen = 437;
+    internal const int SplitView_OpenPaneLength = 438;
+    internal const int SplitView_PaneBackground = 439;
+    internal const int SplitView_PanePlacement = 440;
+    internal const int SplitView_Pane = 441;
+    internal const int SplitView_PaneTemplate = 442;
+    internal const int SplitView_UseLightDismissOverlayMode = 443;
+    internal const int SplitView_TemplateSettings = 444;
+    internal const int StackPanel_Spacing = 445;
+    internal const int StackPanel_Orientation = 446;
+    internal const int StackPanel_AreHorizontalSnapPointsRegular = 447;
+    internal const int StackPanel_AreVerticalSnapPointsRegular = 448;
+    internal const int TabControl_TabStripPlacement = 449;
+    internal const int TabControl_HorizontalContentAlignment = 450;
+    internal const int TabControl_VerticalContentAlignment = 451;
+    internal const int TabControl_ContentTemplate = 452;
+    internal const int TabControl_SelectedContent = 453;
+    internal const int TabControl_SelectedContentTemplate = 454;
+    internal const int TabControl_PageTransition = 455;
+    internal const int TabControl_IndicatorTemplate = 456;
+    internal const int TabItem_TabStripPlacement = 457;
+    internal const int TabItem_IsSelected = 458;
+    internal const int TabItem_Icon = 459;
+    internal const int TabItem_IconTemplate = 460;
+    internal const int TabItem_IndicatorTemplate = 461;
+    internal const int TextBlock_Background = 462;
+    internal const int TextBlock_Padding = 463;
+    internal const int TextBlock_FontFamily = 464;
+    internal const int TextBlock_FontSize = 465;
+    internal const int TextBlock_FontStyle = 466;
+    internal const int TextBlock_FontWeight = 467;
+    internal const int TextBlock_FontStretch = 468;
+    internal const int TextBlock_Foreground = 469;
+    internal const int TextBlock_BaselineOffset = 470;
+    internal const int TextBlock_LineHeight = 471;
+    internal const int TextBlock_LineSpacing = 472;
+    internal const int TextBlock_LetterSpacing = 473;
+    internal const int TextBlock_MaxLines = 474;
+    internal const int TextBlock_Text = 475;
+    internal const int TextBlock_TextAlignment = 476;
+    internal const int TextBlock_TextWrapping = 477;
+    internal const int TextBlock_TextTrimming = 478;
+    internal const int TextBlock_TextDecorations = 479;
+    internal const int TextBlock_FontFeatures = 480;
+    internal const int TextBlock_Inlines = 481;
+    internal const int TextBox_IsInactiveSelectionHighlightEnabled = 482;
+    internal const int TextBox_ClearSelectionOnLostFocus = 483;
+    internal const int TextBox_AcceptsReturn = 484;
+    internal const int TextBox_AcceptsTab = 485;
+    internal const int TextBox_CaretIndex = 486;
+    internal const int TextBox_IsReadOnly = 487;
+    internal const int TextBox_PasswordChar = 488;
+    internal const int TextBox_SelectionBrush = 489;
+    internal const int TextBox_SelectionForegroundBrush = 490;
+    internal const int TextBox_CaretBrush = 491;
+    internal const int TextBox_CaretBlinkInterval = 492;
+    internal const int TextBox_SelectionStart = 493;
+    internal const int TextBox_SelectionEnd = 494;
+    internal const int TextBox_MaxLength = 495;
+    internal const int TextBox_MaxLines = 496;
+    internal const int TextBox_MinLines = 497;
+    internal const int TextBox_Text = 498;
+    internal const int TextBox_TextAlignment = 499;
+    internal const int TextBox_HorizontalContentAlignment = 500;
+    internal const int TextBox_VerticalContentAlignment = 501;
+    internal const int TextBox_TextWrapping = 502;
+    internal const int TextBox_LineHeight = 503;
+    internal const int TextBox_PlaceholderText = 504;
+    internal const int TextBox_UseFloatingPlaceholder = 505;
+    internal const int TextBox_PlaceholderForeground = 506;
+    internal const int TextBox_NewLine = 507;
+    internal const int TextBox_InnerLeftContent = 508;
+    internal const int TextBox_InnerRightContent = 509;
+    internal const int TextBox_RevealPassword = 510;
+    internal const int TextBox_CanCut = 511;
+    internal const int TextBox_CanCopy = 512;
+    internal const int TextBox_CanPaste = 513;
+    internal const int TextBox_IsUndoEnabled = 514;
+    internal const int TextBox_UndoLimit = 515;
+    internal const int TextBox_CanUndo = 516;
+    internal const int TextBox_CanRedo = 517;
+    internal const int ThemeVariantScope_ActualThemeVariant = 518;
+    internal const int ThemeVariantScope_RequestedThemeVariant = 519;
+    internal const int TickBar_Fill = 520;
+    internal const int TickBar_Minimum = 521;
+    internal const int TickBar_Maximum = 522;
+    internal const int TickBar_TickFrequency = 523;
+    internal const int TickBar_Orientation = 524;
+    internal const int TickBar_Ticks = 525;
+    internal const int TickBar_IsDirectionReversed = 526;
+    internal const int TickBar_Placement = 527;
+    internal const int TickBar_ReservedSpace = 528;
+    internal const int ToggleSwitch_OffContent = 529;
+    internal const int ToggleSwitch_OffContentTemplate = 530;
+    internal const int ToggleSwitch_OnContent = 531;
+    internal const int ToggleSwitch_OnContentTemplate = 532;
+    internal const int ToggleSwitch_KnobTransitions = 533;
+    internal const int ToolTip_Tip = 534;
+    internal const int ToolTip_IsOpen = 535;
+    internal const int ToolTip_Placement = 536;
+    internal const int ToolTip_HorizontalOffset = 537;
+    internal const int ToolTip_VerticalOffset = 538;
+    internal const int ToolTip_CustomPopupPlacementCallback = 539;
+    internal const int ToolTip_ShowDelay = 540;
+    internal const int ToolTip_BetweenShowDelay = 541;
+    internal const int ToolTip_ShowOnDisabled = 542;
+    internal const int ToolTip_ServiceEnabled = 543;
+    internal const int TopLevel_ClientSize = 544;
+    internal const int TopLevel_FrameSize = 545;
+    internal const int TopLevel_TransparencyLevelHint = 546;
+    internal const int TopLevel_ActualTransparencyLevel = 547;
+    internal const int TopLevel_TransparencyBackgroundFallback = 548;
+    internal const int TopLevel_ActualThemeVariant = 549;
+    internal const int TopLevel_RequestedThemeVariant = 550;
+    internal const int TopLevel_SystemBarColor = 551;
+    internal const int TopLevel_AutoSafeAreaPadding = 552;
+    internal const int TransitioningContentControl_PageTransition = 553;
+    internal const int TransitioningContentControl_IsTransitionReversed = 554;
+    internal const int TrayIcon_Command = 555;
+    internal const int TrayIcon_CommandParameter = 556;
+    internal const int TrayIcon_Icons = 557;
+    internal const int TrayIcon_Menu = 558;
+    internal const int TrayIcon_Icon = 559;
+    internal const int TrayIcon_ToolTipText = 560;
+    internal const int TrayIcon_IsVisible = 561;
+    internal const int TreeView_AutoScrollToSelectedItem = 562;
+    internal const int TreeView_SelectedItem = 563;
+    internal const int TreeView_SelectedItems = 564;
+    internal const int TreeView_SelectionMode = 565;
+    internal const int TreeViewItem_IsExpanded = 566;
+    internal const int TreeViewItem_IsSelected = 567;
+    internal const int TreeViewItem_Level = 568;
+    internal const int Viewbox_Stretch = 569;
+    internal const int Viewbox_StretchDirection = 570;
+    internal const int Viewbox_Child = 571;
+    internal const int VirtualizingStackPanel_Orientation = 572;
+    internal const int VirtualizingStackPanel_AreHorizontalSnapPointsRegular = 573;
+    internal const int VirtualizingStackPanel_AreVerticalSnapPointsRegular = 574;
+    internal const int VirtualizingStackPanel_CacheLength = 575;
+    internal const int Window_SizeToContent = 576;
+    internal const int Window_ExtendClientAreaToDecorationsHint = 577;
+    internal const int Window_ExtendClientAreaTitleBarHeightHint = 578;
+    internal const int Window_IsExtendedIntoWindowDecorations = 579;
+    internal const int Window_WindowDecorationMargin = 580;
+    internal const int Window_OffScreenMargin = 581;
+    internal const int Window_WindowDecorations = 582;
+    internal const int Window_ShowActivated = 583;
+    internal const int Window_ShowInTaskbar = 584;
+    internal const int Window_ClosingBehavior = 585;
+    internal const int Window_WindowState = 586;
+    internal const int Window_Title = 587;
+    internal const int Window_Icon = 588;
+    internal const int Window_WindowStartupLocation = 589;
+    internal const int Window_CanResize = 590;
+    internal const int Window_CanMinimize = 591;
+    internal const int Window_CanMaximize = 592;
+    internal const int WindowBase_IsActive = 593;
+    internal const int WindowBase_Owner = 594;
+    internal const int WindowBase_Topmost = 595;
+    internal const int WrapPanel_ItemSpacing = 596;
+    internal const int WrapPanel_LineSpacing = 597;
+    internal const int WrapPanel_Orientation = 598;
+    internal const int WrapPanel_ItemsAlignment = 599;
+    internal const int WrapPanel_ItemWidth = 600;
+    internal const int WrapPanel_ItemHeight = 601;
+    internal const int Arc_StartAngle = 602;
+    internal const int Arc_SweepAngle = 603;
+    internal const int Line_StartPoint = 604;
+    internal const int Line_EndPoint = 605;
+    internal const int Path_Data = 606;
+    internal const int Polygon_Points = 607;
+    internal const int Polygon_FillRule = 608;
+    internal const int Polyline_Points = 609;
+    internal const int Polyline_FillRule = 610;
+    internal const int Rectangle_RadiusX = 611;
+    internal const int Rectangle_RadiusY = 612;
+    internal const int Sector_StartAngle = 613;
+    internal const int Sector_SweepAngle = 614;
+    internal const int Shape_Fill = 615;
+    internal const int Shape_Stretch = 616;
+    internal const int Shape_Stroke = 617;
+    internal const int Shape_StrokeDashArray = 618;
+    internal const int Shape_StrokeDashOffset = 619;
+    internal const int Shape_StrokeThickness = 620;
+    internal const int Shape_StrokeLineCap = 621;
+    internal const int Shape_StrokeJoin = 622;
+    internal const int Shape_StrokeMiterLimit = 623;
+    internal const int ContentPresenter_Background = 624;
+    internal const int ContentPresenter_BackgroundSizing = 625;
+    internal const int ContentPresenter_BorderBrush = 626;
+    internal const int ContentPresenter_BorderThickness = 627;
+    internal const int ContentPresenter_CornerRadius = 628;
+    internal const int ContentPresenter_BoxShadow = 629;
+    internal const int ContentPresenter_Foreground = 630;
+    internal const int ContentPresenter_FontFamily = 631;
+    internal const int ContentPresenter_FontSize = 632;
+    internal const int ContentPresenter_FontStyle = 633;
+    internal const int ContentPresenter_FontWeight = 634;
+    internal const int ContentPresenter_FontStretch = 635;
+    internal const int ContentPresenter_TextAlignment = 636;
+    internal const int ContentPresenter_TextWrapping = 637;
+    internal const int ContentPresenter_TextTrimming = 638;
+    internal const int ContentPresenter_LineHeight = 639;
+    internal const int ContentPresenter_LetterSpacing = 640;
+    internal const int ContentPresenter_MaxLines = 641;
+    internal const int ContentPresenter_Child = 642;
+    internal const int ContentPresenter_Content = 643;
+    internal const int ContentPresenter_ContentTemplate = 644;
+    internal const int ContentPresenter_HorizontalContentAlignment = 645;
+    internal const int ContentPresenter_VerticalContentAlignment = 646;
+    internal const int ContentPresenter_Padding = 647;
+    internal const int ContentPresenter_RecognizesAccessKey = 648;
+    internal const int ItemsPresenter_ItemsPanel = 649;
+    internal const int ScrollContentPresenter_CanHorizontallyScroll = 650;
+    internal const int ScrollContentPresenter_CanVerticallyScroll = 651;
+    internal const int ScrollContentPresenter_Extent = 652;
+    internal const int ScrollContentPresenter_Offset = 653;
+    internal const int ScrollContentPresenter_Viewport = 654;
+    internal const int ScrollContentPresenter_HorizontalSnapPointsType = 655;
+    internal const int ScrollContentPresenter_VerticalSnapPointsType = 656;
+    internal const int ScrollContentPresenter_HorizontalSnapPointsAlignment = 657;
+    internal const int ScrollContentPresenter_VerticalSnapPointsAlignment = 658;
+    internal const int ScrollContentPresenter_IsScrollChainingEnabled = 659;
+    internal const int TextPresenter_ShowSelectionHighlight = 660;
+    internal const int TextPresenter_CaretIndex = 661;
+    internal const int TextPresenter_RevealPassword = 662;
+    internal const int TextPresenter_PasswordChar = 663;
+    internal const int TextPresenter_SelectionBrush = 664;
+    internal const int TextPresenter_SelectionForegroundBrush = 665;
+    internal const int TextPresenter_CaretBrush = 666;
+    internal const int TextPresenter_CaretBlinkInterval = 667;
+    internal const int TextPresenter_SelectionStart = 668;
+    internal const int TextPresenter_SelectionEnd = 669;
+    internal const int TextPresenter_Text = 670;
+    internal const int TextPresenter_PreeditText = 671;
+    internal const int TextPresenter_PreeditTextCursorPosition = 672;
+    internal const int TextPresenter_TextAlignment = 673;
+    internal const int TextPresenter_TextWrapping = 674;
+    internal const int TextPresenter_LineHeight = 675;
+    internal const int TextPresenter_LetterSpacing = 676;
+    internal const int TextPresenter_Background = 677;
+    internal const int NotificationCard_IsClosing = 678;
+    internal const int NotificationCard_IsClosed = 679;
+    internal const int NotificationCard_NotificationType = 680;
+    internal const int NotificationCard_CloseOnClick = 681;
+    internal const int WindowNotificationManager_Position = 682;
+    internal const int WindowNotificationManager_MaxItems = 683;
+    internal const int Inline_TextDecorations = 684;
+    internal const int Inline_BaselineAlignment = 685;
+    internal const int InlineUIContainer_Child = 686;
+    internal const int Run_Text = 687;
+    internal const int Span_Inlines = 688;
+    internal const int TextElement_Background = 689;
+    internal const int TextElement_FontFamily = 690;
+    internal const int TextElement_FontFeatures = 691;
+    internal const int TextElement_FontSize = 692;
+    internal const int TextElement_FontStyle = 693;
+    internal const int TextElement_FontWeight = 694;
+    internal const int TextElement_FontStretch = 695;
+    internal const int TextElement_Foreground = 696;
+    internal const int TextElement_LetterSpacing = 697;
+    internal const int WindowDrawnDecorations_Template = 698;
+    internal const int WindowDrawnDecorations_DefaultTitleBarHeight = 699;
+    internal const int WindowDrawnDecorations_DefaultFrameThickness = 700;
+    internal const int WindowDrawnDecorations_DefaultShadowThickness = 701;
+    internal const int WindowDrawnDecorations_TitleBarHeight = 702;
+    internal const int WindowDrawnDecorations_FrameThickness = 703;
+    internal const int WindowDrawnDecorations_ShadowThickness = 704;
+    internal const int WindowDrawnDecorations_HasShadow = 705;
+    internal const int WindowDrawnDecorations_HasBorder = 706;
+    internal const int WindowDrawnDecorations_HasTitleBar = 707;
+    internal const int WindowDrawnDecorations_Title = 708;
+    internal const int CalendarItem_HeaderBackground = 709;
+    internal const int CalendarItem_DayTitleTemplate = 710;
+    internal const int DateTimePickerPanel_ItemHeight = 711;
+    internal const int DateTimePickerPanel_PanelType = 712;
+    internal const int DateTimePickerPanel_ItemFormat = 713;
+    internal const int DateTimePickerPanel_ShouldLoop = 714;
+    internal const int FlyoutBase_IsOpen = 715;
+    internal const int FlyoutBase_Target = 716;
+    internal const int FlyoutBase_AttachedFlyout = 717;
+    internal const int PopupFlyoutBase_Placement = 718;
+    internal const int PopupFlyoutBase_HorizontalOffset = 719;
+    internal const int PopupFlyoutBase_VerticalOffset = 720;
+    internal const int PopupFlyoutBase_PlacementAnchor = 721;
+    internal const int PopupFlyoutBase_PlacementGravity = 722;
+    internal const int PopupFlyoutBase_CustomPopupPlacementCallback = 723;
+    internal const int PopupFlyoutBase_ShowMode = 724;
+    internal const int PopupFlyoutBase_OverlayDismissEventPassThrough = 725;
+    internal const int PopupFlyoutBase_OverlayInputPassThroughElement = 726;
+    internal const int PopupFlyoutBase_PlacementConstraintAdjustment = 727;
+    internal const int PipsPagerTemplateSettings_Pips = 728;
+    internal const int AccessText_ShowAccessKey = 729;
+    internal const int AdornerLayer_AdornedElement = 730;
+    internal const int AdornerLayer_IsClipEnabled = 731;
+    internal const int AdornerLayer_Adorner = 732;
+    internal const int AdornerLayer_DefaultFocusAdorner = 733;
+    internal const int HeaderedContentControl_Header = 734;
+    internal const int HeaderedContentControl_HeaderTemplate = 735;
+    internal const int HeaderedItemsControl_Header = 736;
+    internal const int HeaderedItemsControl_HeaderTemplate = 737;
+    internal const int HeaderedSelectingItemsControl_Header = 738;
+    internal const int HeaderedSelectingItemsControl_HeaderTemplate = 739;
+    internal const int OverlayPopupHost_Transform = 740;
+    internal const int Popup_WindowManagerAddShadowHint = 741;
+    internal const int Popup_Child = 742;
+    internal const int Popup_InheritsTransform = 743;
+    internal const int Popup_IsOpen = 744;
+    internal const int Popup_PlacementAnchor = 745;
+    internal const int Popup_PlacementConstraintAdjustment = 746;
+    internal const int Popup_PlacementGravity = 747;
+    internal const int Popup_Placement = 748;
+    internal const int Popup_PlacementRect = 749;
+    internal const int Popup_PlacementTarget = 750;
+    internal const int Popup_CustomPopupPlacementCallback = 751;
+    internal const int Popup_OverlayDismissEventPassThrough = 752;
+    internal const int Popup_OverlayInputPassThroughElement = 753;
+    internal const int Popup_HorizontalOffset = 754;
+    internal const int Popup_IsLightDismissEnabled = 755;
+    internal const int Popup_VerticalOffset = 756;
+    internal const int Popup_Topmost = 757;
+    internal const int Popup_TakesFocusFromNativeControl = 758;
+    internal const int Popup_ShouldUseOverlayLayer = 759;
+    internal const int Popup_IsUsingOverlayLayer = 760;
+    internal const int PopupRoot_Transform = 761;
+    internal const int PopupRoot_WindowManagerAddShadowHint = 762;
+    internal const int RangeBase_Minimum = 763;
+    internal const int RangeBase_Maximum = 764;
+    internal const int RangeBase_Value = 765;
+    internal const int RangeBase_SmallChange = 766;
+    internal const int RangeBase_LargeChange = 767;
+    internal const int ScrollBar_ViewportSize = 768;
+    internal const int ScrollBar_Visibility = 769;
+    internal const int ScrollBar_Orientation = 770;
+    internal const int ScrollBar_IsExpanded = 771;
+    internal const int ScrollBar_AllowAutoHide = 772;
+    internal const int ScrollBar_HideDelay = 773;
+    internal const int ScrollBar_ShowDelay = 774;
+    internal const int SelectingItemsControl_AutoScrollToSelectedItem = 775;
+    internal const int SelectingItemsControl_SelectedIndex = 776;
+    internal const int SelectingItemsControl_SelectedItem = 777;
+    internal const int SelectingItemsControl_SelectedValue = 778;
+    internal const int SelectingItemsControl_SelectedValueBinding = 779;
+    internal const int SelectingItemsControl_IsSelected = 780;
+    internal const int SelectingItemsControl_IsTextSearchEnabled = 781;
+    internal const int SelectingItemsControl_WrapSelection = 782;
+    internal const int TemplatedControl_Background = 783;
+    internal const int TemplatedControl_BackgroundSizing = 784;
+    internal const int TemplatedControl_BorderBrush = 785;
+    internal const int TemplatedControl_BorderThickness = 786;
+    internal const int TemplatedControl_CornerRadius = 787;
+    internal const int TemplatedControl_FontFamily = 788;
+    internal const int TemplatedControl_FontFeatures = 789;
+    internal const int TemplatedControl_FontSize = 790;
+    internal const int TemplatedControl_FontStyle = 791;
+    internal const int TemplatedControl_FontWeight = 792;
+    internal const int TemplatedControl_FontStretch = 793;
+    internal const int TemplatedControl_Foreground = 794;
+    internal const int TemplatedControl_LetterSpacing = 795;
+    internal const int TemplatedControl_Padding = 796;
+    internal const int TemplatedControl_Template = 797;
+    internal const int TemplatedControl_IsTemplateFocusTarget = 798;
+    internal const int ToggleButton_IsChecked = 799;
+    internal const int ToggleButton_IsThreeState = 800;
+    internal const int Track_Minimum = 801;
+    internal const int Track_Maximum = 802;
+    internal const int Track_Value = 803;
+    internal const int Track_ViewportSize = 804;
+    internal const int Track_Orientation = 805;
+    internal const int Track_Thumb = 806;
+    internal const int Track_IncreaseButton = 807;
+    internal const int Track_DecreaseButton = 808;
+    internal const int Track_IsDirectionReversed = 809;
+    internal const int Track_IgnoreThumbDrag = 810;
+    internal const int Track_DeferThumbDrag = 811;
+    internal const int UniformGrid_Rows = 812;
+    internal const int UniformGrid_Columns = 813;
+    internal const int UniformGrid_FirstColumn = 814;
+    internal const int UniformGrid_RowSpacing = 815;
+    internal const int UniformGrid_ColumnSpacing = 816;
+    internal const int SplitViewTemplateSettings_ClosedPaneWidth = 817;
+    internal const int SplitViewTemplateSettings_PaneColumnGridLength = 818;
+    internal const int SplitViewTemplateSettings_ClosedPaneHeight = 819;
+    internal const int SplitViewTemplateSettings_PaneRowGridLength = 820;
+    internal const int StyledElement_DataContext = 821;
+    internal const int StyledElement_Name = 822;
+    internal const int StyledElement_Parent = 823;
+    internal const int StyledElement_TemplatedParent = 824;
+    internal const int StyledElement_Theme = 825;
+    internal const int Visual_Bounds = 826;
+    internal const int Visual_ClipToBounds = 827;
+    internal const int Visual_Clip = 828;
+    internal const int Visual_IsVisible = 829;
+    internal const int Visual_Opacity = 830;
+    internal const int Visual_OpacityMask = 831;
+    internal const int Visual_CacheMode = 832;
+    internal const int Visual_Effect = 833;
+    internal const int Visual_HasMirrorTransform = 834;
+    internal const int Visual_RenderTransform = 835;
+    internal const int Visual_RenderTransformOrigin = 836;
+    internal const int Visual_FlowDirection = 837;
+    internal const int Visual_VisualParent = 838;
+    internal const int Visual_ZIndex = 839;
+    internal const int Layoutable_DesiredSize = 840;
+    internal const int Layoutable_Width = 841;
+    internal const int Layoutable_Height = 842;
+    internal const int Layoutable_MinWidth = 843;
+    internal const int Layoutable_MaxWidth = 844;
+    internal const int Layoutable_MinHeight = 845;
+    internal const int Layoutable_MaxHeight = 846;
+    internal const int Layoutable_Margin = 847;
+    internal const int Layoutable_HorizontalAlignment = 848;
+    internal const int Layoutable_VerticalAlignment = 849;
+    internal const int Layoutable_UseLayoutRounding = 850;
+    internal const int PullGestureRecognizer_PullDirection = 851;
+    internal const int InputElement_Focusable = 852;
+    internal const int InputElement_IsEnabled = 853;
+    internal const int InputElement_IsEffectivelyEnabled = 854;
+    internal const int InputElement_Cursor = 855;
+    internal const int InputElement_IsKeyboardFocusWithin = 856;
+    internal const int InputElement_IsFocused = 857;
+    internal const int InputElement_IsHitTestVisible = 858;
+    internal const int InputElement_IsPointerOver = 859;
+    internal const int InputElement_IsTabStop = 860;
+    internal const int InputElement_TabIndex = 861;
+    internal const int InputElement_IsHoldingEnabled = 862;
+    internal const int InputElement_IsHoldWithMouseEnabled = 863;
+    internal const int KeyBinding_Command = 864;
+    internal const int KeyBinding_CommandParameter = 865;
+    internal const int KeyBinding_Gesture = 866;
+    internal const int ScrollGestureRecognizer_CanHorizontallyScroll = 867;
+    internal const int ScrollGestureRecognizer_CanVerticallyScroll = 868;
+    internal const int ScrollGestureRecognizer_IsScrollInertiaEnabled = 869;
+    internal const int ScrollGestureRecognizer_ScrollStartDistance = 870;
+    internal const int SwipeGestureRecognizer_CanHorizontallySwipe = 871;
+    internal const int SwipeGestureRecognizer_CanVerticallySwipe = 872;
+    internal const int SwipeGestureRecognizer_Threshold = 873;
+    internal const int SwipeGestureRecognizer_IsMouseEnabled = 874;
+    internal const int SwipeGestureRecognizer_IsEnabled = 875;
+    internal const int CombinedGeometry_Geometry1 = 876;
+    internal const int CombinedGeometry_Geometry2 = 877;
+    internal const int CombinedGeometry_GeometryCombineMode = 878;
+    internal const int ArcSegment_IsLargeArc = 879;
+    internal const int ArcSegment_Point = 880;
+    internal const int ArcSegment_RotationAngle = 881;
+    internal const int ArcSegment_Size = 882;
+    internal const int ArcSegment_SweepDirection = 883;
+    internal const int BezierSegment_Point1 = 884;
+    internal const int BezierSegment_Point2 = 885;
+    internal const int BezierSegment_Point3 = 886;
+    internal const int BitmapCache_RenderAtScale = 887;
+    internal const int BitmapCache_SnapsToDevicePixels = 888;
+    internal const int BitmapCache_EnableClearType = 889;
+    internal const int Brush_Opacity = 890;
+    internal const int Brush_Transform = 891;
+    internal const int Brush_TransformOrigin = 892;
+    internal const int ConicGradientBrush_Center = 893;
+    internal const int ConicGradientBrush_Angle = 894;
+    internal const int DashStyle_Dashes = 895;
+    internal const int DashStyle_Offset = 896;
+    internal const int DrawingBrush_Drawing = 897;
+    internal const int DrawingGroup_Opacity = 898;
+    internal const int DrawingGroup_Transform = 899;
+    internal const int DrawingGroup_ClipGeometry = 900;
+    internal const int DrawingGroup_OpacityMask = 901;
+    internal const int DrawingGroup_Children = 902;
+    internal const int DrawingImage_Drawing = 903;
+    internal const int DrawingImage_Viewbox = 904;
+    internal const int BlurEffect_Radius = 905;
+    internal const int DropShadowEffectBase_BlurRadius = 906;
+    internal const int DropShadowEffectBase_Color = 907;
+    internal const int DropShadowEffectBase_Opacity = 908;
+    internal const int DropShadowEffect_OffsetX = 909;
+    internal const int DropShadowEffect_OffsetY = 910;
+    internal const int DropShadowDirectionEffect_ShadowDepth = 911;
+    internal const int DropShadowDirectionEffect_Direction = 912;
+    internal const int EllipseGeometry_Rect = 913;
+    internal const int EllipseGeometry_RadiusX = 914;
+    internal const int EllipseGeometry_RadiusY = 915;
+    internal const int EllipseGeometry_Center = 916;
+    internal const int ExperimentalAcrylicMaterial_TintColor = 917;
+    internal const int ExperimentalAcrylicMaterial_BackgroundSource = 918;
+    internal const int ExperimentalAcrylicMaterial_TintOpacity = 919;
+    internal const int ExperimentalAcrylicMaterial_MaterialOpacity = 920;
+    internal const int ExperimentalAcrylicMaterial_PlatformTransparencyCompensationLevel = 921;
+    internal const int ExperimentalAcrylicMaterial_FallbackColor = 922;
+    internal const int Geometry_Transform = 923;
+    internal const int GeometryDrawing_Geometry = 924;
+    internal const int GeometryDrawing_Brush = 925;
+    internal const int GeometryDrawing_Pen = 926;
+    internal const int GeometryGroup_Children = 927;
+    internal const int GeometryGroup_FillRule = 928;
+    internal const int GlyphRunDrawing_Foreground = 929;
+    internal const int GlyphRunDrawing_GlyphRun = 930;
+    internal const int GradientBrush_SpreadMethod = 931;
+    internal const int GradientBrush_GradientStops = 932;
+    internal const int GradientStop_Offset = 933;
+    internal const int GradientStop_Color = 934;
+    internal const int ImageBrush_Source = 935;
+    internal const int ImageDrawing_ImageSource = 936;
+    internal const int ImageDrawing_Rect = 937;
+    internal const int LinearGradientBrush_StartPoint = 938;
+    internal const int LinearGradientBrush_EndPoint = 939;
+    internal const int LineGeometry_StartPoint = 940;
+    internal const int LineGeometry_EndPoint = 941;
+    internal const int LineSegment_Point = 942;
+    internal const int MatrixTransform_Matrix = 943;
+    internal const int PathFigure_IsClosed = 944;
+    internal const int PathFigure_IsFilled = 945;
+    internal const int PathFigure_Segments = 946;
+    internal const int PathFigure_StartPoint = 947;
+    internal const int PathGeometry_Figures = 948;
+    internal const int PathGeometry_FillRule = 949;
+    internal const int PathSegment_IsStroked = 950;
+    internal const int Pen_Brush = 951;
+    internal const int Pen_Thickness = 952;
+    internal const int Pen_DashStyle = 953;
+    internal const int Pen_LineCap = 954;
+    internal const int Pen_LineJoin = 955;
+    internal const int Pen_MiterLimit = 956;
+    internal const int PolyBezierSegment_Points = 957;
+    internal const int PolylineGeometry_Points = 958;
+    internal const int PolylineGeometry_IsFilled = 959;
+    internal const int PolyLineSegment_Points = 960;
+    internal const int QuadraticBezierSegment_Point1 = 961;
+    internal const int QuadraticBezierSegment_Point2 = 962;
+    internal const int RadialGradientBrush_Center = 963;
+    internal const int RadialGradientBrush_GradientOrigin = 964;
+    internal const int RadialGradientBrush_RadiusX = 965;
+    internal const int RadialGradientBrush_RadiusY = 966;
+    internal const int RectangleGeometry_RadiusX = 967;
+    internal const int RectangleGeometry_RadiusY = 968;
+    internal const int RectangleGeometry_Rect = 969;
+    internal const int RotateTransform_Angle = 970;
+    internal const int RotateTransform_CenterX = 971;
+    internal const int RotateTransform_CenterY = 972;
+    internal const int ScaleTransform_ScaleX = 973;
+    internal const int ScaleTransform_ScaleY = 974;
+    internal const int SkewTransform_AngleX = 975;
+    internal const int SkewTransform_AngleY = 976;
+    internal const int SolidColorBrush_Color = 977;
+    internal const int TextDecoration_Location = 978;
+    internal const int TextDecoration_Stroke = 979;
+    internal const int TextDecoration_StrokeThicknessUnit = 980;
+    internal const int TextDecoration_StrokeDashArray = 981;
+    internal const int TextDecoration_StrokeDashOffset = 982;
+    internal const int TextDecoration_StrokeThickness = 983;
+    internal const int TextDecoration_StrokeLineCap = 984;
+    internal const int TextDecoration_StrokeOffset = 985;
+    internal const int TextDecoration_StrokeOffsetUnit = 986;
+    internal const int TileBrush_AlignmentX = 987;
+    internal const int TileBrush_AlignmentY = 988;
+    internal const int TileBrush_DestinationRect = 989;
+    internal const int TileBrush_SourceRect = 990;
+    internal const int TileBrush_Stretch = 991;
+    internal const int TileBrush_TileMode = 992;
+    internal const int TransformGroup_Children = 993;
+    internal const int TranslateTransform_X = 994;
+    internal const int TranslateTransform_Y = 995;
+    internal const int VisualBrush_Visual = 996;
+    internal const int Rotate3DTransform_AngleX = 997;
+    internal const int Rotate3DTransform_AngleY = 998;
+    internal const int Rotate3DTransform_AngleZ = 999;
+    internal const int Rotate3DTransform_CenterX = 1000;
+    internal const int Rotate3DTransform_CenterY = 1001;
+    internal const int Rotate3DTransform_CenterZ = 1002;
+    internal const int Rotate3DTransform_Depth = 1003;
+    internal const int CroppedBitmap_Source = 1004;
+    internal const int CroppedBitmap_SourceRect = 1005;
+    internal const int Animatable_Transitions = 1006;
+    internal const int Animation_Duration = 1007;
+    internal const int Animation_IterationCount = 1008;
+    internal const int Animation_PlaybackDirection = 1009;
+    internal const int Animation_PlaybackBehavior = 1010;
+    internal const int Animation_FillMode = 1011;
+    internal const int Animation_Easing = 1012;
+    internal const int Animation_Delay = 1013;
+    internal const int Animation_DelayBetweenIterations = 1014;
+    internal const int Animation_SpeedRatio = 1015;
+    internal const int TransitionBase_Duration = 1016;
+    internal const int TransitionBase_Delay = 1017;
+    internal const int TransitionBase_Easing = 1018;
+    internal const int TransitionBase_Property = 1019;
+    internal const int ColorPicker_Content = 1020;
+    internal const int ColorPicker_ContentTemplate = 1021;
+    internal const int ColorPicker_HorizontalContentAlignment = 1022;
+    internal const int ColorPicker_VerticalContentAlignment = 1023;
+    internal const int ColorView_Color = 1024;
+    internal const int ColorView_ColorModel = 1025;
+    internal const int ColorView_ColorSpectrumComponents = 1026;
+    internal const int ColorView_ColorSpectrumShape = 1027;
+    internal const int ColorView_HexInputAlphaPosition = 1028;
+    internal const int ColorView_HsvColor = 1029;
+    internal const int ColorView_IsAccentColorsVisible = 1030;
+    internal const int ColorView_IsAlphaEnabled = 1031;
+    internal const int ColorView_IsAlphaVisible = 1032;
+    internal const int ColorView_IsColorComponentsVisible = 1033;
+    internal const int ColorView_IsColorModelVisible = 1034;
+    internal const int ColorView_IsColorPaletteVisible = 1035;
+    internal const int ColorView_IsColorPreviewVisible = 1036;
+    internal const int ColorView_IsColorSpectrumVisible = 1037;
+    internal const int ColorView_IsColorSpectrumSliderVisible = 1038;
+    internal const int ColorView_IsComponentSliderVisible = 1039;
+    internal const int ColorView_IsComponentTextInputVisible = 1040;
+    internal const int ColorView_IsHexInputVisible = 1041;
+    internal const int ColorView_MaxHue = 1042;
+    internal const int ColorView_MaxSaturation = 1043;
+    internal const int ColorView_MaxValue = 1044;
+    internal const int ColorView_MinHue = 1045;
+    internal const int ColorView_MinSaturation = 1046;
+    internal const int ColorView_MinValue = 1047;
+    internal const int ColorView_PaletteColors = 1048;
+    internal const int ColorView_PaletteColumnCount = 1049;
+    internal const int ColorView_Palette = 1050;
+    internal const int ColorView_SelectedIndex = 1051;
+    internal const int ColorPreviewer_HsvColor = 1052;
+    internal const int ColorPreviewer_IsAccentColorsVisible = 1053;
+    internal const int ColorSlider_Color = 1054;
+    internal const int ColorSlider_ColorComponent = 1055;
+    internal const int ColorSlider_ColorModel = 1056;
+    internal const int ColorSlider_HsvColor = 1057;
+    internal const int ColorSlider_IsAlphaVisible = 1058;
+    internal const int ColorSlider_IsPerceptive = 1059;
+    internal const int ColorSlider_IsRoundingEnabled = 1060;
+    internal const int ColorSpectrum_Color = 1061;
+    internal const int ColorSpectrum_Components = 1062;
+    internal const int ColorSpectrum_HsvColor = 1063;
+    internal const int ColorSpectrum_MaxHue = 1064;
+    internal const int ColorSpectrum_MaxSaturation = 1065;
+    internal const int ColorSpectrum_MaxValue = 1066;
+    internal const int ColorSpectrum_MinHue = 1067;
+    internal const int ColorSpectrum_MinSaturation = 1068;
+    internal const int ColorSpectrum_MinValue = 1069;
+    internal const int ColorSpectrum_Shape = 1070;
+    internal const int ColorSpectrum_ThirdComponent = 1071;
+    internal const int NonVirtualizingStackLayout_Orientation = 1072;
+    internal const int NonVirtualizingStackLayout_Spacing = 1073;
+    internal const int StackLayout_DisableVirtualization = 1074;
+    internal const int StackLayout_Orientation = 1075;
+    internal const int StackLayout_Spacing = 1076;
+    internal const int UniformGridLayout_ItemsJustification = 1077;
+    internal const int UniformGridLayout_ItemsStretch = 1078;
+    internal const int UniformGridLayout_MinColumnSpacing = 1079;
+    internal const int UniformGridLayout_MinItemHeight = 1080;
+    internal const int UniformGridLayout_MinItemWidth = 1081;
+    internal const int UniformGridLayout_MinRowSpacing = 1082;
+    internal const int UniformGridLayout_MaximumRowsOrColumns = 1083;
+    internal const int UniformGridLayout_Orientation = 1084;
+    internal const int WrapLayout_HorizontalSpacing = 1085;
+    internal const int WrapLayout_VerticalSpacing = 1086;
+    internal const int WrapLayout_Orientation = 1087;
+    internal const int ItemsRepeater_HorizontalCacheLength = 1088;
+    internal const int ItemsRepeater_ItemTemplate = 1089;
+    internal const int ItemsRepeater_ItemsSource = 1090;
+    internal const int ItemsRepeater_Layout = 1091;
+    internal const int ItemsRepeater_VerticalCacheLength = 1092;
+    internal const int DataGrid_CanUserReorderColumns = 1093;
+    internal const int DataGrid_CanUserResizeColumns = 1094;
+    internal const int DataGrid_CanUserSortColumns = 1095;
+    internal const int DataGrid_ColumnHeaderHeight = 1096;
+    internal const int DataGrid_ColumnWidth = 1097;
+    internal const int DataGrid_RowTheme = 1098;
+    internal const int DataGrid_CellTheme = 1099;
+    internal const int DataGrid_ColumnHeaderTheme = 1100;
+    internal const int DataGrid_RowGroupTheme = 1101;
+    internal const int DataGrid_FrozenColumnCount = 1102;
+    internal const int DataGrid_GridLinesVisibility = 1103;
+    internal const int DataGrid_HeadersVisibility = 1104;
+    internal const int DataGrid_HorizontalGridLinesBrush = 1105;
+    internal const int DataGrid_HorizontalScrollBarVisibility = 1106;
+    internal const int DataGrid_IsReadOnly = 1107;
+    internal const int DataGrid_AreRowGroupHeadersFrozen = 1108;
+    internal const int DataGrid_IsScrollInertiaEnabled = 1109;
+    internal const int DataGrid_IsValid = 1110;
+    internal const int DataGrid_MaxColumnWidth = 1111;
+    internal const int DataGrid_MinColumnWidth = 1112;
+    internal const int DataGrid_RowBackground = 1113;
+    internal const int DataGrid_RowHeight = 1114;
+    internal const int DataGrid_RowHeaderWidth = 1115;
+    internal const int DataGrid_SelectionMode = 1116;
+    internal const int DataGrid_VerticalGridLinesBrush = 1117;
+    internal const int DataGrid_VerticalScrollBarVisibility = 1118;
+    internal const int DataGrid_DropLocationIndicatorTemplate = 1119;
+    internal const int DataGrid_SelectedIndex = 1120;
+    internal const int DataGrid_SelectedItem = 1121;
+    internal const int DataGrid_ClipboardCopyMode = 1122;
+    internal const int DataGrid_AutoGenerateColumns = 1123;
+    internal const int DataGrid_ItemsSource = 1124;
+    internal const int DataGrid_AreRowDetailsFrozen = 1125;
+    internal const int DataGrid_RowDetailsTemplate = 1126;
+    internal const int DataGrid_RowDetailsVisibilityMode = 1127;
+    internal const int DataGrid_CollectionView = 1128;
+    internal const int DataGridCell_IsValid = 1129;
+    internal const int DataGridCheckBoxColumn_IsThreeState = 1130;
+    internal const int DataGridColumn_IsVisible = 1131;
+    internal const int DataGridColumn_CellTheme = 1132;
+    internal const int DataGridColumn_Header = 1133;
+    internal const int DataGridColumn_HeaderTemplate = 1134;
+    internal const int DataGridColumn_Width = 1135;
+    internal const int DataGridColumnHeader_SeparatorBrush = 1136;
+    internal const int DataGridColumnHeader_AreSeparatorsVisible = 1137;
+    internal const int DataGridRow_Header = 1138;
+    internal const int DataGridRow_IsSelected = 1139;
+    internal const int DataGridRow_IsValid = 1140;
+    internal const int DataGridRow_DetailsTemplate = 1141;
+    internal const int DataGridRow_AreDetailsVisible = 1142;
+    internal const int DataGridRow_Index = 1143;
+    internal const int DataGridRowGroupHeader_IsItemCountVisible = 1144;
+    internal const int DataGridRowGroupHeader_ItemCountFormat = 1145;
+    internal const int DataGridRowGroupHeader_PropertyName = 1146;
+    internal const int DataGridRowGroupHeader_IsPropertyNameVisible = 1147;
+    internal const int DataGridRowGroupHeader_SublevelIndent = 1148;
+    internal const int DataGridTemplateColumn_CellTemplate = 1149;
+    internal const int DataGridTemplateColumn_CellEditingTemplate = 1150;
+    internal const int DataGridTextColumn_FontFamily = 1151;
+    internal const int DataGridTextColumn_FontSize = 1152;
+    internal const int DataGridTextColumn_FontStyle = 1153;
+    internal const int DataGridTextColumn_FontWeight = 1154;
+    internal const int DataGridTextColumn_FontStretch = 1155;
+    internal const int DataGridTextColumn_Foreground = 1156;
+    internal const int DataGridRowHeader_SeparatorBrush = 1157;
+    internal const int DataGridRowHeader_AreSeparatorsVisible = 1158;
+    internal const int DataGridDetailsPresenter_ContentHeight = 1159;
+    internal const int DataGridFrozenGrid_IsFrozen = 1160;
 
     private static partial PropertyMetadataEntry[] CreateEntries()
         => new[]
@@ -1633,12 +1768,14 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Application_RequestedThemeVariant, TypeMetadata.Avalonia_Application, "RequestedThemeVariant", Avalonia.Application.RequestedThemeVariantProperty),
             new PropertyMetadataEntry(Application_Name, TypeMetadata.Avalonia_Application, "Name", Avalonia.Application.NameProperty),
             new PropertyMetadataEntry(AutoCompleteBox_CaretIndex, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "CaretIndex", Avalonia.Controls.AutoCompleteBox.CaretIndexProperty),
-            new PropertyMetadataEntry(AutoCompleteBox_Watermark, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "Watermark", Avalonia.Controls.AutoCompleteBox.WatermarkProperty),
+            new PropertyMetadataEntry(AutoCompleteBox_PlaceholderText, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "PlaceholderText", Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty),
+            new PropertyMetadataEntry(AutoCompleteBox_PlaceholderForeground, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "PlaceholderForeground", Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty),
             new PropertyMetadataEntry(AutoCompleteBox_MinimumPrefixLength, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "MinimumPrefixLength", Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty),
             new PropertyMetadataEntry(AutoCompleteBox_MinimumPopulateDelay, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "MinimumPopulateDelay", Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty),
             new PropertyMetadataEntry(AutoCompleteBox_MaxDropDownHeight, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "MaxDropDownHeight", Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty),
             new PropertyMetadataEntry(AutoCompleteBox_IsTextCompletionEnabled, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "IsTextCompletionEnabled", Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty),
             new PropertyMetadataEntry(AutoCompleteBox_ItemTemplate, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "ItemTemplate", Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty),
+            new PropertyMetadataEntry(AutoCompleteBox_ClearSelectionOnLostFocus, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "ClearSelectionOnLostFocus", Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty),
             new PropertyMetadataEntry(AutoCompleteBox_IsDropDownOpen, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "IsDropDownOpen", Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty),
             new PropertyMetadataEntry(AutoCompleteBox_SelectedItem, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "SelectedItem", Avalonia.Controls.AutoCompleteBox.SelectedItemProperty),
             new PropertyMetadataEntry(AutoCompleteBox_Text, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "Text", Avalonia.Controls.AutoCompleteBox.TextProperty),
@@ -1653,6 +1790,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(AutoCompleteBox_MaxLength, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "MaxLength", Avalonia.Controls.AutoCompleteBox.MaxLengthProperty),
             new PropertyMetadataEntry(AutoCompleteBox_InnerLeftContent, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "InnerLeftContent", Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty),
             new PropertyMetadataEntry(AutoCompleteBox_InnerRightContent, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "InnerRightContent", Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty),
+            new PropertyMetadataEntry(AutoCompleteBox_ValueMemberBinding, TypeMetadata.Avalonia_Controls_AutoCompleteBox, "ValueMemberBinding", Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty),
             new PropertyMetadataEntry(Border_Background, TypeMetadata.Avalonia_Controls_Border, "Background", Avalonia.Controls.Border.BackgroundProperty),
             new PropertyMetadataEntry(Border_BackgroundSizing, TypeMetadata.Avalonia_Controls_Border, "BackgroundSizing", Avalonia.Controls.Border.BackgroundSizingProperty),
             new PropertyMetadataEntry(Border_BorderBrush, TypeMetadata.Avalonia_Controls_Border, "BorderBrush", Avalonia.Controls.Border.BorderBrushProperty),
@@ -1680,8 +1818,9 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(CalendarDatePicker_SelectedDateFormat, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "SelectedDateFormat", Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty),
             new PropertyMetadataEntry(CalendarDatePicker_CustomDateFormatString, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "CustomDateFormatString", Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty),
             new PropertyMetadataEntry(CalendarDatePicker_Text, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "Text", Avalonia.Controls.CalendarDatePicker.TextProperty),
-            new PropertyMetadataEntry(CalendarDatePicker_Watermark, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "Watermark", Avalonia.Controls.CalendarDatePicker.WatermarkProperty),
-            new PropertyMetadataEntry(CalendarDatePicker_UseFloatingWatermark, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "UseFloatingWatermark", Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty),
+            new PropertyMetadataEntry(CalendarDatePicker_PlaceholderText, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "PlaceholderText", Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty),
+            new PropertyMetadataEntry(CalendarDatePicker_UseFloatingPlaceholder, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "UseFloatingPlaceholder", Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty),
+            new PropertyMetadataEntry(CalendarDatePicker_PlaceholderForeground, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "PlaceholderForeground", Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty),
             new PropertyMetadataEntry(CalendarDatePicker_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "HorizontalContentAlignment", Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty),
             new PropertyMetadataEntry(CalendarDatePicker_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_CalendarDatePicker, "VerticalContentAlignment", Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty),
             new PropertyMetadataEntry(Calendar_FirstDayOfWeek, TypeMetadata.Avalonia_Controls_Calendar, "FirstDayOfWeek", Avalonia.Controls.Calendar.FirstDayOfWeekProperty),
@@ -1689,6 +1828,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Calendar_HeaderBackground, TypeMetadata.Avalonia_Controls_Calendar, "HeaderBackground", Avalonia.Controls.Calendar.HeaderBackgroundProperty),
             new PropertyMetadataEntry(Calendar_DisplayMode, TypeMetadata.Avalonia_Controls_Calendar, "DisplayMode", Avalonia.Controls.Calendar.DisplayModeProperty),
             new PropertyMetadataEntry(Calendar_SelectionMode, TypeMetadata.Avalonia_Controls_Calendar, "SelectionMode", Avalonia.Controls.Calendar.SelectionModeProperty),
+            new PropertyMetadataEntry(Calendar_AllowTapRangeSelection, TypeMetadata.Avalonia_Controls_Calendar, "AllowTapRangeSelection", Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty),
             new PropertyMetadataEntry(Calendar_SelectedDate, TypeMetadata.Avalonia_Controls_Calendar, "SelectedDate", Avalonia.Controls.Calendar.SelectedDateProperty),
             new PropertyMetadataEntry(Calendar_DisplayDate, TypeMetadata.Avalonia_Controls_Calendar, "DisplayDate", Avalonia.Controls.Calendar.DisplayDateProperty),
             new PropertyMetadataEntry(Calendar_DisplayDateStart, TypeMetadata.Avalonia_Controls_Calendar, "DisplayDateStart", Avalonia.Controls.Calendar.DisplayDateStartProperty),
@@ -1698,17 +1838,49 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Canvas_Right, TypeMetadata.Avalonia_Controls_Canvas, "Right", Avalonia.Controls.Canvas.RightProperty),
             new PropertyMetadataEntry(Canvas_Bottom, TypeMetadata.Avalonia_Controls_Canvas, "Bottom", Avalonia.Controls.Canvas.BottomProperty),
             new PropertyMetadataEntry(Carousel_PageTransition, TypeMetadata.Avalonia_Controls_Carousel, "PageTransition", Avalonia.Controls.Carousel.PageTransitionProperty),
+            new PropertyMetadataEntry(Carousel_IsSwipeEnabled, TypeMetadata.Avalonia_Controls_Carousel, "IsSwipeEnabled", Avalonia.Controls.Carousel.IsSwipeEnabledProperty),
+            new PropertyMetadataEntry(Carousel_ViewportFraction, TypeMetadata.Avalonia_Controls_Carousel, "ViewportFraction", Avalonia.Controls.Carousel.ViewportFractionProperty),
+            new PropertyMetadataEntry(Carousel_IsSwiping, TypeMetadata.Avalonia_Controls_Carousel, "IsSwiping", Avalonia.Controls.Carousel.IsSwipingProperty),
             new PropertyMetadataEntry(ColumnDefinition_MaxWidth, TypeMetadata.Avalonia_Controls_ColumnDefinition, "MaxWidth", Avalonia.Controls.ColumnDefinition.MaxWidthProperty),
             new PropertyMetadataEntry(ColumnDefinition_MinWidth, TypeMetadata.Avalonia_Controls_ColumnDefinition, "MinWidth", Avalonia.Controls.ColumnDefinition.MinWidthProperty),
             new PropertyMetadataEntry(ColumnDefinition_Width, TypeMetadata.Avalonia_Controls_ColumnDefinition, "Width", Avalonia.Controls.ColumnDefinition.WidthProperty),
             new PropertyMetadataEntry(ComboBox_IsDropDownOpen, TypeMetadata.Avalonia_Controls_ComboBox, "IsDropDownOpen", Avalonia.Controls.ComboBox.IsDropDownOpenProperty),
+            new PropertyMetadataEntry(ComboBox_IsEditable, TypeMetadata.Avalonia_Controls_ComboBox, "IsEditable", Avalonia.Controls.ComboBox.IsEditableProperty),
             new PropertyMetadataEntry(ComboBox_MaxDropDownHeight, TypeMetadata.Avalonia_Controls_ComboBox, "MaxDropDownHeight", Avalonia.Controls.ComboBox.MaxDropDownHeightProperty),
             new PropertyMetadataEntry(ComboBox_SelectionBoxItem, TypeMetadata.Avalonia_Controls_ComboBox, "SelectionBoxItem", Avalonia.Controls.ComboBox.SelectionBoxItemProperty),
             new PropertyMetadataEntry(ComboBox_PlaceholderText, TypeMetadata.Avalonia_Controls_ComboBox, "PlaceholderText", Avalonia.Controls.ComboBox.PlaceholderTextProperty),
             new PropertyMetadataEntry(ComboBox_PlaceholderForeground, TypeMetadata.Avalonia_Controls_ComboBox, "PlaceholderForeground", Avalonia.Controls.ComboBox.PlaceholderForegroundProperty),
             new PropertyMetadataEntry(ComboBox_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_ComboBox, "HorizontalContentAlignment", Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty),
             new PropertyMetadataEntry(ComboBox_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_ComboBox, "VerticalContentAlignment", Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty),
+            new PropertyMetadataEntry(ComboBox_Text, TypeMetadata.Avalonia_Controls_ComboBox, "Text", Avalonia.Controls.ComboBox.TextProperty),
             new PropertyMetadataEntry(ComboBox_SelectionBoxItemTemplate, TypeMetadata.Avalonia_Controls_ComboBox, "SelectionBoxItemTemplate", Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty),
+            new PropertyMetadataEntry(CommandBar_PrimaryCommands, TypeMetadata.Avalonia_Controls_CommandBar, "PrimaryCommands", Avalonia.Controls.CommandBar.PrimaryCommandsProperty),
+            new PropertyMetadataEntry(CommandBar_SecondaryCommands, TypeMetadata.Avalonia_Controls_CommandBar, "SecondaryCommands", Avalonia.Controls.CommandBar.SecondaryCommandsProperty),
+            new PropertyMetadataEntry(CommandBar_Content, TypeMetadata.Avalonia_Controls_CommandBar, "Content", Avalonia.Controls.CommandBar.ContentProperty),
+            new PropertyMetadataEntry(CommandBar_DefaultLabelPosition, TypeMetadata.Avalonia_Controls_CommandBar, "DefaultLabelPosition", Avalonia.Controls.CommandBar.DefaultLabelPositionProperty),
+            new PropertyMetadataEntry(CommandBar_IsDynamicOverflowEnabled, TypeMetadata.Avalonia_Controls_CommandBar, "IsDynamicOverflowEnabled", Avalonia.Controls.CommandBar.IsDynamicOverflowEnabledProperty),
+            new PropertyMetadataEntry(CommandBar_OverflowButtonVisibility, TypeMetadata.Avalonia_Controls_CommandBar, "OverflowButtonVisibility", Avalonia.Controls.CommandBar.OverflowButtonVisibilityProperty),
+            new PropertyMetadataEntry(CommandBar_IsOpen, TypeMetadata.Avalonia_Controls_CommandBar, "IsOpen", Avalonia.Controls.CommandBar.IsOpenProperty),
+            new PropertyMetadataEntry(CommandBar_IsSticky, TypeMetadata.Avalonia_Controls_CommandBar, "IsSticky", Avalonia.Controls.CommandBar.IsStickyProperty),
+            new PropertyMetadataEntry(CommandBar_ItemWidthBottom, TypeMetadata.Avalonia_Controls_CommandBar, "ItemWidthBottom", Avalonia.Controls.CommandBar.ItemWidthBottomProperty),
+            new PropertyMetadataEntry(CommandBar_ItemWidthRight, TypeMetadata.Avalonia_Controls_CommandBar, "ItemWidthRight", Avalonia.Controls.CommandBar.ItemWidthRightProperty),
+            new PropertyMetadataEntry(CommandBar_ItemWidthCollapsed, TypeMetadata.Avalonia_Controls_CommandBar, "ItemWidthCollapsed", Avalonia.Controls.CommandBar.ItemWidthCollapsedProperty),
+            new PropertyMetadataEntry(CommandBar_HasSecondaryCommands, TypeMetadata.Avalonia_Controls_CommandBar, "HasSecondaryCommands", Avalonia.Controls.CommandBar.HasSecondaryCommandsProperty),
+            new PropertyMetadataEntry(CommandBar_IsOverflowButtonVisible, TypeMetadata.Avalonia_Controls_CommandBar, "IsOverflowButtonVisible", Avalonia.Controls.CommandBar.IsOverflowButtonVisibleProperty),
+            new PropertyMetadataEntry(CommandBarButton_Label, TypeMetadata.Avalonia_Controls_CommandBarButton, "Label", Avalonia.Controls.CommandBarButton.LabelProperty),
+            new PropertyMetadataEntry(CommandBarButton_Icon, TypeMetadata.Avalonia_Controls_CommandBarButton, "Icon", Avalonia.Controls.CommandBarButton.IconProperty),
+            new PropertyMetadataEntry(CommandBarButton_IsCompact, TypeMetadata.Avalonia_Controls_CommandBarButton, "IsCompact", Avalonia.Controls.CommandBarButton.IsCompactProperty),
+            new PropertyMetadataEntry(CommandBarButton_DynamicOverflowOrder, TypeMetadata.Avalonia_Controls_CommandBarButton, "DynamicOverflowOrder", Avalonia.Controls.CommandBarButton.DynamicOverflowOrderProperty),
+            new PropertyMetadataEntry(CommandBarButton_LabelPosition, TypeMetadata.Avalonia_Controls_CommandBarButton, "LabelPosition", Avalonia.Controls.CommandBarButton.LabelPositionProperty),
+            new PropertyMetadataEntry(CommandBarButton_IsInOverflow, TypeMetadata.Avalonia_Controls_CommandBarButton, "IsInOverflow", Avalonia.Controls.CommandBarButton.IsInOverflowProperty),
+            new PropertyMetadataEntry(CommandBarSeparator_IsCompact, TypeMetadata.Avalonia_Controls_CommandBarSeparator, "IsCompact", Avalonia.Controls.CommandBarSeparator.IsCompactProperty),
+            new PropertyMetadataEntry(CommandBarSeparator_IsInOverflow, TypeMetadata.Avalonia_Controls_CommandBarSeparator, "IsInOverflow", Avalonia.Controls.CommandBarSeparator.IsInOverflowProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_Label, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "Label", Avalonia.Controls.CommandBarToggleButton.LabelProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_Icon, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "Icon", Avalonia.Controls.CommandBarToggleButton.IconProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_IsCompact, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "IsCompact", Avalonia.Controls.CommandBarToggleButton.IsCompactProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_DynamicOverflowOrder, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "DynamicOverflowOrder", Avalonia.Controls.CommandBarToggleButton.DynamicOverflowOrderProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_LabelPosition, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "LabelPosition", Avalonia.Controls.CommandBarToggleButton.LabelPositionProperty),
+            new PropertyMetadataEntry(CommandBarToggleButton_IsInOverflow, TypeMetadata.Avalonia_Controls_CommandBarToggleButton, "IsInOverflow", Avalonia.Controls.CommandBarToggleButton.IsInOverflowProperty),
             new PropertyMetadataEntry(ContentControl_Content, TypeMetadata.Avalonia_Controls_ContentControl, "Content", Avalonia.Controls.ContentControl.ContentProperty),
             new PropertyMetadataEntry(ContentControl_ContentTemplate, TypeMetadata.Avalonia_Controls_ContentControl, "ContentTemplate", Avalonia.Controls.ContentControl.ContentTemplateProperty),
             new PropertyMetadataEntry(ContentControl_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_ContentControl, "HorizontalContentAlignment", Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty),
@@ -1836,7 +2008,6 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(NativeMenu_Parent, TypeMetadata.Avalonia_Controls_NativeMenu, "Parent", Avalonia.Controls.NativeMenu.ParentProperty),
             new PropertyMetadataEntry(NativeMenu_IsNativeMenuExported, TypeMetadata.Avalonia_Controls_NativeMenu, "IsNativeMenuExported", Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty),
             new PropertyMetadataEntry(NativeMenu_Menu, TypeMetadata.Avalonia_Controls_NativeMenu, "Menu", Avalonia.Controls.NativeMenu.MenuProperty),
-            new PropertyMetadataEntry(NativeMenuBar_EnableMenuItemClickForwarding, TypeMetadata.Avalonia_Controls_NativeMenuBar, "EnableMenuItemClickForwarding", Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty),
             new PropertyMetadataEntry(NativeMenuItem_Menu, TypeMetadata.Avalonia_Controls_NativeMenuItem, "Menu", Avalonia.Controls.NativeMenuItem.MenuProperty),
             new PropertyMetadataEntry(NativeMenuItem_Icon, TypeMetadata.Avalonia_Controls_NativeMenuItem, "Icon", Avalonia.Controls.NativeMenuItem.IconProperty),
             new PropertyMetadataEntry(NativeMenuItem_Header, TypeMetadata.Avalonia_Controls_NativeMenuItem, "Header", Avalonia.Controls.NativeMenuItem.HeaderProperty),
@@ -1864,14 +2035,101 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(NumericUpDown_Text, TypeMetadata.Avalonia_Controls_NumericUpDown, "Text", Avalonia.Controls.NumericUpDown.TextProperty),
             new PropertyMetadataEntry(NumericUpDown_TextConverter, TypeMetadata.Avalonia_Controls_NumericUpDown, "TextConverter", Avalonia.Controls.NumericUpDown.TextConverterProperty),
             new PropertyMetadataEntry(NumericUpDown_Value, TypeMetadata.Avalonia_Controls_NumericUpDown, "Value", Avalonia.Controls.NumericUpDown.ValueProperty),
-            new PropertyMetadataEntry(NumericUpDown_Watermark, TypeMetadata.Avalonia_Controls_NumericUpDown, "Watermark", Avalonia.Controls.NumericUpDown.WatermarkProperty),
+            new PropertyMetadataEntry(NumericUpDown_PlaceholderText, TypeMetadata.Avalonia_Controls_NumericUpDown, "PlaceholderText", Avalonia.Controls.NumericUpDown.PlaceholderTextProperty),
+            new PropertyMetadataEntry(NumericUpDown_PlaceholderForeground, TypeMetadata.Avalonia_Controls_NumericUpDown, "PlaceholderForeground", Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty),
             new PropertyMetadataEntry(NumericUpDown_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_NumericUpDown, "HorizontalContentAlignment", Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty),
             new PropertyMetadataEntry(NumericUpDown_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_NumericUpDown, "VerticalContentAlignment", Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty),
             new PropertyMetadataEntry(NumericUpDown_TextAlignment, TypeMetadata.Avalonia_Controls_NumericUpDown, "TextAlignment", Avalonia.Controls.NumericUpDown.TextAlignmentProperty),
             new PropertyMetadataEntry(NumericUpDown_InnerLeftContent, TypeMetadata.Avalonia_Controls_NumericUpDown, "InnerLeftContent", Avalonia.Controls.NumericUpDown.InnerLeftContentProperty),
             new PropertyMetadataEntry(NumericUpDown_InnerRightContent, TypeMetadata.Avalonia_Controls_NumericUpDown, "InnerRightContent", Avalonia.Controls.NumericUpDown.InnerRightContentProperty),
+            new PropertyMetadataEntry(CarouselPage_ItemsPanel, TypeMetadata.Avalonia_Controls_CarouselPage, "ItemsPanel", Avalonia.Controls.CarouselPage.ItemsPanelProperty),
+            new PropertyMetadataEntry(CarouselPage_PageTransition, TypeMetadata.Avalonia_Controls_CarouselPage, "PageTransition", Avalonia.Controls.CarouselPage.PageTransitionProperty),
+            new PropertyMetadataEntry(CarouselPage_IsGestureEnabled, TypeMetadata.Avalonia_Controls_CarouselPage, "IsGestureEnabled", Avalonia.Controls.CarouselPage.IsGestureEnabledProperty),
+            new PropertyMetadataEntry(CarouselPage_IsKeyboardNavigationEnabled, TypeMetadata.Avalonia_Controls_CarouselPage, "IsKeyboardNavigationEnabled", Avalonia.Controls.CarouselPage.IsKeyboardNavigationEnabledProperty),
+            new PropertyMetadataEntry(ContentPage_Content, TypeMetadata.Avalonia_Controls_ContentPage, "Content", Avalonia.Controls.ContentPage.ContentProperty),
+            new PropertyMetadataEntry(ContentPage_ContentTemplate, TypeMetadata.Avalonia_Controls_ContentPage, "ContentTemplate", Avalonia.Controls.ContentPage.ContentTemplateProperty),
+            new PropertyMetadataEntry(ContentPage_AutomaticallyApplySafeAreaPadding, TypeMetadata.Avalonia_Controls_ContentPage, "AutomaticallyApplySafeAreaPadding", Avalonia.Controls.ContentPage.AutomaticallyApplySafeAreaPaddingProperty),
+            new PropertyMetadataEntry(ContentPage_TopCommandBar, TypeMetadata.Avalonia_Controls_ContentPage, "TopCommandBar", Avalonia.Controls.ContentPage.TopCommandBarProperty),
+            new PropertyMetadataEntry(ContentPage_BottomCommandBar, TypeMetadata.Avalonia_Controls_ContentPage, "BottomCommandBar", Avalonia.Controls.ContentPage.BottomCommandBarProperty),
+            new PropertyMetadataEntry(ContentPage_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_ContentPage, "HorizontalContentAlignment", Avalonia.Controls.ContentPage.HorizontalContentAlignmentProperty),
+            new PropertyMetadataEntry(ContentPage_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_ContentPage, "VerticalContentAlignment", Avalonia.Controls.ContentPage.VerticalContentAlignmentProperty),
+            new PropertyMetadataEntry(DrawerPage_Drawer, TypeMetadata.Avalonia_Controls_DrawerPage, "Drawer", Avalonia.Controls.DrawerPage.DrawerProperty),
+            new PropertyMetadataEntry(DrawerPage_Content, TypeMetadata.Avalonia_Controls_DrawerPage, "Content", Avalonia.Controls.DrawerPage.ContentProperty),
+            new PropertyMetadataEntry(DrawerPage_IsOpen, TypeMetadata.Avalonia_Controls_DrawerPage, "IsOpen", Avalonia.Controls.DrawerPage.IsOpenProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerLength, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerLength", Avalonia.Controls.DrawerPage.DrawerLengthProperty),
+            new PropertyMetadataEntry(DrawerPage_CompactDrawerLength, TypeMetadata.Avalonia_Controls_DrawerPage, "CompactDrawerLength", Avalonia.Controls.DrawerPage.CompactDrawerLengthProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerBreakpointLength, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerBreakpointLength", Avalonia.Controls.DrawerPage.DrawerBreakpointLengthProperty),
+            new PropertyMetadataEntry(DrawerPage_IsGestureEnabled, TypeMetadata.Avalonia_Controls_DrawerPage, "IsGestureEnabled", Avalonia.Controls.DrawerPage.IsGestureEnabledProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerBehavior, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerBehavior", Avalonia.Controls.DrawerPage.DrawerBehaviorProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerLayoutBehavior, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerLayoutBehavior", Avalonia.Controls.DrawerPage.DrawerLayoutBehaviorProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerPlacement, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerPlacement", Avalonia.Controls.DrawerPage.DrawerPlacementProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerHeader, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerHeader", Avalonia.Controls.DrawerPage.DrawerHeaderProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerFooter, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerFooter", Avalonia.Controls.DrawerPage.DrawerFooterProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerHeaderTemplate, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerHeaderTemplate", Avalonia.Controls.DrawerPage.DrawerHeaderTemplateProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerFooterTemplate, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerFooterTemplate", Avalonia.Controls.DrawerPage.DrawerFooterTemplateProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerIcon, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerIcon", Avalonia.Controls.DrawerPage.DrawerIconProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerIconTemplate, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerIconTemplate", Avalonia.Controls.DrawerPage.DrawerIconTemplateProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerTemplate, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerTemplate", Avalonia.Controls.DrawerPage.DrawerTemplateProperty),
+            new PropertyMetadataEntry(DrawerPage_ContentTemplate, TypeMetadata.Avalonia_Controls_DrawerPage, "ContentTemplate", Avalonia.Controls.DrawerPage.ContentTemplateProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerBackground, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerBackground", Avalonia.Controls.DrawerPage.DrawerBackgroundProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerHeaderBackground, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerHeaderBackground", Avalonia.Controls.DrawerPage.DrawerHeaderBackgroundProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerHeaderForeground, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerHeaderForeground", Avalonia.Controls.DrawerPage.DrawerHeaderForegroundProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerFooterBackground, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerFooterBackground", Avalonia.Controls.DrawerPage.DrawerFooterBackgroundProperty),
+            new PropertyMetadataEntry(DrawerPage_DrawerFooterForeground, TypeMetadata.Avalonia_Controls_DrawerPage, "DrawerFooterForeground", Avalonia.Controls.DrawerPage.DrawerFooterForegroundProperty),
+            new PropertyMetadataEntry(DrawerPage_BackdropBrush, TypeMetadata.Avalonia_Controls_DrawerPage, "BackdropBrush", Avalonia.Controls.DrawerPage.BackdropBrushProperty),
+            new PropertyMetadataEntry(DrawerPage_HorizontalContentAlignment, TypeMetadata.Avalonia_Controls_DrawerPage, "HorizontalContentAlignment", Avalonia.Controls.DrawerPage.HorizontalContentAlignmentProperty),
+            new PropertyMetadataEntry(DrawerPage_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_DrawerPage, "VerticalContentAlignment", Avalonia.Controls.DrawerPage.VerticalContentAlignmentProperty),
+            new PropertyMetadataEntry(DrawerPage_DisplayMode, TypeMetadata.Avalonia_Controls_DrawerPage, "DisplayMode", Avalonia.Controls.DrawerPage.DisplayModeProperty),
+            new PropertyMetadataEntry(MultiPage_Pages, TypeMetadata.Avalonia_Controls_MultiPage, "Pages", Avalonia.Controls.MultiPage.PagesProperty),
+            new PropertyMetadataEntry(MultiPage_ItemsSource, TypeMetadata.Avalonia_Controls_MultiPage, "ItemsSource", Avalonia.Controls.MultiPage.ItemsSourceProperty),
+            new PropertyMetadataEntry(MultiPage_PageTemplate, TypeMetadata.Avalonia_Controls_MultiPage, "PageTemplate", Avalonia.Controls.MultiPage.PageTemplateProperty),
+            new PropertyMetadataEntry(NavigationPage_Content, TypeMetadata.Avalonia_Controls_NavigationPage, "Content", Avalonia.Controls.NavigationPage.ContentProperty),
+            new PropertyMetadataEntry(NavigationPage_PageTransition, TypeMetadata.Avalonia_Controls_NavigationPage, "PageTransition", Avalonia.Controls.NavigationPage.PageTransitionProperty),
+            new PropertyMetadataEntry(NavigationPage_ModalTransition, TypeMetadata.Avalonia_Controls_NavigationPage, "ModalTransition", Avalonia.Controls.NavigationPage.ModalTransitionProperty),
+            new PropertyMetadataEntry(NavigationPage_IsBackButtonEffectivelyVisible, TypeMetadata.Avalonia_Controls_NavigationPage, "IsBackButtonEffectivelyVisible", Avalonia.Controls.NavigationPage.IsBackButtonEffectivelyVisibleProperty),
+            new PropertyMetadataEntry(NavigationPage_BarLayoutBehavior, TypeMetadata.Avalonia_Controls_NavigationPage, "BarLayoutBehavior", Avalonia.Controls.NavigationPage.BarLayoutBehaviorProperty),
+            new PropertyMetadataEntry(NavigationPage_HasShadow, TypeMetadata.Avalonia_Controls_NavigationPage, "HasShadow", Avalonia.Controls.NavigationPage.HasShadowProperty),
+            new PropertyMetadataEntry(NavigationPage_BarHeight, TypeMetadata.Avalonia_Controls_NavigationPage, "BarHeight", Avalonia.Controls.NavigationPage.BarHeightProperty),
+            new PropertyMetadataEntry(NavigationPage_BarHeightOverride, TypeMetadata.Avalonia_Controls_NavigationPage, "BarHeightOverride", Avalonia.Controls.NavigationPage.BarHeightOverrideProperty),
+            new PropertyMetadataEntry(NavigationPage_EffectiveBarHeight, TypeMetadata.Avalonia_Controls_NavigationPage, "EffectiveBarHeight", Avalonia.Controls.NavigationPage.EffectiveBarHeightProperty),
+            new PropertyMetadataEntry(NavigationPage_BackButtonContent, TypeMetadata.Avalonia_Controls_NavigationPage, "BackButtonContent", Avalonia.Controls.NavigationPage.BackButtonContentProperty),
+            new PropertyMetadataEntry(NavigationPage_HasBackButton, TypeMetadata.Avalonia_Controls_NavigationPage, "HasBackButton", Avalonia.Controls.NavigationPage.HasBackButtonProperty),
+            new PropertyMetadataEntry(NavigationPage_IsBackButtonVisible, TypeMetadata.Avalonia_Controls_NavigationPage, "IsBackButtonVisible", Avalonia.Controls.NavigationPage.IsBackButtonVisibleProperty),
+            new PropertyMetadataEntry(NavigationPage_TopCommandBar, TypeMetadata.Avalonia_Controls_NavigationPage, "TopCommandBar", Avalonia.Controls.NavigationPage.TopCommandBarProperty),
+            new PropertyMetadataEntry(NavigationPage_BottomCommandBar, TypeMetadata.Avalonia_Controls_NavigationPage, "BottomCommandBar", Avalonia.Controls.NavigationPage.BottomCommandBarProperty),
+            new PropertyMetadataEntry(NavigationPage_HasNavigationBar, TypeMetadata.Avalonia_Controls_NavigationPage, "HasNavigationBar", Avalonia.Controls.NavigationPage.HasNavigationBarProperty),
+            new PropertyMetadataEntry(NavigationPage_IsGestureEnabled, TypeMetadata.Avalonia_Controls_NavigationPage, "IsGestureEnabled", Avalonia.Controls.NavigationPage.IsGestureEnabledProperty),
+            new PropertyMetadataEntry(NavigationPage_IsNavigating, TypeMetadata.Avalonia_Controls_NavigationPage, "IsNavigating", Avalonia.Controls.NavigationPage.IsNavigatingProperty),
+            new PropertyMetadataEntry(NavigationPage_CanGoBack, TypeMetadata.Avalonia_Controls_NavigationPage, "CanGoBack", Avalonia.Controls.NavigationPage.CanGoBackProperty),
+            new PropertyMetadataEntry(NavigationPage_IsBackButtonEnabled, TypeMetadata.Avalonia_Controls_NavigationPage, "IsBackButtonEnabled", Avalonia.Controls.NavigationPage.IsBackButtonEnabledProperty),
+            new PropertyMetadataEntry(Page_SafeAreaPadding, TypeMetadata.Avalonia_Controls_Page, "SafeAreaPadding", Avalonia.Controls.Page.SafeAreaPaddingProperty),
+            new PropertyMetadataEntry(Page_Header, TypeMetadata.Avalonia_Controls_Page, "Header", Avalonia.Controls.Page.HeaderProperty),
+            new PropertyMetadataEntry(Page_HeaderTemplate, TypeMetadata.Avalonia_Controls_Page, "HeaderTemplate", Avalonia.Controls.Page.HeaderTemplateProperty),
+            new PropertyMetadataEntry(Page_Icon, TypeMetadata.Avalonia_Controls_Page, "Icon", Avalonia.Controls.Page.IconProperty),
+            new PropertyMetadataEntry(Page_IconTemplate, TypeMetadata.Avalonia_Controls_Page, "IconTemplate", Avalonia.Controls.Page.IconTemplateProperty),
+            new PropertyMetadataEntry(Page_CurrentPage, TypeMetadata.Avalonia_Controls_Page, "CurrentPage", Avalonia.Controls.Page.CurrentPageProperty),
+            new PropertyMetadataEntry(Page_IsInNavigationPage, TypeMetadata.Avalonia_Controls_Page, "IsInNavigationPage", Avalonia.Controls.Page.IsInNavigationPageProperty),
+            new PropertyMetadataEntry(Page_Navigation, TypeMetadata.Avalonia_Controls_Page, "Navigation", Avalonia.Controls.Page.NavigationProperty),
+            new PropertyMetadataEntry(PageNavigationHost_Page, TypeMetadata.Avalonia_Controls_PageNavigationHost, "Page", Avalonia.Controls.PageNavigationHost.PageProperty),
+            new PropertyMetadataEntry(SelectingMultiPage_SelectedIndex, TypeMetadata.Avalonia_Controls_SelectingMultiPage, "SelectedIndex", Avalonia.Controls.SelectingMultiPage.SelectedIndexProperty),
+            new PropertyMetadataEntry(SelectingMultiPage_SelectedPage, TypeMetadata.Avalonia_Controls_SelectingMultiPage, "SelectedPage", Avalonia.Controls.SelectingMultiPage.SelectedPageProperty),
+            new PropertyMetadataEntry(TabbedPage_TabPlacement, TypeMetadata.Avalonia_Controls_TabbedPage, "TabPlacement", Avalonia.Controls.TabbedPage.TabPlacementProperty),
+            new PropertyMetadataEntry(TabbedPage_IsKeyboardNavigationEnabled, TypeMetadata.Avalonia_Controls_TabbedPage, "IsKeyboardNavigationEnabled", Avalonia.Controls.TabbedPage.IsKeyboardNavigationEnabledProperty),
+            new PropertyMetadataEntry(TabbedPage_IsGestureEnabled, TypeMetadata.Avalonia_Controls_TabbedPage, "IsGestureEnabled", Avalonia.Controls.TabbedPage.IsGestureEnabledProperty),
+            new PropertyMetadataEntry(TabbedPage_PageTransition, TypeMetadata.Avalonia_Controls_TabbedPage, "PageTransition", Avalonia.Controls.TabbedPage.PageTransitionProperty),
+            new PropertyMetadataEntry(TabbedPage_IndicatorTemplate, TypeMetadata.Avalonia_Controls_TabbedPage, "IndicatorTemplate", Avalonia.Controls.TabbedPage.IndicatorTemplateProperty),
+            new PropertyMetadataEntry(TabbedPage_IsTabEnabled, TypeMetadata.Avalonia_Controls_TabbedPage, "IsTabEnabled", Avalonia.Controls.TabbedPage.IsTabEnabledProperty),
             new PropertyMetadataEntry(Panel_Background, TypeMetadata.Avalonia_Controls_Panel, "Background", Avalonia.Controls.Panel.BackgroundProperty),
             new PropertyMetadataEntry(PathIcon_Data, TypeMetadata.Avalonia_Controls_PathIcon, "Data", Avalonia.Controls.PathIcon.DataProperty),
+            new PropertyMetadataEntry(PipsPager_MaxVisiblePips, TypeMetadata.Avalonia_Controls_PipsPager, "MaxVisiblePips", Avalonia.Controls.PipsPager.MaxVisiblePipsProperty),
+            new PropertyMetadataEntry(PipsPager_IsNextButtonVisible, TypeMetadata.Avalonia_Controls_PipsPager, "IsNextButtonVisible", Avalonia.Controls.PipsPager.IsNextButtonVisibleProperty),
+            new PropertyMetadataEntry(PipsPager_NumberOfPages, TypeMetadata.Avalonia_Controls_PipsPager, "NumberOfPages", Avalonia.Controls.PipsPager.NumberOfPagesProperty),
+            new PropertyMetadataEntry(PipsPager_Orientation, TypeMetadata.Avalonia_Controls_PipsPager, "Orientation", Avalonia.Controls.PipsPager.OrientationProperty),
+            new PropertyMetadataEntry(PipsPager_IsPreviousButtonVisible, TypeMetadata.Avalonia_Controls_PipsPager, "IsPreviousButtonVisible", Avalonia.Controls.PipsPager.IsPreviousButtonVisibleProperty),
+            new PropertyMetadataEntry(PipsPager_SelectedPageIndex, TypeMetadata.Avalonia_Controls_PipsPager, "SelectedPageIndex", Avalonia.Controls.PipsPager.SelectedPageIndexProperty),
+            new PropertyMetadataEntry(PipsPager_TemplateSettings, TypeMetadata.Avalonia_Controls_PipsPager, "TemplateSettings", Avalonia.Controls.PipsPager.TemplateSettingsProperty),
+            new PropertyMetadataEntry(PipsPager_PreviousButtonTheme, TypeMetadata.Avalonia_Controls_PipsPager, "PreviousButtonTheme", Avalonia.Controls.PipsPager.PreviousButtonThemeProperty),
+            new PropertyMetadataEntry(PipsPager_NextButtonTheme, TypeMetadata.Avalonia_Controls_PipsPager, "NextButtonTheme", Avalonia.Controls.PipsPager.NextButtonThemeProperty),
             new PropertyMetadataEntry(ProgressBar_IsIndeterminate, TypeMetadata.Avalonia_Controls_ProgressBar, "IsIndeterminate", Avalonia.Controls.ProgressBar.IsIndeterminateProperty),
             new PropertyMetadataEntry(ProgressBar_ShowProgressText, TypeMetadata.Avalonia_Controls_ProgressBar, "ShowProgressText", Avalonia.Controls.ProgressBar.ShowProgressTextProperty),
             new PropertyMetadataEntry(ProgressBar_ProgressTextFormat, TypeMetadata.Avalonia_Controls_ProgressBar, "ProgressTextFormat", Avalonia.Controls.ProgressBar.ProgressTextFormatProperty),
@@ -1959,8 +2217,13 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(TabControl_ContentTemplate, TypeMetadata.Avalonia_Controls_TabControl, "ContentTemplate", Avalonia.Controls.TabControl.ContentTemplateProperty),
             new PropertyMetadataEntry(TabControl_SelectedContent, TypeMetadata.Avalonia_Controls_TabControl, "SelectedContent", Avalonia.Controls.TabControl.SelectedContentProperty),
             new PropertyMetadataEntry(TabControl_SelectedContentTemplate, TypeMetadata.Avalonia_Controls_TabControl, "SelectedContentTemplate", Avalonia.Controls.TabControl.SelectedContentTemplateProperty),
+            new PropertyMetadataEntry(TabControl_PageTransition, TypeMetadata.Avalonia_Controls_TabControl, "PageTransition", Avalonia.Controls.TabControl.PageTransitionProperty),
+            new PropertyMetadataEntry(TabControl_IndicatorTemplate, TypeMetadata.Avalonia_Controls_TabControl, "IndicatorTemplate", Avalonia.Controls.TabControl.IndicatorTemplateProperty),
             new PropertyMetadataEntry(TabItem_TabStripPlacement, TypeMetadata.Avalonia_Controls_TabItem, "TabStripPlacement", Avalonia.Controls.TabItem.TabStripPlacementProperty),
             new PropertyMetadataEntry(TabItem_IsSelected, TypeMetadata.Avalonia_Controls_TabItem, "IsSelected", Avalonia.Controls.TabItem.IsSelectedProperty),
+            new PropertyMetadataEntry(TabItem_Icon, TypeMetadata.Avalonia_Controls_TabItem, "Icon", Avalonia.Controls.TabItem.IconProperty),
+            new PropertyMetadataEntry(TabItem_IconTemplate, TypeMetadata.Avalonia_Controls_TabItem, "IconTemplate", Avalonia.Controls.TabItem.IconTemplateProperty),
+            new PropertyMetadataEntry(TabItem_IndicatorTemplate, TypeMetadata.Avalonia_Controls_TabItem, "IndicatorTemplate", Avalonia.Controls.TabItem.IndicatorTemplateProperty),
             new PropertyMetadataEntry(TextBlock_Background, TypeMetadata.Avalonia_Controls_TextBlock, "Background", Avalonia.Controls.TextBlock.BackgroundProperty),
             new PropertyMetadataEntry(TextBlock_Padding, TypeMetadata.Avalonia_Controls_TextBlock, "Padding", Avalonia.Controls.TextBlock.PaddingProperty),
             new PropertyMetadataEntry(TextBlock_FontFamily, TypeMetadata.Avalonia_Controls_TextBlock, "FontFamily", Avalonia.Controls.TextBlock.FontFamilyProperty),
@@ -2003,9 +2266,9 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(TextBox_VerticalContentAlignment, TypeMetadata.Avalonia_Controls_TextBox, "VerticalContentAlignment", Avalonia.Controls.TextBox.VerticalContentAlignmentProperty),
             new PropertyMetadataEntry(TextBox_TextWrapping, TypeMetadata.Avalonia_Controls_TextBox, "TextWrapping", Avalonia.Controls.TextBox.TextWrappingProperty),
             new PropertyMetadataEntry(TextBox_LineHeight, TypeMetadata.Avalonia_Controls_TextBox, "LineHeight", Avalonia.Controls.TextBox.LineHeightProperty),
-            new PropertyMetadataEntry(TextBox_LetterSpacing, TypeMetadata.Avalonia_Controls_TextBox, "LetterSpacing", Avalonia.Controls.TextBox.LetterSpacingProperty),
-            new PropertyMetadataEntry(TextBox_Watermark, TypeMetadata.Avalonia_Controls_TextBox, "Watermark", Avalonia.Controls.TextBox.WatermarkProperty),
-            new PropertyMetadataEntry(TextBox_UseFloatingWatermark, TypeMetadata.Avalonia_Controls_TextBox, "UseFloatingWatermark", Avalonia.Controls.TextBox.UseFloatingWatermarkProperty),
+            new PropertyMetadataEntry(TextBox_PlaceholderText, TypeMetadata.Avalonia_Controls_TextBox, "PlaceholderText", Avalonia.Controls.TextBox.PlaceholderTextProperty),
+            new PropertyMetadataEntry(TextBox_UseFloatingPlaceholder, TypeMetadata.Avalonia_Controls_TextBox, "UseFloatingPlaceholder", Avalonia.Controls.TextBox.UseFloatingPlaceholderProperty),
+            new PropertyMetadataEntry(TextBox_PlaceholderForeground, TypeMetadata.Avalonia_Controls_TextBox, "PlaceholderForeground", Avalonia.Controls.TextBox.PlaceholderForegroundProperty),
             new PropertyMetadataEntry(TextBox_NewLine, TypeMetadata.Avalonia_Controls_TextBox, "NewLine", Avalonia.Controls.TextBox.NewLineProperty),
             new PropertyMetadataEntry(TextBox_InnerLeftContent, TypeMetadata.Avalonia_Controls_TextBox, "InnerLeftContent", Avalonia.Controls.TextBox.InnerLeftContentProperty),
             new PropertyMetadataEntry(TextBox_InnerRightContent, TypeMetadata.Avalonia_Controls_TextBox, "InnerRightContent", Avalonia.Controls.TextBox.InnerRightContentProperty),
@@ -2045,7 +2308,6 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(ToolTip_ServiceEnabled, TypeMetadata.Avalonia_Controls_ToolTip, "ServiceEnabled", Avalonia.Controls.ToolTip.ServiceEnabledProperty),
             new PropertyMetadataEntry(TopLevel_ClientSize, TypeMetadata.Avalonia_Controls_TopLevel, "ClientSize", Avalonia.Controls.TopLevel.ClientSizeProperty),
             new PropertyMetadataEntry(TopLevel_FrameSize, TypeMetadata.Avalonia_Controls_TopLevel, "FrameSize", Avalonia.Controls.TopLevel.FrameSizeProperty),
-            new PropertyMetadataEntry(TopLevel_PointerOverElement, TypeMetadata.Avalonia_Controls_TopLevel, "PointerOverElement", Avalonia.Controls.TopLevel.PointerOverElementProperty),
             new PropertyMetadataEntry(TopLevel_TransparencyLevelHint, TypeMetadata.Avalonia_Controls_TopLevel, "TransparencyLevelHint", Avalonia.Controls.TopLevel.TransparencyLevelHintProperty),
             new PropertyMetadataEntry(TopLevel_ActualTransparencyLevel, TypeMetadata.Avalonia_Controls_TopLevel, "ActualTransparencyLevel", Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty),
             new PropertyMetadataEntry(TopLevel_TransparencyBackgroundFallback, TypeMetadata.Avalonia_Controls_TopLevel, "TransparencyBackgroundFallback", Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty),
@@ -2075,14 +2337,14 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(VirtualizingStackPanel_Orientation, TypeMetadata.Avalonia_Controls_VirtualizingStackPanel, "Orientation", Avalonia.Controls.VirtualizingStackPanel.OrientationProperty),
             new PropertyMetadataEntry(VirtualizingStackPanel_AreHorizontalSnapPointsRegular, TypeMetadata.Avalonia_Controls_VirtualizingStackPanel, "AreHorizontalSnapPointsRegular", Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty),
             new PropertyMetadataEntry(VirtualizingStackPanel_AreVerticalSnapPointsRegular, TypeMetadata.Avalonia_Controls_VirtualizingStackPanel, "AreVerticalSnapPointsRegular", Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty),
+            new PropertyMetadataEntry(VirtualizingStackPanel_CacheLength, TypeMetadata.Avalonia_Controls_VirtualizingStackPanel, "CacheLength", Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty),
             new PropertyMetadataEntry(Window_SizeToContent, TypeMetadata.Avalonia_Controls_Window, "SizeToContent", Avalonia.Controls.Window.SizeToContentProperty),
             new PropertyMetadataEntry(Window_ExtendClientAreaToDecorationsHint, TypeMetadata.Avalonia_Controls_Window, "ExtendClientAreaToDecorationsHint", Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty),
-            new PropertyMetadataEntry(Window_ExtendClientAreaChromeHints, TypeMetadata.Avalonia_Controls_Window, "ExtendClientAreaChromeHints", Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty),
             new PropertyMetadataEntry(Window_ExtendClientAreaTitleBarHeightHint, TypeMetadata.Avalonia_Controls_Window, "ExtendClientAreaTitleBarHeightHint", Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty),
             new PropertyMetadataEntry(Window_IsExtendedIntoWindowDecorations, TypeMetadata.Avalonia_Controls_Window, "IsExtendedIntoWindowDecorations", Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty),
             new PropertyMetadataEntry(Window_WindowDecorationMargin, TypeMetadata.Avalonia_Controls_Window, "WindowDecorationMargin", Avalonia.Controls.Window.WindowDecorationMarginProperty),
             new PropertyMetadataEntry(Window_OffScreenMargin, TypeMetadata.Avalonia_Controls_Window, "OffScreenMargin", Avalonia.Controls.Window.OffScreenMarginProperty),
-            new PropertyMetadataEntry(Window_SystemDecorations, TypeMetadata.Avalonia_Controls_Window, "SystemDecorations", Avalonia.Controls.Window.SystemDecorationsProperty),
+            new PropertyMetadataEntry(Window_WindowDecorations, TypeMetadata.Avalonia_Controls_Window, "WindowDecorations", Avalonia.Controls.Window.WindowDecorationsProperty),
             new PropertyMetadataEntry(Window_ShowActivated, TypeMetadata.Avalonia_Controls_Window, "ShowActivated", Avalonia.Controls.Window.ShowActivatedProperty),
             new PropertyMetadataEntry(Window_ShowInTaskbar, TypeMetadata.Avalonia_Controls_Window, "ShowInTaskbar", Avalonia.Controls.Window.ShowInTaskbarProperty),
             new PropertyMetadataEntry(Window_ClosingBehavior, TypeMetadata.Avalonia_Controls_Window, "ClosingBehavior", Avalonia.Controls.Window.ClosingBehaviorProperty),
@@ -2091,6 +2353,8 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Window_Icon, TypeMetadata.Avalonia_Controls_Window, "Icon", Avalonia.Controls.Window.IconProperty),
             new PropertyMetadataEntry(Window_WindowStartupLocation, TypeMetadata.Avalonia_Controls_Window, "WindowStartupLocation", Avalonia.Controls.Window.WindowStartupLocationProperty),
             new PropertyMetadataEntry(Window_CanResize, TypeMetadata.Avalonia_Controls_Window, "CanResize", Avalonia.Controls.Window.CanResizeProperty),
+            new PropertyMetadataEntry(Window_CanMinimize, TypeMetadata.Avalonia_Controls_Window, "CanMinimize", Avalonia.Controls.Window.CanMinimizeProperty),
+            new PropertyMetadataEntry(Window_CanMaximize, TypeMetadata.Avalonia_Controls_Window, "CanMaximize", Avalonia.Controls.Window.CanMaximizeProperty),
             new PropertyMetadataEntry(WindowBase_IsActive, TypeMetadata.Avalonia_Controls_WindowBase, "IsActive", Avalonia.Controls.WindowBase.IsActiveProperty),
             new PropertyMetadataEntry(WindowBase_Owner, TypeMetadata.Avalonia_Controls_WindowBase, "Owner", Avalonia.Controls.WindowBase.OwnerProperty),
             new PropertyMetadataEntry(WindowBase_Topmost, TypeMetadata.Avalonia_Controls_WindowBase, "Topmost", Avalonia.Controls.WindowBase.TopmostProperty),
@@ -2106,7 +2370,9 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Line_EndPoint, TypeMetadata.Avalonia_Controls_Shapes_Line, "EndPoint", Avalonia.Controls.Shapes.Line.EndPointProperty),
             new PropertyMetadataEntry(Path_Data, TypeMetadata.Avalonia_Controls_Shapes_Path, "Data", Avalonia.Controls.Shapes.Path.DataProperty),
             new PropertyMetadataEntry(Polygon_Points, TypeMetadata.Avalonia_Controls_Shapes_Polygon, "Points", Avalonia.Controls.Shapes.Polygon.PointsProperty),
+            new PropertyMetadataEntry(Polygon_FillRule, TypeMetadata.Avalonia_Controls_Shapes_Polygon, "FillRule", Avalonia.Controls.Shapes.Polygon.FillRuleProperty),
             new PropertyMetadataEntry(Polyline_Points, TypeMetadata.Avalonia_Controls_Shapes_Polyline, "Points", Avalonia.Controls.Shapes.Polyline.PointsProperty),
+            new PropertyMetadataEntry(Polyline_FillRule, TypeMetadata.Avalonia_Controls_Shapes_Polyline, "FillRule", Avalonia.Controls.Shapes.Polyline.FillRuleProperty),
             new PropertyMetadataEntry(Rectangle_RadiusX, TypeMetadata.Avalonia_Controls_Shapes_Rectangle, "RadiusX", Avalonia.Controls.Shapes.Rectangle.RadiusXProperty),
             new PropertyMetadataEntry(Rectangle_RadiusY, TypeMetadata.Avalonia_Controls_Shapes_Rectangle, "RadiusY", Avalonia.Controls.Shapes.Rectangle.RadiusYProperty),
             new PropertyMetadataEntry(Sector_StartAngle, TypeMetadata.Avalonia_Controls_Shapes_Sector, "StartAngle", Avalonia.Controls.Shapes.Sector.StartAngleProperty),
@@ -2119,6 +2385,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Shape_StrokeThickness, TypeMetadata.Avalonia_Controls_Shapes_Shape, "StrokeThickness", Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty),
             new PropertyMetadataEntry(Shape_StrokeLineCap, TypeMetadata.Avalonia_Controls_Shapes_Shape, "StrokeLineCap", Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty),
             new PropertyMetadataEntry(Shape_StrokeJoin, TypeMetadata.Avalonia_Controls_Shapes_Shape, "StrokeJoin", Avalonia.Controls.Shapes.Shape.StrokeJoinProperty),
+            new PropertyMetadataEntry(Shape_StrokeMiterLimit, TypeMetadata.Avalonia_Controls_Shapes_Shape, "StrokeMiterLimit", Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty),
             new PropertyMetadataEntry(ContentPresenter_Background, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "Background", Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty),
             new PropertyMetadataEntry(ContentPresenter_BackgroundSizing, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "BackgroundSizing", Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty),
             new PropertyMetadataEntry(ContentPresenter_BorderBrush, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "BorderBrush", Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty),
@@ -2135,6 +2402,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(ContentPresenter_TextWrapping, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "TextWrapping", Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty),
             new PropertyMetadataEntry(ContentPresenter_TextTrimming, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "TextTrimming", Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty),
             new PropertyMetadataEntry(ContentPresenter_LineHeight, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "LineHeight", Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty),
+            new PropertyMetadataEntry(ContentPresenter_LetterSpacing, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "LetterSpacing", Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty),
             new PropertyMetadataEntry(ContentPresenter_MaxLines, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "MaxLines", Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty),
             new PropertyMetadataEntry(ContentPresenter_Child, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "Child", Avalonia.Controls.Presenters.ContentPresenter.ChildProperty),
             new PropertyMetadataEntry(ContentPresenter_Content, TypeMetadata.Avalonia_Controls_Presenters_ContentPresenter, "Content", Avalonia.Controls.Presenters.ContentPresenter.ContentProperty),
@@ -2191,6 +2459,18 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(TextElement_FontWeight, TypeMetadata.Avalonia_Controls_Documents_TextElement, "FontWeight", Avalonia.Controls.Documents.TextElement.FontWeightProperty),
             new PropertyMetadataEntry(TextElement_FontStretch, TypeMetadata.Avalonia_Controls_Documents_TextElement, "FontStretch", Avalonia.Controls.Documents.TextElement.FontStretchProperty),
             new PropertyMetadataEntry(TextElement_Foreground, TypeMetadata.Avalonia_Controls_Documents_TextElement, "Foreground", Avalonia.Controls.Documents.TextElement.ForegroundProperty),
+            new PropertyMetadataEntry(TextElement_LetterSpacing, TypeMetadata.Avalonia_Controls_Documents_TextElement, "LetterSpacing", Avalonia.Controls.Documents.TextElement.LetterSpacingProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_Template, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "Template", Avalonia.Controls.Chrome.WindowDrawnDecorations.TemplateProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_DefaultTitleBarHeight, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "DefaultTitleBarHeight", Avalonia.Controls.Chrome.WindowDrawnDecorations.DefaultTitleBarHeightProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_DefaultFrameThickness, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "DefaultFrameThickness", Avalonia.Controls.Chrome.WindowDrawnDecorations.DefaultFrameThicknessProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_DefaultShadowThickness, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "DefaultShadowThickness", Avalonia.Controls.Chrome.WindowDrawnDecorations.DefaultShadowThicknessProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_TitleBarHeight, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "TitleBarHeight", Avalonia.Controls.Chrome.WindowDrawnDecorations.TitleBarHeightProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_FrameThickness, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "FrameThickness", Avalonia.Controls.Chrome.WindowDrawnDecorations.FrameThicknessProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_ShadowThickness, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "ShadowThickness", Avalonia.Controls.Chrome.WindowDrawnDecorations.ShadowThicknessProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_HasShadow, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "HasShadow", Avalonia.Controls.Chrome.WindowDrawnDecorations.HasShadowProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_HasBorder, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "HasBorder", Avalonia.Controls.Chrome.WindowDrawnDecorations.HasBorderProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_HasTitleBar, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "HasTitleBar", Avalonia.Controls.Chrome.WindowDrawnDecorations.HasTitleBarProperty),
+            new PropertyMetadataEntry(WindowDrawnDecorations_Title, TypeMetadata.Avalonia_Controls_Chrome_WindowDrawnDecorations, "Title", Avalonia.Controls.Chrome.WindowDrawnDecorations.TitleProperty),
             new PropertyMetadataEntry(CalendarItem_HeaderBackground, TypeMetadata.Avalonia_Controls_Primitives_CalendarItem, "HeaderBackground", Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty),
             new PropertyMetadataEntry(CalendarItem_DayTitleTemplate, TypeMetadata.Avalonia_Controls_Primitives_CalendarItem, "DayTitleTemplate", Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty),
             new PropertyMetadataEntry(DateTimePickerPanel_ItemHeight, TypeMetadata.Avalonia_Controls_Primitives_DateTimePickerPanel, "ItemHeight", Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty),
@@ -2210,6 +2490,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(PopupFlyoutBase_OverlayDismissEventPassThrough, TypeMetadata.Avalonia_Controls_Primitives_PopupFlyoutBase, "OverlayDismissEventPassThrough", Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty),
             new PropertyMetadataEntry(PopupFlyoutBase_OverlayInputPassThroughElement, TypeMetadata.Avalonia_Controls_Primitives_PopupFlyoutBase, "OverlayInputPassThroughElement", Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty),
             new PropertyMetadataEntry(PopupFlyoutBase_PlacementConstraintAdjustment, TypeMetadata.Avalonia_Controls_Primitives_PopupFlyoutBase, "PlacementConstraintAdjustment", Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty),
+            new PropertyMetadataEntry(PipsPagerTemplateSettings_Pips, TypeMetadata.Avalonia_Controls_Primitives_PipsPagerTemplateSettings, "Pips", Avalonia.Controls.Primitives.PipsPagerTemplateSettings.PipsProperty),
             new PropertyMetadataEntry(AccessText_ShowAccessKey, TypeMetadata.Avalonia_Controls_Primitives_AccessText, "ShowAccessKey", Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty),
             new PropertyMetadataEntry(AdornerLayer_AdornedElement, TypeMetadata.Avalonia_Controls_Primitives_AdornerLayer, "AdornedElement", Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty),
             new PropertyMetadataEntry(AdornerLayer_IsClipEnabled, TypeMetadata.Avalonia_Controls_Primitives_AdornerLayer, "IsClipEnabled", Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty),
@@ -2276,6 +2557,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(TemplatedControl_FontWeight, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "FontWeight", Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty),
             new PropertyMetadataEntry(TemplatedControl_FontStretch, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "FontStretch", Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty),
             new PropertyMetadataEntry(TemplatedControl_Foreground, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "Foreground", Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty),
+            new PropertyMetadataEntry(TemplatedControl_LetterSpacing, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "LetterSpacing", Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty),
             new PropertyMetadataEntry(TemplatedControl_Padding, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "Padding", Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty),
             new PropertyMetadataEntry(TemplatedControl_Template, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "Template", Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty),
             new PropertyMetadataEntry(TemplatedControl_IsTemplateFocusTarget, TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, "IsTemplateFocusTarget", Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty),
@@ -2297,9 +2579,10 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(UniformGrid_FirstColumn, TypeMetadata.Avalonia_Controls_Primitives_UniformGrid, "FirstColumn", Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty),
             new PropertyMetadataEntry(UniformGrid_RowSpacing, TypeMetadata.Avalonia_Controls_Primitives_UniformGrid, "RowSpacing", Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty),
             new PropertyMetadataEntry(UniformGrid_ColumnSpacing, TypeMetadata.Avalonia_Controls_Primitives_UniformGrid, "ColumnSpacing", Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty),
-            new PropertyMetadataEntry(VisualLayerManager_ChromeOverlayLayer, TypeMetadata.Avalonia_Controls_Primitives_VisualLayerManager, "ChromeOverlayLayer", Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty),
             new PropertyMetadataEntry(SplitViewTemplateSettings_ClosedPaneWidth, TypeMetadata.Avalonia_Controls_Primitives_SplitViewTemplateSettings, "ClosedPaneWidth", Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty),
             new PropertyMetadataEntry(SplitViewTemplateSettings_PaneColumnGridLength, TypeMetadata.Avalonia_Controls_Primitives_SplitViewTemplateSettings, "PaneColumnGridLength", Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty),
+            new PropertyMetadataEntry(SplitViewTemplateSettings_ClosedPaneHeight, TypeMetadata.Avalonia_Controls_Primitives_SplitViewTemplateSettings, "ClosedPaneHeight", Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneHeightProperty),
+            new PropertyMetadataEntry(SplitViewTemplateSettings_PaneRowGridLength, TypeMetadata.Avalonia_Controls_Primitives_SplitViewTemplateSettings, "PaneRowGridLength", Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneRowGridLengthProperty),
             new PropertyMetadataEntry(StyledElement_DataContext, TypeMetadata.Avalonia_StyledElement, "DataContext", Avalonia.StyledElement.DataContextProperty),
             new PropertyMetadataEntry(StyledElement_Name, TypeMetadata.Avalonia_StyledElement, "Name", Avalonia.StyledElement.NameProperty),
             new PropertyMetadataEntry(StyledElement_Parent, TypeMetadata.Avalonia_StyledElement, "Parent", Avalonia.StyledElement.ParentProperty),
@@ -2311,6 +2594,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Visual_IsVisible, TypeMetadata.Avalonia_Visual, "IsVisible", Avalonia.Visual.IsVisibleProperty),
             new PropertyMetadataEntry(Visual_Opacity, TypeMetadata.Avalonia_Visual, "Opacity", Avalonia.Visual.OpacityProperty),
             new PropertyMetadataEntry(Visual_OpacityMask, TypeMetadata.Avalonia_Visual, "OpacityMask", Avalonia.Visual.OpacityMaskProperty),
+            new PropertyMetadataEntry(Visual_CacheMode, TypeMetadata.Avalonia_Visual, "CacheMode", Avalonia.Visual.CacheModeProperty),
             new PropertyMetadataEntry(Visual_Effect, TypeMetadata.Avalonia_Visual, "Effect", Avalonia.Visual.EffectProperty),
             new PropertyMetadataEntry(Visual_HasMirrorTransform, TypeMetadata.Avalonia_Visual, "HasMirrorTransform", Avalonia.Visual.HasMirrorTransformProperty),
             new PropertyMetadataEntry(Visual_RenderTransform, TypeMetadata.Avalonia_Visual, "RenderTransform", Avalonia.Visual.RenderTransformProperty),
@@ -2340,6 +2624,8 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(InputElement_IsPointerOver, TypeMetadata.Avalonia_Input_InputElement, "IsPointerOver", Avalonia.Input.InputElement.IsPointerOverProperty),
             new PropertyMetadataEntry(InputElement_IsTabStop, TypeMetadata.Avalonia_Input_InputElement, "IsTabStop", Avalonia.Input.InputElement.IsTabStopProperty),
             new PropertyMetadataEntry(InputElement_TabIndex, TypeMetadata.Avalonia_Input_InputElement, "TabIndex", Avalonia.Input.InputElement.TabIndexProperty),
+            new PropertyMetadataEntry(InputElement_IsHoldingEnabled, TypeMetadata.Avalonia_Input_InputElement, "IsHoldingEnabled", Avalonia.Input.InputElement.IsHoldingEnabledProperty),
+            new PropertyMetadataEntry(InputElement_IsHoldWithMouseEnabled, TypeMetadata.Avalonia_Input_InputElement, "IsHoldWithMouseEnabled", Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty),
             new PropertyMetadataEntry(KeyBinding_Command, TypeMetadata.Avalonia_Input_KeyBinding, "Command", Avalonia.Input.KeyBinding.CommandProperty),
             new PropertyMetadataEntry(KeyBinding_CommandParameter, TypeMetadata.Avalonia_Input_KeyBinding, "CommandParameter", Avalonia.Input.KeyBinding.CommandParameterProperty),
             new PropertyMetadataEntry(KeyBinding_Gesture, TypeMetadata.Avalonia_Input_KeyBinding, "Gesture", Avalonia.Input.KeyBinding.GestureProperty),
@@ -2347,6 +2633,11 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(ScrollGestureRecognizer_CanVerticallyScroll, TypeMetadata.Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer, "CanVerticallyScroll", Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty),
             new PropertyMetadataEntry(ScrollGestureRecognizer_IsScrollInertiaEnabled, TypeMetadata.Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer, "IsScrollInertiaEnabled", Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty),
             new PropertyMetadataEntry(ScrollGestureRecognizer_ScrollStartDistance, TypeMetadata.Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer, "ScrollStartDistance", Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty),
+            new PropertyMetadataEntry(SwipeGestureRecognizer_CanHorizontallySwipe, TypeMetadata.Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, "CanHorizontallySwipe", Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer.CanHorizontallySwipeProperty),
+            new PropertyMetadataEntry(SwipeGestureRecognizer_CanVerticallySwipe, TypeMetadata.Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, "CanVerticallySwipe", Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer.CanVerticallySwipeProperty),
+            new PropertyMetadataEntry(SwipeGestureRecognizer_Threshold, TypeMetadata.Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, "Threshold", Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer.ThresholdProperty),
+            new PropertyMetadataEntry(SwipeGestureRecognizer_IsMouseEnabled, TypeMetadata.Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, "IsMouseEnabled", Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer.IsMouseEnabledProperty),
+            new PropertyMetadataEntry(SwipeGestureRecognizer_IsEnabled, TypeMetadata.Avalonia_Input_GestureRecognizers_SwipeGestureRecognizer, "IsEnabled", Avalonia.Input.GestureRecognizers.SwipeGestureRecognizer.IsEnabledProperty),
             new PropertyMetadataEntry(CombinedGeometry_Geometry1, TypeMetadata.Avalonia_Media_CombinedGeometry, "Geometry1", Avalonia.Media.CombinedGeometry.Geometry1Property),
             new PropertyMetadataEntry(CombinedGeometry_Geometry2, TypeMetadata.Avalonia_Media_CombinedGeometry, "Geometry2", Avalonia.Media.CombinedGeometry.Geometry2Property),
             new PropertyMetadataEntry(CombinedGeometry_GeometryCombineMode, TypeMetadata.Avalonia_Media_CombinedGeometry, "GeometryCombineMode", Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty),
@@ -2358,6 +2649,9 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(BezierSegment_Point1, TypeMetadata.Avalonia_Media_BezierSegment, "Point1", Avalonia.Media.BezierSegment.Point1Property),
             new PropertyMetadataEntry(BezierSegment_Point2, TypeMetadata.Avalonia_Media_BezierSegment, "Point2", Avalonia.Media.BezierSegment.Point2Property),
             new PropertyMetadataEntry(BezierSegment_Point3, TypeMetadata.Avalonia_Media_BezierSegment, "Point3", Avalonia.Media.BezierSegment.Point3Property),
+            new PropertyMetadataEntry(BitmapCache_RenderAtScale, TypeMetadata.Avalonia_Media_BitmapCache, "RenderAtScale", Avalonia.Media.BitmapCache.RenderAtScaleProperty),
+            new PropertyMetadataEntry(BitmapCache_SnapsToDevicePixels, TypeMetadata.Avalonia_Media_BitmapCache, "SnapsToDevicePixels", Avalonia.Media.BitmapCache.SnapsToDevicePixelsProperty),
+            new PropertyMetadataEntry(BitmapCache_EnableClearType, TypeMetadata.Avalonia_Media_BitmapCache, "EnableClearType", Avalonia.Media.BitmapCache.EnableClearTypeProperty),
             new PropertyMetadataEntry(Brush_Opacity, TypeMetadata.Avalonia_Media_Brush, "Opacity", Avalonia.Media.Brush.OpacityProperty),
             new PropertyMetadataEntry(Brush_Transform, TypeMetadata.Avalonia_Media_Brush, "Transform", Avalonia.Media.Brush.TransformProperty),
             new PropertyMetadataEntry(Brush_TransformOrigin, TypeMetadata.Avalonia_Media_Brush, "TransformOrigin", Avalonia.Media.Brush.TransformOriginProperty),
@@ -2372,6 +2666,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(DrawingGroup_OpacityMask, TypeMetadata.Avalonia_Media_DrawingGroup, "OpacityMask", Avalonia.Media.DrawingGroup.OpacityMaskProperty),
             new PropertyMetadataEntry(DrawingGroup_Children, TypeMetadata.Avalonia_Media_DrawingGroup, "Children", Avalonia.Media.DrawingGroup.ChildrenProperty),
             new PropertyMetadataEntry(DrawingImage_Drawing, TypeMetadata.Avalonia_Media_DrawingImage, "Drawing", Avalonia.Media.DrawingImage.DrawingProperty),
+            new PropertyMetadataEntry(DrawingImage_Viewbox, TypeMetadata.Avalonia_Media_DrawingImage, "Viewbox", Avalonia.Media.DrawingImage.ViewboxProperty),
             new PropertyMetadataEntry(BlurEffect_Radius, TypeMetadata.Avalonia_Media_BlurEffect, "Radius", Avalonia.Media.BlurEffect.RadiusProperty),
             new PropertyMetadataEntry(DropShadowEffectBase_BlurRadius, TypeMetadata.Avalonia_Media_DropShadowEffectBase, "BlurRadius", Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty),
             new PropertyMetadataEntry(DropShadowEffectBase_Color, TypeMetadata.Avalonia_Media_DropShadowEffectBase, "Color", Avalonia.Media.DropShadowEffectBase.ColorProperty),
@@ -2477,6 +2772,7 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(Animation_Duration, TypeMetadata.Avalonia_Animation_Animation, "Duration", Avalonia.Animation.Animation.DurationProperty),
             new PropertyMetadataEntry(Animation_IterationCount, TypeMetadata.Avalonia_Animation_Animation, "IterationCount", Avalonia.Animation.Animation.IterationCountProperty),
             new PropertyMetadataEntry(Animation_PlaybackDirection, TypeMetadata.Avalonia_Animation_Animation, "PlaybackDirection", Avalonia.Animation.Animation.PlaybackDirectionProperty),
+            new PropertyMetadataEntry(Animation_PlaybackBehavior, TypeMetadata.Avalonia_Animation_Animation, "PlaybackBehavior", Avalonia.Animation.Animation.PlaybackBehaviorProperty),
             new PropertyMetadataEntry(Animation_FillMode, TypeMetadata.Avalonia_Animation_Animation, "FillMode", Avalonia.Animation.Animation.FillModeProperty),
             new PropertyMetadataEntry(Animation_Easing, TypeMetadata.Avalonia_Animation_Animation, "Easing", Avalonia.Animation.Animation.EasingProperty),
             new PropertyMetadataEntry(Animation_Delay, TypeMetadata.Avalonia_Animation_Animation, "Delay", Avalonia.Animation.Animation.DelayProperty),
@@ -2627,37 +2923,5 @@ internal static partial class PropertyMetadata
             new PropertyMetadataEntry(DataGridRowHeader_AreSeparatorsVisible, TypeMetadata.Avalonia_Controls_Primitives_DataGridRowHeader, "AreSeparatorsVisible", Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty),
             new PropertyMetadataEntry(DataGridDetailsPresenter_ContentHeight, TypeMetadata.Avalonia_Controls_Primitives_DataGridDetailsPresenter, "ContentHeight", Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty),
             new PropertyMetadataEntry(DataGridFrozenGrid_IsFrozen, TypeMetadata.Avalonia_Controls_Primitives_DataGridFrozenGrid, "IsFrozen", Avalonia.Controls.Primitives.DataGridFrozenGrid.IsFrozenProperty),
-            new PropertyMetadataEntry(TreeDataGrid_AutoDragDropRows, TypeMetadata.Avalonia_Controls_TreeDataGrid, "AutoDragDropRows", Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty),
-            new PropertyMetadataEntry(TreeDataGrid_CanUserResizeColumns, TypeMetadata.Avalonia_Controls_TreeDataGrid, "CanUserResizeColumns", Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty),
-            new PropertyMetadataEntry(TreeDataGrid_CanUserSortColumns, TypeMetadata.Avalonia_Controls_TreeDataGrid, "CanUserSortColumns", Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty),
-            new PropertyMetadataEntry(TreeDataGrid_Columns, TypeMetadata.Avalonia_Controls_TreeDataGrid, "Columns", Avalonia.Controls.TreeDataGrid.ColumnsProperty),
-            new PropertyMetadataEntry(TreeDataGrid_ElementFactory, TypeMetadata.Avalonia_Controls_TreeDataGrid, "ElementFactory", Avalonia.Controls.TreeDataGrid.ElementFactoryProperty),
-            new PropertyMetadataEntry(TreeDataGrid_Rows, TypeMetadata.Avalonia_Controls_TreeDataGrid, "Rows", Avalonia.Controls.TreeDataGrid.RowsProperty),
-            new PropertyMetadataEntry(TreeDataGrid_Scroll, TypeMetadata.Avalonia_Controls_TreeDataGrid, "Scroll", Avalonia.Controls.TreeDataGrid.ScrollProperty),
-            new PropertyMetadataEntry(TreeDataGrid_ShowColumnHeaders, TypeMetadata.Avalonia_Controls_TreeDataGrid, "ShowColumnHeaders", Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty),
-            new PropertyMetadataEntry(TreeDataGrid_Source, TypeMetadata.Avalonia_Controls_TreeDataGrid, "Source", Avalonia.Controls.TreeDataGrid.SourceProperty),
-            new PropertyMetadataEntry(TreeDataGridCell_IsSelected, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridCell, "IsSelected", Avalonia.Controls.Primitives.TreeDataGridCell.IsSelectedProperty),
-            new PropertyMetadataEntry(TreeDataGridCellsPresenter_Rows, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridCellsPresenter, "Rows", Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty),
-            new PropertyMetadataEntry(TreeDataGridCheckBoxCell_IsReadOnly, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridCheckBoxCell, "IsReadOnly", Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty),
-            new PropertyMetadataEntry(TreeDataGridCheckBoxCell_IsThreeState, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridCheckBoxCell, "IsThreeState", Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty),
-            new PropertyMetadataEntry(TreeDataGridCheckBoxCell_Value, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridCheckBoxCell, "Value", Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty),
-            new PropertyMetadataEntry(TreeDataGridColumnHeader_CanUserResize, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridColumnHeader, "CanUserResize", Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty),
-            new PropertyMetadataEntry(TreeDataGridColumnHeader_Header, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridColumnHeader, "Header", Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty),
-            new PropertyMetadataEntry(TreeDataGridColumnHeader_SortDirection, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridColumnHeader, "SortDirection", Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty),
-            new PropertyMetadataEntry(TreeDataGridExpanderCell_Indent, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridExpanderCell, "Indent", Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty),
-            new PropertyMetadataEntry(TreeDataGridExpanderCell_IsExpanded, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridExpanderCell, "IsExpanded", Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty),
-            new PropertyMetadataEntry(TreeDataGridExpanderCell_ShowExpander, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridExpanderCell, "ShowExpander", Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty),
-            new PropertyMetadataEntry(TreeDataGridRow_Columns, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRow, "Columns", Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty),
-            new PropertyMetadataEntry(TreeDataGridRow_ElementFactory, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRow, "ElementFactory", Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty),
-            new PropertyMetadataEntry(TreeDataGridRow_IsSelected, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRow, "IsSelected", Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty),
-            new PropertyMetadataEntry(TreeDataGridRow_Rows, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRow, "Rows", Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty),
-            new PropertyMetadataEntry(TreeDataGridRowsPresenter_Columns, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRowsPresenter, "Columns", Avalonia.Controls.Primitives.TreeDataGridRowsPresenter.ColumnsProperty),
-            new PropertyMetadataEntry(TreeDataGridTemplateCell_Content, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTemplateCell, "Content", Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty),
-            new PropertyMetadataEntry(TreeDataGridTemplateCell_ContentTemplate, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTemplateCell, "ContentTemplate", Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty),
-            new PropertyMetadataEntry(TreeDataGridTemplateCell_EditingTemplate, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTemplateCell, "EditingTemplate", Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty),
-            new PropertyMetadataEntry(TreeDataGridTextCell_TextTrimming, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTextCell, "TextTrimming", Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty),
-            new PropertyMetadataEntry(TreeDataGridTextCell_TextWrapping, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTextCell, "TextWrapping", Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty),
-            new PropertyMetadataEntry(TreeDataGridTextCell_Value, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTextCell, "Value", Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty),
-            new PropertyMetadataEntry(TreeDataGridTextCell_TextAlignment, TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridTextCell, "TextAlignment", Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty),
         };
 }

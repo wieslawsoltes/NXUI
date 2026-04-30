@@ -123,7 +123,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarFill(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarFill(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarFill(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarFill(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarFill(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarFill(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.FillProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarFill(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarFill(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.FillProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarMinimum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarMinimum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarMinimum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarMinimum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.MinimumProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarMinimum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarMinimum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MinimumProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarMaximum(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarMaximum(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarMaximum(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarMaximum(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.MaximumProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarMaximum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarMaximum(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MaximumProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarTickFrequency(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarTickFrequency(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarTickFrequency(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarTickFrequency(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarTickFrequency(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarTickFrequency(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.TickFrequencyProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarTickFrequency(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarTickFrequency(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TickFrequencyProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarOrientation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarOrientation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarOrientation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.OrientationProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarOrientation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.OrientationProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarTicks(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarTicks(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarTicks(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarTicks(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarTicks(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarTicks(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.TicksProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarTicks(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarTicks(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TicksProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarIsDirectionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarIsDirectionReversed(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarIsDirectionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarIsDirectionReversed(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarIsDirectionReversed(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarIsDirectionReversed(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.IsDirectionReversedProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarIsDirectionReversed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarIsDirectionReversed(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.IsDirectionReversedProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarPlacement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarPlacement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarPlacement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarPlacement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.PlacementProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarPlacement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.PlacementProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTickBarReservedSpace(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarReservedSpace(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTickBarReservedSpace(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarReservedSpace(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class TickBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTickBarReservedSpace(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTickBarReservedSpace(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TickBar.ReservedSpaceProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class TickBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTickBarReservedSpace(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTickBarReservedSpace(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.ReservedSpaceProperty, binding));
         return keyFrame;

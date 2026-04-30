@@ -32,7 +32,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FocusAdorner<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -78,7 +78,7 @@ public static partial class ControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FocusAdorner<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -128,7 +128,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FocusAdorner<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -164,7 +164,7 @@ public static partial class ControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFocusAdorner(
+    public static Avalonia.Data.BindingBase BindFocusAdorner(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tag<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -316,7 +316,7 @@ public static partial class ControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Tag<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -366,7 +366,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Tag<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -402,7 +402,7 @@ public static partial class ControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Control.TagProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTag(
+    public static Avalonia.Data.BindingBase BindTag(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContextMenu<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -554,7 +554,7 @@ public static partial class ControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ContextMenu<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -604,7 +604,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContextMenu<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -640,7 +640,7 @@ public static partial class ControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContextMenu(
+    public static Avalonia.Data.BindingBase BindContextMenu(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContextFlyout<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -792,7 +792,7 @@ public static partial class ControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ContextFlyout<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -842,7 +842,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContextFlyout<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -878,7 +878,7 @@ public static partial class ControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContextFlyout(
+    public static Avalonia.Data.BindingBase BindContextFlyout(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1048,97 +1048,6 @@ public static partial class ControlExtensions
         {
             var typed = (Avalonia.Controls.Control)target;
             var observable = typed.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
-            handler((T)typed, observable);
-        }));
-    }
-
-
-    // Avalonia.Controls.Control.ContextRequestedEvent
-
-    /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="action">The action to be performed when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnContextRequestedHandler<T>(
-        this T obj,
-        Action<T, Avalonia.Controls.ContextRequestedEventArgs> action,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
-    {
-        obj.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action(obj, args), routes);
-        return obj;
-    }
-
-    /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnContextRequested<T>(
-        this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets an observable for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(
-        this Avalonia.Controls.Control obj,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
-    {
-        return obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
-    }
-
-    /// <summary>
-    /// Records a routed event handler for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="action">The action to run when the event fires.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnContextRequestedHandler<T>(
-        this ElementBuilder<T> builder,
-        Action<T, Avalonia.Controls.ContextRequestedEventArgs> action,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
-    {
-        return builder.WithEvent(new EventMutation(target =>
-        {
-            var typed = (Avalonia.Controls.Control)target;
-            void Handler(object? _, Avalonia.Controls.ContextRequestedEventArgs args) => action((T)typed, args);
-            typed.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, Handler, routes);
-            return () => typed.RemoveHandler(Avalonia.Controls.Control.ContextRequestedEvent, Handler);
-        }));
-    }
-
-    /// <summary>
-    /// Records a routed event observable handler for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="handler">The handler receiving the observable.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnContextRequested<T>(
-        this ElementBuilder<T> builder,
-        Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
-    {
-        return builder.WithEvent(new EventMutation(target =>
-        {
-            var typed = (Avalonia.Controls.Control)target;
-            var observable = typed.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
             handler((T)typed, observable);
         }));
     }
@@ -1412,61 +1321,6 @@ public static partial class ControlExtensions
         {
             var typed = (Avalonia.Controls.Control)target;
             var observable = typed.GetObservable(Avalonia.Controls.Control.SizeChangedEvent, routes);
-            handler((T)typed, observable);
-        }));
-    }
-
-
-    // Avalonia.Controls.Control.ContextRequested
-
-    /// <summary>
-    /// Adds a handler to the `ContextRequested` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
-    {
-        var observable = Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
-                h => obj.ContextRequested += h, 
-                h => obj.ContextRequested -= h)
-            .Select(x => x.EventArgs);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Returns an observable for the `ContextRequested` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable for the `ContextRequested` event on the specified object.</returns>
-    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
-    {
-        return Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
-                h => obj.ContextRequested += h, 
-                h => obj.ContextRequested -= h)
-            .Select(x => x.EventArgs);
-    }
-
-    /// <summary>
-    /// Records a CLR event handler for hot reload builds.
-    /// </summary>
-    /// <param name="builder">The target builder.</param>
-    /// <param name="handler">The handler receiving an observable.</param>
-    /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnContextRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
-    {
-        return builder.WithEvent(new EventMutation(target =>
-        {
-            var typed = (Avalonia.Controls.Control)target;
-            var observable = Observable
-                .FromEventPattern<System.EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
-                    h => typed.ContextRequested += h,
-                    h => typed.ContextRequested -= h)
-                .Select(x => x.EventArgs);
             handler((T)typed, observable);
         }));
     }

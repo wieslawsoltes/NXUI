@@ -68,7 +68,7 @@ public static partial class NativeMenuItemElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> value.
     /// </summary>
-    public static IObservable<Avalonia.Controls.NativeMenuItemToggleType> ObserveToggleType<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NativeMenuItem
+    public static IObservable<Avalonia.Controls.MenuItemToggleType> ObserveToggleType<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NativeMenuItem
     {
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
     }

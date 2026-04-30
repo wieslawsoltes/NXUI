@@ -57,6 +57,15 @@ public static partial class CalendarElementRefExtensions
 
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveAllowTapRangeSelection<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Calendar
+    {
+        return elementRef.Observe(Avalonia.Controls.Calendar.AllowTapRangeSelectionProperty);
+    }
+
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> value.
     /// </summary>
     public static IObservable<System.Nullable<System.DateTime>> ObserveSelectedDate<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Calendar

@@ -32,7 +32,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder Duration(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> Duration(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation Duration(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.DurationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDuration(
+    public static Avalonia.Data.BindingBase BindDuration(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder IterationCount(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> IterationCount(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation IterationCount(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIterationCount(
+    public static Avalonia.Data.BindingBase BindIterationCount(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder PlaybackDirection(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> PlaybackDirection(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation PlaybackDirection(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlaybackDirection(
+    public static Avalonia.Data.BindingBase BindPlaybackDirection(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -793,6 +793,303 @@ public static partial class AnimationExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehavior(this AnimationBuilder builder, Avalonia.Animation.PlaybackBehavior value)
+    {
+        return builder.WithValue(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehavior(
+        this AnimationBuilder builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return builder.WithBinding(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehavior(
+        this AnimationBuilder builder,
+        IObservable<Avalonia.Animation.PlaybackBehavior> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return builder.WithBinding(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Animation.Animation> PlaybackBehavior(this ElementRef<Avalonia.Animation.Animation> elementRef, Avalonia.Animation.PlaybackBehavior value)
+    {
+        return elementRef.SetValue(Avalonia.Animation.Animation.PlaybackBehaviorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Animation.Animation> PlaybackBehavior(
+        this ElementRef<Avalonia.Animation.Animation> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Animation.Animation.PlaybackBehaviorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Animation.Animation> PlaybackBehavior(
+        this ElementRef<Avalonia.Animation.Animation> elementRef,
+        IObservable<Avalonia.Animation.PlaybackBehavior> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Animation.Animation.PlaybackBehaviorProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Animation.Animation.PlaybackBehaviorProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehavior(this Avalonia.Animation.Animation obj, Avalonia.Animation.PlaybackBehavior value)
+    {
+        obj[Avalonia.Animation.Animation.PlaybackBehaviorProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehavior(
+        this Avalonia.Animation.Animation obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Animation.Animation.PlaybackBehaviorProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehavior(
+        this Avalonia.Animation.Animation obj,
+        IObservable<Avalonia.Animation.PlaybackBehavior> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Animation.Animation.PlaybackBehaviorProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPlaybackBehavior(
+        this Avalonia.Animation.Animation obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Animation.Animation.PlaybackBehaviorProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
+    public static IObservable<Avalonia.Animation.PlaybackBehavior> ObservePlaybackBehavior(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnPlaybackBehavior(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.PlaybackBehavior>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.PlaybackBehavior>> ObserveBindingPlaybackBehavior(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingPlaybackBehavior(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<Avalonia.Animation.PlaybackBehavior>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaybackBehaviorChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnPlaybackBehaviorChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.PlaybackBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehaviorAuto(this AnimationBuilder builder)
+    {
+        return builder.WithValue(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, Avalonia.Animation.PlaybackBehavior.Auto);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> property value to <see cref="Avalonia.Animation.PlaybackBehavior.Auto"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehaviorAuto(this Avalonia.Animation.Animation obj)
+    {
+        obj[Avalonia.Animation.Animation.PlaybackBehaviorProperty] = Avalonia.Animation.PlaybackBehavior.Auto;
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehaviorAlways(this AnimationBuilder builder)
+    {
+        return builder.WithValue(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, Avalonia.Animation.PlaybackBehavior.Always);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> property value to <see cref="Avalonia.Animation.PlaybackBehavior.Always"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehaviorAlways(this Avalonia.Animation.Animation obj)
+    {
+        obj[Avalonia.Animation.Animation.PlaybackBehaviorProperty] = Avalonia.Animation.PlaybackBehavior.Always;
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static AnimationBuilder PlaybackBehaviorOnlyIfVisible(this AnimationBuilder builder)
+    {
+        return builder.WithValue(PropertyMetadata.Animation_PlaybackBehavior, Avalonia.Animation.Animation.PlaybackBehaviorProperty, Avalonia.Animation.PlaybackBehavior.OnlyIfVisible);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackBehaviorProperty"/> property value to <see cref="Avalonia.Animation.PlaybackBehavior.OnlyIfVisible"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Animation.Animation PlaybackBehaviorOnlyIfVisible(this Avalonia.Animation.Animation obj)
+    {
+        obj[Avalonia.Animation.Animation.PlaybackBehaviorProperty] = Avalonia.Animation.PlaybackBehavior.OnlyIfVisible;
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -813,7 +1110,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder FillMode(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -859,7 +1156,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> FillMode(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -907,7 +1204,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation FillMode(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -942,7 +1239,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.FillModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFillMode(
+    public static Avalonia.Data.BindingBase BindFillMode(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1132,7 +1429,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder Easing(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1178,7 +1475,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> Easing(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1226,7 +1523,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation Easing(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1261,7 +1558,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.EasingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindEasing(
+    public static Avalonia.Data.BindingBase BindEasing(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1363,7 +1660,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder Delay(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1409,7 +1706,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> Delay(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1457,7 +1754,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation Delay(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1492,7 +1789,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.DelayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDelay(
+    public static Avalonia.Data.BindingBase BindDelay(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1594,7 +1891,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder DelayBetweenIterations(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1640,7 +1937,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> DelayBetweenIterations(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1688,7 +1985,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation DelayBetweenIterations(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1723,7 +2020,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDelayBetweenIterations(
+    public static Avalonia.Data.BindingBase BindDelayBetweenIterations(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1825,7 +2122,7 @@ public static partial class AnimationExtensions
     /// <returns>The builder instance.</returns>
     public static AnimationBuilder SpeedRatio(
         this AnimationBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1871,7 +2168,7 @@ public static partial class AnimationExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Animation.Animation> SpeedRatio(
         this ElementRef<Avalonia.Animation.Animation> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1919,7 +2216,7 @@ public static partial class AnimationExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Animation.Animation SpeedRatio(
         this Avalonia.Animation.Animation obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1954,7 +2251,7 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSpeedRatio(
+    public static Avalonia.Data.BindingBase BindSpeedRatio(
         this Avalonia.Animation.Animation obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visualizer<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -78,7 +78,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Visualizer<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -128,7 +128,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The target object reference.</returns>
     public static T Visualizer<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -164,7 +164,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVisualizer(
+    public static Avalonia.Data.BindingBase BindVisualizer(
         this Avalonia.Controls.RefreshContainer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -316,7 +316,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PullDirection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -366,7 +366,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The target object reference.</returns>
     public static T PullDirection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -402,7 +402,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPullDirection(
+    public static Avalonia.Data.BindingBase BindPullDirection(
         this Avalonia.Controls.RefreshContainer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -64,4 +64,22 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Animation.IPageTransition?> ObservePageTransition<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabControl
+    {
+        return elementRef.Observe(Avalonia.Controls.TabControl.PageTransitionProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveIndicatorTemplate<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabControl
+    {
+        return elementRef.Observe(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+    }
+
 }

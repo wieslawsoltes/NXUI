@@ -123,7 +123,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBackground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBackground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBackground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlBackground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlBackgroundSizing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBackgroundSizing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBackgroundSizing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlBackgroundSizing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBackgroundSizing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlBackgroundSizing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlBorderBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBorderBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlBorderBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlBorderThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBorderThickness(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlBorderThickness(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlCornerRadius(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlCornerRadius(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontFamily(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontFamily(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontFamily(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontFeatures(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontFeatures(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontFeatures(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontFeatures(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontFeatures(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontFeatures(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontSize(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontSize(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontSize(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontSize(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontStyle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontStyle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontStyle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontWeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontWeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontWeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontStretch(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontStretch(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlFontStretch(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlForeground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlForeground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, binding));
         return style;
@@ -1912,9 +1912,168 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetTemplatedControlLetterSpacing(this StyleBuilder builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetTemplatedControlLetterSpacing(this KeyFrameBuilder builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlLetterSpacing(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlLetterSpacing(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetTemplatedControlLetterSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetTemplatedControlLetterSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlLetterSpacing(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlLetterSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetTemplatedControlLetterSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetTemplatedControlLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlLetterSpacing(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding));
         return keyFrame;
     }
 
@@ -2031,7 +2190,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlPadding(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2204,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlPadding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2218,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlPadding(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlPadding(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, binding));
         return style;
@@ -2071,7 +2230,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, binding));
         return keyFrame;
@@ -2190,7 +2349,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2363,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2377,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, binding));
         return style;
@@ -2230,7 +2389,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, binding));
         return keyFrame;
@@ -2349,7 +2508,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTemplatedControlIsTemplateFocusTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlIsTemplateFocusTarget(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2522,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTemplatedControlIsTemplateFocusTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlIsTemplateFocusTarget(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2536,7 @@ public static partial class TemplatedControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlIsTemplateFocusTarget(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTemplatedControlIsTemplateFocusTarget(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, binding));
         return style;
@@ -2389,7 +2548,7 @@ public static partial class TemplatedControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, binding));
         return keyFrame;

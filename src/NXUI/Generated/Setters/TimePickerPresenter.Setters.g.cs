@@ -123,7 +123,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTimePickerPresenterMinuteIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerPresenterMinuteIncrement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTimePickerPresenterMinuteIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerPresenterMinuteIncrement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterMinuteIncrement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTimePickerPresenterMinuteIncrement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTimePickerPresenterSecondIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerPresenterSecondIncrement(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTimePickerPresenterSecondIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerPresenterSecondIncrement(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterSecondIncrement(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTimePickerPresenterSecondIncrement(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterSecondIncrement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTimePickerPresenterSecondIncrement(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTimePickerPresenterClockIdentifier(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerPresenterClockIdentifier(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTimePickerPresenterClockIdentifier(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerPresenterClockIdentifier(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterClockIdentifier(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTimePickerPresenterClockIdentifier(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTimePickerPresenterUseSeconds(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerPresenterUseSeconds(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTimePickerPresenterUseSeconds(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerPresenterUseSeconds(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterUseSeconds(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTimePickerPresenterUseSeconds(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.UseSecondsProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterUseSeconds(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTimePickerPresenterUseSeconds(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.UseSecondsProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTimePickerPresenterTime(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerPresenterTime(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTimePickerPresenterTime(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerPresenterTime(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterTime(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTimePickerPresenterTime(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TimePickerPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, binding));
         return keyFrame;

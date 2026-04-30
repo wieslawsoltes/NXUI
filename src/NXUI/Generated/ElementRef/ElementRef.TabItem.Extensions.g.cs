@@ -28,4 +28,31 @@ public static partial class TabItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabItem.IsSelectedProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabItem.IconProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Object?> ObserveIcon<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabItem
+    {
+        return elementRef.Observe(Avalonia.Controls.TabItem.IconProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabItem.IconTemplateProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveIconTemplate<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabItem
+    {
+        return elementRef.Observe(Avalonia.Controls.TabItem.IconTemplateProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabItem.IndicatorTemplateProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveIndicatorTemplate<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabItem
+    {
+        return elementRef.Observe(Avalonia.Controls.TabItem.IndicatorTemplateProperty);
+    }
+
 }

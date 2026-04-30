@@ -123,7 +123,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetControlFocusAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlFocusAdorner(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetControlFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetControlFocusAdorner(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetControlFocusAdorner(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetControlTag(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlTag(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetControlTag(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlTag(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetControlTag(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetControlTag(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlTag(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetControlTag(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetControlContextMenu(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlContextMenu(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetControlContextMenu(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlContextMenu(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetControlContextMenu(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetControlContextMenu(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetControlContextFlyout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlContextFlyout(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetControlContextFlyout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlContextFlyout(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetControlContextFlyout(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetControlContextFlyout(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, binding));
         return keyFrame;

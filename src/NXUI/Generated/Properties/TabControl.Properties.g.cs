@@ -37,4 +37,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,Avalonia.Controls.Templates.IDataTemplate> TabControl_SelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Animation.IPageTransition> TabControl_PageTransition => Avalonia.Controls.TabControl.PageTransitionProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabControl_IndicatorTemplate => Avalonia.Controls.TabControl.IndicatorTemplateProperty;
 }

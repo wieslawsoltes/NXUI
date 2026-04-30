@@ -19,4 +19,13 @@ public static partial class PolygonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Polygon.PointsProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Shapes.Polygon.FillRuleProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.FillRule> ObserveFillRule<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Shapes.Polygon
+    {
+        return elementRef.Observe(Avalonia.Controls.Shapes.Polygon.FillRuleProperty);
+    }
+
 }

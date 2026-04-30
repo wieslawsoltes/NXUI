@@ -31,7 +31,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> SelectingItemsControl_SelectedValueBinding => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Data.BindingBase> SelectingItemsControl_SelectedValueBinding => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.

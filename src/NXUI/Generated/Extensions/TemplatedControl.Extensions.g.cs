@@ -32,7 +32,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -78,7 +78,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Background<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -128,7 +128,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -164,7 +164,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackground(
+    public static Avalonia.Data.BindingBase BindBackground(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -316,7 +316,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BackgroundSizing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -366,7 +366,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T BackgroundSizing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -402,7 +402,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackgroundSizing(
+    public static Avalonia.Data.BindingBase BindBackgroundSizing(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -577,7 +577,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -623,7 +623,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -673,7 +673,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -709,7 +709,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderBrush(
+    public static Avalonia.Data.BindingBase BindBorderBrush(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -815,7 +815,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -861,7 +861,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BorderThickness<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -911,7 +911,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderThickness<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -947,7 +947,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBorderThickness(
+    public static Avalonia.Data.BindingBase BindBorderThickness(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1103,7 +1103,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1149,7 +1149,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CornerRadius<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1199,7 +1199,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T CornerRadius<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1235,7 +1235,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCornerRadius(
+    public static Avalonia.Data.BindingBase BindCornerRadius(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1391,7 +1391,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1437,7 +1437,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFamily<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1487,7 +1487,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFamily<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1523,7 +1523,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFamily(
+    public static Avalonia.Data.BindingBase BindFontFamily(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1629,7 +1629,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1675,7 +1675,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFeatures<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1725,7 +1725,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFeatures<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1761,7 +1761,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFeatures(
+    public static Avalonia.Data.BindingBase BindFontFeatures(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1867,7 +1867,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1913,7 +1913,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontSize<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1963,7 +1963,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontSize<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1999,7 +1999,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontSize(
+    public static Avalonia.Data.BindingBase BindFontSize(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2105,7 +2105,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2151,7 +2151,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStyle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2201,7 +2201,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStyle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2237,7 +2237,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStyle(
+    public static Avalonia.Data.BindingBase BindFontStyle(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2412,7 +2412,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2458,7 +2458,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontWeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2508,7 +2508,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontWeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -2544,7 +2544,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontWeight(
+    public static Avalonia.Data.BindingBase BindFontWeight(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3064,7 +3064,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3110,7 +3110,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3160,7 +3160,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3196,7 +3196,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStretch(
+    public static Avalonia.Data.BindingBase BindFontStretch(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3509,7 +3509,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3555,7 +3555,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Foreground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3605,7 +3605,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3641,7 +3641,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindForeground(
+    public static Avalonia.Data.BindingBase BindForeground(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -3727,6 +3727,244 @@ public static partial class TemplatedControlExtensions
 
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.WithValue(PropertyMetadata.TemplatedControl_LetterSpacing, Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.WithBinding(PropertyMetadata.TemplatedControl_LetterSpacing, Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.WithBinding(PropertyMetadata.TemplatedControl_LetterSpacing, Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindLetterSpacing(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
@@ -3747,7 +3985,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3793,7 +4031,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Padding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3843,7 +4081,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Padding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3879,7 +4117,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPadding(
+    public static Avalonia.Data.BindingBase BindPadding(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4035,7 +4273,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Template<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -4081,7 +4319,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Template<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -4131,7 +4369,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Template<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -4167,7 +4405,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTemplate(
+    public static Avalonia.Data.BindingBase BindTemplate(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -4273,7 +4511,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTemplateFocusTarget<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4319,7 +4557,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTemplateFocusTarget<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4369,7 +4607,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTemplateFocusTarget<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -4405,7 +4643,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTemplateFocusTarget(
+    public static Avalonia.Data.BindingBase BindIsTemplateFocusTarget(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -123,7 +123,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBackground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBackground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBackground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterBackground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterBackgroundSizing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBackgroundSizing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBackgroundSizing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterBackgroundSizing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBackgroundSizing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterBackgroundSizing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterBorderBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBorderBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterBorderBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterBorderThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBorderThickness(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterBorderThickness(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterCornerRadius(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterCornerRadius(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterBoxShadow(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBoxShadow(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterBoxShadow(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBoxShadow(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBoxShadow(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterBoxShadow(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterForeground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterForeground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontFamily(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontFamily(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterFontFamily(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontSize(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontSize(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontSize(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterFontSize(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontStyle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontStyle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterFontStyle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontWeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontWeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterFontWeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontStretch(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontStretch(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterFontStretch(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, binding));
         return keyFrame;
@@ -2031,7 +2031,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2045,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2059,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterTextAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, binding));
         return style;
@@ -2071,7 +2071,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterTextAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, binding));
         return keyFrame;
@@ -2190,7 +2190,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterTextWrapping(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextWrapping(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2204,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2218,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterTextWrapping(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, binding));
         return style;
@@ -2230,7 +2230,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterTextWrapping(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterTextWrapping(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, binding));
         return keyFrame;
@@ -2349,7 +2349,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterTextTrimming(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextTrimming(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2363,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2377,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterTextTrimming(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterTextTrimming(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, binding));
         return style;
@@ -2389,7 +2389,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterTextTrimming(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterTextTrimming(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, binding));
         return keyFrame;
@@ -2508,7 +2508,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterLineHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterLineHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2522,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterLineHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterLineHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2536,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterLineHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, binding));
         return style;
@@ -2548,9 +2548,168 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterLineHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterLineHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, binding));
+        return keyFrame;
+    }
+
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetContentPresenterLetterSpacing(this StyleBuilder builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetContentPresenterLetterSpacing(this KeyFrameBuilder builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value));
+        });
+    }
+
+    // Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterLetterSpacing(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterLetterSpacing(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetContentPresenterLetterSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetContentPresenterLetterSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterLetterSpacing(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterLetterSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static StyleBuilder SetContentPresenterLetterSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static KeyFrameBuilder SetContentPresenterLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterLetterSpacing(this Style style, Avalonia.Data.BindingBase binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LetterSpacingProperty, binding));
         return keyFrame;
     }
 
@@ -2667,7 +2826,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterMaxLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterMaxLines(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2840,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterMaxLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterMaxLines(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +2854,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterMaxLines(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterMaxLines(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, binding));
         return style;
@@ -2707,7 +2866,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterMaxLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterMaxLines(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, binding));
         return keyFrame;
@@ -2826,7 +2985,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +2999,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +3013,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, binding));
         return style;
@@ -2866,7 +3025,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, binding));
         return keyFrame;
@@ -2985,7 +3144,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterContentTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +3158,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3172,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterContentTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, binding));
         return style;
@@ -3025,7 +3184,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, binding));
         return keyFrame;
@@ -3144,7 +3303,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3317,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3331,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterHorizontalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, binding));
         return style;
@@ -3184,7 +3343,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, binding));
         return keyFrame;
@@ -3303,7 +3462,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3317,7 +3476,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3331,7 +3490,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterVerticalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, binding));
         return style;
@@ -3343,7 +3502,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, binding));
         return keyFrame;
@@ -3462,7 +3621,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterPadding(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3476,7 +3635,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterPadding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3490,7 +3649,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterPadding(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterPadding(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, binding));
         return style;
@@ -3502,7 +3661,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, binding));
         return keyFrame;
@@ -3621,7 +3780,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetContentPresenterRecognizesAccessKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterRecognizesAccessKey(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3635,7 +3794,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetContentPresenterRecognizesAccessKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterRecognizesAccessKey(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3649,7 +3808,7 @@ public static partial class ContentPresenterSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterRecognizesAccessKey(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContentPresenterRecognizesAccessKey(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, binding));
         return style;
@@ -3661,7 +3820,7 @@ public static partial class ContentPresenterSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -78,7 +78,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -128,7 +128,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -164,7 +164,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemSpacing(
+    public static Avalonia.Data.BindingBase BindItemSpacing(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -316,7 +316,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> LineSpacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -366,7 +366,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T LineSpacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -402,7 +402,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindLineSpacing(
+    public static Avalonia.Data.BindingBase BindLineSpacing(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -554,7 +554,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -604,7 +604,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -640,7 +640,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -838,7 +838,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -888,7 +888,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -924,7 +924,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsAlignment(
+    public static Avalonia.Data.BindingBase BindItemsAlignment(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1099,7 +1099,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemWidth<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1145,7 +1145,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemWidth<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1195,7 +1195,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemWidth<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1231,7 +1231,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemWidth(
+    public static Avalonia.Data.BindingBase BindItemWidth(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1337,7 +1337,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1383,7 +1383,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1433,7 +1433,7 @@ public static partial class WrapPanelExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
     {
@@ -1469,7 +1469,7 @@ public static partial class WrapPanelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemHeight(
+    public static Avalonia.Data.BindingBase BindItemHeight(
         this Avalonia.Controls.WrapPanel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

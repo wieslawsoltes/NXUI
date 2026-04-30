@@ -32,7 +32,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Interval<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -78,7 +78,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Interval<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -128,7 +128,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Interval<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -164,7 +164,7 @@ public static partial class RepeatButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindInterval(
+    public static Avalonia.Data.BindingBase BindInterval(
         this Avalonia.Controls.RepeatButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -316,7 +316,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Delay<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -366,7 +366,7 @@ public static partial class RepeatButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Delay<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RepeatButton
     {
@@ -402,7 +402,7 @@ public static partial class RepeatButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDelay(
+    public static Avalonia.Data.BindingBase BindDelay(
         this Avalonia.Controls.RepeatButton obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -19,7 +19,7 @@ public static partial class ListBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindScroll(
+    public static Avalonia.Data.BindingBase BindScroll(
         this Avalonia.Controls.ListBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class ListBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItems<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -168,7 +168,7 @@ public static partial class ListBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedItems<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -218,7 +218,7 @@ public static partial class ListBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItems<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -254,7 +254,7 @@ public static partial class ListBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedItems(
+    public static Avalonia.Data.BindingBase BindSelectedItems(
         this Avalonia.Controls.ListBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class ListBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Selection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -406,7 +406,7 @@ public static partial class ListBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Selection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -456,7 +456,7 @@ public static partial class ListBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Selection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -492,7 +492,7 @@ public static partial class ListBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelection(
+    public static Avalonia.Data.BindingBase BindSelection(
         this Avalonia.Controls.ListBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class ListBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -644,7 +644,7 @@ public static partial class ListBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -694,7 +694,7 @@ public static partial class ListBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
     {
@@ -730,7 +730,7 @@ public static partial class ListBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionMode(
+    public static Avalonia.Data.BindingBase BindSelectionMode(
         this Avalonia.Controls.ListBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

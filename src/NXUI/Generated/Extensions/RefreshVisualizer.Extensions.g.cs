@@ -19,7 +19,7 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRefreshVisualizerState(
+    public static Avalonia.Data.BindingBase BindRefreshVisualizerState(
         this Avalonia.Controls.RefreshVisualizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class RefreshVisualizerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -168,7 +168,7 @@ public static partial class RefreshVisualizerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -218,7 +218,7 @@ public static partial class RefreshVisualizerExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -254,7 +254,7 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.RefreshVisualizer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

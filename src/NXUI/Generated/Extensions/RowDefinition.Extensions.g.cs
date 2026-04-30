@@ -32,7 +32,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -78,7 +78,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -128,7 +128,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -164,7 +164,7 @@ public static partial class RowDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxHeight(
+    public static Avalonia.Data.BindingBase BindMaxHeight(
         this Avalonia.Controls.RowDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -316,7 +316,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinHeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -366,7 +366,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T MinHeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -402,7 +402,7 @@ public static partial class RowDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinHeight(
+    public static Avalonia.Data.BindingBase BindMinHeight(
         this Avalonia.Controls.RowDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Height<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -554,7 +554,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Height<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -604,7 +604,7 @@ public static partial class RowDefinitionExtensions
     /// <returns>The target object reference.</returns>
     public static T Height<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RowDefinition
     {
@@ -640,7 +640,7 @@ public static partial class RowDefinitionExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeight(
+    public static Avalonia.Data.BindingBase BindHeight(
         this Avalonia.Controls.RowDefinition obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

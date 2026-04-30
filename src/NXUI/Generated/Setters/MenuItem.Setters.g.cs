@@ -123,7 +123,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemCommand(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemCommand(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemCommand(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemCommand(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemHotKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemHotKey(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemHotKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemHotKey(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemHotKey(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemHotKey(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemHotKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemHotKey(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemCommandParameter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemCommandParameter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemIcon(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemIcon(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemIcon(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemIcon(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIcon(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemIcon(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemInputGesture(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemInputGesture(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemInputGesture(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemInputGesture(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemInputGesture(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemInputGesture(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemIsSubMenuOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemIsSubMenuOpen(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemIsSubMenuOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemIsSubMenuOpen(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIsSubMenuOpen(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemIsSubMenuOpen(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemStaysOpenOnClick(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemStaysOpenOnClick(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemStaysOpenOnClick(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemStaysOpenOnClick(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemStaysOpenOnClick(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemStaysOpenOnClick(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemToggleType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemToggleType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemToggleType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemToggleType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemToggleType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemToggleType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.ToggleTypeProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemToggleType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemToggleType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.ToggleTypeProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemIsChecked(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemIsChecked(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemIsChecked(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemIsChecked(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIsChecked(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemIsChecked(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsCheckedProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsChecked(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemIsChecked(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsCheckedProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetMenuItemGroupName(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuItemGroupName(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class MenuItemSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetMenuItemGroupName(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuItemGroupName(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class MenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemGroupName(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetMenuItemGroupName(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.GroupNameProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class MenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemGroupName(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetMenuItemGroupName(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.GroupNameProperty, binding));
         return keyFrame;

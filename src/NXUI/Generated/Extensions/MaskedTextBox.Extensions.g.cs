@@ -32,7 +32,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsciiOnly<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -78,7 +78,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AsciiOnly<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -128,7 +128,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T AsciiOnly<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -164,7 +164,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAsciiOnly(
+    public static Avalonia.Data.BindingBase BindAsciiOnly(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Culture<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -316,7 +316,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Culture<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -366,7 +366,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Culture<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -402,7 +402,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCulture(
+    public static Avalonia.Data.BindingBase BindCulture(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HidePromptOnLeave<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -554,7 +554,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HidePromptOnLeave<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -604,7 +604,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T HidePromptOnLeave<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -640,7 +640,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHidePromptOnLeave(
+    public static Avalonia.Data.BindingBase BindHidePromptOnLeave(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -733,7 +733,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaskCompleted(
+    public static Avalonia.Data.BindingBase BindMaskCompleted(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -823,7 +823,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaskFull(
+    public static Avalonia.Data.BindingBase BindMaskFull(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -926,7 +926,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Mask<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -972,7 +972,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Mask<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1022,7 +1022,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Mask<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1058,7 +1058,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMask(
+    public static Avalonia.Data.BindingBase BindMask(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1164,7 +1164,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PromptChar<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1210,7 +1210,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PromptChar<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1260,7 +1260,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PromptChar<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1296,7 +1296,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPromptChar(
+    public static Avalonia.Data.BindingBase BindPromptChar(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1402,7 +1402,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnPrompt<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1448,7 +1448,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ResetOnPrompt<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1498,7 +1498,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ResetOnPrompt<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1534,7 +1534,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindResetOnPrompt(
+    public static Avalonia.Data.BindingBase BindResetOnPrompt(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1640,7 +1640,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnSpace<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1686,7 +1686,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ResetOnSpace<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1736,7 +1736,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ResetOnSpace<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1772,7 +1772,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindResetOnSpace(
+    public static Avalonia.Data.BindingBase BindResetOnSpace(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

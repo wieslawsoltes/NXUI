@@ -17,7 +17,6 @@ var includedAssemblies = new HashSet<string>
     "Avalonia.Controls.ColorPicker",
     "Avalonia.Controls.ItemsRepeater",
     "Avalonia.Controls.DataGrid",
-    "Avalonia.Controls.TreeDataGrid",
 };
 
 var excludedClasses = new HashSet<string>
@@ -57,7 +56,6 @@ AppBuilder.Configure<Application>()
         var __ = new ColorPicker();
         var ___ = new ItemsRepeater();
         var ____ = new DataGrid();
-        var _____ = new TreeDataGrid();
         Generate();
     })
     .SetupWithoutStarting();

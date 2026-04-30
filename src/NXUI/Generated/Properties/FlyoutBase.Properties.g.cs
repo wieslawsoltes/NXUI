@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,System.Boolean> FlyoutBase_IsOpen => Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> FlyoutBase_IsOpen => Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class.

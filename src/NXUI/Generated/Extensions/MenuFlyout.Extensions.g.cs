@@ -32,7 +32,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -78,7 +78,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsSource<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -128,7 +128,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -164,7 +164,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsSource(
+    public static Avalonia.Data.BindingBase BindItemsSource(
         this Avalonia.Controls.MenuFlyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -316,7 +316,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -366,7 +366,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -402,7 +402,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemTemplate(
+    public static Avalonia.Data.BindingBase BindItemTemplate(
         this Avalonia.Controls.MenuFlyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemContainerTheme<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -554,7 +554,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemContainerTheme<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -604,7 +604,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemContainerTheme<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -640,7 +640,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemContainerTheme(
+    public static Avalonia.Data.BindingBase BindItemContainerTheme(
         this Avalonia.Controls.MenuFlyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlyoutPresenterTheme<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -792,7 +792,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FlyoutPresenterTheme<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -842,7 +842,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T FlyoutPresenterTheme<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -878,7 +878,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlyoutPresenterTheme(
+    public static Avalonia.Data.BindingBase BindFlyoutPresenterTheme(
         this Avalonia.Controls.MenuFlyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

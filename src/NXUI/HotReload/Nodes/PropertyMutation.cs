@@ -68,7 +68,7 @@ public sealed class PropertyMutation
     /// <summary>
     /// Creates a mutation that sets a binding.
     /// </summary>
-    public static PropertyMutation ForBinding(BindingDescriptor descriptor, IBinding binding)
+    public static PropertyMutation ForBinding(BindingDescriptor descriptor, BindingBase binding)
     {
         ArgumentNullException.ThrowIfNull(binding);
 
@@ -162,7 +162,7 @@ public sealed class PropertyMutation
                 var descriptor = _bindingDescriptor!.Value.Property.Bind()
                     .WithMode(_bindingDescriptor.Value.Mode)
                     .WithPriority(_bindingDescriptor.Value.Priority);
-                target[descriptor] = (IBinding)_value!;
+                target[descriptor] = (BindingBase)_value!;
                 break;
 
             case PropertyMutationKind.AttachChild:

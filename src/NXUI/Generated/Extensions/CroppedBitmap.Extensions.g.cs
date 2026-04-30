@@ -32,7 +32,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -78,7 +78,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Source<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -128,7 +128,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The target object reference.</returns>
     public static T Source<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -164,7 +164,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSource(
+    public static Avalonia.Data.BindingBase BindSource(
         this Avalonia.Media.Imaging.CroppedBitmap obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -316,7 +316,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SourceRect<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -366,7 +366,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The target object reference.</returns>
     public static T SourceRect<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -402,7 +402,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSourceRect(
+    public static Avalonia.Data.BindingBase BindSourceRect(
         this Avalonia.Media.Imaging.CroppedBitmap obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

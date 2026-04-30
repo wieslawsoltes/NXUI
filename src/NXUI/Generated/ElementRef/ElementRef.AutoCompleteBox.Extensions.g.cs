@@ -21,11 +21,20 @@ public static partial class AutoCompleteBoxElementRefExtensions
 
 
     /// <summary>
-    /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> value.
+    /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> value.
     /// </summary>
-    public static IObservable<System.String?> ObserveWatermark<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
+    public static IObservable<System.String?> ObservePlaceholderText<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
     {
-        return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+        return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty);
     }
 
 
@@ -71,6 +80,15 @@ public static partial class AutoCompleteBoxElementRefExtensions
     public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
     {
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveClearSelectionOnLostFocus<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty);
     }
 
 
@@ -197,6 +215,15 @@ public static partial class AutoCompleteBoxElementRefExtensions
     public static IObservable<System.Object?> ObserveInnerRightContent<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
     {
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Data.BindingBase?> ObserveValueMemberBinding<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty);
     }
 
 }

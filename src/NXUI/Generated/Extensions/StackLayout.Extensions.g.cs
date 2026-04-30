@@ -32,7 +32,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisableVirtualization<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -78,7 +78,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisableVirtualization<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -128,7 +128,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T DisableVirtualization<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -164,7 +164,7 @@ public static partial class StackLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisableVirtualization(
+    public static Avalonia.Data.BindingBase BindDisableVirtualization(
         this Avalonia.Layout.StackLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -316,7 +316,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -366,7 +366,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -402,7 +402,7 @@ public static partial class StackLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Layout.StackLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Spacing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -600,7 +600,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Spacing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -650,7 +650,7 @@ public static partial class StackLayoutExtensions
     /// <returns>The target object reference.</returns>
     public static T Spacing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
@@ -686,7 +686,7 @@ public static partial class StackLayoutExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSpacing(
+    public static Avalonia.Data.BindingBase BindSpacing(
         this Avalonia.Layout.StackLayout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

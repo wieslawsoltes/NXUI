@@ -82,4 +82,13 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveStrokeMiterLimit<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Shapes.Shape
+    {
+        return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty);
+    }
+
 }

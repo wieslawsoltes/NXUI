@@ -123,7 +123,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetStyledElementDataContext(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementDataContext(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetStyledElementDataContext(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementDataContext(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class StyledElementSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetStyledElementDataContext(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetStyledElementDataContext(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.StyledElement.DataContextProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class StyledElementSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStyledElementDataContext(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetStyledElementDataContext(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.DataContextProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetStyledElementName(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementName(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetStyledElementName(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementName(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class StyledElementSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetStyledElementName(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetStyledElementName(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.StyledElement.NameProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class StyledElementSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStyledElementName(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetStyledElementName(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.NameProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetStyledElementTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementTheme(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetStyledElementTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementTheme(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class StyledElementSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetStyledElementTheme(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetStyledElementTheme(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.StyledElement.ThemeProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class StyledElementSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStyledElementTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetStyledElementTheme(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.ThemeProperty, binding));
         return keyFrame;

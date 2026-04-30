@@ -32,7 +32,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The builder instance.</returns>
     public static VisualBrushBuilder Visual(
         this VisualBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.VisualBrush> Visual(
         this ElementRef<Avalonia.Media.VisualBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.VisualBrush Visual(
         this Avalonia.Media.VisualBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class VisualBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVisual(
+    public static Avalonia.Data.BindingBase BindVisual(
         this Avalonia.Media.VisualBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -101,7 +101,7 @@ public class SettersGenerator
 
                 // binding
 
-                if (p.ValueType != typeof(Avalonia.Data.IBinding))
+                if (!typeof(Avalonia.Data.BindingBase).IsAssignableFrom(p.ValueType))
                 {
                     var hotBindingBuilder = new StringBuilder(Templates.PropertySettersBindingHotReloadTemplate);
                     var bindingBuilder = new StringBuilder(Templates.PropertySettersBindingTemplate);

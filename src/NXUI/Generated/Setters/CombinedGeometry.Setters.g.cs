@@ -123,7 +123,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCombinedGeometryGeometry1(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCombinedGeometryGeometry1(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCombinedGeometryGeometry1(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCombinedGeometryGeometry1(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCombinedGeometryGeometry1(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCombinedGeometryGeometry1(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCombinedGeometryGeometry1(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCombinedGeometryGeometry1(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCombinedGeometryGeometry2(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCombinedGeometryGeometry2(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCombinedGeometryGeometry2(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCombinedGeometryGeometry2(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCombinedGeometryGeometry2(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCombinedGeometryGeometry2(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCombinedGeometryGeometry2(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCombinedGeometryGeometry2(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetCombinedGeometryGeometryCombineMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCombinedGeometryGeometryCombineMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetCombinedGeometryGeometryCombineMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCombinedGeometryGeometryCombineMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCombinedGeometryGeometryCombineMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetCombinedGeometryGeometryCombineMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class CombinedGeometrySetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCombinedGeometryGeometryCombineMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetCombinedGeometryGeometryCombineMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, binding));
         return keyFrame;

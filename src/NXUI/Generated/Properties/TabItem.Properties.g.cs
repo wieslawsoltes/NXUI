@@ -17,4 +17,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> TabItem_IsSelected => Avalonia.Controls.TabItem.IsSelectedProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TabItem.IconProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> TabItem_Icon => Avalonia.Controls.TabItem.IconProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TabItem.IconTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabItem_IconTemplate => Avalonia.Controls.TabItem.IconTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TabItem.IndicatorTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabItem_IndicatorTemplate => Avalonia.Controls.TabItem.IndicatorTemplateProperty;
 }

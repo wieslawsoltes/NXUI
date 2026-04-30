@@ -32,7 +32,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -78,7 +78,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TintColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -128,7 +128,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T TintColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -164,7 +164,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTintColor(
+    public static Avalonia.Data.BindingBase BindTintColor(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSource<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -316,7 +316,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BackgroundSource<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -366,7 +366,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T BackgroundSource<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -402,7 +402,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackgroundSource(
+    public static Avalonia.Data.BindingBase BindBackgroundSource(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintOpacity<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -600,7 +600,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TintOpacity<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -650,7 +650,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T TintOpacity<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -686,7 +686,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTintOpacity(
+    public static Avalonia.Data.BindingBase BindTintOpacity(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaterialOpacity<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -838,7 +838,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaterialOpacity<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -888,7 +888,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T MaterialOpacity<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -924,7 +924,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaterialOpacity(
+    public static Avalonia.Data.BindingBase BindMaterialOpacity(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1030,7 +1030,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlatformTransparencyCompensationLevel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1076,7 +1076,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> PlatformTransparencyCompensationLevel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1126,7 +1126,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T PlatformTransparencyCompensationLevel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1162,7 +1162,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlatformTransparencyCompensationLevel(
+    public static Avalonia.Data.BindingBase BindPlatformTransparencyCompensationLevel(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1268,7 +1268,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FallbackColor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1314,7 +1314,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FallbackColor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1364,7 +1364,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <returns>The target object reference.</returns>
     public static T FallbackColor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1400,7 +1400,7 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFallbackColor(
+    public static Avalonia.Data.BindingBase BindFallbackColor(
         this Avalonia.Media.ExperimentalAcrylicMaterial obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

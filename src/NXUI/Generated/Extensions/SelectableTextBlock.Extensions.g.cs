@@ -32,7 +32,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionStart<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -78,7 +78,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionStart<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -128,7 +128,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionStart<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -164,7 +164,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionStart(
+    public static Avalonia.Data.BindingBase BindSelectionStart(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionEnd<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -316,7 +316,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionEnd<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -366,7 +366,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionEnd<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -402,7 +402,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionEnd(
+    public static Avalonia.Data.BindingBase BindSelectionEnd(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +495,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedText(
+    public static Avalonia.Data.BindingBase BindSelectedText(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -644,7 +644,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -694,7 +694,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -730,7 +730,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionBrush(
+    public static Avalonia.Data.BindingBase BindSelectionBrush(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +836,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -882,7 +882,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionForegroundBrush<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -932,7 +932,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionForegroundBrush<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -968,7 +968,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionForegroundBrush(
+    public static Avalonia.Data.BindingBase BindSelectionForegroundBrush(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1061,7 +1061,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanCopy(
+    public static Avalonia.Data.BindingBase BindCanCopy(
         this Avalonia.Controls.SelectableTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

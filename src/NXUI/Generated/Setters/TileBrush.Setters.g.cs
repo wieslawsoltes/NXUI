@@ -123,7 +123,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushAlignmentX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushAlignmentX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushAlignmentX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushAlignmentX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushAlignmentX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushAlignmentX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushAlignmentY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushAlignmentY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushAlignmentY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushAlignmentY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushAlignmentY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushAlignmentY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushDestinationRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushDestinationRect(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushDestinationRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushDestinationRect(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushDestinationRect(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushDestinationRect(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushSourceRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushSourceRect(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushSourceRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushSourceRect(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushSourceRect(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushSourceRect(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushStretch(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushStretch(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushStretch(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushStretch(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTileBrushTileMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushTileMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTileBrushTileMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushTileMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TileBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushTileMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTileBrushTileMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TileBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, binding));
         return keyFrame;

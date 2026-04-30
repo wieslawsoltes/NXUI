@@ -32,7 +32,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -78,7 +78,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Background<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -128,7 +128,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -164,7 +164,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBackground(
+    public static Avalonia.Data.BindingBase BindBackground(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -316,7 +316,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFamily<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -366,7 +366,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFamily<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -402,7 +402,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFamily(
+    public static Avalonia.Data.BindingBase BindFontFamily(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -554,7 +554,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontFeatures<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -604,7 +604,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFeatures<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -640,7 +640,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontFeatures(
+    public static Avalonia.Data.BindingBase BindFontFeatures(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -792,7 +792,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontSize<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -842,7 +842,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontSize<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -878,7 +878,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontSize(
+    public static Avalonia.Data.BindingBase BindFontSize(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1030,7 +1030,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStyle<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1080,7 +1080,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStyle<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1116,7 +1116,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStyle(
+    public static Avalonia.Data.BindingBase BindFontStyle(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1291,7 +1291,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1337,7 +1337,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontWeight<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1387,7 +1387,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontWeight<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1423,7 +1423,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontWeight(
+    public static Avalonia.Data.BindingBase BindFontWeight(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1943,7 +1943,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -1989,7 +1989,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> FontStretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2039,7 +2039,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontStretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2075,7 +2075,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFontStretch(
+    public static Avalonia.Data.BindingBase BindFontStretch(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2388,7 +2388,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2434,7 +2434,7 @@ public static partial class TextElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Foreground<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2484,7 +2484,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2520,7 +2520,7 @@ public static partial class TextElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindForeground(
+    public static Avalonia.Data.BindingBase BindForeground(
         this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2600,6 +2600,244 @@ public static partial class TextElementExtensions
     public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
+    {
+        return builder.WithValue(PropertyMetadata.TextElement_LetterSpacing, Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return builder.WithBinding(PropertyMetadata.TextElement_LetterSpacing, Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return builder.WithBinding(PropertyMetadata.TextElement_LetterSpacing, Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetValue(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Documents.TextElement.LetterSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Documents.TextElement.LetterSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.Documents.TextElement.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.Documents.TextElement.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindLetterSpacing(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Documents.TextElement.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.LetterSpacingProperty);
         handler(obj, observable);
         return obj;
     }

@@ -123,7 +123,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPathFigureIsClosed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureIsClosed(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPathFigureIsClosed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureIsClosed(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class PathFigureSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureIsClosed(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPathFigureIsClosed(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class PathFigureSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPathFigureIsFilled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureIsFilled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPathFigureIsFilled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureIsFilled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class PathFigureSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureIsFilled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPathFigureIsFilled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class PathFigureSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPathFigureSegments(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureSegments(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPathFigureSegments(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureSegments(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class PathFigureSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureSegments(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPathFigureSegments(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class PathFigureSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetPathFigureStartPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureStartPoint(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetPathFigureStartPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureStartPoint(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class PathFigureSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureStartPoint(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPathFigureStartPoint(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class PathFigureSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, binding));
         return keyFrame;

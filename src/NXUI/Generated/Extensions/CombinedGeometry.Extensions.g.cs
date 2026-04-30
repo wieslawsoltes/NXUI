@@ -32,7 +32,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Geometry1<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -78,7 +78,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Geometry1<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -128,7 +128,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Geometry1<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -164,7 +164,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGeometry1(
+    public static Avalonia.Data.BindingBase BindGeometry1(
         this Avalonia.Media.CombinedGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Geometry2<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -316,7 +316,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Geometry2<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -366,7 +366,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Geometry2<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -402,7 +402,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGeometry2(
+    public static Avalonia.Data.BindingBase BindGeometry2(
         this Avalonia.Media.CombinedGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GeometryCombineMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -554,7 +554,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> GeometryCombineMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -604,7 +604,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T GeometryCombineMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -640,7 +640,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGeometryCombineMode(
+    public static Avalonia.Data.BindingBase BindGeometryCombineMode(
         this Avalonia.Media.CombinedGeometry obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

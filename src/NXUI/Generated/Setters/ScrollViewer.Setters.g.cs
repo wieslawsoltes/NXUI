@@ -123,7 +123,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerBringIntoViewOnFocusChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerBringIntoViewOnFocusChange(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerBringIntoViewOnFocusChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerBringIntoViewOnFocusChange(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerBringIntoViewOnFocusChange(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerBringIntoViewOnFocusChange(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerBringIntoViewOnFocusChange(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerBringIntoViewOnFocusChange(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerHorizontalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerHorizontalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerHorizontalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerHorizontalScrollBarVisibility(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerHorizontalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerHorizontalSnapPointsType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerVerticalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerVerticalSnapPointsType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerVerticalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerVerticalSnapPointsAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerVerticalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerVerticalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerVerticalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerVerticalScrollBarVisibility(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerAllowAutoHide(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerAllowAutoHide(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerAllowAutoHide(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerAllowAutoHide(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerAllowAutoHide(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerIsScrollChainingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsScrollChainingEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerIsScrollChainingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsScrollChainingEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerIsScrollChainingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerIsScrollChainingEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerIsScrollInertiaEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsScrollInertiaEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerIsScrollInertiaEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsScrollInertiaEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerIsScrollInertiaEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerIsScrollInertiaEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerIsScrollInertiaEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerIsScrollInertiaEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetScrollViewerIsDeferredScrollingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsDeferredScrollingEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetScrollViewerIsDeferredScrollingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsDeferredScrollingEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class ScrollViewerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerIsDeferredScrollingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetScrollViewerIsDeferredScrollingEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class ScrollViewerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerIsDeferredScrollingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetScrollViewerIsDeferredScrollingEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static BezierSegmentBuilder Point1(
         this BezierSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.BezierSegment> Point1(
         this ElementRef<Avalonia.Media.BezierSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.BezierSegment Point1(
         this Avalonia.Media.BezierSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.BezierSegment.Point1Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoint1(
+    public static Avalonia.Data.BindingBase BindPoint1(
         this Avalonia.Media.BezierSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static BezierSegmentBuilder Point2(
         this BezierSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.BezierSegment> Point2(
         this ElementRef<Avalonia.Media.BezierSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.BezierSegment Point2(
         this Avalonia.Media.BezierSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.BezierSegment.Point2Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoint2(
+    public static Avalonia.Data.BindingBase BindPoint2(
         this Avalonia.Media.BezierSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static BezierSegmentBuilder Point3(
         this BezierSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.BezierSegment> Point3(
         this ElementRef<Avalonia.Media.BezierSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class BezierSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.BezierSegment Point3(
         this Avalonia.Media.BezierSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.BezierSegment.Point3Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoint3(
+    public static Avalonia.Data.BindingBase BindPoint3(
         this Avalonia.Media.BezierSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

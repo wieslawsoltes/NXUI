@@ -123,7 +123,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDateTimePickerPanelItemHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDateTimePickerPanelItemHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDateTimePickerPanelItemHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDateTimePickerPanelItemHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDateTimePickerPanelItemHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDateTimePickerPanelItemHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDateTimePickerPanelItemHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDateTimePickerPanelItemHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDateTimePickerPanelPanelType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDateTimePickerPanelPanelType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDateTimePickerPanelPanelType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDateTimePickerPanelPanelType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDateTimePickerPanelPanelType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDateTimePickerPanelPanelType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDateTimePickerPanelPanelType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDateTimePickerPanelPanelType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDateTimePickerPanelItemFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDateTimePickerPanelItemFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDateTimePickerPanelItemFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDateTimePickerPanelItemFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDateTimePickerPanelItemFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDateTimePickerPanelItemFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDateTimePickerPanelItemFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDateTimePickerPanelItemFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDateTimePickerPanelShouldLoop(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDateTimePickerPanelShouldLoop(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDateTimePickerPanelShouldLoop(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDateTimePickerPanelShouldLoop(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDateTimePickerPanelShouldLoop(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDateTimePickerPanelShouldLoop(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DateTimePickerPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDateTimePickerPanelShouldLoop(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDateTimePickerPanelShouldLoop(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CellTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -78,7 +78,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CellTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -128,7 +128,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The target object reference.</returns>
     public static T CellTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -164,7 +164,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCellTemplate(
+    public static Avalonia.Data.BindingBase BindCellTemplate(
         this Avalonia.Controls.DataGridTemplateColumn obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CellEditingTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -316,7 +316,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CellEditingTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -366,7 +366,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <returns>The target object reference.</returns>
     public static T CellEditingTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTemplateColumn
     {
@@ -402,7 +402,7 @@ public static partial class DataGridTemplateColumnExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCellEditingTemplate(
+    public static Avalonia.Data.BindingBase BindCellEditingTemplate(
         this Avalonia.Controls.DataGridTemplateColumn obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

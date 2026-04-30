@@ -32,7 +32,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder AngleX(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> AngleX(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform AngleX(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngleX(
+    public static Avalonia.Data.BindingBase BindAngleX(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder AngleY(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> AngleY(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform AngleY(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngleY(
+    public static Avalonia.Data.BindingBase BindAngleY(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder AngleZ(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> AngleZ(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform AngleZ(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngleZ(
+    public static Avalonia.Data.BindingBase BindAngleZ(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -725,7 +725,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder CenterX(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -771,7 +771,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> CenterX(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -819,7 +819,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform CenterX(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -854,7 +854,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenterX(
+    public static Avalonia.Data.BindingBase BindCenterX(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -956,7 +956,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder CenterY(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1002,7 +1002,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> CenterY(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1050,7 +1050,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform CenterY(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1085,7 +1085,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenterY(
+    public static Avalonia.Data.BindingBase BindCenterY(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1187,7 +1187,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder CenterZ(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1233,7 +1233,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> CenterZ(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1281,7 +1281,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform CenterZ(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1316,7 +1316,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenterZ(
+    public static Avalonia.Data.BindingBase BindCenterZ(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1418,7 +1418,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The builder instance.</returns>
     public static Rotate3DTransformBuilder Depth(
         this Rotate3DTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1464,7 +1464,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.Rotate3DTransform> Depth(
         this ElementRef<Avalonia.Media.Rotate3DTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1512,7 +1512,7 @@ public static partial class Rotate3DTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Rotate3DTransform Depth(
         this Avalonia.Media.Rotate3DTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1547,7 +1547,7 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDepth(
+    public static Avalonia.Data.BindingBase BindDepth(
         this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

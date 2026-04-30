@@ -19,7 +19,7 @@ public static partial class MenuBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsOpen(
+    public static Avalonia.Data.BindingBase BindIsOpen(
         this Avalonia.Controls.MenuBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -66,7 +66,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextBlock_LetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
+    public static Avalonia.StyledProperty<System.Double> TextBlock_LetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.

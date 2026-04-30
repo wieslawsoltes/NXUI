@@ -29,7 +29,7 @@ public static partial class Templates
     /// <returns>The builder instance.</returns>
     public static %BuilderType% %MethodName%%BuilderGeneric%(
         this %BuilderType% builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%BuilderConstraint%
     {
@@ -78,7 +78,7 @@ public static partial class Templates
     /// <returns>The element reference.</returns>
     public static %ElementRefType% %MethodName%%ElementRefGeneric%(
         this %ElementRefType% elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%ElementRefConstraint%
     {
@@ -174,7 +174,7 @@ public static partial class Templates
     /// <returns>The target object reference.</returns>
     public static T %MethodName%<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : %OwnerType%
     {
@@ -210,7 +210,7 @@ public static partial class Templates
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="%ClassType%.%Name%Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding Bind%Name%(
+    public static Avalonia.Data.BindingBase Bind%Name%(
         this %OwnerType% obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -320,7 +320,7 @@ public static partial class Templates
     /// <returns>The target object reference.</returns>
     public static %OwnerType% %MethodName%(
         this %OwnerType% obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -355,7 +355,7 @@ public static partial class Templates
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="%ClassType%.%Name%Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding Bind%Name%(
+    public static Avalonia.Data.BindingBase Bind%Name%(
         this %OwnerType% obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -446,7 +446,7 @@ public static partial class Templates
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="%ClassType%.%Name%Property"/> binding.</returns>
-    public static Avalonia.Data.IBinding Bind%Name%(
+    public static Avalonia.Data.BindingBase Bind%Name%(
         this %OwnerType% obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

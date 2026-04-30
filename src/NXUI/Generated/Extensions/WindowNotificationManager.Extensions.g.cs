@@ -32,7 +32,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Position<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -78,7 +78,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Position<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -128,7 +128,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The target object reference.</returns>
     public static T Position<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -164,7 +164,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPosition(
+    public static Avalonia.Data.BindingBase BindPosition(
         this Avalonia.Controls.Notifications.WindowNotificationManager obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -408,7 +408,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxItems<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -454,7 +454,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxItems<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -504,7 +504,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxItems<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -540,7 +540,7 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxItems(
+    public static Avalonia.Data.BindingBase BindMaxItems(
         this Avalonia.Controls.Notifications.WindowNotificationManager obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

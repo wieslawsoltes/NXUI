@@ -32,7 +32,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The builder instance.</returns>
     public static RotateTransformBuilder Angle(
         this RotateTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RotateTransform> Angle(
         this ElementRef<Avalonia.Media.RotateTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RotateTransform Angle(
         this Avalonia.Media.RotateTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngle(
+    public static Avalonia.Data.BindingBase BindAngle(
         this Avalonia.Media.RotateTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The builder instance.</returns>
     public static RotateTransformBuilder CenterX(
         this RotateTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RotateTransform> CenterX(
         this ElementRef<Avalonia.Media.RotateTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RotateTransform CenterX(
         this Avalonia.Media.RotateTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenterX(
+    public static Avalonia.Data.BindingBase BindCenterX(
         this Avalonia.Media.RotateTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The builder instance.</returns>
     public static RotateTransformBuilder CenterY(
         this RotateTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.RotateTransform> CenterY(
         this ElementRef<Avalonia.Media.RotateTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class RotateTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RotateTransform CenterY(
         this Avalonia.Media.RotateTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenterY(
+    public static Avalonia.Data.BindingBase BindCenterY(
         this Avalonia.Media.RotateTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

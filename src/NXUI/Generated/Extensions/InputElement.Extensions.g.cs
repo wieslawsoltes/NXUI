@@ -32,7 +32,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Focusable<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -78,7 +78,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Focusable<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -128,7 +128,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Focusable<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -164,7 +164,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.FocusableProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFocusable(
+    public static Avalonia.Data.BindingBase BindFocusable(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -316,7 +316,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -366,7 +366,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T IsEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -402,7 +402,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsEnabled(
+    public static Avalonia.Data.BindingBase BindIsEnabled(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -495,7 +495,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsEffectivelyEnabled(
+    public static Avalonia.Data.BindingBase BindIsEffectivelyEnabled(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Cursor<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -644,7 +644,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Cursor<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -694,7 +694,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Cursor<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -730,7 +730,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.CursorProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCursor(
+    public static Avalonia.Data.BindingBase BindCursor(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -823,7 +823,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsKeyboardFocusWithin(
+    public static Avalonia.Data.BindingBase BindIsKeyboardFocusWithin(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -913,7 +913,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsFocused(
+    public static Avalonia.Data.BindingBase BindIsFocused(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1016,7 +1016,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHitTestVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1062,7 +1062,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsHitTestVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1112,7 +1112,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T IsHitTestVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1148,7 +1148,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsHitTestVisible(
+    public static Avalonia.Data.BindingBase BindIsHitTestVisible(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1241,7 +1241,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsPointerOver(
+    public static Avalonia.Data.BindingBase BindIsPointerOver(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1344,7 +1344,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTabStop<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1390,7 +1390,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsTabStop<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1440,7 +1440,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T IsTabStop<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1476,7 +1476,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsTabStop(
+    public static Avalonia.Data.BindingBase BindIsTabStop(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1582,7 +1582,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TabIndex<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1628,7 +1628,7 @@ public static partial class InputElementExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TabIndex<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1678,7 +1678,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T TabIndex<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -1714,7 +1714,7 @@ public static partial class InputElementExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTabIndex(
+    public static Avalonia.Data.BindingBase BindTabIndex(
         this Avalonia.Input.InputElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1798,6 +1798,482 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldingEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        return builder.WithValue(PropertyMetadata.InputElement_IsHoldingEnabled, Avalonia.Input.InputElement.IsHoldingEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldingEnabled<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsHoldingEnabled, Avalonia.Input.InputElement.IsHoldingEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldingEnabled<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsHoldingEnabled, Avalonia.Input.InputElement.IsHoldingEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldingEnabled<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetValue(Avalonia.Input.InputElement.IsHoldingEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldingEnabled<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsHoldingEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldingEnabled<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsHoldingEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Input.InputElement.IsHoldingEnabledProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldingEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.Input.InputElement.IsHoldingEnabledProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldingEnabled<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldingEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldingEnabled<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldingEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIsHoldingEnabled(
+        this Avalonia.StyledElement obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldingEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsHoldingEnabled(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHoldingEnabled<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.Boolean>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsHoldingEnabled(this Avalonia.StyledElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsHoldingEnabled<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsHoldingEnabledChanged(this Avalonia.StyledElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHoldingEnabledChanged<T>(this T obj, Action<Avalonia.StyledElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldWithMouseEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        return builder.WithValue(PropertyMetadata.InputElement_IsHoldWithMouseEnabled, Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldWithMouseEnabled<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsHoldWithMouseEnabled, Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsHoldWithMouseEnabled<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsHoldWithMouseEnabled, Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldWithMouseEnabled<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetValue(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldWithMouseEnabled<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsHoldWithMouseEnabled<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldWithMouseEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldWithMouseEnabled<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsHoldWithMouseEnabled<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIsHoldWithMouseEnabled(
+        this Avalonia.StyledElement obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsHoldWithMouseEnabled(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHoldWithMouseEnabled<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.Boolean>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsHoldWithMouseEnabled(this Avalonia.StyledElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsHoldWithMouseEnabled<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsHoldWithMouseEnabledChanged(this Avalonia.StyledElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHoldWithMouseEnabledChanged<T>(this T obj, Action<Avalonia.StyledElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.StyledElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.GotFocusEvent
 
     /// <summary>
@@ -1810,7 +2286,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object.</returns>
     public static T OnGotFocusHandler<T>(
         this T obj,
-        Action<T, Avalonia.Input.GotFocusEventArgs> action,
+        Action<T, Avalonia.Input.FocusChangedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         obj.AddHandler(Avalonia.Input.InputElement.GotFocusEvent, (_, args) => action(obj, args), routes);
@@ -1826,7 +2302,7 @@ public static partial class InputElementExtensions
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
     public static T OnGotFocus<T>(
-        this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler,
+        this T obj, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
@@ -1840,7 +2316,7 @@ public static partial class InputElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocus(
+    public static IObservable<Avalonia.Input.FocusChangedEventArgs> ObserveOnGotFocus(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
@@ -1856,13 +2332,13 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnGotFocusHandler<T>(
         this ElementBuilder<T> builder,
-        Action<T, Avalonia.Input.GotFocusEventArgs> action,
+        Action<T, Avalonia.Input.FocusChangedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            void Handler(object? _, Avalonia.Input.GotFocusEventArgs args) => action((T)typed, args);
+            void Handler(object? _, Avalonia.Input.FocusChangedEventArgs args) => action((T)typed, args);
             typed.AddHandler(Avalonia.Input.InputElement.GotFocusEvent, Handler, routes);
             return () => typed.RemoveHandler(Avalonia.Input.InputElement.GotFocusEvent, Handler);
         }));
@@ -1877,13 +2353,104 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnGotFocus<T>(
         this ElementBuilder<T> builder,
-        Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler,
+        Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
             var observable = typed.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.GettingFocusEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.GettingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnGettingFocusHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.FocusChangingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.GettingFocusEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.GettingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnGettingFocus<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.GettingFocusEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.GettingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.FocusChangingEventArgs> ObserveOnGettingFocus(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.GettingFocusEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnGettingFocusHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.FocusChangingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.FocusChangingEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.GettingFocusEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.GettingFocusEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnGettingFocus<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.GettingFocusEvent, routes);
             handler((T)typed, observable);
         }));
     }
@@ -1901,7 +2468,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object.</returns>
     public static T OnLostFocusHandler<T>(
         this T obj,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Action<T, Avalonia.Input.FocusChangedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         obj.AddHandler(Avalonia.Input.InputElement.LostFocusEvent, (_, args) => action(obj, args), routes);
@@ -1917,7 +2484,7 @@ public static partial class InputElementExtensions
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
     public static T OnLostFocus<T>(
-        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        this T obj, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
@@ -1931,7 +2498,7 @@ public static partial class InputElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocus(
+    public static IObservable<Avalonia.Input.FocusChangedEventArgs> ObserveOnLostFocus(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
@@ -1947,13 +2514,13 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLostFocusHandler<T>(
         this ElementBuilder<T> builder,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Action<T, Avalonia.Input.FocusChangedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            void Handler(object? _, Avalonia.Input.FocusChangedEventArgs args) => action((T)typed, args);
             typed.AddHandler(Avalonia.Input.InputElement.LostFocusEvent, Handler, routes);
             return () => typed.RemoveHandler(Avalonia.Input.InputElement.LostFocusEvent, Handler);
         }));
@@ -1968,13 +2535,104 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLostFocus<T>(
         this ElementBuilder<T> builder,
-        Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
             var observable = typed.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.LosingFocusEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.LosingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnLosingFocusHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.FocusChangingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.LosingFocusEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.LosingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnLosingFocus<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.LosingFocusEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.LosingFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.FocusChangingEventArgs> ObserveOnLosingFocus(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.LosingFocusEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnLosingFocusHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.FocusChangingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.FocusChangingEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.LosingFocusEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.LosingFocusEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnLosingFocus<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.LosingFocusEvent, routes);
             handler((T)typed, observable);
         }));
     }
@@ -2981,6 +3639,1644 @@ public static partial class InputElementExtensions
     }
 
 
+    // Avalonia.Input.InputElement.ContextRequestedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnContextRequestedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.ContextRequestedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.ContextRequestedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnContextRequested<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.ContextRequestedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.ContextRequestedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.ContextRequestedEventArgs> ObserveOnContextRequested(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.ContextRequestedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextRequestedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.ContextRequestedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.ContextRequestedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.ContextRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.ContextRequestedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextRequested<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.ContextRequestedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.ContextRequestedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ContextCanceledEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ContextCanceledEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnContextCanceledHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.ContextCanceledEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ContextCanceledEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnContextCanceled<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.ContextCanceledEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.ContextCanceledEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnContextCanceled(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.ContextCanceledEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextCanceledHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.ContextCanceledEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.ContextCanceledEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextCanceled<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.ContextCanceledEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PinchEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PinchEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPinchHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PinchEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PinchEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PinchEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPinch<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PinchEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PinchEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PinchEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PinchEventArgs> ObserveOnPinch(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PinchEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinchHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PinchEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PinchEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PinchEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PinchEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinch<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PinchEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PinchEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PinchEndedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PinchEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPinchEndedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PinchEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PinchEndedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PinchEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPinchEnded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PinchEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PinchEndedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PinchEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PinchEndedEventArgs> ObserveOnPinchEnded(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PinchEndedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinchEndedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PinchEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PinchEndedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PinchEndedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PinchEndedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinchEnded<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PinchEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PinchEndedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PullGestureEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PullGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPullGestureHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PullGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PullGestureEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PullGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPullGesture<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PullGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PullGestureEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PullGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PullGestureEventArgs> ObserveOnPullGesture(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PullGestureEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGestureHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PullGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PullGestureEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PullGestureEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PullGestureEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGesture<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PullGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PullGestureEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PullGestureEndedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PullGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPullGestureEndedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PullGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PullGestureEndedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PullGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPullGestureEnded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PullGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PullGestureEndedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PullGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PullGestureEndedEventArgs> ObserveOnPullGestureEnded(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PullGestureEndedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGestureEndedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PullGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PullGestureEndedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PullGestureEndedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PullGestureEndedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGestureEnded<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PullGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PullGestureEndedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.SwipeGestureEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.SwipeGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSwipeGestureHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.SwipeGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.SwipeGestureEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.SwipeGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSwipeGesture<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.SwipeGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.SwipeGestureEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.SwipeGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.SwipeGestureEventArgs> ObserveOnSwipeGesture(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.SwipeGestureEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGestureHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.SwipeGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.SwipeGestureEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.SwipeGestureEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.SwipeGestureEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGesture<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.SwipeGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.SwipeGestureEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.SwipeGestureEndedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.SwipeGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSwipeGestureEndedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.SwipeGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.SwipeGestureEndedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.SwipeGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSwipeGestureEnded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.SwipeGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.SwipeGestureEndedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.SwipeGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.SwipeGestureEndedEventArgs> ObserveOnSwipeGestureEnded(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.SwipeGestureEndedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGestureEndedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.SwipeGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.SwipeGestureEndedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.SwipeGestureEndedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.SwipeGestureEndedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGestureEnded<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.SwipeGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.SwipeGestureEndedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGestureEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGestureHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.ScrollGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.ScrollGestureEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGesture<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.ScrollGestureEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureEventArgs> ObserveOnScrollGesture(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.ScrollGestureEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.ScrollGestureEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.ScrollGestureEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.ScrollGestureEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGesture<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.ScrollGestureEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.ScrollGestureEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGestureInertiaStartingHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.ScrollGestureInertiaStartingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGestureInertiaStarting<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs> ObserveOnScrollGestureInertiaStarting(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureInertiaStartingHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.ScrollGestureInertiaStartingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.ScrollGestureInertiaStartingEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureInertiaStarting<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.ScrollGestureInertiaStartingEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGestureEndedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGestureEndedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.ScrollGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.ScrollGestureEndedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.ScrollGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnScrollGestureEnded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureEndedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.ScrollGestureEndedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureEndedEventArgs> ObserveOnScrollGestureEnded(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.ScrollGestureEndedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureEndedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.ScrollGestureEndedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.ScrollGestureEndedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.ScrollGestureEndedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.ScrollGestureEndedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureEnded<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.ScrollGestureEndedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.ScrollGestureEndedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureMagnifyHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureMagnify<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureMagnify(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureMagnifyHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PointerDeltaEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureMagnify<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureMagnifyEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureRotateHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureRotate<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureRotate(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureRotateHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PointerDeltaEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureRotate<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureRotateEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureSwipeHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPointerTouchPadGestureSwipe<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureSwipe(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureSwipeHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.PointerDeltaEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.PointerDeltaEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureSwipe<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.PointerTouchPadGestureSwipeEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.TappedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnTappedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.TappedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnTapped<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.TappedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.TappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnTapped(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.TappedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnTappedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.TappedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.TappedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.TappedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnTapped<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.TappedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.RightTappedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.RightTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnRightTappedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.RightTappedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.RightTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnRightTapped<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.RightTappedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.RightTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnRightTapped(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.RightTappedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnRightTappedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.TappedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.RightTappedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.RightTappedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnRightTapped<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.RightTappedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.HoldingEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.HoldingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnHoldingHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.HoldingRoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.HoldingEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.HoldingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnHolding<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.HoldingRoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.HoldingEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.HoldingEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.HoldingRoutedEventArgs> ObserveOnHolding(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.HoldingEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnHoldingHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.HoldingRoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.HoldingRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.HoldingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.HoldingEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnHolding<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.HoldingRoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.HoldingEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.DoubleTappedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.DoubleTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnDoubleTappedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        obj.AddHandler(Avalonia.Input.InputElement.DoubleTappedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.DoubleTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnDoubleTapped<T>(
+        this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.DoubleTappedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.DoubleTappedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnDoubleTapped(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.DoubleTappedEvent, routes);
+    }
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnDoubleTappedHandler<T>(
+        this ElementBuilder<T> builder,
+        Action<T, Avalonia.Input.TappedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            void Handler(object? _, Avalonia.Input.TappedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.DoubleTappedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.DoubleTappedEvent, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnDoubleTapped<T>(
+        this ElementBuilder<T> builder,
+        Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = typed.GetObservable(Avalonia.Input.InputElement.DoubleTappedEvent, routes);
+            handler((T)typed, observable);
+        }));
+    }
+
+
     // Avalonia.Input.InputElement.GotFocus
 
     /// <summary>
@@ -2990,10 +5286,10 @@ public static partial class InputElementExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnGotFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnGotFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                 h => obj.GotFocus += h, 
                 h => obj.GotFocus -= h)
             .Select(x => x.EventArgs);
@@ -3006,10 +5302,10 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `GotFocus` event on the specified object.</returns>
-    public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocusEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.FocusChangedEventArgs> ObserveOnGotFocusEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                 h => obj.GotFocus += h, 
                 h => obj.GotFocus -= h)
             .Select(x => x.EventArgs);
@@ -3021,15 +5317,70 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnGotFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static ElementBuilder<T> OnGotFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
             var observable = Observable
-                .FromEventPattern<System.EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
+                .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                     h => typed.GotFocus += h,
                     h => typed.GotFocus -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.GettingFocus
+
+    /// <summary>
+    /// Adds a handler to the `GettingFocus` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGettingFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                h => obj.GettingFocus += h, 
+                h => obj.GettingFocus -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `GettingFocus` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `GettingFocus` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.FocusChangingEventArgs> ObserveOnGettingFocusEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                h => obj.GettingFocus += h, 
+                h => obj.GettingFocus -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnGettingFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                    h => typed.GettingFocus += h,
+                    h => typed.GettingFocus -= h)
                 .Select(x => x.EventArgs);
             handler((T)typed, observable);
         }));
@@ -3045,10 +5396,10 @@ public static partial class InputElementExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLostFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnLostFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                 h => obj.LostFocus += h, 
                 h => obj.LostFocus -= h)
             .Select(x => x.EventArgs);
@@ -3061,10 +5412,10 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `LostFocus` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocusEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.FocusChangedEventArgs> ObserveOnLostFocusEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
-            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                 h => obj.LostFocus += h, 
                 h => obj.LostFocus -= h)
             .Select(x => x.EventArgs);
@@ -3076,15 +5427,70 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnLostFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static ElementBuilder<T> OnLostFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.FocusChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
             var observable = Observable
-                .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangedEventArgs>, Avalonia.Input.FocusChangedEventArgs>(
                     h => typed.LostFocus += h,
                     h => typed.LostFocus -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.LosingFocus
+
+    /// <summary>
+    /// Adds a handler to the `LosingFocus` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLosingFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                h => obj.LosingFocus += h, 
+                h => obj.LosingFocus -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `LosingFocus` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `LosingFocus` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.FocusChangingEventArgs> ObserveOnLosingFocusEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                h => obj.LosingFocus += h, 
+                h => obj.LosingFocus -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnLosingFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.FocusChangingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.FocusChangingEventArgs>, Avalonia.Input.FocusChangingEventArgs>(
+                    h => typed.LosingFocus += h,
+                    h => typed.LosingFocus -= h)
                 .Select(x => x.EventArgs);
             handler((T)typed, observable);
         }));
@@ -3696,6 +6102,776 @@ public static partial class InputElementExtensions
     }
 
 
+    // Avalonia.Input.InputElement.ContextRequested
+
+    /// <summary>
+    /// Adds a handler to the `ContextRequested` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.ContextRequestedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ContextRequestedEventArgs>, Avalonia.Input.ContextRequestedEventArgs>(
+                h => obj.ContextRequested += h, 
+                h => obj.ContextRequested -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ContextRequested` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ContextRequested` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ContextRequestedEventArgs>, Avalonia.Input.ContextRequestedEventArgs>(
+                h => obj.ContextRequested += h, 
+                h => obj.ContextRequested -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.ContextRequestedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.ContextRequestedEventArgs>, Avalonia.Input.ContextRequestedEventArgs>(
+                    h => typed.ContextRequested += h,
+                    h => typed.ContextRequested -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ContextCanceled
+
+    /// <summary>
+    /// Adds a handler to the `ContextCanceled` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContextCanceledEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.ContextCanceled += h, 
+                h => obj.ContextCanceled -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ContextCanceled` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ContextCanceled` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnContextCanceledEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.ContextCanceled += h, 
+                h => obj.ContextCanceled -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnContextCanceledEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                    h => typed.ContextCanceled += h,
+                    h => typed.ContextCanceled -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.Pinch
+
+    /// <summary>
+    /// Adds a handler to the `Pinch` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPinchEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PinchEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEventArgs>, Avalonia.Input.PinchEventArgs>(
+                h => obj.Pinch += h, 
+                h => obj.Pinch -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `Pinch` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `Pinch` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PinchEventArgs> ObserveOnPinchEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEventArgs>, Avalonia.Input.PinchEventArgs>(
+                h => obj.Pinch += h, 
+                h => obj.Pinch -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinchEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PinchEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEventArgs>, Avalonia.Input.PinchEventArgs>(
+                    h => typed.Pinch += h,
+                    h => typed.Pinch -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PinchEnded
+
+    /// <summary>
+    /// Adds a handler to the `PinchEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPinchEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PinchEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEndedEventArgs>, Avalonia.Input.PinchEndedEventArgs>(
+                h => obj.PinchEnded += h, 
+                h => obj.PinchEnded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PinchEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PinchEnded` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PinchEndedEventArgs> ObserveOnPinchEndedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEndedEventArgs>, Avalonia.Input.PinchEndedEventArgs>(
+                h => obj.PinchEnded += h, 
+                h => obj.PinchEnded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPinchEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PinchEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PinchEndedEventArgs>, Avalonia.Input.PinchEndedEventArgs>(
+                    h => typed.PinchEnded += h,
+                    h => typed.PinchEnded -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PullGesture
+
+    /// <summary>
+    /// Adds a handler to the `PullGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPullGestureEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PullGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEventArgs>, Avalonia.Input.PullGestureEventArgs>(
+                h => obj.PullGesture += h, 
+                h => obj.PullGesture -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PullGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PullGesture` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PullGestureEventArgs> ObserveOnPullGestureEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEventArgs>, Avalonia.Input.PullGestureEventArgs>(
+                h => obj.PullGesture += h, 
+                h => obj.PullGesture -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGestureEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PullGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEventArgs>, Avalonia.Input.PullGestureEventArgs>(
+                    h => typed.PullGesture += h,
+                    h => typed.PullGesture -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PullGestureEnded
+
+    /// <summary>
+    /// Adds a handler to the `PullGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPullGestureEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PullGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEndedEventArgs>, Avalonia.Input.PullGestureEndedEventArgs>(
+                h => obj.PullGestureEnded += h, 
+                h => obj.PullGestureEnded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PullGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PullGestureEnded` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PullGestureEndedEventArgs> ObserveOnPullGestureEndedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEndedEventArgs>, Avalonia.Input.PullGestureEndedEventArgs>(
+                h => obj.PullGestureEnded += h, 
+                h => obj.PullGestureEnded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPullGestureEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PullGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PullGestureEndedEventArgs>, Avalonia.Input.PullGestureEndedEventArgs>(
+                    h => typed.PullGestureEnded += h,
+                    h => typed.PullGestureEnded -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGesture
+
+    /// <summary>
+    /// Adds a handler to the `ScrollGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnScrollGestureEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEventArgs>, Avalonia.Input.ScrollGestureEventArgs>(
+                h => obj.ScrollGesture += h, 
+                h => obj.ScrollGesture -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ScrollGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ScrollGesture` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureEventArgs> ObserveOnScrollGestureEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEventArgs>, Avalonia.Input.ScrollGestureEventArgs>(
+                h => obj.ScrollGesture += h, 
+                h => obj.ScrollGesture -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.ScrollGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEventArgs>, Avalonia.Input.ScrollGestureEventArgs>(
+                    h => typed.ScrollGesture += h,
+                    h => typed.ScrollGesture -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGestureInertiaStarting
+
+    /// <summary>
+    /// Adds a handler to the `ScrollGestureInertiaStarting` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnScrollGestureInertiaStartingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>, Avalonia.Input.ScrollGestureInertiaStartingEventArgs>(
+                h => obj.ScrollGestureInertiaStarting += h, 
+                h => obj.ScrollGestureInertiaStarting -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ScrollGestureInertiaStarting` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ScrollGestureInertiaStarting` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs> ObserveOnScrollGestureInertiaStartingEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>, Avalonia.Input.ScrollGestureInertiaStartingEventArgs>(
+                h => obj.ScrollGestureInertiaStarting += h, 
+                h => obj.ScrollGestureInertiaStarting -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureInertiaStartingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureInertiaStartingEventArgs>, Avalonia.Input.ScrollGestureInertiaStartingEventArgs>(
+                    h => typed.ScrollGestureInertiaStarting += h,
+                    h => typed.ScrollGestureInertiaStarting -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.ScrollGestureEnded
+
+    /// <summary>
+    /// Adds a handler to the `ScrollGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnScrollGestureEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.ScrollGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEndedEventArgs>, Avalonia.Input.ScrollGestureEndedEventArgs>(
+                h => obj.ScrollGestureEnded += h, 
+                h => obj.ScrollGestureEnded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ScrollGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ScrollGestureEnded` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.ScrollGestureEndedEventArgs> ObserveOnScrollGestureEndedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEndedEventArgs>, Avalonia.Input.ScrollGestureEndedEventArgs>(
+                h => obj.ScrollGestureEnded += h, 
+                h => obj.ScrollGestureEnded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnScrollGestureEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.ScrollGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.ScrollGestureEndedEventArgs>, Avalonia.Input.ScrollGestureEndedEventArgs>(
+                    h => typed.ScrollGestureEnded += h,
+                    h => typed.ScrollGestureEnded -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureMagnify
+
+    /// <summary>
+    /// Adds a handler to the `PointerTouchPadGestureMagnify` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPointerTouchPadGestureMagnifyEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureMagnify += h, 
+                h => obj.PointerTouchPadGestureMagnify -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PointerTouchPadGestureMagnify` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PointerTouchPadGestureMagnify` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureMagnifyEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureMagnify += h, 
+                h => obj.PointerTouchPadGestureMagnify -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureMagnifyEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                    h => typed.PointerTouchPadGestureMagnify += h,
+                    h => typed.PointerTouchPadGestureMagnify -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureRotate
+
+    /// <summary>
+    /// Adds a handler to the `PointerTouchPadGestureRotate` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPointerTouchPadGestureRotateEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureRotate += h, 
+                h => obj.PointerTouchPadGestureRotate -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PointerTouchPadGestureRotate` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PointerTouchPadGestureRotate` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureRotateEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureRotate += h, 
+                h => obj.PointerTouchPadGestureRotate -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureRotateEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                    h => typed.PointerTouchPadGestureRotate += h,
+                    h => typed.PointerTouchPadGestureRotate -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.SwipeGesture
+
+    /// <summary>
+    /// Adds a handler to the `SwipeGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSwipeGestureEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.SwipeGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEventArgs>, Avalonia.Input.SwipeGestureEventArgs>(
+                h => obj.SwipeGesture += h, 
+                h => obj.SwipeGesture -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `SwipeGesture` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `SwipeGesture` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.SwipeGestureEventArgs> ObserveOnSwipeGestureEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEventArgs>, Avalonia.Input.SwipeGestureEventArgs>(
+                h => obj.SwipeGesture += h, 
+                h => obj.SwipeGesture -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGestureEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.SwipeGestureEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEventArgs>, Avalonia.Input.SwipeGestureEventArgs>(
+                    h => typed.SwipeGesture += h,
+                    h => typed.SwipeGesture -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.SwipeGestureEnded
+
+    /// <summary>
+    /// Adds a handler to the `SwipeGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSwipeGestureEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.SwipeGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEndedEventArgs>, Avalonia.Input.SwipeGestureEndedEventArgs>(
+                h => obj.SwipeGestureEnded += h, 
+                h => obj.SwipeGestureEnded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `SwipeGestureEnded` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `SwipeGestureEnded` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.SwipeGestureEndedEventArgs> ObserveOnSwipeGestureEndedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEndedEventArgs>, Avalonia.Input.SwipeGestureEndedEventArgs>(
+                h => obj.SwipeGestureEnded += h, 
+                h => obj.SwipeGestureEnded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnSwipeGestureEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.SwipeGestureEndedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.SwipeGestureEndedEventArgs>, Avalonia.Input.SwipeGestureEndedEventArgs>(
+                    h => typed.SwipeGestureEnded += h,
+                    h => typed.SwipeGestureEnded -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.PointerTouchPadGestureSwipe
+
+    /// <summary>
+    /// Adds a handler to the `PointerTouchPadGestureSwipe` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPointerTouchPadGestureSwipeEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureSwipe += h, 
+                h => obj.PointerTouchPadGestureSwipe -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PointerTouchPadGestureSwipe` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PointerTouchPadGestureSwipe` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.PointerDeltaEventArgs> ObserveOnPointerTouchPadGestureSwipeEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                h => obj.PointerTouchPadGestureSwipe += h, 
+                h => obj.PointerTouchPadGestureSwipe -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnPointerTouchPadGestureSwipeEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerDeltaEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.PointerDeltaEventArgs>, Avalonia.Input.PointerDeltaEventArgs>(
+                    h => typed.PointerTouchPadGestureSwipe += h,
+                    h => typed.PointerTouchPadGestureSwipe -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
     // Avalonia.Input.InputElement.Tapped
 
     /// <summary>
@@ -3745,6 +6921,61 @@ public static partial class InputElementExtensions
                 .FromEventPattern<System.EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
                     h => typed.Tapped += h,
                     h => typed.Tapped -= h)
+                .Select(x => x.EventArgs);
+            handler((T)typed, observable);
+        }));
+    }
+
+
+    // Avalonia.Input.InputElement.RightTapped
+
+    /// <summary>
+    /// Adds a handler to the `RightTapped` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRightTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.RightTapped += h, 
+                h => obj.RightTapped -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `RightTapped` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `RightTapped` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnRightTappedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<System.EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.RightTapped += h, 
+                h => obj.RightTapped -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> OnRightTappedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (Avalonia.Input.InputElement)target;
+            var observable = Observable
+                .FromEventPattern<System.EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                    h => typed.RightTapped += h,
+                    h => typed.RightTapped -= h)
                 .Select(x => x.EventArgs);
             handler((T)typed, observable);
         }));

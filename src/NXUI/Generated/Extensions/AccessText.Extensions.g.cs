@@ -17,7 +17,7 @@ public static partial class AccessTextExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ShowAccessKey<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> ShowAccessKey<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.AccessText
     {
         return builder.WithValue(PropertyMetadata.AccessText_ShowAccessKey, Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, value);
     }
@@ -32,9 +32,9 @@ public static partial class AccessTextExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowAccessKey<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         return builder.WithBinding(PropertyMetadata.AccessText_ShowAccessKey, Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, binding, mode, priority);
     }
@@ -51,7 +51,7 @@ public static partial class AccessTextExtensions
         this ElementBuilder<T> builder,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         return builder.WithBinding(PropertyMetadata.AccessText_ShowAccessKey, Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
@@ -63,7 +63,7 @@ public static partial class AccessTextExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> ShowAccessKey<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Control
+    public static ElementRef<T> ShowAccessKey<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Primitives.AccessText
     {
         return elementRef.SetValue(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, value);
     }
@@ -78,9 +78,9 @@ public static partial class AccessTextExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowAccessKey<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         return elementRef.SetBinding(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, binding, mode, priority);
     }
@@ -97,7 +97,7 @@ public static partial class AccessTextExtensions
         this ElementRef<T> elementRef,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         return elementRef.SetBinding(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
@@ -111,7 +111,7 @@ public static partial class AccessTextExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ShowAccessKey<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
+    public static T ShowAccessKey<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.AccessText
     {
         obj[Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty] = value;
         return obj;
@@ -128,9 +128,9 @@ public static partial class AccessTextExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowAccessKey<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         var descriptor = Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -150,7 +150,7 @@ public static partial class AccessTextExtensions
         this T obj,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.AccessText
     {
         var descriptor = Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -164,8 +164,8 @@ public static partial class AccessTextExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowAccessKey(
-        this Avalonia.Controls.Control obj,
+    public static Avalonia.Data.BindingBase BindShowAccessKey(
+        this Avalonia.Controls.Primitives.AccessText obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -181,7 +181,7 @@ public static partial class AccessTextExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Boolean> ObserveShowAccessKey(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Boolean> ObserveShowAccessKey(this Avalonia.Controls.Primitives.AccessText obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }
@@ -193,7 +193,7 @@ public static partial class AccessTextExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnShowAccessKey<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnShowAccessKey<T>(this T obj, Action<Avalonia.Controls.Primitives.AccessText, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.AccessText
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
         handler(obj, observable);
@@ -205,7 +205,7 @@ public static partial class AccessTextExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowAccessKey(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowAccessKey(this Avalonia.Controls.Primitives.AccessText obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }
@@ -217,7 +217,7 @@ public static partial class AccessTextExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingShowAccessKey<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingShowAccessKey<T>(this T obj, Action<Avalonia.Controls.Primitives.AccessText, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.AccessText
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
         handler(obj, observable);
@@ -229,7 +229,7 @@ public static partial class AccessTextExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable with property change details.</returns>
-    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowAccessKeyChanged(this Avalonia.Controls.Control obj)
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowAccessKeyChanged(this Avalonia.Controls.Primitives.AccessText obj)
     {
         return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }
@@ -241,7 +241,7 @@ public static partial class AccessTextExtensions
     /// <param name="handler">The handler with target object and property change observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnShowAccessKeyChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    public static T OnShowAccessKeyChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.AccessText, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.AccessText
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
         handler(obj, observable);

@@ -123,7 +123,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetGeometryDrawingGeometry(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingGeometry(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetGeometryDrawingGeometry(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingGeometry(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingGeometry(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetGeometryDrawingGeometry(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetGeometryDrawingBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingBrush(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetGeometryDrawingBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingBrush(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingBrush(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetGeometryDrawingBrush(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetGeometryDrawingPen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingPen(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetGeometryDrawingPen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingPen(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, binding));
         return keyFrame;

@@ -32,7 +32,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -78,7 +78,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Menu<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -128,7 +128,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Menu<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -164,7 +164,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMenu(
+    public static Avalonia.Data.BindingBase BindMenu(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -316,7 +316,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Icon<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -366,7 +366,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Icon<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -402,7 +402,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIcon(
+    public static Avalonia.Data.BindingBase BindIcon(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -554,7 +554,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Header<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -604,7 +604,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Header<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -640,7 +640,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHeader(
+    public static Avalonia.Data.BindingBase BindHeader(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTip<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -792,7 +792,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ToolTip<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -842,7 +842,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T ToolTip<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -878,7 +878,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.ToolTipProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindToolTip(
+    public static Avalonia.Data.BindingBase BindToolTip(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1030,7 +1030,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Gesture<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1080,7 +1080,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Gesture<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1116,7 +1116,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGesture(
+    public static Avalonia.Data.BindingBase BindGesture(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1222,7 +1222,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1268,7 +1268,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsChecked<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1318,7 +1318,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T IsChecked<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1354,7 +1354,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsChecked(
+    public static Avalonia.Data.BindingBase BindIsChecked(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1445,7 +1445,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ToggleType<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> ToggleType<T>(this ElementBuilder<T> builder, Avalonia.Controls.MenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, value);
     }
@@ -1460,7 +1460,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleType<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1477,7 +1477,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleType<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.NativeMenuItemToggleType> observable,
+        IObservable<Avalonia.Controls.MenuItemToggleType> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1491,7 +1491,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> ToggleType<T>(this ElementRef<T> elementRef, Avalonia.Controls.NativeMenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementRef<T> ToggleType<T>(this ElementRef<T> elementRef, Avalonia.Controls.MenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
     {
         return elementRef.SetValue(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, value);
     }
@@ -1506,7 +1506,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ToggleType<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1523,7 +1523,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ToggleType<T>(
         this ElementRef<T> elementRef,
-        IObservable<Avalonia.Controls.NativeMenuItemToggleType> observable,
+        IObservable<Avalonia.Controls.MenuItemToggleType> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1539,7 +1539,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ToggleType<T>(this T obj, Avalonia.Controls.NativeMenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
+    public static T ToggleType<T>(this T obj, Avalonia.Controls.MenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = value;
         return obj;
@@ -1556,7 +1556,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T ToggleType<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1576,7 +1576,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T ToggleType<T>(
         this T obj,
-        IObservable<Avalonia.Controls.NativeMenuItemToggleType> observable,
+        IObservable<Avalonia.Controls.MenuItemToggleType> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1592,7 +1592,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindToggleType(
+    public static Avalonia.Data.BindingBase BindToggleType(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1609,7 +1609,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.NativeMenuItemToggleType> ObserveToggleType(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<Avalonia.Controls.MenuItemToggleType> ObserveToggleType(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
     }
@@ -1621,7 +1621,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnToggleType<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Controls.NativeMenuItemToggleType>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnToggleType<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Controls.MenuItemToggleType>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
         handler(obj, observable);
@@ -1633,7 +1633,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.NativeMenuItemToggleType>> ObserveBindingToggleType(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<Avalonia.Controls.MenuItemToggleType>> ObserveBindingToggleType(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
     }
@@ -1645,7 +1645,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingToggleType<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Controls.NativeMenuItemToggleType>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingToggleType<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Controls.MenuItemToggleType>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
         handler(obj, observable);
@@ -1683,19 +1683,19 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
-        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.None);
+        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.None);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.None"/>.
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
     public static T ToggleTypeNone<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
-        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.None;
+        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.None;
         return obj;
     }
 
@@ -1706,19 +1706,19 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeCheckBox<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
-        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.CheckBox);
+        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.CheckBox);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.CheckBox"/>.
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.CheckBox"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
     public static T ToggleTypeCheckBox<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
-        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.CheckBox;
+        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.CheckBox;
         return obj;
     }
 
@@ -1729,19 +1729,19 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeRadio<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
-        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.Radio);
+        return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.Radio);
     }
 
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.Radio"/>.
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.Radio"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
     public static T ToggleTypeRadio<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
-        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.Radio;
+        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.Radio;
         return obj;
     }
 
@@ -1767,7 +1767,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1813,7 +1813,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Command<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1863,7 +1863,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1899,7 +1899,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommand(
+    public static Avalonia.Data.BindingBase BindCommand(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2005,7 +2005,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2051,7 +2051,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CommandParameter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2101,7 +2101,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2137,7 +2137,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.CommandParameterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommandParameter(
+    public static Avalonia.Data.BindingBase BindCommandParameter(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2243,7 +2243,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2289,7 +2289,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2339,7 +2339,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T IsEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2375,7 +2375,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsEnabled(
+    public static Avalonia.Data.BindingBase BindIsEnabled(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2481,7 +2481,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2527,7 +2527,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2577,7 +2577,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T IsVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2613,7 +2613,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenuItem.IsVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsVisible(
+    public static Avalonia.Data.BindingBase BindIsVisible(
         this Avalonia.Controls.NativeMenuItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

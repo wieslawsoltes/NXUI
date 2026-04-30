@@ -41,7 +41,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenuItemToggleType> NativeMenuItem_ToggleType => Avalonia.Controls.NativeMenuItem.ToggleTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.MenuItemToggleType> NativeMenuItem_ToggleType => Avalonia.Controls.NativeMenuItem.ToggleTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.

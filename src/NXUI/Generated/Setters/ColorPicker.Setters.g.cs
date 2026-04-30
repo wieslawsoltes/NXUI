@@ -123,7 +123,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorPickerContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorPickerContent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorPickerContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorPickerContent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ColorPickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorPickerContent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorPickerContent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.ContentProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ColorPickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorPickerContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorPickerContent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.ContentProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorPickerContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorPickerContentTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorPickerContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorPickerContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ColorPickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorPickerContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorPickerContentTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.ContentTemplateProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ColorPickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorPickerContentTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorPickerContentTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.ContentTemplateProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorPickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorPickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorPickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorPickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ColorPickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorPickerHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorPickerHorizontalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ColorPickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorPickerHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorPickerHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorPickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorPickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ColorPickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorPickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorPickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ColorPickerSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorPickerVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorPickerVerticalContentAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ColorPickerSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorPickerVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorPickerVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, binding));
         return keyFrame;

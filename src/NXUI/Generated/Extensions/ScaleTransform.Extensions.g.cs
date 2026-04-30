@@ -32,7 +32,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The builder instance.</returns>
     public static ScaleTransformBuilder ScaleX(
         this ScaleTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ScaleTransform> ScaleX(
         this ElementRef<Avalonia.Media.ScaleTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ScaleTransform ScaleX(
         this Avalonia.Media.ScaleTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindScaleX(
+    public static Avalonia.Data.BindingBase BindScaleX(
         this Avalonia.Media.ScaleTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The builder instance.</returns>
     public static ScaleTransformBuilder ScaleY(
         this ScaleTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ScaleTransform> ScaleY(
         this ElementRef<Avalonia.Media.ScaleTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class ScaleTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ScaleTransform ScaleY(
         this Avalonia.Media.ScaleTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindScaleY(
+    public static Avalonia.Data.BindingBase BindScaleY(
         this Avalonia.Media.ScaleTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

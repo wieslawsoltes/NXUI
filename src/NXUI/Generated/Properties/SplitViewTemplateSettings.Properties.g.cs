@@ -17,4 +17,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> SplitViewTemplateSettings_PaneColumnGridLength => Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneHeightProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> SplitViewTemplateSettings_ClosedPaneHeight => Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneHeightProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneRowGridLengthProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> SplitViewTemplateSettings_PaneRowGridLength => Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneRowGridLengthProperty;
 }

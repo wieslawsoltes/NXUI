@@ -32,7 +32,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemContainerTheme<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -78,7 +78,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemContainerTheme<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -128,7 +128,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemContainerTheme<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -164,7 +164,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemContainerTheme(
+    public static Avalonia.Data.BindingBase BindItemContainerTheme(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -257,7 +257,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemCount(
+    public static Avalonia.Data.BindingBase BindItemCount(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsPanel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -406,7 +406,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsPanel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -456,7 +456,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsPanel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -492,7 +492,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsPanel(
+    public static Avalonia.Data.BindingBase BindItemsPanel(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -598,7 +598,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -644,7 +644,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemsSource<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -694,7 +694,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -730,7 +730,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemsSource(
+    public static Avalonia.Data.BindingBase BindItemsSource(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -836,7 +836,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -882,7 +882,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ItemTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -932,7 +932,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -968,7 +968,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItemTemplate(
+    public static Avalonia.Data.BindingBase BindItemTemplate(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1059,7 +1059,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> DisplayMemberBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> DisplayMemberBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_DisplayMemberBinding, Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, value);
     }
@@ -1074,7 +1074,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMemberBinding<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1091,7 +1091,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMemberBinding<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1105,7 +1105,7 @@ public static partial class ItemsControlExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> DisplayMemberBinding<T>(this ElementRef<T> elementRef, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.ItemsControl
+    public static ElementRef<T> DisplayMemberBinding<T>(this ElementRef<T> elementRef, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.ItemsControl
     {
         return elementRef.SetValue(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, value);
     }
@@ -1120,7 +1120,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayMemberBinding<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1137,7 +1137,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DisplayMemberBinding<T>(
         this ElementRef<T> elementRef,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1153,7 +1153,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DisplayMemberBinding<T>(this T obj, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.ItemsControl
+    public static T DisplayMemberBinding<T>(this T obj, Avalonia.Data.BindingBase? value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty] = value;
         return obj;
@@ -1170,7 +1170,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayMemberBinding<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1190,7 +1190,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayMemberBinding<T>(
         this T obj,
-        IObservable<Avalonia.Data.IBinding?> observable,
+        IObservable<Avalonia.Data.BindingBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1206,7 +1206,7 @@ public static partial class ItemsControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDisplayMemberBinding(
+    public static Avalonia.Data.BindingBase BindDisplayMemberBinding(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1223,7 +1223,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Data.IBinding?> ObserveDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<Avalonia.Data.BindingBase?> ObserveDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }
@@ -1235,7 +1235,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Data.IBinding?>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Data.BindingBase?>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
         handler(obj, observable);
@@ -1247,7 +1247,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Data.IBinding?>> ObserveBindingDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Data.BindingBase?>> ObserveBindingDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }
@@ -1259,7 +1259,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding?>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Data.BindingBase?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
         handler(obj, observable);

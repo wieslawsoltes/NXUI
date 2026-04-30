@@ -83,7 +83,7 @@ public readonly struct ElementBuilder<TControl>
     /// <summary>
     /// Adds a binding mutation.
     /// </summary>
-    internal ElementBuilder<TControl> WithBinding(int propertyId, AvaloniaProperty property, IBinding binding, BindingMode mode, BindingPriority priority)
+    internal ElementBuilder<TControl> WithBinding(int propertyId, AvaloniaProperty property, BindingBase binding, BindingMode mode, BindingPriority priority)
     {
         var descriptor = new BindingDescriptor(propertyId, property, mode, priority);
         Node.AddProperty(PropertyMutation.ForBinding(descriptor, binding));

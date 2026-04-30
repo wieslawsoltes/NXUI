@@ -32,7 +32,7 @@ public static partial class TabControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TabStripPlacement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -78,7 +78,7 @@ public static partial class TabControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TabStripPlacement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -128,7 +128,7 @@ public static partial class TabControlExtensions
     /// <returns>The target object reference.</returns>
     public static T TabStripPlacement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -164,7 +164,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTabStripPlacement(
+    public static Avalonia.Data.BindingBase BindTabStripPlacement(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -362,7 +362,7 @@ public static partial class TabControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -408,7 +408,7 @@ public static partial class TabControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -458,7 +458,7 @@ public static partial class TabControlExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -494,7 +494,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(
+    public static Avalonia.Data.BindingBase BindHorizontalContentAlignment(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -692,7 +692,7 @@ public static partial class TabControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -738,7 +738,7 @@ public static partial class TabControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalContentAlignment<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -788,7 +788,7 @@ public static partial class TabControlExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignment<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -824,7 +824,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalContentAlignment(
+    public static Avalonia.Data.BindingBase BindVerticalContentAlignment(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1022,7 +1022,7 @@ public static partial class TabControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -1068,7 +1068,7 @@ public static partial class TabControlExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ContentTemplate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -1118,7 +1118,7 @@ public static partial class TabControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -1154,7 +1154,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindContentTemplate(
+    public static Avalonia.Data.BindingBase BindContentTemplate(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1247,7 +1247,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedContent(
+    public static Avalonia.Data.BindingBase BindSelectedContent(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1337,7 +1337,7 @@ public static partial class TabControlExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedContentTemplate(
+    public static Avalonia.Data.BindingBase BindSelectedContentTemplate(
         this Avalonia.Controls.TabControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1414,6 +1414,482 @@ public static partial class TabControlExtensions
     public static Avalonia.Controls.TabControl OnSelectedContentTemplateChanged(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PageTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithValue(PropertyMetadata.TabControl_PageTransition, Avalonia.Controls.TabControl.PageTransitionProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PageTransition<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithBinding(PropertyMetadata.TabControl_PageTransition, Avalonia.Controls.TabControl.PageTransitionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> PageTransition<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithBinding(PropertyMetadata.TabControl_PageTransition, Avalonia.Controls.TabControl.PageTransitionProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PageTransition<T>(this ElementRef<T> elementRef, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.PageTransitionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PageTransition<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.PageTransitionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PageTransition<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.PageTransitionProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.TabControl.PageTransitionProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PageTransition<T>(this T obj, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.TabControl
+    {
+        obj[Avalonia.Controls.TabControl.PageTransitionProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PageTransition<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        var descriptor = Avalonia.Controls.TabControl.PageTransitionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PageTransition<T>(
+        this T obj,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        var descriptor = Avalonia.Controls.TabControl.PageTransitionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindPageTransition(
+        this Avalonia.Controls.TabControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TabControl.PageTransitionProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Animation.IPageTransition?> ObservePageTransition(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPageTransition<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Animation.IPageTransition?>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition?>> ObserveBindingPageTransition(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPageTransition<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Animation.IPageTransition?>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePageTransitionChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPageTransitionChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IndicatorTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithValue(PropertyMetadata.TabControl_IndicatorTemplate, Avalonia.Controls.TabControl.IndicatorTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IndicatorTemplate<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithBinding(PropertyMetadata.TabControl_IndicatorTemplate, Avalonia.Controls.TabControl.IndicatorTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IndicatorTemplate<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return builder.WithBinding(PropertyMetadata.TabControl_IndicatorTemplate, Avalonia.Controls.TabControl.IndicatorTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IndicatorTemplate<T>(this ElementRef<T> elementRef, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.IndicatorTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IndicatorTemplate<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.IndicatorTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IndicatorTemplate<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.IndicatorTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.TabControl.IndicatorTemplateProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndicatorTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
+    {
+        obj[Avalonia.Controls.TabControl.IndicatorTemplateProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndicatorTemplate<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        var descriptor = Avalonia.Controls.TabControl.IndicatorTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndicatorTemplate<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        var descriptor = Avalonia.Controls.TabControl.IndicatorTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindIndicatorTemplate(
+        this Avalonia.Controls.TabControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TabControl.IndicatorTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveIndicatorTemplate(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIndicatorTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingIndicatorTemplate(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIndicatorTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIndicatorTemplateChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.IndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIndicatorTemplateChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.IndicatorTemplateProperty);
         handler(obj, observable);
         return obj;
     }

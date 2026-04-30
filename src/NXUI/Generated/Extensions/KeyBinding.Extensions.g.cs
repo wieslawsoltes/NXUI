@@ -32,7 +32,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -78,7 +78,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Command<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -128,7 +128,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -164,7 +164,7 @@ public static partial class KeyBindingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommand(
+    public static Avalonia.Data.BindingBase BindCommand(
         this Avalonia.Input.KeyBinding obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -316,7 +316,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CommandParameter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -366,7 +366,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -402,7 +402,7 @@ public static partial class KeyBindingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommandParameter(
+    public static Avalonia.Data.BindingBase BindCommandParameter(
         this Avalonia.Input.KeyBinding obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -554,7 +554,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Gesture<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -604,7 +604,7 @@ public static partial class KeyBindingExtensions
     /// <returns>The target object reference.</returns>
     public static T Gesture<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
@@ -640,7 +640,7 @@ public static partial class KeyBindingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindGesture(
+    public static Avalonia.Data.BindingBase BindGesture(
         this Avalonia.Input.KeyBinding obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

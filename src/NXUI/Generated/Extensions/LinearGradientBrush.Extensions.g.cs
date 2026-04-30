@@ -32,7 +32,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static LinearGradientBrushBuilder StartPoint(
         this LinearGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.LinearGradientBrush> StartPoint(
         this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LinearGradientBrush StartPoint(
         this Avalonia.Media.LinearGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStartPoint(
+    public static Avalonia.Data.BindingBase BindStartPoint(
         this Avalonia.Media.LinearGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static LinearGradientBrushBuilder EndPoint(
         this LinearGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.LinearGradientBrush> EndPoint(
         this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class LinearGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LinearGradientBrush EndPoint(
         this Avalonia.Media.LinearGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindEndPoint(
+    public static Avalonia.Data.BindingBase BindEndPoint(
         this Avalonia.Media.LinearGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

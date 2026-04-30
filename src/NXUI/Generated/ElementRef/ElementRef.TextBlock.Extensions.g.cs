@@ -113,7 +113,7 @@ public static partial class TextBlockElementRefExtensions
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> value.
     /// </summary>
-    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Control
+    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBlock
     {
         return elementRef.Observe(Avalonia.Controls.TextBlock.LetterSpacingProperty);
     }

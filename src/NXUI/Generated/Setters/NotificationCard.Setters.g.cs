@@ -123,7 +123,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNotificationCardIsClosed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNotificationCardIsClosed(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNotificationCardIsClosed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNotificationCardIsClosed(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class NotificationCardSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNotificationCardIsClosed(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNotificationCardIsClosed(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class NotificationCardSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNotificationCardIsClosed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNotificationCardIsClosed(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNotificationCardNotificationType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNotificationCardNotificationType(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNotificationCardNotificationType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNotificationCardNotificationType(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class NotificationCardSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNotificationCardNotificationType(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNotificationCardNotificationType(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class NotificationCardSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNotificationCardNotificationType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNotificationCardNotificationType(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetNotificationCardCloseOnClick(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNotificationCardCloseOnClick(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class NotificationCardSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetNotificationCardCloseOnClick(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNotificationCardCloseOnClick(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class NotificationCardSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNotificationCardCloseOnClick(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetNotificationCardCloseOnClick(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class NotificationCardSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNotificationCardCloseOnClick(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetNotificationCardCloseOnClick(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty, binding));
         return keyFrame;

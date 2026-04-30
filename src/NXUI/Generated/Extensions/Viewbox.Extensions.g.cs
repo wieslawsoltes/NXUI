@@ -32,7 +32,7 @@ public static partial class ViewboxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -78,7 +78,7 @@ public static partial class ViewboxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Stretch<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -128,7 +128,7 @@ public static partial class ViewboxExtensions
     /// <returns>The target object reference.</returns>
     public static T Stretch<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -164,7 +164,7 @@ public static partial class ViewboxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStretch(
+    public static Avalonia.Data.BindingBase BindStretch(
         this Avalonia.Controls.Viewbox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -362,7 +362,7 @@ public static partial class ViewboxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -408,7 +408,7 @@ public static partial class ViewboxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> StretchDirection<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -458,7 +458,7 @@ public static partial class ViewboxExtensions
     /// <returns>The target object reference.</returns>
     public static T StretchDirection<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -494,7 +494,7 @@ public static partial class ViewboxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindStretchDirection(
+    public static Avalonia.Data.BindingBase BindStretchDirection(
         this Avalonia.Controls.Viewbox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -669,7 +669,7 @@ public static partial class ViewboxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -715,7 +715,7 @@ public static partial class ViewboxExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Child<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -765,7 +765,7 @@ public static partial class ViewboxExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -801,7 +801,7 @@ public static partial class ViewboxExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindChild(
+    public static Avalonia.Data.BindingBase BindChild(
         this Avalonia.Controls.Viewbox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -123,7 +123,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetProgressBarIsIndeterminate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetProgressBarIsIndeterminate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetProgressBarIsIndeterminate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetProgressBarIsIndeterminate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ProgressBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetProgressBarIsIndeterminate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetProgressBarIsIndeterminate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.IsIndeterminateProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ProgressBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetProgressBarIsIndeterminate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetProgressBarIsIndeterminate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.IsIndeterminateProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetProgressBarShowProgressText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetProgressBarShowProgressText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetProgressBarShowProgressText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetProgressBarShowProgressText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ProgressBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetProgressBarShowProgressText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetProgressBarShowProgressText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.ShowProgressTextProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ProgressBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetProgressBarShowProgressText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetProgressBarShowProgressText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.ShowProgressTextProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetProgressBarProgressTextFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetProgressBarProgressTextFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetProgressBarProgressTextFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetProgressBarProgressTextFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ProgressBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetProgressBarProgressTextFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetProgressBarProgressTextFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ProgressBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetProgressBarProgressTextFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetProgressBarProgressTextFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetProgressBarOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetProgressBarOrientation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ProgressBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetProgressBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetProgressBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ProgressBarSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetProgressBarOrientation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetProgressBarOrientation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.OrientationProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ProgressBarSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetProgressBarOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetProgressBarOrientation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ProgressBar.OrientationProperty, binding));
         return keyFrame;

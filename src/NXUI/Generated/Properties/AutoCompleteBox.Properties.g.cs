@@ -14,9 +14,14 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Int32> AutoCompleteBox_CaretIndex => Avalonia.Controls.AutoCompleteBox.CaretIndexProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> AutoCompleteBox_Watermark => Avalonia.Controls.AutoCompleteBox.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> AutoCompleteBox_PlaceholderText => Avalonia.Controls.AutoCompleteBox.PlaceholderTextProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> AutoCompleteBox_PlaceholderForeground => Avalonia.Controls.AutoCompleteBox.PlaceholderForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
@@ -42,6 +47,11 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> AutoCompleteBox_ItemTemplate => Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> AutoCompleteBox_ClearSelectionOnLostFocus => Avalonia.Controls.AutoCompleteBox.ClearSelectionOnLostFocusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
@@ -112,4 +122,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Object> AutoCompleteBox_InnerRightContent => Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Data.BindingBase> AutoCompleteBox_ValueMemberBinding => Avalonia.Controls.AutoCompleteBox.ValueMemberBindingProperty;
 }

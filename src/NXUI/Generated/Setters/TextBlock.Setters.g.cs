@@ -123,7 +123,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockBackground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockBackground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockBackground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockBackground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockPadding(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockPadding(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockPadding(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockPadding(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontFamily(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontFamily(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontFamily(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontSize(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontSize(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontSize(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontSize(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontStyle(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontStyle(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontStyle(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontWeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontWeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontWeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontStretch(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontStretch(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontStretch(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockForeground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockForeground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockBaselineOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockBaselineOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockBaselineOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockBaselineOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockBaselineOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockBaselineOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, binding));
         return keyFrame;
@@ -1554,7 +1554,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockLineHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLineHeight(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1568,7 +1568,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockLineHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLineHeight(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1582,7 +1582,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockLineHeight(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, binding));
         return style;
@@ -1594,7 +1594,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, binding));
         return keyFrame;
@@ -1713,7 +1713,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockLineSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLineSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1727,7 +1727,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockLineSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLineSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1741,7 +1741,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockLineSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockLineSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineSpacingProperty, binding));
         return style;
@@ -1753,7 +1753,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockLineSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockLineSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineSpacingProperty, binding));
         return keyFrame;
@@ -1872,7 +1872,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockLetterSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLetterSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1886,7 +1886,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1900,7 +1900,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockLetterSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockLetterSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, binding));
         return style;
@@ -1912,7 +1912,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, binding));
         return keyFrame;
@@ -2031,7 +2031,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockMaxLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockMaxLines(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2045,7 +2045,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockMaxLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockMaxLines(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2059,7 +2059,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockMaxLines(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockMaxLines(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, binding));
         return style;
@@ -2071,7 +2071,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, binding));
         return keyFrame;
@@ -2190,7 +2190,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockText(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2204,7 +2204,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockText(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2218,7 +2218,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockText(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockText(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, binding));
         return style;
@@ -2230,7 +2230,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, binding));
         return keyFrame;
@@ -2349,7 +2349,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextAlignment(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2363,7 +2363,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2377,7 +2377,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockTextAlignment(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, binding));
         return style;
@@ -2389,7 +2389,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, binding));
         return keyFrame;
@@ -2508,7 +2508,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockTextWrapping(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextWrapping(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2522,7 +2522,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2536,7 +2536,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockTextWrapping(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, binding));
         return style;
@@ -2548,7 +2548,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, binding));
         return keyFrame;
@@ -2667,7 +2667,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockTextTrimming(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextTrimming(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2681,7 +2681,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2695,7 +2695,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextTrimming(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockTextTrimming(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, binding));
         return style;
@@ -2707,7 +2707,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, binding));
         return keyFrame;
@@ -2826,7 +2826,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockTextDecorations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextDecorations(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2840,7 +2840,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockTextDecorations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextDecorations(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2854,7 +2854,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextDecorations(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockTextDecorations(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, binding));
         return style;
@@ -2866,7 +2866,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, binding));
         return keyFrame;
@@ -2985,7 +2985,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockFontFeatures(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontFeatures(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -2999,7 +2999,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3013,7 +3013,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontFeatures(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockFontFeatures(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFeaturesProperty, binding));
         return style;
@@ -3025,7 +3025,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontFeatures(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockFontFeatures(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFeaturesProperty, binding));
         return keyFrame;
@@ -3144,7 +3144,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextBlockInlines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockInlines(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -3158,7 +3158,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextBlockInlines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockInlines(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3172,7 +3172,7 @@ public static partial class TextBlockSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockInlines(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextBlockInlines(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, binding));
         return style;
@@ -3184,7 +3184,7 @@ public static partial class TextBlockSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockInlines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextBlockInlines(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, binding));
         return keyFrame;

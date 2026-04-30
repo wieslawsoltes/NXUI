@@ -123,7 +123,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetWrapLayoutHorizontalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapLayoutHorizontalSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetWrapLayoutHorizontalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapLayoutHorizontalSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class WrapLayoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutHorizontalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetWrapLayoutHorizontalSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class WrapLayoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetWrapLayoutVerticalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapLayoutVerticalSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetWrapLayoutVerticalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapLayoutVerticalSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class WrapLayoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutVerticalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetWrapLayoutVerticalSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class WrapLayoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetWrapLayoutOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapLayoutOrientation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class WrapLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetWrapLayoutOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapLayoutOrientation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class WrapLayoutSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetWrapLayoutOrientation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class WrapLayoutSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, binding));
         return keyFrame;

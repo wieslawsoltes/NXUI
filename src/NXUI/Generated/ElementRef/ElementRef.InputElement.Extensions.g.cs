@@ -100,4 +100,22 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.TabIndexProperty);
     }
 
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Input.InputElement.IsHoldingEnabledProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsHoldingEnabled<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.StyledElement
+    {
+        return elementRef.Observe(Avalonia.Input.InputElement.IsHoldingEnabledProperty);
+    }
+
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsHoldWithMouseEnabled<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.StyledElement
+    {
+        return elementRef.Observe(Avalonia.Input.InputElement.IsHoldWithMouseEnabledProperty);
+    }
+
 }

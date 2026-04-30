@@ -47,4 +47,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.PenLineJoin> Shape_StrokeJoin => Avalonia.Controls.Shapes.Shape.StrokeJoinProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> Shape_StrokeMiterLimit => Avalonia.Controls.Shapes.Shape.StrokeMiterLimitProperty;
 }

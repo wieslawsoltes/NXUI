@@ -32,7 +32,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -78,7 +78,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DayFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -128,7 +128,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T DayFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -164,7 +164,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDayFormat(
+    public static Avalonia.Data.BindingBase BindDayFormat(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -316,7 +316,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> DayVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -366,7 +366,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T DayVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -402,7 +402,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDayVisible(
+    public static Avalonia.Data.BindingBase BindDayVisible(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxYear<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -554,7 +554,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MaxYear<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -604,7 +604,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T MaxYear<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -640,7 +640,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaxYear(
+    public static Avalonia.Data.BindingBase BindMaxYear(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinYear<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -792,7 +792,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MinYear<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -842,7 +842,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T MinYear<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -878,7 +878,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinYear(
+    public static Avalonia.Data.BindingBase BindMinYear(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1030,7 +1030,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MonthFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1080,7 +1080,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T MonthFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1116,7 +1116,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMonthFormat(
+    public static Avalonia.Data.BindingBase BindMonthFormat(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1222,7 +1222,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1268,7 +1268,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> MonthVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1318,7 +1318,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T MonthVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1354,7 +1354,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMonthVisible(
+    public static Avalonia.Data.BindingBase BindMonthVisible(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1460,7 +1460,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearFormat<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1506,7 +1506,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> YearFormat<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1556,7 +1556,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T YearFormat<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1592,7 +1592,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindYearFormat(
+    public static Avalonia.Data.BindingBase BindYearFormat(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1698,7 +1698,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearVisible<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1744,7 +1744,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> YearVisible<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1794,7 +1794,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T YearVisible<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1830,7 +1830,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindYearVisible(
+    public static Avalonia.Data.BindingBase BindYearVisible(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1936,7 +1936,7 @@ public static partial class DatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -1982,7 +1982,7 @@ public static partial class DatePickerExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedDate<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -2032,7 +2032,7 @@ public static partial class DatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedDate<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePicker
     {
@@ -2068,7 +2068,7 @@ public static partial class DatePickerExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedDate(
+    public static Avalonia.Data.BindingBase BindSelectedDate(
         this Avalonia.Controls.DatePicker obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

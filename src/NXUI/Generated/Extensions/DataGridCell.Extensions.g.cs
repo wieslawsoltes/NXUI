@@ -19,7 +19,7 @@ public static partial class DataGridCellExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsValid(
+    public static Avalonia.Data.BindingBase BindIsValid(
         this Avalonia.Controls.DataGridCell obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

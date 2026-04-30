@@ -123,7 +123,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationLocation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationLocation(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationLocation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationLocation(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationLocation(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationLocation(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStroke(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStroke(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStroke(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStroke(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStroke(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStroke(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeThicknessUnit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeThicknessUnit(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeThicknessUnit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeThicknessUnit(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeThicknessUnit(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeThicknessUnit(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeDashArray(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeDashArray(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeDashArray(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeDashArray(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeDashOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeDashOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeDashOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeDashOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeThickness(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeThickness(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeThickness(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeThickness(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeLineCap(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeLineCap(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeLineCap(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeLineCap(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding));
         return keyFrame;
@@ -1236,7 +1236,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeOffset(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1250,7 +1250,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffset(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1264,7 +1264,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeOffset(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeOffset(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding));
         return style;
@@ -1276,7 +1276,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding));
         return keyFrame;
@@ -1395,7 +1395,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetTextDecorationStrokeOffsetUnit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeOffsetUnit(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1409,7 +1409,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetTextDecorationStrokeOffsetUnit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffsetUnit(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1423,7 +1423,7 @@ public static partial class TextDecorationSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeOffsetUnit(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetTextDecorationStrokeOffsetUnit(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding));
         return style;
@@ -1435,7 +1435,7 @@ public static partial class TextDecorationSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding));
         return keyFrame;

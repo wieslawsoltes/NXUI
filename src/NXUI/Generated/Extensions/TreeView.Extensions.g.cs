@@ -32,7 +32,7 @@ public static partial class TreeViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -78,7 +78,7 @@ public static partial class TreeViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> AutoScrollToSelectedItem<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -128,7 +128,7 @@ public static partial class TreeViewExtensions
     /// <returns>The target object reference.</returns>
     public static T AutoScrollToSelectedItem<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -164,7 +164,7 @@ public static partial class TreeViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAutoScrollToSelectedItem(
+    public static Avalonia.Data.BindingBase BindAutoScrollToSelectedItem(
         this Avalonia.Controls.TreeView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TreeViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -316,7 +316,7 @@ public static partial class TreeViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedItem<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -366,7 +366,7 @@ public static partial class TreeViewExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItem<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -402,7 +402,7 @@ public static partial class TreeViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedItem(
+    public static Avalonia.Data.BindingBase BindSelectedItem(
         this Avalonia.Controls.TreeView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TreeViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItems<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -554,7 +554,7 @@ public static partial class TreeViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectedItems<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -604,7 +604,7 @@ public static partial class TreeViewExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItems<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -640,7 +640,7 @@ public static partial class TreeViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectedItems(
+    public static Avalonia.Data.BindingBase BindSelectedItems(
         this Avalonia.Controls.TreeView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TreeViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -792,7 +792,7 @@ public static partial class TreeViewExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> SelectionMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -842,7 +842,7 @@ public static partial class TreeViewExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -878,7 +878,7 @@ public static partial class TreeViewExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSelectionMode(
+    public static Avalonia.Data.BindingBase BindSelectionMode(
         this Avalonia.Controls.TreeView obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

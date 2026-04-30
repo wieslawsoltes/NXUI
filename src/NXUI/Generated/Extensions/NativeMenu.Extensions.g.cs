@@ -19,7 +19,7 @@ public static partial class NativeMenuExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenu.ParentProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindParent(
+    public static Avalonia.Data.BindingBase BindParent(
         this Avalonia.Controls.NativeMenu obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -122,7 +122,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsNativeMenuExported<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -168,7 +168,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsNativeMenuExported<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -218,7 +218,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The target object reference.</returns>
     public static T IsNativeMenuExported<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -254,7 +254,7 @@ public static partial class NativeMenuExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsNativeMenuExported(
+    public static Avalonia.Data.BindingBase BindIsNativeMenuExported(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -360,7 +360,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
     {
@@ -406,7 +406,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Menu<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
     {
@@ -456,7 +456,7 @@ public static partial class NativeMenuExtensions
     /// <returns>The target object reference.</returns>
     public static T Menu<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
     {
@@ -492,7 +492,7 @@ public static partial class NativeMenuExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMenu(
+    public static Avalonia.Data.BindingBase BindMenu(
         this Avalonia.AvaloniaObject obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

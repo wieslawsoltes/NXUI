@@ -32,7 +32,7 @@ public static partial class BrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Opacity<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -78,7 +78,7 @@ public static partial class BrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Opacity<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -128,7 +128,7 @@ public static partial class BrushExtensions
     /// <returns>The target object reference.</returns>
     public static T Opacity<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -164,7 +164,7 @@ public static partial class BrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Brush.OpacityProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOpacity(
+    public static Avalonia.Data.BindingBase BindOpacity(
         this Avalonia.Media.Brush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class BrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Transform<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -316,7 +316,7 @@ public static partial class BrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Transform<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -366,7 +366,7 @@ public static partial class BrushExtensions
     /// <returns>The target object reference.</returns>
     public static T Transform<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -402,7 +402,7 @@ public static partial class BrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Brush.TransformProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransform(
+    public static Avalonia.Data.BindingBase BindTransform(
         this Avalonia.Media.Brush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class BrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransformOrigin<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -554,7 +554,7 @@ public static partial class BrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TransformOrigin<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -604,7 +604,7 @@ public static partial class BrushExtensions
     /// <returns>The target object reference.</returns>
     public static T TransformOrigin<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -640,7 +640,7 @@ public static partial class BrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransformOrigin(
+    public static Avalonia.Data.BindingBase BindTransformOrigin(
         this Avalonia.Media.Brush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

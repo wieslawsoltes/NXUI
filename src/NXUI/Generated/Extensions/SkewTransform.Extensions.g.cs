@@ -32,7 +32,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The builder instance.</returns>
     public static SkewTransformBuilder AngleX(
         this SkewTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.SkewTransform> AngleX(
         this ElementRef<Avalonia.Media.SkewTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.SkewTransform AngleX(
         this Avalonia.Media.SkewTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngleX(
+    public static Avalonia.Data.BindingBase BindAngleX(
         this Avalonia.Media.SkewTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The builder instance.</returns>
     public static SkewTransformBuilder AngleY(
         this SkewTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.SkewTransform> AngleY(
         this ElementRef<Avalonia.Media.SkewTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class SkewTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.SkewTransform AngleY(
         this Avalonia.Media.SkewTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngleY(
+    public static Avalonia.Data.BindingBase BindAngleY(
         this Avalonia.Media.SkewTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

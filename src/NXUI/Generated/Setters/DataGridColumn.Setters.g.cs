@@ -123,7 +123,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridColumnIsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridColumnIsVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridColumnIsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridColumnIsVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DataGridColumnSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridColumnIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridColumnIsVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.IsVisibleProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DataGridColumnSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridColumnIsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridColumnIsVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.IsVisibleProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridColumnCellTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridColumnCellTheme(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridColumnCellTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridColumnCellTheme(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DataGridColumnSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridColumnCellTheme(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridColumnCellTheme(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.CellThemeProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DataGridColumnSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridColumnCellTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridColumnCellTheme(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.CellThemeProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridColumnHeader(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridColumnHeader(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridColumnHeader(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridColumnHeader(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DataGridColumnSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridColumnHeader(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridColumnHeader(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.HeaderProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DataGridColumnSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridColumnHeader(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridColumnHeader(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.HeaderProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridColumnHeaderTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridColumnHeaderTemplate(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridColumnHeaderTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridColumnHeaderTemplate(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DataGridColumnSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridColumnHeaderTemplate(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridColumnHeaderTemplate(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.HeaderTemplateProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DataGridColumnSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridColumnHeaderTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridColumnHeaderTemplate(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.HeaderTemplateProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridColumnWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridColumnWidth(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class DataGridColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridColumnWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridColumnWidth(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class DataGridColumnSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridColumnWidth(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridColumnWidth(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.WidthProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class DataGridColumnSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridColumnWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridColumnWidth(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridColumn.WidthProperty, binding));
         return keyFrame;

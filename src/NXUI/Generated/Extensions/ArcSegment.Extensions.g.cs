@@ -32,7 +32,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ArcSegmentBuilder IsLargeArc(
         this ArcSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ArcSegment> IsLargeArc(
         this ElementRef<Avalonia.Media.ArcSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment IsLargeArc(
         this Avalonia.Media.ArcSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsLargeArc(
+    public static Avalonia.Data.BindingBase BindIsLargeArc(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ArcSegmentBuilder Point(
         this ArcSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ArcSegment> Point(
         this ElementRef<Avalonia.Media.ArcSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment Point(
         this Avalonia.Media.ArcSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ArcSegment.PointProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoint(
+    public static Avalonia.Data.BindingBase BindPoint(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -494,7 +494,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ArcSegmentBuilder RotationAngle(
         this ArcSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -540,7 +540,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ArcSegment> RotationAngle(
         this ElementRef<Avalonia.Media.ArcSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -588,7 +588,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment RotationAngle(
         this Avalonia.Media.ArcSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -623,7 +623,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindRotationAngle(
+    public static Avalonia.Data.BindingBase BindRotationAngle(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -725,7 +725,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ArcSegmentBuilder Size(
         this ArcSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -771,7 +771,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ArcSegment> Size(
         this ElementRef<Avalonia.Media.ArcSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -819,7 +819,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment Size(
         this Avalonia.Media.ArcSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -854,7 +854,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSize(
+    public static Avalonia.Data.BindingBase BindSize(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -956,7 +956,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ArcSegmentBuilder SweepDirection(
         this ArcSegmentBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1002,7 +1002,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ArcSegment> SweepDirection(
         this ElementRef<Avalonia.Media.ArcSegment> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1050,7 +1050,7 @@ public static partial class ArcSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment SweepDirection(
         this Avalonia.Media.ArcSegment obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -1085,7 +1085,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindSweepDirection(
+    public static Avalonia.Data.BindingBase BindSweepDirection(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

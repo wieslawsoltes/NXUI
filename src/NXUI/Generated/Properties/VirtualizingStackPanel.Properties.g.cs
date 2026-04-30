@@ -22,4 +22,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> VirtualizingStackPanel_AreVerticalSnapPointsRegular => Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty"/> property defined in <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> VirtualizingStackPanel_CacheLength => Avalonia.Controls.VirtualizingStackPanel.CacheLengthProperty;
 }

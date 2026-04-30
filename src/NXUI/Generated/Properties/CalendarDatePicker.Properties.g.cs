@@ -59,14 +59,19 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.String> CalendarDatePicker_Text => Avalonia.Controls.CalendarDatePicker.TextProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
+    /// The <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> CalendarDatePicker_Watermark => Avalonia.Controls.CalendarDatePicker.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> CalendarDatePicker_PlaceholderText => Avalonia.Controls.CalendarDatePicker.PlaceholderTextProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
+    /// The <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePicker_UseFloatingWatermark => Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty;
+    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePicker_UseFloatingPlaceholder => Avalonia.Controls.CalendarDatePicker.UseFloatingPlaceholderProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> CalendarDatePicker_PlaceholderForeground => Avalonia.Controls.CalendarDatePicker.PlaceholderForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.

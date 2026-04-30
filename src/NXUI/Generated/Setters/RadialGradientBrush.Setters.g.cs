@@ -123,7 +123,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRadialGradientBrushCenter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRadialGradientBrushCenter(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRadialGradientBrushCenter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRadialGradientBrushCenter(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushCenter(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRadialGradientBrushCenter(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushCenter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRadialGradientBrushCenter(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRadialGradientBrushGradientOrigin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRadialGradientBrushGradientOrigin(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRadialGradientBrushGradientOrigin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRadialGradientBrushGradientOrigin(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushGradientOrigin(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRadialGradientBrushGradientOrigin(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushGradientOrigin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRadialGradientBrushGradientOrigin(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRadialGradientBrushRadiusX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRadialGradientBrushRadiusX(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRadialGradientBrushRadiusX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRadialGradientBrushRadiusX(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRadialGradientBrushRadiusX(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRadialGradientBrushRadiusX(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetRadialGradientBrushRadiusY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRadialGradientBrushRadiusY(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetRadialGradientBrushRadiusY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRadialGradientBrushRadiusY(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRadialGradientBrushRadiusY(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class RadialGradientBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRadialGradientBrushRadiusY(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
         return keyFrame;

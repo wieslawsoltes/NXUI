@@ -123,7 +123,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderColor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderColor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderColor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderColorComponent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColorComponent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderColorComponent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColorComponent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderColorComponent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderColorComponent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderColorComponent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderColorComponent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderColorModel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColorModel(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderColorModel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColorModel(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderColorModel(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderColorModel(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderColorModel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderColorModel(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderHsvColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderHsvColor(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderHsvColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderHsvColor(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderHsvColor(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderHsvColor(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderHsvColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderHsvColor(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderIsAlphaVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderIsAlphaVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderIsAlphaVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderIsAlphaVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, binding));
         return keyFrame;
@@ -918,7 +918,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderIsPerceptive(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsPerceptive(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -932,7 +932,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderIsPerceptive(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsPerceptive(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -946,7 +946,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderIsPerceptive(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderIsPerceptive(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, binding));
         return style;
@@ -958,7 +958,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderIsPerceptive(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderIsPerceptive(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, binding));
         return keyFrame;
@@ -1077,7 +1077,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetColorSliderIsRoundingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsRoundingEnabled(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -1091,7 +1091,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetColorSliderIsRoundingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsRoundingEnabled(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1105,7 +1105,7 @@ public static partial class ColorSliderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetColorSliderIsRoundingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetColorSliderIsRoundingEnabled(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, binding));
         return style;
@@ -1117,7 +1117,7 @@ public static partial class ColorSliderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColorSliderIsRoundingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetColorSliderIsRoundingEnabled(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, binding));
         return keyFrame;

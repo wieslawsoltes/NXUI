@@ -32,7 +32,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Duration<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -78,7 +78,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Duration<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -128,7 +128,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Duration<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -164,7 +164,7 @@ public static partial class TransitionBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDuration(
+    public static Avalonia.Data.BindingBase BindDuration(
         this Avalonia.Animation.TransitionBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -316,7 +316,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Delay<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -366,7 +366,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Delay<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -402,7 +402,7 @@ public static partial class TransitionBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindDelay(
+    public static Avalonia.Data.BindingBase BindDelay(
         this Avalonia.Animation.TransitionBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Easing<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -554,7 +554,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Easing<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -604,7 +604,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Easing<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -640,7 +640,7 @@ public static partial class TransitionBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindEasing(
+    public static Avalonia.Data.BindingBase BindEasing(
         this Avalonia.Animation.TransitionBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Property<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -792,7 +792,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Property<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -842,7 +842,7 @@ public static partial class TransitionBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Property<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.TransitionBase
     {
@@ -878,7 +878,7 @@ public static partial class TransitionBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindProperty(
+    public static Avalonia.Data.BindingBase BindProperty(
         this Avalonia.Animation.TransitionBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

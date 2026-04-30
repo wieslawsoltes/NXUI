@@ -123,7 +123,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDrawingGroupOpacity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupOpacity(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDrawingGroupOpacity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupOpacity(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DrawingGroupSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDrawingGroupOpacity(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDrawingGroupOpacity(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DrawingGroupSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDrawingGroupOpacity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDrawingGroupOpacity(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDrawingGroupTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupTransform(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDrawingGroupTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupTransform(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DrawingGroupSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDrawingGroupTransform(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDrawingGroupTransform(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.TransformProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DrawingGroupSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDrawingGroupTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDrawingGroupTransform(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.TransformProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDrawingGroupClipGeometry(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupClipGeometry(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDrawingGroupClipGeometry(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupClipGeometry(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DrawingGroupSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDrawingGroupClipGeometry(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDrawingGroupClipGeometry(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ClipGeometryProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DrawingGroupSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDrawingGroupClipGeometry(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDrawingGroupClipGeometry(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ClipGeometryProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDrawingGroupOpacityMask(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupOpacityMask(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDrawingGroupOpacityMask(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupOpacityMask(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DrawingGroupSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDrawingGroupOpacityMask(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDrawingGroupOpacityMask(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityMaskProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DrawingGroupSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDrawingGroupOpacityMask(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDrawingGroupOpacityMask(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityMaskProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDrawingGroupChildren(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupChildren(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDrawingGroupChildren(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupChildren(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class DrawingGroupSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDrawingGroupChildren(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDrawingGroupChildren(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ChildrenProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class DrawingGroupSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDrawingGroupChildren(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDrawingGroupChildren(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ChildrenProperty, binding));
         return keyFrame;

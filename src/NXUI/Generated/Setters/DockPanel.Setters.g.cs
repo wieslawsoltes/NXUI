@@ -123,7 +123,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDockPanelDock(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelDock(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDockPanelDock(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelDock(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DockPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelDock(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDockPanelDock(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DockPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDockPanelLastChildFill(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelLastChildFill(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDockPanelLastChildFill(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelLastChildFill(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DockPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelLastChildFill(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDockPanelLastChildFill(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DockPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDockPanelHorizontalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelHorizontalSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDockPanelHorizontalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelHorizontalSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DockPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelHorizontalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDockPanelHorizontalSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.HorizontalSpacingProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DockPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelHorizontalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDockPanelHorizontalSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.HorizontalSpacingProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDockPanelVerticalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelVerticalSpacing(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDockPanelVerticalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelVerticalSpacing(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DockPanelSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelVerticalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDockPanelVerticalSpacing(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.VerticalSpacingProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DockPanelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelVerticalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDockPanelVerticalSpacing(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.VerticalSpacingProperty, binding));
         return keyFrame;

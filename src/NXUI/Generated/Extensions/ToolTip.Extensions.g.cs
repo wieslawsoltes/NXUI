@@ -32,7 +32,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tip<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -78,7 +78,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Tip<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -128,7 +128,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T Tip<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -164,7 +164,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.TipProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTip(
+    public static Avalonia.Data.BindingBase BindTip(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsOpen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -316,7 +316,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsOpen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -366,7 +366,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T IsOpen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -402,7 +402,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsOpen(
+    public static Avalonia.Data.BindingBase BindIsOpen(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -554,7 +554,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Placement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -604,7 +604,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T Placement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -640,7 +640,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacement(
+    public static Avalonia.Data.BindingBase BindPlacement(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1114,7 +1114,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1160,7 +1160,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HorizontalOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1210,7 +1210,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T HorizontalOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1246,7 +1246,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalOffset(
+    public static Avalonia.Data.BindingBase BindHorizontalOffset(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1352,7 +1352,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1398,7 +1398,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> VerticalOffset<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1448,7 +1448,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T VerticalOffset<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1484,7 +1484,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalOffset(
+    public static Avalonia.Data.BindingBase BindVerticalOffset(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1590,7 +1590,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1636,7 +1636,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CustomPopupPlacementCallback<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1686,7 +1686,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomPopupPlacementCallback<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1722,7 +1722,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCustomPopupPlacementCallback(
+    public static Avalonia.Data.BindingBase BindCustomPopupPlacementCallback(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1828,7 +1828,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1874,7 +1874,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowDelay<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1924,7 +1924,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowDelay<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1960,7 +1960,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowDelay(
+    public static Avalonia.Data.BindingBase BindShowDelay(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2066,7 +2066,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BetweenShowDelay<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2112,7 +2112,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> BetweenShowDelay<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2162,7 +2162,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T BetweenShowDelay<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2198,7 +2198,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindBetweenShowDelay(
+    public static Avalonia.Data.BindingBase BindBetweenShowDelay(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2304,7 +2304,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowOnDisabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2350,7 +2350,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ShowOnDisabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2400,7 +2400,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T ShowOnDisabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2436,7 +2436,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindShowOnDisabled(
+    public static Avalonia.Data.BindingBase BindShowOnDisabled(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2542,7 +2542,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ServiceEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2588,7 +2588,7 @@ public static partial class ToolTipExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ServiceEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2638,7 +2638,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T ServiceEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -2674,7 +2674,7 @@ public static partial class ToolTipExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindServiceEnabled(
+    public static Avalonia.Data.BindingBase BindServiceEnabled(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClickMode<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -78,7 +78,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ClickMode<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -128,7 +128,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T ClickMode<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -164,7 +164,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.ClickModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindClickMode(
+    public static Avalonia.Data.BindingBase BindClickMode(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -316,7 +316,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -362,7 +362,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Command<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -412,7 +412,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -448,7 +448,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.CommandProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommand(
+    public static Avalonia.Data.BindingBase BindCommand(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HotKey<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -600,7 +600,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> HotKey<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -650,7 +650,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T HotKey<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -686,7 +686,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.HotKeyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHotKey(
+    public static Avalonia.Data.BindingBase BindHotKey(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -838,7 +838,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CommandParameter<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -888,7 +888,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -924,7 +924,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCommandParameter(
+    public static Avalonia.Data.BindingBase BindCommandParameter(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1030,7 +1030,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDefault<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1076,7 +1076,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDefault<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1126,7 +1126,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDefault<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1162,7 +1162,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDefault(
+    public static Avalonia.Data.BindingBase BindIsDefault(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1268,7 +1268,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsCancel<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1314,7 +1314,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsCancel<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1364,7 +1364,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T IsCancel<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1400,7 +1400,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.IsCancelProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsCancel(
+    public static Avalonia.Data.BindingBase BindIsCancel(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1493,7 +1493,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.IsPressedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsPressed(
+    public static Avalonia.Data.BindingBase BindIsPressed(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1596,7 +1596,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Flyout<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1642,7 +1642,7 @@ public static partial class ButtonExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Flyout<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1692,7 +1692,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Flyout<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1728,7 +1728,7 @@ public static partial class ButtonExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Button.FlyoutProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlyout(
+    public static Avalonia.Data.BindingBase BindFlyout(
         this Avalonia.Controls.Button obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

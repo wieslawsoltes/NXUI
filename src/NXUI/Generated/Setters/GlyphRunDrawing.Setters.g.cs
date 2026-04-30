@@ -123,7 +123,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetGlyphRunDrawingForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGlyphRunDrawingForeground(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetGlyphRunDrawingForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGlyphRunDrawingForeground(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGlyphRunDrawingForeground(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetGlyphRunDrawingForeground(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetGlyphRunDrawingGlyphRun(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGlyphRunDrawingGlyphRun(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetGlyphRunDrawingGlyphRun(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGlyphRunDrawingGlyphRun(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGlyphRunDrawingGlyphRun(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetGlyphRunDrawingGlyphRun(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding));
         return keyFrame;

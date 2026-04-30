@@ -79,9 +79,14 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Nullable<System.Decimal>> NumericUpDown_Value => Avalonia.Controls.NumericUpDown.ValueProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
+    /// The <see cref="Avalonia.Controls.NumericUpDown.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> NumericUpDown_Watermark => Avalonia.Controls.NumericUpDown.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> NumericUpDown_PlaceholderText => Avalonia.Controls.NumericUpDown.PlaceholderTextProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> NumericUpDown_PlaceholderForeground => Avalonia.Controls.NumericUpDown.PlaceholderForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.

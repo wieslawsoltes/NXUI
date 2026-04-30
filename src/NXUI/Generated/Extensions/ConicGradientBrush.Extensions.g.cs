@@ -32,7 +32,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ConicGradientBrushBuilder Center(
         this ConicGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ConicGradientBrush> Center(
         this ElementRef<Avalonia.Media.ConicGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Center(
         this Avalonia.Media.ConicGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCenter(
+    public static Avalonia.Data.BindingBase BindCenter(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ConicGradientBrushBuilder Angle(
         this ConicGradientBrushBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.ConicGradientBrush> Angle(
         this ElementRef<Avalonia.Media.ConicGradientBrush> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class ConicGradientBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Angle(
         this Avalonia.Media.ConicGradientBrush obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindAngle(
+    public static Avalonia.Data.BindingBase BindAngle(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

@@ -32,7 +32,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -78,7 +78,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> CornerRadius<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -128,7 +128,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The target object reference.</returns>
     public static T CornerRadius<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -164,7 +164,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCornerRadius(
+    public static Avalonia.Data.BindingBase BindCornerRadius(
         this Avalonia.Controls.ExperimentalAcrylicBorder obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -305,7 +305,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Material<T>(this ElementBuilder<T> builder, Avalonia.Media.ExperimentalAcrylicMaterial value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static ElementBuilder<T> Material<T>(this ElementBuilder<T> builder, Avalonia.Media.ExperimentalAcrylicMaterial? value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         return builder.WithValue(PropertyMetadata.ExperimentalAcrylicBorder_Material, Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value);
     }
@@ -320,7 +320,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Material<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -337,7 +337,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Material<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable,
+        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -351,7 +351,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="elementRef">The target element reference.</param>
     /// <param name="value">The value.</param>
     /// <returns>The element reference.</returns>
-    public static ElementRef<T> Material<T>(this ElementRef<T> elementRef, Avalonia.Media.ExperimentalAcrylicMaterial value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static ElementRef<T> Material<T>(this ElementRef<T> elementRef, Avalonia.Media.ExperimentalAcrylicMaterial? value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         return elementRef.SetValue(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value);
     }
@@ -366,7 +366,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Material<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -383,7 +383,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Material<T>(
         this ElementRef<T> elementRef,
-        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable,
+        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -399,7 +399,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Material<T>(this T obj, Avalonia.Media.ExperimentalAcrylicMaterial value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static T Material<T>(this T obj, Avalonia.Media.ExperimentalAcrylicMaterial? value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         obj[Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty] = value;
         return obj;
@@ -416,7 +416,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The target object reference.</returns>
     public static T Material<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -436,7 +436,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <returns>The target object reference.</returns>
     public static T Material<T>(
         this T obj,
-        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable,
+        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
@@ -452,7 +452,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaterial(
+    public static Avalonia.Data.BindingBase BindMaterial(
         this Avalonia.Controls.ExperimentalAcrylicBorder obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -469,7 +469,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> ObserveMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    public static IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?> ObserveMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
     {
         return obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }
@@ -481,7 +481,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static T OnMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial?>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         var observable = obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
         handler(obj, observable);
@@ -493,7 +493,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial>> ObserveBindingMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    public static IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial?>> ObserveBindingMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }
@@ -505,7 +505,7 @@ public static partial class ExperimentalAcrylicBorderExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial>>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static T OnBindingMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial?>>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
         handler(obj, observable);

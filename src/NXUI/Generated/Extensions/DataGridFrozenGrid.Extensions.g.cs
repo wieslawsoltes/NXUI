@@ -32,7 +32,7 @@ public static partial class DataGridFrozenGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsFrozen<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -78,7 +78,7 @@ public static partial class DataGridFrozenGridExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsFrozen<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -128,7 +128,7 @@ public static partial class DataGridFrozenGridExtensions
     /// <returns>The target object reference.</returns>
     public static T IsFrozen<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -164,7 +164,7 @@ public static partial class DataGridFrozenGridExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid.IsFrozenProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsFrozen(
+    public static Avalonia.Data.BindingBase BindIsFrozen(
         this Avalonia.Controls.Control obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

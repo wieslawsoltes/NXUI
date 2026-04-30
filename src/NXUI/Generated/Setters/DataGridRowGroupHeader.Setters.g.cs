@@ -123,7 +123,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridRowGroupHeaderIsItemCountVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridRowGroupHeaderIsItemCountVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridRowGroupHeaderItemCountFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderItemCountFormat(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridRowGroupHeaderItemCountFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderItemCountFormat(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridRowGroupHeaderItemCountFormat(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridRowGroupHeaderItemCountFormat(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridRowGroupHeaderItemCountFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridRowGroupHeaderItemCountFormat(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridRowGroupHeaderPropertyName(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderPropertyName(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridRowGroupHeaderPropertyName(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderPropertyName(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridRowGroupHeaderPropertyName(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridRowGroupHeaderPropertyName(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridRowGroupHeaderPropertyName(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridRowGroupHeaderPropertyName(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, binding));
         return keyFrame;
@@ -600,7 +600,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -614,7 +614,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -628,7 +628,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridRowGroupHeaderIsPropertyNameVisible(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridRowGroupHeaderIsPropertyNameVisible(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, binding));
         return style;
@@ -640,7 +640,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, binding));
         return keyFrame;
@@ -759,7 +759,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetDataGridRowGroupHeaderSublevelIndent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderSublevelIndent(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -773,7 +773,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetDataGridRowGroupHeaderSublevelIndent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderSublevelIndent(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -787,7 +787,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDataGridRowGroupHeaderSublevelIndent(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetDataGridRowGroupHeaderSublevelIndent(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, binding));
         return style;
@@ -799,7 +799,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDataGridRowGroupHeaderSublevelIndent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetDataGridRowGroupHeaderSublevelIndent(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, binding));
         return keyFrame;

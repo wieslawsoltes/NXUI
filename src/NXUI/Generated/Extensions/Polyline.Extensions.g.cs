@@ -32,7 +32,7 @@ public static partial class PolylineExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Points<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
     {
@@ -78,7 +78,7 @@ public static partial class PolylineExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Points<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
     {
@@ -128,7 +128,7 @@ public static partial class PolylineExtensions
     /// <returns>The target object reference.</returns>
     public static T Points<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
     {
@@ -164,7 +164,7 @@ public static partial class PolylineExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoints(
+    public static Avalonia.Data.BindingBase BindPoints(
         this Avalonia.Controls.Shapes.Polyline obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -245,6 +245,290 @@ public static partial class PolylineExtensions
     {
         var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Polyline.PointsProperty);
         handler(obj, observable);
+        return obj;
+    }
+
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> FillRule<T>(this ElementBuilder<T> builder, Avalonia.Media.FillRule value) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return builder.WithValue(PropertyMetadata.Polyline_FillRule, Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> FillRule<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return builder.WithBinding(PropertyMetadata.Polyline_FillRule, Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> FillRule<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.FillRule> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return builder.WithBinding(PropertyMetadata.Polyline_FillRule, Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding(), mode, priority);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(this ElementRef<T> elementRef, Avalonia.Media.FillRule value) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return elementRef.SetValue(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FillRule> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Shapes.Polyline.FillRuleProperty, observable.ToBinding(), mode, priority);
+    }
+
+    // Avalonia.Controls.Shapes.Polyline.FillRuleProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FillRule<T>(this T obj, Avalonia.Media.FillRule value) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        obj[Avalonia.Controls.Shapes.Polyline.FillRuleProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FillRule<T>(
+        this T obj,
+        Avalonia.Data.BindingBase binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var descriptor = Avalonia.Controls.Shapes.Polyline.FillRuleProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FillRule<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FillRule> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var descriptor = Avalonia.Controls.Shapes.Polyline.FillRuleProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> binding.</returns>
+    public static Avalonia.Data.BindingBase BindFillRule(
+        this Avalonia.Controls.Shapes.Polyline obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Shapes.Polyline.FillRuleProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FillRule> ObserveFillRule(this Avalonia.Controls.Shapes.Polyline obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFillRule<T>(this T obj, Action<Avalonia.Controls.Shapes.Polyline, IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FillRule>> ObserveBindingFillRule(this Avalonia.Controls.Shapes.Polyline obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFillRule<T>(this T obj, Action<Avalonia.Controls.Shapes.Polyline, IObservable<BindingValue<Avalonia.Media.FillRule>>> handler) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFillRuleChanged(this Avalonia.Controls.Shapes.Polyline obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFillRuleChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Polyline, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Polyline.FillRuleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> FillRuleEvenOdd<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return builder.WithValue(PropertyMetadata.Polyline_FillRule, Avalonia.Controls.Shapes.Polyline.FillRuleProperty, Avalonia.Media.FillRule.EvenOdd);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        obj[Avalonia.Controls.Shapes.Polyline.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
+        return obj;
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> FillRuleNonZero<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        return builder.WithValue(PropertyMetadata.Polyline_FillRule, Avalonia.Controls.Shapes.Polyline.FillRuleProperty, Avalonia.Media.FillRule.NonZero);
+    }
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.NonZero"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FillRuleNonZero<T>(this T obj) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        obj[Avalonia.Controls.Shapes.Polyline.FillRuleProperty] = Avalonia.Media.FillRule.NonZero;
         return obj;
     }
 }

@@ -123,7 +123,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetListBoxSelectedItems(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelectedItems(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -137,7 +137,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetListBoxSelectedItems(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelectedItems(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -151,7 +151,7 @@ public static partial class ListBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetListBoxSelectedItems(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetListBoxSelectedItems(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectedItemsProperty, binding));
         return style;
@@ -163,7 +163,7 @@ public static partial class ListBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetListBoxSelectedItems(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetListBoxSelectedItems(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectedItemsProperty, binding));
         return keyFrame;
@@ -282,7 +282,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetListBoxSelection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelection(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -296,7 +296,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetListBoxSelection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelection(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -310,7 +310,7 @@ public static partial class ListBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetListBoxSelection(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetListBoxSelection(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionProperty, binding));
         return style;
@@ -322,7 +322,7 @@ public static partial class ListBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetListBoxSelection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetListBoxSelection(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionProperty, binding));
         return keyFrame;
@@ -441,7 +441,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static StyleBuilder SetListBoxSelectionMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelectionMode(this StyleBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(style =>
         {
@@ -455,7 +455,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static KeyFrameBuilder SetListBoxSelectionMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelectionMode(this KeyFrameBuilder builder, Avalonia.Data.BindingBase binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -469,7 +469,7 @@ public static partial class ListBoxSetters
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetListBoxSelectionMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetListBoxSelectionMode(this Style style, Avalonia.Data.BindingBase binding)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionModeProperty, binding));
         return style;
@@ -481,7 +481,7 @@ public static partial class ListBoxSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetListBoxSelectionMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetListBoxSelectionMode(this KeyFrame keyFrame, Avalonia.Data.BindingBase binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionModeProperty, binding));
         return keyFrame;

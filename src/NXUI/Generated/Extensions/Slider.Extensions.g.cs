@@ -32,7 +32,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -78,7 +78,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -128,7 +128,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -164,7 +164,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -316,7 +316,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -362,7 +362,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDirectionReversed<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -412,7 +412,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDirectionReversed<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -448,7 +448,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDirectionReversed(
+    public static Avalonia.Data.BindingBase BindIsDirectionReversed(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -554,7 +554,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSnapToTickEnabled<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -600,7 +600,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsSnapToTickEnabled<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -650,7 +650,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T IsSnapToTickEnabled<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -686,7 +686,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsSnapToTickEnabled(
+    public static Avalonia.Data.BindingBase BindIsSnapToTickEnabled(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -792,7 +792,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -838,7 +838,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TickFrequency<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -888,7 +888,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T TickFrequency<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -924,7 +924,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTickFrequency(
+    public static Avalonia.Data.BindingBase BindTickFrequency(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1030,7 +1030,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1076,7 +1076,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TickPlacement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1126,7 +1126,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T TickPlacement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1162,7 +1162,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTickPlacement(
+    public static Avalonia.Data.BindingBase BindTickPlacement(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1360,7 +1360,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1406,7 +1406,7 @@ public static partial class SliderExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Ticks<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1456,7 +1456,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T Ticks<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1492,7 +1492,7 @@ public static partial class SliderExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Slider.TicksProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTicks(
+    public static Avalonia.Data.BindingBase BindTicks(
         this Avalonia.Controls.Slider obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

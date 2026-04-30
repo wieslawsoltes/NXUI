@@ -19,7 +19,7 @@ public static partial class WindowBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsActive(
+    public static Avalonia.Data.BindingBase BindIsActive(
         this Avalonia.Controls.WindowBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -109,7 +109,7 @@ public static partial class WindowBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOwner(
+    public static Avalonia.Data.BindingBase BindOwner(
         this Avalonia.Controls.WindowBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -212,7 +212,7 @@ public static partial class WindowBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Topmost<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WindowBase
     {
@@ -258,7 +258,7 @@ public static partial class WindowBaseExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Topmost<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WindowBase
     {
@@ -308,7 +308,7 @@ public static partial class WindowBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T Topmost<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WindowBase
     {
@@ -344,7 +344,7 @@ public static partial class WindowBaseExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTopmost(
+    public static Avalonia.Data.BindingBase BindTopmost(
         this Avalonia.Controls.WindowBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

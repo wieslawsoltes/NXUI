@@ -32,7 +32,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -78,7 +78,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Fill<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -128,7 +128,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Fill<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -164,7 +164,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.FillProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFill(
+    public static Avalonia.Data.BindingBase BindFill(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -270,7 +270,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -316,7 +316,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Minimum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -366,7 +366,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Minimum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -402,7 +402,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMinimum(
+    public static Avalonia.Data.BindingBase BindMinimum(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -508,7 +508,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -554,7 +554,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Maximum<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -604,7 +604,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Maximum<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -640,7 +640,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindMaximum(
+    public static Avalonia.Data.BindingBase BindMaximum(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -746,7 +746,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -792,7 +792,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> TickFrequency<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -842,7 +842,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T TickFrequency<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -878,7 +878,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTickFrequency(
+    public static Avalonia.Data.BindingBase BindTickFrequency(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -984,7 +984,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1030,7 +1030,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Orientation<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1080,7 +1080,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Orientation<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1116,7 +1116,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindOrientation(
+    public static Avalonia.Data.BindingBase BindOrientation(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1268,7 +1268,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1314,7 +1314,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Ticks<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1364,7 +1364,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Ticks<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1400,7 +1400,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.TicksProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTicks(
+    public static Avalonia.Data.BindingBase BindTicks(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1506,7 +1506,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1552,7 +1552,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> IsDirectionReversed<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1602,7 +1602,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T IsDirectionReversed<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1638,7 +1638,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsDirectionReversed(
+    public static Avalonia.Data.BindingBase BindIsDirectionReversed(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1744,7 +1744,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1790,7 +1790,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Placement<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1840,7 +1840,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Placement<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1876,7 +1876,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacement(
+    public static Avalonia.Data.BindingBase BindPlacement(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -2074,7 +2074,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ReservedSpace<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -2120,7 +2120,7 @@ public static partial class TickBarExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> ReservedSpace<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -2170,7 +2170,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T ReservedSpace<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -2206,7 +2206,7 @@ public static partial class TickBarExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindReservedSpace(
+    public static Avalonia.Data.BindingBase BindReservedSpace(
         this Avalonia.Controls.TickBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

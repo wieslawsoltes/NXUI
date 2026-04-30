@@ -32,7 +32,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The builder instance.</returns>
     public static TranslateTransformBuilder X(
         this TranslateTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -78,7 +78,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.TranslateTransform> X(
         this ElementRef<Avalonia.Media.TranslateTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -126,7 +126,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.TranslateTransform X(
         this Avalonia.Media.TranslateTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -161,7 +161,7 @@ public static partial class TranslateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TranslateTransform.XProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindX(
+    public static Avalonia.Data.BindingBase BindX(
         this Avalonia.Media.TranslateTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -263,7 +263,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The builder instance.</returns>
     public static TranslateTransformBuilder Y(
         this TranslateTransformBuilder builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -309,7 +309,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<Avalonia.Media.TranslateTransform> Y(
         this ElementRef<Avalonia.Media.TranslateTransform> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -357,7 +357,7 @@ public static partial class TranslateTransformExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.TranslateTransform Y(
         this Avalonia.Media.TranslateTransform obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -392,7 +392,7 @@ public static partial class TranslateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Media.TranslateTransform.YProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindY(
+    public static Avalonia.Data.BindingBase BindY(
         this Avalonia.Media.TranslateTransform obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

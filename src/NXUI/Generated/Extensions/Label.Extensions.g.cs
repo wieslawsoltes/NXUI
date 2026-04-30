@@ -32,7 +32,7 @@ public static partial class LabelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Target<T>(
         this ElementBuilder<T> builder,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Label
     {
@@ -78,7 +78,7 @@ public static partial class LabelExtensions
     /// <returns>The element reference.</returns>
     public static ElementRef<T> Target<T>(
         this ElementRef<T> elementRef,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Label
     {
@@ -128,7 +128,7 @@ public static partial class LabelExtensions
     /// <returns>The target object reference.</returns>
     public static T Target<T>(
         this T obj,
-        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingBase binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Label
     {
@@ -164,7 +164,7 @@ public static partial class LabelExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Label.TargetProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTarget(
+    public static Avalonia.Data.BindingBase BindTarget(
         this Avalonia.Controls.Label obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)

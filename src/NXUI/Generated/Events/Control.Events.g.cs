@@ -14,11 +14,6 @@ public static partial class Events
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.RequestBringIntoViewEventArgs> ControlRequestBringIntoView => Avalonia.Controls.Control.RequestBringIntoViewEvent;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event defined in <see cref="Avalonia.Controls.Control"/> class.
-    /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.ContextRequestedEventArgs> ControlContextRequested => Avalonia.Controls.Control.ContextRequestedEvent;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.Control.LoadedEvent"/> event defined in <see cref="Avalonia.Controls.Control"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> ControlLoaded => Avalonia.Controls.Control.LoadedEvent;
