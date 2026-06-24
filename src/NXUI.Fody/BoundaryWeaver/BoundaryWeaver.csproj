@@ -6,6 +6,7 @@
     <AssemblyName>NXUI.Fody.BoundaryWeaver</AssemblyName>
     <RootNamespace>NXUI.Fody.BoundaryWeaver</RootNamespace>
     <PackageId>NXUI.Fody</PackageId>
+    <Description>Fody weaver that annotates NXUI hot-reload boundaries for Avalonia controls.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <IncludeBuildOutput>true</IncludeBuildOutput>

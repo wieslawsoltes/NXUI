@@ -7,6 +7,7 @@
     <Copyright>Copyright © Wiesław Šoltés 2025</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/wieslawsoltes/NXUI</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup>
     <AnalysisLevel>latest</AnalysisLevel>
@@ -24,5 +25,8 @@
   </PropertyGroup>
   <ItemGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == 'true'">
     <PackageReference Include="NXUI.Fody" Version="$(VersionPrefix)" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" Visible="false" />
   </ItemGroup>
 </Project>
