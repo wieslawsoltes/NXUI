@@ -155,8 +155,30 @@ jobs:
       - name: Build
         run: dotnet build NXUI.sln -c Release --no-restore -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
 
-      - name: Pack
+      - name: Pack NuGet packages
         run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+      - name: Pack symbol packages
+        shell: bash
+        run: |
+          symbol_projects=(
+            src/NXUI/NXUI.csproj
+            src/NXUI.Desktop/NXUI.Desktop.csproj
+            src/NXUI.Cli/NXUI.Cli.csproj
+            src/NXUI.Fody/BoundaryWeaver/BoundaryWeaver.csproj
+            src/Reflectonia/Reflectonia.csproj
+          )
+
+          for project in "${symbol_projects[@]}"; do
+            dotnet pack "$project" \
+              -c Release \
+              --no-build \
+              -o artifacts/packages \
+              -p:Version=${{ needs.build.outputs.version }} \
+              -p:ContinuousIntegrationBuild=true \
+              -p:IncludeSymbols=true \
+              -p:SymbolPackageFormat=snupkg
+          done
 
       - name: Upload NuGet packages
         uses: actions/upload-artifact@v4
