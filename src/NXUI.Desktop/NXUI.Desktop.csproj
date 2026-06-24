@@ -19,7 +19,11 @@
     <PackageReference Include="Tmds.DBus.Protocol" Version="$(TmdsDbusProtocolVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="*.props">
+    <Content Include="NXUI.props">
+      <Pack>true</Pack>
+      <PackagePath>build\$(PackageId).props;buildTransitive\$(PackageId).props</PackagePath>
+    </Content>
+    <Content Include="ImplicitUsings.props">
       <Pack>true</Pack>
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
