@@ -26,3 +26,7 @@ jobs:
       run: dotnet workload install wasm-tools wasm-experimental
     - name: Build Release
       run: dotnet build -c Release
+    - name: Test Release
+      run: dotnet test -c Release --no-build
+    - name: Pack Release
+      run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages
