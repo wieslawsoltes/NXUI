@@ -30,3 +30,22 @@ jobs:
       run: dotnet test -c Release --no-build
     - name: Pack Release
       run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages
+    - name: Pack Release Symbols
+      shell: pwsh
+      run: |
+        $symbolProjects = @(
+          "src/NXUI/NXUI.csproj",
+          "src/NXUI.Desktop/NXUI.Desktop.csproj",
+          "src/NXUI.Cli/NXUI.Cli.csproj",
+          "src/NXUI.Fody/BoundaryWeaver/BoundaryWeaver.csproj",
+          "src/Reflectonia/Reflectonia.csproj"
+        )
+
+        foreach ($project in $symbolProjects) {
+          dotnet pack $project `
+            -c Release `
+            --no-build `
+            -o artifacts/packages `
+            -p:IncludeSymbols=true `
+            -p:SymbolPackageFormat=snupkg
+        }
