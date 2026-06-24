@@ -29,7 +29,8 @@ jobs:
     - name: Test Release
       run: dotnet test -c Release --no-build
     - name: Pack Release
-      run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages
+      shell: pwsh
+      run: ./build/PackPackages.ps1 -OutputPath artifacts/packages
     - name: Pack Release Symbols
       shell: pwsh
       run: ./build/PackSymbols.ps1 -OutputPath artifacts/packages

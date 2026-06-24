@@ -156,7 +156,8 @@ jobs:
         run: dotnet build NXUI.sln -c Release --no-restore -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
 
       - name: Pack NuGet packages
-        run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+        shell: pwsh
+        run: ./build/PackPackages.ps1 -OutputPath artifacts/packages -Version '${{ needs.build.outputs.version }}' -ContinuousIntegrationBuild
 
       - name: Pack symbol packages
         shell: pwsh
