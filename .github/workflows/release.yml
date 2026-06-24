@@ -1,0 +1,236 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 12.0.0)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Is this a pre-release?'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Release
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag_name: ${{ steps.version.outputs.tag_name }}
+      is_prerelease: ${{ steps.version.outputs.is_prerelease }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Install wasm tools
+        run: dotnet workload install wasm-tools wasm-experimental
+
+      - name: Determine version
+        id: version
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            VERSION="${{ github.event.inputs.version }}"
+            REQUESTED_PRERELEASE="${{ github.event.inputs.prerelease }}"
+            VERSION="${VERSION#v}"
+            TAG_NAME="v${VERSION}"
+          else
+            TAG_NAME="${GITHUB_REF_NAME}"
+            VERSION="${TAG_NAME#v}"
+            REQUESTED_PRERELEASE="false"
+          fi
+
+          if [[ ! "$VERSION" =~ ^[0-9]+(\.[0-9]+){1,3}(-[0-9A-Za-z][0-9A-Za-z.-]*)?$ ]]; then
+            echo "Invalid release version '$VERSION'. Use a NuGet-compatible version such as 12.0.0 or 12.0.0-preview.1." >&2
+            exit 1
+          fi
+
+          if [[ "$VERSION" == *"-"* || "$REQUESTED_PRERELEASE" == "true" ]]; then
+            IS_PRERELEASE="true"
+          else
+            IS_PRERELEASE="false"
+          fi
+
+          {
+            echo "version=$VERSION"
+            echo "tag_name=$TAG_NAME"
+            echo "is_prerelease=$IS_PRERELEASE"
+          } >> "$GITHUB_OUTPUT"
+          echo "Building NXUI $VERSION (tag: $TAG_NAME, prerelease: $IS_PRERELEASE)"
+
+      - name: Restore
+        run: dotnet restore NXUI.sln
+
+      - name: Build
+        run: dotnet build NXUI.sln -c Release --no-restore -p:Version=${{ steps.version.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+  test:
+    name: Test Release
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Install wasm tools
+        run: dotnet workload install wasm-tools wasm-experimental
+
+      - name: Restore
+        run: dotnet restore NXUI.sln
+
+      - name: Build
+        run: dotnet build NXUI.sln -c Release --no-restore -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+      - name: Test
+        run: dotnet test NXUI.sln -c Release --no-build --logger trx --results-directory artifacts/test -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: release-test-results
+          path: artifacts/test/**/*.trx
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Publish test results
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: Release Test Results
+          path: artifacts/test/**/*.trx
+          reporter: dotnet-trx
+          fail-on-empty: false
+
+  pack:
+    name: Pack Release
+    runs-on: ubuntu-latest
+    needs: [build, test]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Install wasm tools
+        run: dotnet workload install wasm-tools wasm-experimental
+
+      - name: Restore
+        run: dotnet restore NXUI.sln
+
+      - name: Build
+        run: dotnet build NXUI.sln -c Release --no-restore -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+      - name: Pack
+        run: dotnet pack NXUI.sln -c Release --no-build -o artifacts/packages -p:Version=${{ needs.build.outputs.version }} -p:ContinuousIntegrationBuild=true
+
+      - name: Upload NuGet packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-nuget-packages
+          path: |
+            artifacts/packages/*.nupkg
+            artifacts/packages/*.snupkg
+          if-no-files-found: error
+          retention-days: 90
+
+  publish-nuget:
+    name: Publish to NuGet
+    runs-on: ubuntu-latest
+    needs: [build, pack]
+    environment: nuget
+    steps:
+      - name: Download NuGet packages
+        uses: actions/download-artifact@v4
+        with:
+          name: release-nuget-packages
+          path: packages
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Publish to NuGet
+        shell: bash
+        run: |
+          shopt -s nullglob
+          packages=(packages/*.nupkg packages/*.snupkg)
+
+          if (( ${#packages[@]} == 0 )); then
+            echo "No NuGet packages found to publish." >&2
+            exit 1
+          fi
+
+          for package in "${packages[@]}"; do
+            echo "Publishing $package..."
+            dotnet nuget push "$package" \
+              --api-key "${{ secrets.NUGET_API_KEY }}" \
+              --source https://api.nuget.org/v3/index.json \
+              --skip-duplicate
+          done
+
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: [build, pack, publish-nuget]
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download NuGet packages
+        uses: actions/download-artifact@v4
+        with:
+          name: release-nuget-packages
+          path: packages
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: NXUI v${{ needs.build.outputs.version }}
+          tag_name: ${{ needs.build.outputs.tag_name }}
+          target_commitish: ${{ github.sha }}
+          draft: false
+          prerelease: ${{ needs.build.outputs.is_prerelease == 'true' }}
+          generate_release_notes: true
+          files: |
+            packages/*.nupkg
+            packages/*.snupkg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
