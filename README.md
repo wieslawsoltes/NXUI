@@ -67,9 +67,13 @@ object Build()
           TextBox(out var tb1)
             .Text("NXUI"),
           TextBox()
-            .Text(window.BindTitle()),
+            .Text(window.ObserveTitle()),
           Label()
-            .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
+            .Content(
+              button
+                .ObserveEvent(Avalonia.Controls.Button.ClickEvent)
+                .Select(_ => ++count)
+                .Select(x => $"You clicked {x} times."))))
     .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
 return HotReloadHost.Run(Build, "NXUI", args);
@@ -170,15 +174,24 @@ object Build()
                     TextBox(out var tb1)
                         .Text("NXUI"),
                     TextBox()
-                        .Text(window.BindTitle()),
+                        .Text(window.ObserveTitle()),
                     Label()
-                        .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
+                        .Content(
+                            button
+                                .ObserveEvent(Avalonia.Controls.Button.ClickEvent)
+                                .Select(_ => ++count)
+                                .Select(x => $"You clicked {x} times."))))
         .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
 return HotReloadHost.Run(Build, "NXUI", args);
 ```
 
 ![image](https://github.com/user-attachments/assets/6dfea182-9725-4904-a201-b9c48aea2915)
+
+The file-based examples are available as runnable samples:
+
+- [`samples/NXUI.Sample.FileApp/App.cs`](samples/NXUI.Sample.FileApp/App.cs)
+- [`samples/NXUI.Sample.FileAppReactive/App.cs`](samples/NXUI.Sample.FileAppReactive/App.cs)
 
 ## F# Support
 
@@ -192,27 +205,28 @@ open Avalonia.Controls
 
 open NXUI.Extensions
 open NXUI.HotReload
+open NXUI.HotReload.Nodes
 open type NXUI.Builders
 
-let Build () : obj =
-    let mutable count = 0
-    let mutable window = Unchecked.defaultof<Window>
-    let mutable button = Unchecked.defaultof<Button>
-    let mutable tb1 = Unchecked.defaultof<TextBox>
+let mutable count = 0
+let mutable window = Unchecked.defaultof<ElementRef<Window>>
+let mutable button = Unchecked.defaultof<ElementRef<Button>>
+let mutable tb1 = Unchecked.defaultof<ElementRef<TextBox>>
 
-    Window(window)
+let Build () : obj =
+    Window(&window)
         .Title("NXUI")
         .Width(400)
         .Height(300)
         .Content(
             StackPanel()
                 .Children(
-                    Button(button).Content("Welcome to Avalonia, please click me!"),
-                    TextBox(tb1).Text("NXUI"),
-                    TextBox().Text(window.BindTitle()),
+                    Button(&button).Content("Welcome to Avalonia, please click me!"),
+                    TextBox(&tb1).Text("NXUI"),
+                    TextBox().Text(window.ObserveTitle()),
                     Label()
                         .Content(
-                            button.ObserveOnClick()
+                            button.ObserveEvent(Button.ClickEvent)
                             |> Observable.map (fun _ ->
                                 count <- count + 1
                                 count)
@@ -227,6 +241,9 @@ let Build () : obj =
 [<EntryPoint>]
 let Main argv = HotReloadHost.Run(Build, "NXUI", argv)
 ```
+
+The F# example is compile-checked by
+[`samples/NXUI.Sample.FSharp.Desktop/ReadmeExample.fs`](samples/NXUI.Sample.FSharp.Desktop/ReadmeExample.fs).
 
 > ### F# 8.0 Support
 >
@@ -251,8 +268,8 @@ these members for every Avalonia control and property.
 ### Builders
 
 `NXUI.Builders` exposes factory methods for every control type.  Each method
-creates the control instance and overloads let you capture it via `out var` for
-later use.
+creates an element builder. Overloads with `out var` capture a hot-reload-safe
+`ElementRef<TControl>` for observing the materialized control later.
 
 ### Property helpers
 
@@ -301,6 +318,18 @@ workflows:
 
 Together these extensions enable complex, reactive UIs built entirely in code
 while managing resources with minimal overhead.
+
+## README integration samples
+
+Every runnable C# example in this README is mirrored by
+[`samples/NXUI.IntegrationTest/ReadmeExamples.cs`](samples/NXUI.IntegrationTest/ReadmeExamples.cs)
+and compiled with the solution. Run a specific variant by passing one of
+`reactive`, `mounted`, `minimalistic`, `file-app`, `file-app-reactive`, or
+`hot-reload`; omitting the name runs the minimal example:
+
+```bash
+dotnet run --project samples/NXUI.IntegrationTest -- reactive
+```
 
 ## Hot Reload
 
